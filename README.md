@@ -2,6 +2,7 @@
 
 This is the repository for Fall 2023 NYU ITP class Canvas for Coders.
 
+
 ## Info
 
 - Joohyun Park (jhp527[@]nyu.edu)
@@ -13,6 +14,7 @@ This is the repository for Fall 2023 NYU ITP class Canvas for Coders.
   - 10/01/2022, Saturday, 3:30pm-4:30pm
   - 10/08/2022, Saturday, 3:30pm-4:30pm
   - 10/15/2022, Saturday, 3:30pm-4:30pm
+
 
 ## Course Description
 For some creators, a web browser is more than just a tool; it is a digital canvas with boundless possibilities for artistic expression. This course covers the three.js fundamentals to provide students with skills to create interactive aethetics in web 3D space.
@@ -27,10 +29,11 @@ At the completion of this course, the students will:
 
 
 ## Values
-💡 No ideas/questions are dum. We respect each others thoughts.  
-🧠 Learn by doing.  
-🤔 Define a problem first, then write the code.  
-👀 Feedback
+💡 No ideas/questions are dum. We respect each others thoughts and invent creativity together.  
+🧠 Learn by doing. Don't be afraid to break anything.  
+🤔 If stuck with errors, take a step back. Define the problem first, then write the code.  
+👀 Feedback matters as much as presentation. Your opinion can inspire someone making great arts.
+
 
 ## Get Started
 
