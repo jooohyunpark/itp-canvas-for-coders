@@ -60,10 +60,8 @@ Please setup belows on your machine before the first class.
 
 ### Week 1 - Intro
 Introduce three.js and creative projects built with it.
-Introduce each other
-Case studies: creative projects built with three.js
-Three.js basics
-Pull down project boilerplate on machine
+- Case studies: creative projects built with three.js
+- Three.js basics
 
 
 ### Week 2 - Basics
