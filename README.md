@@ -45,7 +45,7 @@ $ yarn dev  # npm run dev
 
 ## Prerequisites
 
-Please install these on your machine before the first class.
+Please setup belows on your machine before the first class.
 
 - [VS Code](https://code.visualstudio.com/)
 - [Git](https://github.com/git-guides/install-git)
