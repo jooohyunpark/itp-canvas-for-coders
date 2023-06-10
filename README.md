@@ -29,10 +29,10 @@ At the completion of this course, the students will:
 
 
 ## Values
-💡 No ideas/questions are dum. We respect each others thoughts and invent creativity together.  
-🧠 Learn by doing. Think, prototype, and iterate. Don't be afraid to break anything.  
-👀 Be curious. Feedback matters as much as presentation. Your constructive opinion can inspire someone making great arts.  
-🤔 If stuck with errors, take a step back. Define the problem first, then write the code.  
+💡    No ideas/questions are dum. We respect each others thoughts and invent creativity together.  
+🧠    Learn by doing. Think, prototype, and iterate. Don't be afraid to break anything.  
+👀    Be curious. Feedback matters as much as presentation. Your constructive opinion can inspire someone making great arts.  
+🤔    If stuck with errors, take a step back. Define the problem first, then write the code.  
 
 ## Get Started
 
