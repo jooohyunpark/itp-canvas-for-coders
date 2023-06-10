@@ -17,7 +17,7 @@ This is the repository for Fall 2023 NYU ITP class Canvas for Coders.
 
 
 ## Course Description
-For some creators, a web browser is more than just a tool; it is a digital canvas with boundless possibilities for artistic expression. This course covers the three.js fundamentals to provide students with skills to create interactive aethetics in web 3D space.
+For some creators, a web browser is more than just a tool; it is a digital canvas with boundless possibilities for artistic expression. This course covers three.js fundamentals to provide students with skills to create interactive aesthetics in web 3D space.
 
 
 ## Course Ojbectives
@@ -30,13 +30,13 @@ At the completion of this course, the students will:
 
 ## Values
 #### 💡 Invent creativity together
-No ideas/questions are weird. We respect every thoughts and encourage diverse perspectives.
+No ideas/questions are weird. We respect every thought and encourage diverse perspectives.
 
 #### 🧠 Learn by doing
-Ideate, research, prototype, and iterate. Be comfortable even it breaks.  
+Ideate, research, prototype, and iterate. Dive deep into writing code, even if it breaks sometimes.  
 
 #### 👀 Be curious
-Feedback matters as much as presentation. Your constructive opinion can inspire someone making great arts.  
+Feedback matters as much as presentation. Your constructive opinion can inspire someone to create great art.  
 
 
 ## Get Started
