@@ -29,9 +29,9 @@ At the completion of this course, the students will:
 
 
 ## Values
-💡 Invent creativity together. No ideas/questions are weird. We respect every thoughts and encourage diverse perspectives.  
-🧠 Learn by doing. Ideate, research, prototype, and iterate. Be comfortable even it breaks.  
-👀 Be curious. Feedback matters as much as presentation. Your constructive opinion can inspire someone making great arts.  
+**💡 Invent creativity together.** No ideas/questions are weird. We respect every thoughts and encourage diverse perspectives.  
+**🧠 Learn by doing.** Ideate, research, prototype, and iterate. Be comfortable even it breaks.  
+**👀 Be curious.** Feedback matters as much as presentation. Your constructive opinion can inspire someone making great arts.  
 
 
 ## Get Started
