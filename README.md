@@ -32,7 +32,7 @@ At the completion of this course, the students will:
 💡 No ideas/questions are dum. We respect each others thoughts and invent creativity together.  
 🧠 Learn by doing. Don't be afraid to break anything.  
 🤔 If stuck with errors, take a step back. Define the problem first, then write the code.  
-👀 Feedback matters as much as presentation. Your opinion can inspire someone making great arts.
+👀 Feedback matters as much as presentation. Your constructive opinion can inspire someone making great arts.
 
 
 ## Get Started
