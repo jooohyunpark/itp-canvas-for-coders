@@ -56,51 +56,46 @@ Please setup belows on your machine before the first class.
 
 
 
-## Weekly schedule
+## Weekly Topics
 
 ### Week 1 - Intro
-Introduce three.js and creative projects built with it.
 - Case studies: creative projects built with three.js
-- Three.js basics
-
+- hreejs documentation and how to get information
+- Three.js basic structure
+  - renderer
+  - scene
+  - camera
+  - lighting
+  - mesh
+  - control
 
 ### Week 2 - Basics
-Go through the overview of three.js code structure. Learn the 3D space concept(xyz)  in the scene, test out basic lighting, and explore the orbit control.
-HTML container div to render the scene
-- Basic structure: renderer, scene, camera, lighting, mesh, control
-- threejs documentation and how to get information
-- X,Y,Z space in a scene
+- camera
+- xyz space in a scene
 - Test out different types of lighting
 - Play with orbit control configuration
 
-
 ### Week 3 - Mesh
-Understand how to create different types of objects in the scene. 
 - Geometries
 - Mesh attributes such as position, rotation, scale
 - Materials
 - Import image as customized material
 - Map video material to the mesh
 
-
-
 ### Week 4 - Animation
 Learn how to animate objects in different ways.
 - Using requestAnimationFrame method to animate elements
 - Import GSAP library to programmatically animate element’s attributes
-
 
 ### Week 5 - Model
 Import gltf model into the scene and explore how to access it and its child objects.
 - Importing 3d model in the scene using loaders
 - Animate model
 
-
 ### Week 6 - Interaction
 Make threejs elements interactable to user events such as hover, click.
 - Raycast intersection Hover to highlight
 - Add click listener to mesh and trigger event
-
 
 ### Week 7 - Final
 Presentation
