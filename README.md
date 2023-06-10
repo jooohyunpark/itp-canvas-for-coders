@@ -27,11 +27,11 @@ At the completion of this course, the students will:
 
 
 ## Values
-💡 No ideas/questions are dum. We respect each others thoughts 
-🧠 Learn everyday. 
-💻 Do 
-🤔 Define a problem first, then write the code.
-5. Feedback 
+- 💡 No ideas/questions are dum. We respect each others thoughts 
+- 🧠 Learn everyday. 
+- 💻 Do 
+- 🤔 Define a problem first, then write the code.
+-  Feedback 
 
 ## Get Started
 
