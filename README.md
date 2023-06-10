@@ -26,6 +26,13 @@ At the completion of this course, the students will:
 2. Use browser as a digital canvas for artistic expression
 
 
+## Values
+💡 No ideas/questions are dum. We respect each others thoughts 
+🧠 Learn everyday. 
+💻 Do 
+🤔 Define a problem first, then write the code.
+5. Feedback 
+
 ## Get Started
 
 Clone this repo. It has weekly code examples in each folder.
