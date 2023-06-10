@@ -121,7 +121,12 @@ Presentation
 - [Sass](https://sass-lang.com/) – Powerful CSS extension language for advanced styling
 - [Bootstrap](https://getbootstrap.com/) – CSS framework for responsive web development
 
-## Additional Resources
+## Resources
+* to come
+
+
+## Equipment
+You will need a modern laptop (4 years old or younger is a good rule of thumb). Most required software is freely available.
 
 
 ## Evaluation
@@ -134,7 +139,7 @@ Grading (pass/fail) will be based on a combination of factors:
 - Assignments (40%)
 - Final Project (20%)
 
-Please see ITP's statement on Pass/Fail which states that a "Pass" is equivalent to an "A" or a "B" while anything less would be considered a "Fail".
+Please see ITP's statement on [Pass/Fail](https://help.itp.nyu.edu/academic-policies/pass-fail) which states that a "Pass" is equivalent to an "A" or a "B" while anything less would be considered a "Fail".
 
 Attendance is mandatory. Please inform your teacher via email if you are going to miss a class. Two unexcused absences is cause for failing the class. (An unexcused lateness of 10 minutes or more is equivalent to 1/2 an absence.)
 
@@ -145,6 +150,20 @@ Class will culminate with final projects. You are expected to push your abilitie
 ## Statement of Academic Integrity
 
 Plagiarism is presenting someone else’s work as though it were your own. More specifically, plagiarism is to present as your own: A sequence of words quoted without quotation marks from another writer or a paraphrased passage from another writer’s work or facts, ideas or images composed by someone else.
+
+
+## Use of Free and Open Source Code from Examples
+
+The following is adapted by permission [from Golan Levin’s Interactivity and Computation Course (Fall 2018)](http://cmuems.com/2018/60212f/syllabus/academic-integrity/) at Carnegie Mellon University.
+
+You must cite the source of any code you use. Please note the following expectations and guidelines:
+
+**Check the License.** When using others' code, pay attention to the license under which it has been released, and be certain to fulfill the terms and requirements of those licenses. Descriptions of common licenses, and their requirements, can be found at choosealicense.com. Some licenses may require permission. If you are confused or aren’t sure how to credit code, ask one of the course instructors and make your best good faith effort. Not properly citing code sources is grounds for a 0 on an assignment.
+
+**Use Libraries.** The use of general, repurposable libraries is strongly encouraged. The people who developed and contributed these components to the community worked hard, often for no pay; acknowledge them by citing their name and linking to their repository.
+
+**Be Careful.** It sometimes happens that an artist places the entire source code for their sketch or artwork online, as a resource from which others can learn. Assignments given in new-media arts courses are often similar; you may also discover the work of a student in some other class or school, who has posted code for a project which responds to a similar assignment. You should probably avoid this code. At the very least, you should be careful about approaching such code for possible re-use. If it is necessary to do so, it is best to extract components that solve a specific technical problem, rather than those parts which operate to create a poetic experience. Your challenge, if and/or when you work with others' code, is to make it your own. It should be clear that downloading an artwork from someone's GitHub and simply changing the colors would be disgracefully lazy. And doing so without proper citation would be outright plagiarism.
+
 
 ## Statement of Principle
 
