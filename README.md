@@ -5,7 +5,7 @@ This is the repository for Fall 2023 NYU ITP class Canvas for Coders.
 
 ## Info
 
-- Joohyun Park (jhp527[@]nyu.edu)
+- Joohyun Park
 - Class dates
   - 10/01/2022, Saturday, 12:20pm-3:20pm
   - 10/08/2022, Saturday, 12:20pm-3:20pm
