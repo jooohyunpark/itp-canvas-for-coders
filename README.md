@@ -4,9 +4,9 @@
 
 - [Joohyun Park](mailto:jhp527@nyu.edu)
 - Class dates
-  - 10/27/2023 - 12/15/2023, Friday, 6:00pm-8:30pm
+  - 10/27/2023 - 12/15/2023, Friday, 6:00pm-8:30pm, 370 Jay Street Room 450 Loc: Brooklyn Campus
 - [Office hours](https://calendar.app.google/BYHgr6gMdJk75LfX7)
-  - 10/27/2023 - 12/15/2023, Tuesday, 7:30pm-8:30pm
+  - 10/31/2023 - 12/12/2023, Tuesday, 7:30pm-8:30pm
 
 
 ## Course Description
