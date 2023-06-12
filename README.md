@@ -100,12 +100,12 @@ Presentation
 
 ## Tools
 
-- [three.js](https://threejs.org/) – Javascript 3D library
+- [three.js](https://threejs.org/) - Javascript 3D library
 - [gsap](https://greensock.com/gsap/) - Javascript animation library for the modern web
 
 
 ## Resources
-* to come
+* TBD
 
 
 ## Equipment
