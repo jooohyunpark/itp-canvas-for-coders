@@ -1,8 +1,5 @@
 # itp-canvas-for-coders
 
-This is the repository for Fall 2023 NYU ITP class Canvas for Coders.
-
-
 ## Info
 
 - Joohyun Park
@@ -64,45 +61,36 @@ Please setup belows on your machine before the first class.
 - [Git](https://github.com/git-guides/install-git)
 
 
-
 ## Weekly Topics
 
 ### Week 1 - Intro
-- Case studies: creative projects built with three.js
-- hreejs documentation and how to get information
-- Three.js basic structure
-  - renderer
-  - scene
-  - camera
-  - lighting
-  - mesh
-  - control
+- Creative projects built with three.js
+- Three.js documentation
+- Renderer, scene
 
 ### Week 2 - Basics
-- camera
-- xyz space in a scene
-- Test out different types of lighting
-- Play with orbit control configuration
+- Camera
+- Lighting
+- Control
+- X,Y,Z space
 
 ### Week 3 - Mesh
 - Geometries
-- Mesh attributes such as position, rotation, scale
 - Materials
-- Import image as customized material
-- Map video material to the mesh
+  - Import image as customized material
+  - Map video material to the mesh
+- Mesh attributes - position, rotation, scale
+
 
 ### Week 4 - Animation
-Learn how to animate objects in different ways.
-- Using requestAnimationFrame method to animate elements
-- Import GSAP library to programmatically animate element’s attributes
+- UrequestAnimationFrame
+- GSAP
 
 ### Week 5 - Model
-Import gltf model into the scene and explore how to access it and its child objects.
-- Importing 3d model in the scene using loaders
-- Animate model
+- Import 3D model using loaders
+- Access child objects of model
 
 ### Week 6 - Interaction
-Make threejs elements interactable to user events such as hover, click.
 - Raycast intersection Hover to highlight
 - Add click listener to mesh and trigger event
 
@@ -112,10 +100,9 @@ Presentation
 
 ## Tools
 
-- [Vue.js](https://vuejs.org/) – The progressive javaScript framework for building UI
-- [Nuxt.js](https://nuxtjs.org/) – JavaScript library based on Vue.js
-- [Sass](https://sass-lang.com/) – Powerful CSS extension language for advanced styling
-- [Bootstrap](https://getbootstrap.com/) – CSS framework for responsive web development
+- [three.js](https://threejs.org/) – Javascript 3D library
+- [gsap](https://greensock.com/gsap/) - Javascript animation library for the modern web
+
 
 ## Resources
 * to come
