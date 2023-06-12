@@ -5,8 +5,8 @@
 - Joohyun Park
 - Class dates
   - 10/27/2023 - 12/15/2023, Friday, 6:00pm-8:30pm
-- [Office hours](https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ38e_td9fOuExnsHGYNL-FhkFVHDDICVNefmc2V0rmHLALBSDYYQ_irIQHs3RCnAxpkBLUo0OcO)
-  - TBD
+- [Office hours](https://calendar.app.google/BYHgr6gMdJk75LfX7)
+  - 10/27/2023 - 12/15/2023, Friday, 8:30pm-9:30pm
 
 
 ## Course Description
