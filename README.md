@@ -37,20 +37,8 @@ Feedback matters as much as presentation. Your constructive opinion can inspire 
 Clone this repo. It has weekly code examples in each folder.
 
 ```bash
-$ git clone https://github.com/jooohyunpark/itp-wou-fall-2022.git
-$ cd itp-wou-fall-2022
-```
-
-You can find different examples under `/pages` in weekly folder. To run these example, run following command from the root.
-
-```bash
-$ cd week1
-$ yarn install # npm install
-$ yarn dev  # npm run dev
-
-# localhost:3000
-# localhost:3000/example-1
-# ...
+$ git clone https://github.com/jooohyunpark/itp-canvas-for-coders.git
+$ cd itp-canvas-for-coders
 ```
 
 ## Prerequisites
@@ -59,9 +47,11 @@ Please setup belows on your machine before the first class.
 
 - [VS Code](https://code.visualstudio.com/)
 - [Git](https://github.com/git-guides/install-git)
+- [Node](https://nodejs.org/en/)
+- [npm](https://www.npmjs.com/) - Comes with Node.js installation
 
 
-## Weekly Topics
+## Weekly Topics (WIP)
 
 ### Week 1 - Intro
 - Creative projects built with three.js
