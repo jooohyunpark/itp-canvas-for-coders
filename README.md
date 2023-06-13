@@ -48,7 +48,7 @@ Please setup belows on your machine before the first class.
 - [VS Code](https://code.visualstudio.com/)
 - [Git](https://github.com/git-guides/install-git)
 - [Node](https://nodejs.org/en/)
-- [npm](https://www.npmjs.com/) - Comes with Node.js installation
+- [npm](https://www.npmjs.com/) (Comes with Node.js installation)
 
 
 ## Weekly Topics (WIP)
