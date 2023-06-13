@@ -58,7 +58,7 @@ Please setup belows on your machine before the first class.
 - Three.js documentation
 - Renderer, scene
 
-### Week 2 - Basics
+### Week 2 - Concept
 - Camera
 - Lighting
 - Control
