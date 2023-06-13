@@ -22,13 +22,13 @@ At the completion of this course, the students will:
 
 
 ## Values
-#### 💡 Invent creativity together
+#### Invent creativity together 💡
 No ideas/questions are wrong. We respect every thought and encourage diverse perspectives.
 
-#### 🧠 Learn by doing
+#### Learn by doing 🧠
 Ideate, research, prototype, and iterate. Dive deep into writing code, even if it breaks sometimes.  
 
-#### 👀 Be curious
+#### Be curious 👀
 Feedback matters as much as presentation. Your constructive opinion can inspire someone to create great art.  
 
 
