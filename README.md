@@ -71,7 +71,6 @@ Please setup belows on your machine before the first class.
   - Map video material to the mesh
 - Mesh attributes - position, rotation, scale
 
-
 ### Week 4 - Animation
 - UrequestAnimationFrame
 - GSAP
