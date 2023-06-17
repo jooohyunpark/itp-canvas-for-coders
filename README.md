@@ -59,10 +59,11 @@ Please setup belows on your machine before the first class.
 - Renderer, scene
 
 ### Week 2 - Concept
+- X,Y,Z space
 - Camera
 - Lighting
+- Helper
 - Control
-- X,Y,Z space
 
 ### Week 3 - Mesh
 - Geometries
