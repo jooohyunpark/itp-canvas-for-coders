@@ -57,7 +57,9 @@ Please setup belows on your machine before the first class.
 - Creative projects built with three.js
 - Three.js wrappers/frameworks
 - Three.js documentation
-- Renderer, scene
+- Renderer
+- Scene
+- Responsiveness
 
 ### Week 2 - Concept
 - X,Y,Z space
