@@ -17,7 +17,7 @@ For some creators, a web browser is more than just a tool; it is a digital canva
 
 At the completion of this course, the students will:
 
-1. Be comfortable prototyping web 3D experience using three.js
+1. Be comfortable prototyping web 3D experience with three.js
 2. Use browser as a digital canvas for artistic expression
 
 
@@ -55,14 +55,18 @@ Please setup belows on your machine before the first class.
 
 ### Week 1 - Intro
 - Creative projects built with three.js
+- Three.js wrappers/frameworks
 - Three.js documentation
-- Renderer, scene
+- Renderer
+- Scene
+- Responsiveness
 
 ### Week 2 - Concept
+- X,Y,Z space
 - Camera
 - Lighting
+- Helper
 - Control
-- X,Y,Z space
 
 ### Week 3 - Mesh
 - Geometries
@@ -70,7 +74,6 @@ Please setup belows on your machine before the first class.
   - Import image as customized material
   - Map video material to the mesh
 - Mesh attributes - position, rotation, scale
-
 
 ### Week 4 - Animation
 - UrequestAnimationFrame
