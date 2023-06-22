@@ -14,13 +14,14 @@ app.appendChild(renderer.domElement);
 // scene
 const scene = new THREE.Scene();
 scene.background = new THREE.Color("#000");
+scene.fog = new THREE.Fog(0xcccccc, 1, 100);
 
 // camera
 const camera = new THREE.PerspectiveCamera(
-  50,
+  55,
   window.innerWidth / window.innerHeight,
   1,
-  100
+  1000
 );
 camera.position.set(0, 0, -30);
 
@@ -29,8 +30,8 @@ const controls = new OrbitControls(camera, renderer.domElement);
 controls.enablePan = false;
 controls.enableDamping = true;
 controls.enableZoom = true;
-controls.minDistance = 20;
-controls.maxDistance = 40;
+controls.minDistance = 10;
+controls.maxDistance = 1000;
 controls.target = new THREE.Vector3(0, 0, 0);
 
 // screen
