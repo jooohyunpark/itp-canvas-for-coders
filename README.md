@@ -80,7 +80,7 @@ Please setup belows on your machine before the first class.
 - GSAP
 - Stats.js
 
-### Week 5 - Model
+### Week 5 - 3D Model
 - GLTFLoaders
 - Accessing objects of model
 - Environment map
