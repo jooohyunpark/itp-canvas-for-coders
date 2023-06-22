@@ -96,7 +96,8 @@ Presentation
 ## Tools
 
 - [three.js](https://threejs.org/) - Javascript 3D library
-- [gsap](https://greensock.com/gsap/) - Javascript animation library for the modern web
+- [gsap](https://greensock.com/gsap/) - Animation library for the modern web
+- [stats.js](https://github.com/mrdoob/stats.js/) - Performance Mmnitor
 
 
 ## Resources
