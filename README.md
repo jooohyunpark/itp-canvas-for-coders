@@ -76,16 +76,18 @@ Please setup belows on your machine before the first class.
 - Mesh attributes - position, rotation, scale
 
 ### Week 4 - Animation
-- UrequestAnimationFrame
+- requestAnimationFrame
 - GSAP
+- Stats.js
 
 ### Week 5 - Model
-- Import 3D model using loaders
-- Access child objects of model
+- GLTFLoaders
+- Accessing objects of model
+- Environment map
 
 ### Week 6 - Interaction
-- Raycast intersection Hover to highlight
-- Add click listener to mesh and trigger event
+- Add click listener to trigger event
+- Deplying the site
 
 ### Week 7 - Final
 Presentation
@@ -94,7 +96,9 @@ Presentation
 ## Tools
 
 - [three.js](https://threejs.org/) - Javascript 3D library
-- [gsap](https://greensock.com/gsap/) - Javascript animation library for the modern web
+- [vite](https://vitejs.dev/) - Javascript build tool
+- [gsap](https://greensock.com/gsap/) - Animation library
+- [stats.js](https://github.com/mrdoob/stats.js/) - Performance Monitor
 
 
 ## Resources
