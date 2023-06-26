@@ -13,42 +13,56 @@ app.appendChild(renderer.domElement);
 
 // scene
 const scene = new THREE.Scene();
-scene.background = new THREE.Color("#000000");
-scene.fog = new THREE.Fog("#cccccc", 1, 100);
+scene.background = new THREE.Color(0xcccccc);
+scene.fog = new THREE.FogExp2(0xcccccc, 0.002);
 
 // camera
 const camera = new THREE.PerspectiveCamera(
-  55,
+  60,
   window.innerWidth / window.innerHeight,
   1,
   1000
 );
-camera.position.set(0, 0, -30);
+camera.position.set(400, 200, 0);
 
 // controls
 const controls = new OrbitControls(camera, renderer.domElement);
-controls.enablePan = false;
 controls.enableDamping = true;
-controls.enableZoom = true;
-controls.minDistance = 10;
-controls.maxDistance = 1000;
+controls.dampingFactor = 0.05;
+controls.screenSpacePanning = false;
 
-// floor
-const floorGeometry = new THREE.PlaneGeometry(1, 1);
-const foorMaterial = new THREE.MeshBasicMaterial({
-  color: 0xffff00,
-  side: THREE.DoubleSide,
-});
-const floorMesh = new THREE.Mesh(floorGeometry, foorMaterial);
-floorMesh.scale.setScalar(100);
-floorMesh.rotation.x = Math.PI * -0.5;
-scene.add(floorMesh);
+controls.enableZoom = true;
+controls.minDistance = 100;
+controls.maxDistance = 500;
+controls.maxPolarAngle = Math.PI / 2;
+
+// lights
+const dirLight1 = new THREE.DirectionalLight(0xffffff);
+dirLight1.position.set(1, 1, 1);
+scene.add(dirLight1);
+
+const dirLight2 = new THREE.DirectionalLight(0x0000ff);
+dirLight2.position.set(-1, -1, -1);
+scene.add(dirLight2);
+
+const ambientLight = new THREE.AmbientLight(0x222222);
+scene.add(ambientLight);
 
 // mesh
-const geometry = new THREE.TorusKnotGeometry(3, 1, 521, 64);
-const material = new THREE.MeshNormalMaterial();
-const mesh = new THREE.Mesh(geometry, material);
-scene.add(mesh);
+const geometry = new THREE.CylinderGeometry(0, 10, 30, 4, 1);
+const material = new THREE.MeshPhongMaterial({
+  color: 0xffffff,
+  flatShading: true,
+});
+for (let i = 0; i < 500; i++) {
+  const mesh = new THREE.Mesh(geometry, material);
+  mesh.position.x = Math.random() * 1600 - 800;
+  mesh.position.y = 0;
+  mesh.position.z = Math.random() * 1600 - 800;
+  mesh.updateMatrix();
+  mesh.matrixAutoUpdate = false;
+  scene.add(mesh);
+}
 
 // resize
 const onResize = () => {
