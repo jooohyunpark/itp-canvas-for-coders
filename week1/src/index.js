@@ -13,8 +13,8 @@ app.appendChild(renderer.domElement);
 
 // scene
 const scene = new THREE.Scene();
-scene.background = new THREE.Color("#000");
-scene.fog = new THREE.Fog(0xcccccc, 1, 100);
+scene.background = new THREE.Color("#000000");
+scene.fog = new THREE.Fog("#cccccc", 1, 100);
 
 // camera
 const camera = new THREE.PerspectiveCamera(
@@ -32,9 +32,19 @@ controls.enableDamping = true;
 controls.enableZoom = true;
 controls.minDistance = 10;
 controls.maxDistance = 1000;
-controls.target = new THREE.Vector3(0, 0, 0);
 
-// screen
+// floor
+const floorGeometry = new THREE.PlaneGeometry(1, 1);
+const foorMaterial = new THREE.MeshBasicMaterial({
+  color: 0xffff00,
+  side: THREE.DoubleSide,
+});
+const floorMesh = new THREE.Mesh(floorGeometry, foorMaterial);
+floorMesh.scale.setScalar(100);
+floorMesh.rotation.x = Math.PI * -0.5;
+scene.add(floorMesh);
+
+// mesh
 const geometry = new THREE.TorusKnotGeometry(3, 1, 521, 64);
 const material = new THREE.MeshNormalMaterial();
 const mesh = new THREE.Mesh(geometry, material);
