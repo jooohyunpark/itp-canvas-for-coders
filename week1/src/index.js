@@ -59,8 +59,6 @@ for (let i = 0; i < 500; i++) {
   mesh.position.x = Math.random() * 1600 - 800;
   mesh.position.y = 0;
   mesh.position.z = Math.random() * 1600 - 800;
-  mesh.updateMatrix();
-  mesh.matrixAutoUpdate = false;
   scene.add(mesh);
 }
 
