@@ -13,64 +13,52 @@ app.appendChild(renderer.domElement);
 
 // scene
 const scene = new THREE.Scene();
-scene.background = new THREE.Color(0xcccccc);
-scene.fog = new THREE.FogExp2(0xcccccc, 0.002);
+scene.background = new THREE.Color(0x000000);
+scene.fog = new THREE.FogExp2(0x000000, 0.002);
 
 // camera
 const camera = new THREE.PerspectiveCamera(
   60,
   window.innerWidth / window.innerHeight,
   1,
-  1000
+  3000
 );
-camera.position.set(400, 200, 0);
+camera.position.set(0, 0, 200);
 
 // controls
 const controls = new OrbitControls(camera, renderer.domElement);
 controls.enableDamping = true;
 controls.dampingFactor = 0.05;
+controls.enablePan = true;
 controls.screenSpacePanning = false;
 controls.enableRotate = true;
-controls.rotateSpeed = 0.3;
 controls.enableZoom = true;
-controls.zoomSpeed = 0.3;
-controls.minDistance = 100;
+controls.minDistance = 50;
 controls.maxDistance = 1000;
 controls.maxPolarAngle = Math.PI / 2;
 
 // lights
-const dirLight1 = new THREE.DirectionalLight(0xffffff);
-dirLight1.position.set(1, 1, 1);
-scene.add(dirLight1);
-
-const dirLight2 = new THREE.DirectionalLight(0x0000ff);
-dirLight2.position.set(-1, -1, -1);
-scene.add(dirLight2);
-
-const ambientLight = new THREE.AmbientLight(0x222222);
-scene.add(ambientLight);
+const ambientLight = new THREE.AmbientLight(0xffffff, 0.5);
+const directionalLight = new THREE.DirectionalLight(0xff0000, 1);
+const directionalLight2 = new THREE.DirectionalLight(0x00ff00, 1);
+directionalLight.position.set(1, 1, 0);
+directionalLight.position.set(-1, -1, -1);
+scene.add(ambientLight, directionalLight, directionalLight2);
 
 // mesh
-const geometry = new THREE.CylinderGeometry(0, 10, 30, 4, 1);
-const material = new THREE.MeshPhongMaterial({
-  color: 0xffffff,
-  flatShading: true,
-});
-for (let i = 0; i < 500; i++) {
-  const mesh = new THREE.Mesh(geometry, material);
-  mesh.position.x = Math.random() * 2000 - 1000;
-  mesh.position.y = 0;
-  mesh.position.z = Math.random() * 2000 - 1000;
+const geometry = new THREE.TorusKnotGeometry(10, 3, 256, 32);
+const standardMaterial = new THREE.MeshStandardMaterial({ color: 0xffffff });
+const normalMaterial = new THREE.MeshNormalMaterial();
+
+const count = 19;
+for (let i = -Math.floor(count / 2); i < Math.ceil(count / 2); i++) {
+  const mesh = new THREE.Mesh(
+    geometry,
+    i === 0 ? normalMaterial : standardMaterial
+  );
+  mesh.position.z = i * 100;
   scene.add(mesh);
 }
-
-const sphereGeometry = new THREE.SphereGeometry(50, 128, 128);
-const sphereMaterial = new THREE.MeshPhongMaterial({
-  color: 0x000000,
-});
-const sphereMesh = new THREE.Mesh(sphereGeometry, sphereMaterial);
-sphereMesh.position.y = 200;
-scene.add(sphereMesh);
 
 // resize
 const onResize = () => {

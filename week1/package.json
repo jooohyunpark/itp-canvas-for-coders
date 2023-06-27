@@ -1,5 +1,6 @@
 {
   "name": "week1",
+  "description": "Canvs for Coders week 1 repo",
   "private": true,
   "version": "0.0.0",
   "type": "module",
