@@ -30,10 +30,12 @@ const controls = new OrbitControls(camera, renderer.domElement);
 controls.enableDamping = true;
 controls.dampingFactor = 0.05;
 controls.screenSpacePanning = false;
-
+controls.enableRotate = true;
+controls.rotateSpeed = 0.3;
 controls.enableZoom = true;
+controls.zoomSpeed = 0.3;
 controls.minDistance = 100;
-controls.maxDistance = 500;
+controls.maxDistance = 1000;
 controls.maxPolarAngle = Math.PI / 2;
 
 // lights
@@ -56,11 +58,19 @@ const material = new THREE.MeshPhongMaterial({
 });
 for (let i = 0; i < 500; i++) {
   const mesh = new THREE.Mesh(geometry, material);
-  mesh.position.x = Math.random() * 1600 - 800;
+  mesh.position.x = Math.random() * 2000 - 1000;
   mesh.position.y = 0;
-  mesh.position.z = Math.random() * 1600 - 800;
+  mesh.position.z = Math.random() * 2000 - 1000;
   scene.add(mesh);
 }
+
+const sphereGeometry = new THREE.SphereGeometry(50, 128, 128);
+const sphereMaterial = new THREE.MeshPhongMaterial({
+  color: 0x000000,
+});
+const sphereMesh = new THREE.Mesh(sphereGeometry, sphereMaterial);
+sphereMesh.position.y = 200;
+scene.add(sphereMesh);
 
 // resize
 const onResize = () => {
