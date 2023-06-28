@@ -29,9 +29,9 @@ controls.enableDamping = true;
 controls.dampingFactor = 0.05;
 controls.autoRotate = true;
 controls.enableRotate = true;
-controls.enableZoom = true;
-controls.minDistance = 100;
-controls.maxDistance = 300;
+controls.enableZoom = false;
+controls.minDistance = 150;
+controls.maxDistance = 150;
 controls.maxPolarAngle = Math.PI / 2;
 
 // object
