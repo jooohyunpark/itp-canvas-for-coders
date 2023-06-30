@@ -57,23 +57,24 @@ Please setup belows on your machine before the first class.
 - Creative projects built with three.js
 - Three.js wrappers/frameworks
 - Three.js documentation
+- Class boilerplate
 - Renderer
-- Scene
-- Responsiveness
 
 ### Week 2 - Concept
-- X,Y,Z space
+- X,Y,Z space 
+- Scene
+- Responsiveness
 - Camera
-- Lighting
+- Lightings
 - Helper
-- Control
+- Controls
 
 ### Week 3 - Mesh
-- Geometries
+- Primitives
 - Materials
-  - Import image as customized material
-  - Map video material to the mesh
-- Mesh attributes - position, rotation, scale
+- Textures
+- Mesh attributes
+- Groups
 
 ### Week 4 - Animation
 - requestAnimationFrame
@@ -84,10 +85,11 @@ Please setup belows on your machine before the first class.
 - GLTFLoaders
 - Accessing objects of model
 - Environment map
+- Skybox
 
 ### Week 6 - Interaction
-- Add click listener to trigger event
-- Deplying the site
+- Binding click events
+- Deplying site
 
 ### Week 7 - Final
 Presentation
