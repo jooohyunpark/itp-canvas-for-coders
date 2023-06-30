@@ -40,6 +40,7 @@ const material = new THREE.MeshNormalMaterial();
 const mesh = new THREE.Mesh(geometry, material);
 scene.add(mesh);
 
+// floor
 const floorGeometry = new THREE.PlaneGeometry(30, 30);
 const floorMesh = new THREE.Mesh(floorGeometry, material);
 floorMesh.rotation.x = -Math.PI * 0.5;
@@ -52,7 +53,6 @@ const onResize = () => {
   camera.updateProjectionMatrix();
   renderer.setSize(window.innerWidth, window.innerHeight);
 };
-
 window.addEventListener("resize", onResize);
 
 // animate
