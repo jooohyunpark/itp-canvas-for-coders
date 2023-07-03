@@ -61,7 +61,7 @@ Please setup belows on your machine before the first class.
 - Renderer
 
 ### Week 2 - Concept
-- X,Y,Z space 
+- Thinking in xyz space 
 - Scene
 - Responsiveness
 - Camera
@@ -81,14 +81,13 @@ Please setup belows on your machine before the first class.
 - GSAP
 - Stats.js
 
-### Week 5 - 3D Model
-- GLTFLoaders
-- Accessing objects of model
-- Environment map
-- Skybox
+### Week 5 - More Elements
+- 3D Model
+- Audio
 
 ### Week 6 - Interaction
 - Binding click events
+- Raycasting
 - Deplying site
 
 ### Week 7 - Final
