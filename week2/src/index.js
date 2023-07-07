@@ -14,14 +14,18 @@ app.appendChild(renderer.domElement);
 // scene
 const scene = new THREE.Scene();
 scene.background = new THREE.Color(0xcccccc);
-scene.fog = new THREE.FogExp2(0xcccccc, 0.002);
+scene.fog = new THREE.FogExp2(0xcccccc, 0.001);
+
+// helper
+const axesHelper = new THREE.AxesHelper(100);
+scene.add(axesHelper);
 
 // camera
 const camera = new THREE.PerspectiveCamera(
   60,
   window.innerWidth / window.innerHeight,
   1,
-  1000
+  3000
 );
 camera.position.set(400, 200, 0);
 
@@ -39,11 +43,11 @@ controls.maxDistance = 1000;
 controls.maxPolarAngle = Math.PI / 2;
 
 // lights
-const dirLight1 = new THREE.DirectionalLight(0xffffff);
+const dirLight1 = new THREE.DirectionalLight("#ffff00");
 dirLight1.position.set(1, 1, 1);
 scene.add(dirLight1);
 
-const dirLight2 = new THREE.DirectionalLight(0x0000ff);
+const dirLight2 = new THREE.DirectionalLight("#0000FF");
 dirLight2.position.set(-1, -1, -1);
 scene.add(dirLight2);
 
