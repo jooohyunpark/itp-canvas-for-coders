@@ -60,7 +60,6 @@ scene.add(ambientLight);
 const geometry = new THREE.CylinderGeometry(0, 10, 30, 128, 1);
 const material = new THREE.MeshPhongMaterial({
   color: 0xffffff,
-  flatShading: true,
 });
 
 for (let i = 0; i < 500; i++) {
