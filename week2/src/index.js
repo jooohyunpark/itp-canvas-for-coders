@@ -29,7 +29,7 @@ const camera = new THREE.PerspectiveCamera(
 );
 camera.position.set(100, 200, 400);
 
-// controls
+// control
 const controls = new OrbitControls(camera, renderer.domElement);
 controls.enableDamping = true;
 controls.dampingFactor = 0.05;
@@ -41,8 +41,9 @@ controls.zoomSpeed = 0.3;
 controls.minDistance = 100;
 controls.maxDistance = 1000;
 controls.maxPolarAngle = Math.PI / 2;
+controls.target = new THREE.Vector3(0, 10, 0);
 
-// lights + helpers
+// directional light
 const dirLight1 = new THREE.DirectionalLight("#ffff00");
 dirLight1.position.set(-100, 100, 100);
 const dirLight1helper = new THREE.DirectionalLightHelper(dirLight1, 10);
@@ -53,16 +54,31 @@ dirLight2.position.set(100, 100, -100);
 const dirLight2helper = new THREE.DirectionalLightHelper(dirLight2, 10);
 scene.add(dirLight2, dirLight2helper);
 
+// point light
 const pointLight = new THREE.PointLight(0xff0000, 1.5, 300);
 pointLight.position.set(100, 10, 100);
 const pointLightHelper = new THREE.PointLightHelper(pointLight, 3);
 scene.add(pointLight, pointLightHelper);
 
+// ambient light
 const ambientLight = new THREE.AmbientLight(0x222222);
 scene.add(ambientLight);
 
-//
-const geometry = new THREE.CylinderGeometry(0, 10, 30, 128, 1);
+// floor
+const floorGeometry = new THREE.PlaneBufferGeometry(10000, 10000);
+const floorMaterial = new THREE.MeshStandardMaterial({
+  color: 0x000000,
+  metalness: 0.2,
+  roughness: 0.8,
+  side: THREE.DoubleSide,
+});
+const floorMesh = new THREE.Mesh(floorGeometry, floorMaterial);
+floorMesh.rotation.x = -Math.PI * 0.5;
+scene.add(floorMesh);
+
+// cylinders
+const cylinderHeight = 30;
+const geometry = new THREE.CylinderGeometry(0, 10, cylinderHeight, 128, 1);
 const material = new THREE.MeshPhongMaterial({
   color: 0xffffff,
 });
@@ -70,7 +86,7 @@ const material = new THREE.MeshPhongMaterial({
 for (let i = 0; i < 500; i++) {
   const mesh = new THREE.Mesh(geometry, material);
   mesh.position.x = Math.random() * 2000 - 1000;
-  mesh.position.y = 0;
+  mesh.position.y = cylinderHeight / 2;
   mesh.position.z = Math.random() * 2000 - 1000;
   scene.add(mesh);
 }
