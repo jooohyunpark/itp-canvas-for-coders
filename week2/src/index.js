@@ -17,6 +17,7 @@ scene.background = new THREE.Color(0xcccccc);
 scene.fog = new THREE.FogExp2(0xcccccc, 0.001);
 
 // helper
+// X: red, Y: green, Z: blue
 const axesHelper = new THREE.AxesHelper(100);
 scene.add(axesHelper);
 
@@ -27,7 +28,7 @@ const camera = new THREE.PerspectiveCamera(
   1,
   3000
 );
-camera.position.set(400, 200, 0);
+camera.position.set(100, 200, 400);
 
 // controls
 const controls = new OrbitControls(camera, renderer.domElement);
@@ -44,22 +45,25 @@ controls.maxPolarAngle = Math.PI / 2;
 
 // lights
 const dirLight1 = new THREE.DirectionalLight("#ffff00");
-dirLight1.position.set(1, 1, 1);
-scene.add(dirLight1);
+dirLight1.position.set(-100, 100, 100);
+const dirLight1helper = new THREE.DirectionalLightHelper(dirLight1, 10);
+scene.add(dirLight1, dirLight1helper);
 
 const dirLight2 = new THREE.DirectionalLight("#0000FF");
-dirLight2.position.set(-1, -1, -1);
-scene.add(dirLight2);
+dirLight2.position.set(100, 100, -100);
+const dirLight2helper = new THREE.DirectionalLightHelper(dirLight2, 10);
+scene.add(dirLight2, dirLight2helper);
 
 const ambientLight = new THREE.AmbientLight(0x222222);
 scene.add(ambientLight);
 
-// mesh
-const geometry = new THREE.CylinderGeometry(0, 10, 30, 4, 1);
+//
+const geometry = new THREE.CylinderGeometry(0, 10, 30, 128, 1);
 const material = new THREE.MeshPhongMaterial({
   color: 0xffffff,
   flatShading: true,
 });
+
 for (let i = 0; i < 500; i++) {
   const mesh = new THREE.Mesh(geometry, material);
   mesh.position.x = Math.random() * 2000 - 1000;
@@ -68,6 +72,7 @@ for (let i = 0; i < 500; i++) {
   scene.add(mesh);
 }
 
+// sphere
 const sphereGeometry = new THREE.SphereGeometry(50, 128, 128);
 const sphereMaterial = new THREE.MeshPhongMaterial({
   color: 0x000000,
