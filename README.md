@@ -5,8 +5,8 @@
 - [Joohyun Park](mailto:jhp527@nyu.edu)
 - Class dates
   - 10/27/2023 - 12/15/2023, Friday, 6:00pm-8:30pm, 370 Jay Street Room 450 Loc: Brooklyn Campus
-- [Office hours](https://calendar.app.google/BYHgr6gMdJk75LfX7)
-  - 10/31/2023 - 12/12/2023, Tuesday, 7:30pm-8:30pm, 370 Jay Street: Brooklyn Campus
+- [Office hours](https://calendar.app.google/BYHgr6gMdJk75LfX7) (TBD)
+  - 10/31/2023 - 12/12/2023, Tuesday, 6:30pm-7:30pm, 370 Jay Street: Brooklyn Campus
 
 
 ## Course Description
@@ -61,12 +61,12 @@ Please setup belows on your machine before the first class.
 - Renderer
 
 ### Week 2 - Concept
-- X,Y,Z space 
+- Thinking in xyz space
 - Scene
 - Responsiveness
 - Camera
 - Lightings
-- Helper
+- Helpers
 - Controls
 
 ### Week 3 - Mesh
@@ -81,14 +81,13 @@ Please setup belows on your machine before the first class.
 - GSAP
 - Stats.js
 
-### Week 5 - 3D Model
-- GLTFLoaders
-- Accessing objects of model
-- Environment map
-- Skybox
+### Week 5 - More Elements
+- 3D Model
+- Audio
 
 ### Week 6 - Interaction
 - Binding click events
+- Raycasting
 - Deplying site
 
 ### Week 7 - Final
