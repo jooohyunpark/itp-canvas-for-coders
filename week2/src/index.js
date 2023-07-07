@@ -53,6 +53,11 @@ dirLight2.position.set(100, 100, -100);
 const dirLight2helper = new THREE.DirectionalLightHelper(dirLight2, 10);
 scene.add(dirLight2, dirLight2helper);
 
+const pointLight = new THREE.PointLight(0xff0000, 1.5, 300);
+pointLight.position.set(100, 10, 100);
+const pointLightHelper = new THREE.PointLightHelper(pointLight, 3);
+scene.add(pointLight, pointLightHelper);
+
 const ambientLight = new THREE.AmbientLight(0x222222);
 scene.add(ambientLight);
 
