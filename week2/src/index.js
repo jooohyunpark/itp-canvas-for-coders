@@ -56,7 +56,7 @@ scene.add(dirLight2, dirLight2helper);
 
 // point light
 const pointLight = new THREE.PointLight(0xff0000, 1.5, 300);
-pointLight.position.set(100, 10, 100);
+pointLight.position.set(-200, 20, -200);
 const pointLightHelper = new THREE.PointLightHelper(pointLight, 3);
 scene.add(pointLight, pointLightHelper);
 
@@ -66,10 +66,8 @@ scene.add(ambientLight);
 
 // floor
 const floorGeometry = new THREE.PlaneBufferGeometry(10000, 10000);
-const floorMaterial = new THREE.MeshStandardMaterial({
+const floorMaterial = new THREE.MeshPhongMaterial({
   color: 0x000000,
-  metalness: 0.2,
-  roughness: 0.8,
   side: THREE.DoubleSide,
 });
 const floorMesh = new THREE.Mesh(floorGeometry, floorMaterial);
