@@ -16,8 +16,7 @@ const scene = new THREE.Scene();
 scene.background = new THREE.Color(0xcccccc);
 scene.fog = new THREE.FogExp2(0xcccccc, 0.001);
 
-// helper
-// X: red, Y: green, Z: blue
+// axis helper -> X: red, Y: green, Z: blue
 const axesHelper = new THREE.AxesHelper(100);
 scene.add(axesHelper);
 
@@ -43,7 +42,7 @@ controls.minDistance = 100;
 controls.maxDistance = 1000;
 controls.maxPolarAngle = Math.PI / 2;
 
-// lights
+// lights + helpers
 const dirLight1 = new THREE.DirectionalLight("#ffff00");
 dirLight1.position.set(-100, 100, 100);
 const dirLight1helper = new THREE.DirectionalLightHelper(dirLight1, 10);
