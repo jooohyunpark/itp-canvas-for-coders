@@ -61,12 +61,12 @@ Please setup belows on your machine before the first class.
 - Renderer
 
 ### Week 2 - Concept
-- Thinking in xyz space 
+- Thinking in xyz space
 - Scene
 - Responsiveness
 - Camera
 - Lightings
-- Helper
+- Helpers
 - Controls
 
 ### Week 3 - Mesh
