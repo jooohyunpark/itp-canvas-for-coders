@@ -67,7 +67,7 @@ scene.add(ambientLight);
 // ground
 const floorGeometry = new THREE.PlaneGeometry(10000, 10000);
 const floorMaterial = new THREE.MeshPhongMaterial({
-  color: 0xcccccc,
+  color: 0x000000,
   side: THREE.DoubleSide,
 });
 const floorMesh = new THREE.Mesh(floorGeometry, floorMaterial);
