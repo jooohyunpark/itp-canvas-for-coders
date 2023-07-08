@@ -64,10 +64,10 @@ scene.add(pointLight, pointLightHelper);
 const ambientLight = new THREE.AmbientLight(0x222222);
 scene.add(ambientLight);
 
-// floor
-const floorGeometry = new THREE.PlaneBufferGeometry(10000, 10000);
+// ground
+const floorGeometry = new THREE.PlaneGeometry(10000, 10000);
 const floorMaterial = new THREE.MeshPhongMaterial({
-  color: 0x000000,
+  color: 0xcccccc,
   side: THREE.DoubleSide,
 });
 const floorMesh = new THREE.Mesh(floorGeometry, floorMaterial);
