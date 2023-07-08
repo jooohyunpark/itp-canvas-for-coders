@@ -38,9 +38,10 @@ controls.enableRotate = true;
 controls.rotateSpeed = 0.3;
 controls.enableZoom = true;
 controls.zoomSpeed = 0.3;
-controls.minDistance = 10;
+controls.minDistance = 100;
 controls.maxDistance = 1000;
 controls.maxPolarAngle = Math.PI / 2;
+controls.target = new THREE.Vector3(0, 10, 0);
 
 // directional light
 const dirLight1 = new THREE.DirectionalLight("#ffff00");
@@ -66,28 +67,35 @@ scene.add(ambientLight);
 // ground
 const floorGeometry = new THREE.PlaneGeometry(10000, 10000);
 const floorMaterial = new THREE.MeshPhongMaterial({
-  color: 0xffffff,
+  color: 0x000000,
   side: THREE.DoubleSide,
 });
 const floorMesh = new THREE.Mesh(floorGeometry, floorMaterial);
 floorMesh.rotation.x = -Math.PI * 0.5;
 scene.add(floorMesh);
 
-// spheres
-const geometry = new THREE.SphereGeometry(5, 128, 128);
+// cylinders
+const cylinderHeight = 30;
+const geometry = new THREE.CylinderGeometry(0, 10, cylinderHeight, 128, 1);
 const material = new THREE.MeshPhongMaterial({
-  color: 0x000000,
+  color: 0xffffff,
 });
-for (let i = 0; i < 30; i++) {
+
+for (let i = 0; i < 500; i++) {
   const mesh = new THREE.Mesh(geometry, material);
-  mesh.position.z = -i * 100;
+  mesh.position.x = Math.random() * 2000 - 1000;
+  mesh.position.y = cylinderHeight / 2;
+  mesh.position.z = Math.random() * 2000 - 1000;
   scene.add(mesh);
 }
 
-// big sphere
-const sphereMesh = new THREE.Mesh(geometry, material);
-sphereMesh.position.y = 100;
-sphereMesh.scale.setScalar(5);
+// sphere
+const sphereGeometry = new THREE.SphereGeometry(50, 128, 128);
+const sphereMaterial = new THREE.MeshPhongMaterial({
+  color: 0x000000,
+});
+const sphereMesh = new THREE.Mesh(sphereGeometry, sphereMaterial);
+sphereMesh.position.y = 200;
 scene.add(sphereMesh);
 
 // resize
