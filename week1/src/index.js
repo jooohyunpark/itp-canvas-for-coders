@@ -16,23 +16,16 @@ const scene = new THREE.Scene();
 
 // camera
 const camera = new THREE.PerspectiveCamera(
-  60,
+  50,
   window.innerWidth / window.innerHeight,
-  1,
+  0.1,
   1000
 );
 camera.position.set(100, 50, 200);
 
 // controls
 const controls = new OrbitControls(camera, renderer.domElement);
-controls.enableDamping = true;
-controls.dampingFactor = 0.05;
 controls.autoRotate = true;
-controls.enableRotate = true;
-controls.enableZoom = false;
-controls.minDistance = 150;
-controls.maxDistance = 150;
-controls.maxPolarAngle = Math.PI / 2;
 
 // object
 const geometry = new THREE.TorusKnotGeometry(10, 3, 256, 32);
