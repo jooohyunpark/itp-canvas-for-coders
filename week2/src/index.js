@@ -24,7 +24,7 @@ const camera = new THREE.PerspectiveCamera(
   0.1,
   3000
 );
-camera.position.set(100, 200, 400);
+camera.position.set(200, 100, 400);
 
 // axis helper -> X: red, Y: green, Z: blue
 const axesHelper = new THREE.AxesHelper(50);
@@ -48,32 +48,39 @@ const ambientLight = new THREE.AmbientLight(0xcccccc, 0.2);
 scene.add(ambientLight);
 
 // directional light
-const dirLight1 = new THREE.DirectionalLight("#ffff00");
-dirLight1.position.set(-100, 100, 0);
-scene.add(dirLight1);
-const dirLight1helper = new THREE.DirectionalLightHelper(dirLight1, 10);
-scene.add(dirLight1helper);
-
-const dirLight2 = new THREE.DirectionalLight("#0000FF");
-dirLight2.position.set(100, 50, -100);
-scene.add(dirLight2);
-const dirLight2helper = new THREE.DirectionalLightHelper(dirLight2, 10);
-scene.add(dirLight2helper);
+const dirLight = new THREE.DirectionalLight("#0000ff");
+dirLight.position.set(-100, 100, 0);
+scene.add(dirLight);
+const dirLighthelper = new THREE.DirectionalLightHelper(dirLight, 10);
+scene.add(dirLighthelper);
 
 // point light
 const pointLight = new THREE.PointLight(0xff0000, 1.5, 300);
-pointLight.position.set(-200, 100, -200);
+pointLight.position.set(-200, 100, 0);
 scene.add(pointLight);
 const pointLightHelper = new THREE.PointLightHelper(pointLight, 10);
 scene.add(pointLightHelper);
 
 // area light
-const rectLight = new THREE.RectAreaLight(0x00ff00, 1, 30, 100);
+const rectLight = new THREE.RectAreaLight(0x00ff00, 3, 30, 100);
 rectLight.position.set(0, 0, 200);
 scene.add(rectLight);
 const rectLightHelper = new RectAreaLightHelper(rectLight);
 scene.add(rectLightHelper);
 
+// spot light
+const spotLight = new THREE.SpotLight(0xffff00, 3);
+spotLight.angle = Math.PI * 0.1;
+spotLight.penumbra = 0.2;
+spotLight.decay = 2;
+spotLight.distance = 300;
+spotLight.position.set(100, 100, -300);
+spotLight.target.position.set(0, 0, -200);
+scene.add(spotLight, spotLight.target);
+const spotLightHelper = new THREE.SpotLightHelper(spotLight);
+scene.add(spotLightHelper);
+
+////////////////////////////////////////////////////////
 // ground
 const groundGeometry = new THREE.PlaneGeometry(10000, 10000);
 const groundMaterial = new THREE.MeshStandardMaterial({
@@ -102,6 +109,7 @@ const sphereMesh = new THREE.Mesh(geometry, material);
 sphereMesh.position.y = 100;
 sphereMesh.scale.setScalar(5);
 scene.add(sphereMesh);
+////////////////////////////////////////////////////////
 
 // resize
 const onResize = () => {
