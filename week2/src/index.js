@@ -50,26 +50,29 @@ scene.add(ambientLight);
 // directional light
 const dirLight1 = new THREE.DirectionalLight("#ffff00");
 dirLight1.position.set(-100, 100, 0);
+scene.add(dirLight1);
 const dirLight1helper = new THREE.DirectionalLightHelper(dirLight1, 10);
-scene.add(dirLight1, dirLight1helper);
+scene.add(dirLight1helper);
 
 const dirLight2 = new THREE.DirectionalLight("#0000FF");
 dirLight2.position.set(100, 50, -100);
+scene.add(dirLight2);
 const dirLight2helper = new THREE.DirectionalLightHelper(dirLight2, 10);
-scene.add(dirLight2, dirLight2helper);
+scene.add(dirLight2helper);
 
 // point light
 const pointLight = new THREE.PointLight(0xff0000, 1.5, 300);
 pointLight.position.set(-200, 100, -200);
+scene.add(pointLight);
 const pointLightHelper = new THREE.PointLightHelper(pointLight, 10);
-scene.add(pointLight, pointLightHelper);
+scene.add(pointLightHelper);
 
 // area light
 const rectLight = new THREE.RectAreaLight(0x00ff00, 1, 30, 100);
 rectLight.position.set(0, 0, 200);
-rectLight.lookAt(0, 0, 0);
+scene.add(rectLight);
 const rectLightHelper = new RectAreaLightHelper(rectLight);
-scene.add(rectLight, rectLightHelper);
+scene.add(rectLightHelper);
 
 // ground
 const groundGeometry = new THREE.PlaneGeometry(10000, 10000);
