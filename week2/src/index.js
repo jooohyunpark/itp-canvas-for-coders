@@ -88,6 +88,7 @@ const spotLightHelper = new THREE.SpotLightHelper(spotLight);
 scene.add(spotLightHelper);
 
 ////////////////////////////////////////////////////////
+/* objects */
 // ground
 const groundGeometry = new THREE.PlaneGeometry(10000, 10000);
 const groundMaterial = new THREE.MeshStandardMaterial({
