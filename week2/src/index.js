@@ -1,6 +1,7 @@
 import "./style.css";
 import * as THREE from "three";
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
+import { RectAreaLightHelper } from "three/addons/helpers/RectAreaLightHelper.js";
 
 // app
 const app = document.querySelector("#app");
@@ -42,6 +43,10 @@ controls.minDistance = 10;
 controls.maxDistance = 1000;
 controls.maxPolarAngle = Math.PI / 2;
 
+// ambient light
+const ambientLight = new THREE.AmbientLight(0xcccccc, 0.2);
+scene.add(ambientLight);
+
 // directional light
 const dirLight1 = new THREE.DirectionalLight("#ffff00");
 dirLight1.position.set(-100, 100, 0);
@@ -59,9 +64,12 @@ pointLight.position.set(-200, 100, -200);
 const pointLightHelper = new THREE.PointLightHelper(pointLight, 10);
 scene.add(pointLight, pointLightHelper);
 
-// ambient light
-const ambientLight = new THREE.AmbientLight(0x222222);
-scene.add(ambientLight);
+// area light
+const rectLight = new THREE.RectAreaLight(0x00ff00, 1, 30, 100);
+rectLight.position.set(0, 0, 200);
+rectLight.lookAt(0, 0, 0);
+const rectLightHelper = new RectAreaLightHelper(rectLight);
+scene.add(rectLight, rectLightHelper);
 
 // ground
 const groundGeometry = new THREE.PlaneGeometry(10000, 10000);
