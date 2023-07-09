@@ -74,7 +74,7 @@ Please setup belows on your machine before the first class.
 - Material
 - Texture
 - Mesh attribute
-- Groups
+- Group
 
 ### Week 4 - Animation
 - requestAnimationFrame
