@@ -65,15 +65,15 @@ Please setup belows on your machine before the first class.
 - Scene
 - Responsiveness
 - Camera
-- Lightings
-- Helpers
-- Controls
+- Light
+- Helper
+- Control
 
 ### Week 3 - Mesh
-- Primitives
-- Materials
-- Textures
-- Mesh attributes
+- Primitive
+- Material
+- Texture
+- Mesh attribute
 - Groups
 
 ### Week 4 - Animation
