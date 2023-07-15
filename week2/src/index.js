@@ -2,6 +2,7 @@ import "./style.css";
 import * as THREE from "three";
 import { OrbitControls } from "three/addons/controls/OrbitControls";
 import { MapControls } from "three/addons/controls/MapControls";
+import { FirstPersonControls } from "three/addons/controls/FirstPersonControls";
 import { RectAreaLightHelper } from "three/addons/helpers/RectAreaLightHelper";
 
 // app
@@ -16,7 +17,7 @@ app.appendChild(renderer.domElement);
 // scene
 const scene = new THREE.Scene();
 scene.background = new THREE.Color(0xcccccc);
-scene.fog = new THREE.FogExp2(0xcccccc, 0.001);
+// scene.fog = new THREE.FogExp2(0xcccccc, 0.001);
 
 // perspective camera
 const camera = new THREE.PerspectiveCamera(
@@ -53,7 +54,11 @@ controls.enableZoom = true;
 controls.zoomSpeed = 0.5;
 controls.minDistance = 10;
 controls.maxDistance = 1000;
-// controls.maxPolarAngle = Math.PI / 2;
+
+// // first person control
+// const controls = new FirstPersonControls(camera, renderer.domElement);
+// controls.movementSpeed = 100;
+// controls.lookSpeed = 0.02;
 
 // ambient light
 const ambientLight = new THREE.AmbientLight(0xcccccc, 0.2);
@@ -140,8 +145,10 @@ const onResize = () => {
 
 window.addEventListener("resize", onResize);
 
+const clock = new THREE.Clock();
+
 // animate
-const animate = () => {
+const animate = (time) => {
   requestAnimationFrame(animate);
 
   renderer.render(scene, camera);
