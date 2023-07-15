@@ -1,7 +1,8 @@
 import "./style.css";
 import * as THREE from "three";
-import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
-import { RectAreaLightHelper } from "three/addons/helpers/RectAreaLightHelper.js";
+import { OrbitControls } from "three/addons/controls/OrbitControls";
+import { MapControls } from "three/addons/controls/MapControls";
+import { RectAreaLightHelper } from "three/addons/helpers/RectAreaLightHelper";
 
 // app
 const app = document.querySelector("#app");
@@ -23,7 +24,7 @@ const camera = new THREE.PerspectiveCamera(
   window.innerWidth / window.innerHeight,
   0.1,
   3000
-);
+); // perspective camera
 // const camera = new THREE.OrthographicCamera(
 //   window.innerWidth / -2,
 //   window.innerWidth / 2,
@@ -31,7 +32,7 @@ const camera = new THREE.PerspectiveCamera(
 //   window.innerHeight / -2,
 //   1,
 //   1000
-// );
+// ); // orthographic camera
 camera.position.set(200, 100, 400);
 scene.add(camera);
 
@@ -40,7 +41,8 @@ const axesHelper = new THREE.AxesHelper(50);
 scene.add(axesHelper);
 
 // control
-const controls = new OrbitControls(camera, renderer.domElement);
+const controls = new OrbitControls(camera, renderer.domElement); // orbit control
+// const controls = new MapControls(camera, renderer.domElement); // map control
 controls.enableDamping = true;
 controls.dampingFactor = 0.05;
 controls.screenSpacePanning = false;
