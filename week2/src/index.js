@@ -24,7 +24,16 @@ const camera = new THREE.PerspectiveCamera(
   0.1,
   3000
 );
+// const camera = new THREE.OrthographicCamera(
+//   window.innerWidth / -2,
+//   window.innerWidth / 2,
+//   window.innerHeight / 2,
+//   window.innerHeight / -2,
+//   1,
+//   1000
+// );
 camera.position.set(200, 100, 400);
+scene.add(camera);
 
 // axis helper -> X: red, Y: green, Z: blue
 const axesHelper = new THREE.AxesHelper(50);
