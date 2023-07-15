@@ -103,6 +103,7 @@ controls.maxDistance = 1000;
 // const controls = new FirstPersonControls(camera, renderer.domElement);
 // controls.movementSpeed = 100;
 // controls.lookSpeed = 0.02;
+// const clock = new THREE.Clock();
 
 ////////////////////////////////////////////////////////
 /* objects, you don't have to modify in week 2 */
@@ -145,10 +146,8 @@ const onResize = () => {
 
 window.addEventListener("resize", onResize);
 
-const clock = new THREE.Clock();
-
 // animate
-const animate = (time) => {
+const animate = () => {
   requestAnimationFrame(animate);
 
   renderer.render(scene, camera);
