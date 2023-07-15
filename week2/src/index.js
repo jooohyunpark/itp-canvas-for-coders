@@ -16,8 +16,8 @@ app.appendChild(renderer.domElement);
 
 // scene
 const scene = new THREE.Scene();
-scene.background = new THREE.Color(0xcccccc);
-// scene.fog = new THREE.FogExp2(0xcccccc, 0.001);
+scene.background = new THREE.Color(0x000000);
+scene.fog = new THREE.FogExp2(0x000000, 0.0007);
 
 // perspective camera
 const camera = new THREE.PerspectiveCamera(
