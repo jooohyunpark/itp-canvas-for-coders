@@ -18,21 +18,22 @@ const scene = new THREE.Scene();
 scene.background = new THREE.Color(0xcccccc);
 scene.fog = new THREE.FogExp2(0xcccccc, 0.001);
 
-// camera
-const camera = new THREE.PerspectiveCamera(
-  60,
-  window.innerWidth / window.innerHeight,
-  0.1,
-  3000
-); // perspective camera
+// perspective camera
+// const camera = new THREE.PerspectiveCamera(
+//   60,
+//   window.innerWidth / window.innerHeight,
+//   0.1,
+//   3000
+// );
+// orthographic camera
 // const camera = new THREE.OrthographicCamera(
 //   window.innerWidth / -2,
 //   window.innerWidth / 2,
 //   window.innerHeight / 2,
 //   window.innerHeight / -2,
 //   1,
-//   1000
-// ); // orthographic camera
+//   3000
+// );
 camera.position.set(200, 100, 400);
 scene.add(camera);
 
