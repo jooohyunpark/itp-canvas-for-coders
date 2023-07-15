@@ -19,12 +19,12 @@ scene.background = new THREE.Color(0xcccccc);
 scene.fog = new THREE.FogExp2(0xcccccc, 0.001);
 
 // perspective camera
-// const camera = new THREE.PerspectiveCamera(
-//   60,
-//   window.innerWidth / window.innerHeight,
-//   0.1,
-//   3000
-// );
+const camera = new THREE.PerspectiveCamera(
+  60,
+  window.innerWidth / window.innerHeight,
+  0.1,
+  3000
+);
 // orthographic camera
 // const camera = new THREE.OrthographicCamera(
 //   window.innerWidth / -2,
@@ -100,7 +100,7 @@ const spotLightHelper = new THREE.SpotLightHelper(spotLight);
 scene.add(spotLightHelper);
 
 ////////////////////////////////////////////////////////
-/* objects */
+/* objects, you don't have to modify in week 2 */
 // ground
 const groundGeometry = new THREE.PlaneGeometry(10000, 10000);
 const groundMaterial = new THREE.MeshStandardMaterial({
