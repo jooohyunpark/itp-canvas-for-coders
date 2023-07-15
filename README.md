@@ -62,9 +62,9 @@ Please setup belows on your machine before the first class.
 
 ### Week 2 - Concept
 - Thinking in xyz space
-- Helper
 - Scene
 - Responsiveness
+- Helper
 - Camera
 - Light
 - Control
