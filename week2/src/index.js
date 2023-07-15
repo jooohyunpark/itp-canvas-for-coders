@@ -42,26 +42,8 @@ scene.add(camera);
 const axesHelper = new THREE.AxesHelper(50);
 scene.add(axesHelper);
 
-// control
-const controls = new OrbitControls(camera, renderer.domElement); // orbit control
-// const controls = new MapControls(camera, renderer.domElement); // map control
-controls.enableDamping = true;
-controls.dampingFactor = 0.05;
-controls.screenSpacePanning = false;
-controls.enableRotate = true;
-controls.rotateSpeed = 0.3;
-controls.enableZoom = true;
-controls.zoomSpeed = 0.5;
-controls.minDistance = 10;
-controls.maxDistance = 1000;
-
-// // first person control
-// const controls = new FirstPersonControls(camera, renderer.domElement);
-// controls.movementSpeed = 100;
-// controls.lookSpeed = 0.02;
-
 // ambient light
-const ambientLight = new THREE.AmbientLight(0xcccccc, 0.2);
+const ambientLight = new THREE.AmbientLight(0xffffff, 0.1);
 scene.add(ambientLight);
 
 // directional light
@@ -70,13 +52,6 @@ dirLight.position.set(-100, 100, 0);
 scene.add(dirLight);
 const dirLighthelper = new THREE.DirectionalLightHelper(dirLight, 10);
 scene.add(dirLighthelper);
-
-// hemisphere light
-const hemiLight = new THREE.HemisphereLight(0x000000, 0x00ffff, 1);
-hemiLight.position.set(0, 200, 0);
-scene.add(hemiLight);
-const hemiLightHelper = new THREE.HemisphereLightHelper(hemiLight, 10);
-scene.add(hemiLightHelper);
 
 // point light
 const pointLight = new THREE.PointLight(0xff0000, 2, 300);
@@ -96,13 +71,38 @@ scene.add(rectLightHelper);
 const spotLight = new THREE.SpotLight(0xffff00, 3);
 spotLight.angle = Math.PI * 0.1;
 spotLight.penumbra = 0.3;
-spotLight.decay = 2;
+spotLight.decay = 1;
 spotLight.distance = 300;
 spotLight.position.set(100, 100, -300);
 spotLight.target.position.set(0, 0, -200);
 scene.add(spotLight, spotLight.target);
 const spotLightHelper = new THREE.SpotLightHelper(spotLight);
 scene.add(spotLightHelper);
+
+// hemisphere light
+const hemiLight = new THREE.HemisphereLight(0x000000, 0x00ffff, 1);
+hemiLight.position.set(0, 200, 0);
+scene.add(hemiLight);
+const hemiLightHelper = new THREE.HemisphereLightHelper(hemiLight, 10);
+scene.add(hemiLightHelper);
+
+// control
+const controls = new OrbitControls(camera, renderer.domElement); // orbit control
+// const controls = new MapControls(camera, renderer.domElement); // map control
+controls.enableDamping = true;
+controls.dampingFactor = 0.05;
+controls.screenSpacePanning = false;
+controls.enableRotate = true;
+controls.rotateSpeed = 0.3;
+controls.enableZoom = true;
+controls.zoomSpeed = 0.5;
+controls.minDistance = 10;
+controls.maxDistance = 1000;
+
+// // first person control
+// const controls = new FirstPersonControls(camera, renderer.domElement);
+// controls.movementSpeed = 100;
+// controls.lookSpeed = 0.02;
 
 ////////////////////////////////////////////////////////
 /* objects, you don't have to modify in week 2 */
