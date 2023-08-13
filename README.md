@@ -41,6 +41,13 @@ $ git clone https://github.com/jooohyunpark/itp-canvas-for-coders.git
 $ cd itp-canvas-for-coders
 ```
 
+To run weekly codebase, run following commands.
+
+```bash
+$ cd week1
+$ npm install && npm run dev
+```
+
 ## Prerequisites
 
 Please setup belows on your machine before the first class.
