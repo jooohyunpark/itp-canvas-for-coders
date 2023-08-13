@@ -110,7 +110,10 @@ Presentation
 
 
 ## Resources
-* TBD
+- [three.js editor](https://threejs.org/editor/)
+- [Google experiments](https://experiments.withgoogle.com/)
+- [React Three Fiber](https://docs.pmnd.rs/react-three-fiber/getting-started/examples)
+- [AFrame](https://aframe.io/)
 
 
 ## Equipment
