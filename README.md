@@ -46,9 +46,9 @@ $ cd itp-canvas-for-coders
 Please setup belows on your machine before the first class.
 
 - [VS Code](https://code.visualstudio.com/)
-- [Git](https://github.com/git-guides/install-git)
 - [Node](https://nodejs.org/en/)
 - [npm](https://www.npmjs.com/) (Comes with Node.js installation)
+- [Git](https://github.com/git-guides/install-git)
 
 
 ## Weekly Topics (WIP)
