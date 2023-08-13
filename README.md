@@ -37,15 +37,15 @@ Feedback matters as much as presentation. Your constructive opinion can inspire 
 Clone this repo. It has weekly code examples in each folder.
 
 ```bash
-$ git clone https://github.com/jooohyunpark/itp-canvas-for-coders.git
-$ cd itp-canvas-for-coders
+git clone https://github.com/jooohyunpark/itp-canvas-for-coders.git
+cd itp-canvas-for-coders
 ```
 
 To run weekly codebase, run following commands.
 
 ```bash
-$ cd week1
-$ npm install && npm run dev
+cd week1
+npm install && npm run dev
 ```
 
 ## Prerequisites
