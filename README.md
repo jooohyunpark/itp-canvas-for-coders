@@ -32,6 +32,16 @@ Ideate, research, prototype, and iterate. Dive deep into writing code, even if i
 Feedback matters as much as presentation. Your constructive opinion can inspire someone to create great art.  
 
 
+## Prerequisites
+
+Please setup belows on your machine before the first class.
+
+- [VS Code](https://code.visualstudio.com/)
+- [Node](https://nodejs.org/en/)
+- [npm](https://www.npmjs.com/) (Comes with Node.js installation)
+- [Git](https://github.com/git-guides/install-git)
+
+
 ## Get Started
 
 Clone this repo. It has weekly code examples in each folder.
@@ -47,15 +57,6 @@ To run weekly codebase, run following commands.
 cd week1
 npm install && npm run dev
 ```
-
-## Prerequisites
-
-Please setup belows on your machine before the first class.
-
-- [VS Code](https://code.visualstudio.com/)
-- [Node](https://nodejs.org/en/)
-- [npm](https://www.npmjs.com/) (Comes with Node.js installation)
-- [Git](https://github.com/git-guides/install-git)
 
 
 ## Weekly Topics (WIP)
