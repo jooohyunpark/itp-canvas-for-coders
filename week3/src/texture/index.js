@@ -5,8 +5,6 @@ import { OrbitControls } from "three/addons/controls/OrbitControls";
 // app
 const app = document.querySelector("#app");
 
-console.log(app);
-
 // renderer
 const renderer = new THREE.WebGLRenderer({ antialias: true });
 renderer.setPixelRatio(window.devicePixelRatio);
@@ -21,14 +19,14 @@ scene.background = new THREE.Color(0xffffff);
 const camera = new THREE.PerspectiveCamera(
   60,
   window.innerWidth / window.innerHeight,
-  1,
+  0.1,
   3000
 );
-camera.position.set(20, 20, 40);
+camera.position.set(200, 100, 400);
 scene.add(camera);
 
 // axis helper -> X: red, Y: green, Z: blue
-const axesHelper = new THREE.AxesHelper(10);
+const axesHelper = new THREE.AxesHelper(50);
 scene.add(axesHelper);
 
 // ambient light
@@ -55,14 +53,6 @@ const onResize = () => {
 };
 
 window.addEventListener("resize", onResize);
-
-// material
-const material = new THREE.MeshNormalMaterial();
-
-// box
-const boxGeometry = new THREE.BoxGeometry(1, 1, 1);
-const boxMesh = new THREE.Mesh(boxGeometry, material);
-scene.add(boxMesh);
 
 // animate
 const animate = () => {

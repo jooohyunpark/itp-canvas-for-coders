@@ -13,6 +13,8 @@ export default defineConfig({
         main: resolve(__dirname, "src/index.html"),
         primitive: resolve(__dirname, "src/primitive/index.html"),
         material: resolve(__dirname, "src/material/index.html"),
+        texture: resolve(__dirname, "src/texture/index.html"),
+        group: resolve(__dirname, "src/group/index.html"),
       },
     },
   },

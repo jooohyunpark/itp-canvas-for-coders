@@ -9,3 +9,8 @@
   display: grid;
   place-content: center;
 }
+
+a {
+  color: inherit;
+  margin: 0 10px;
+}
