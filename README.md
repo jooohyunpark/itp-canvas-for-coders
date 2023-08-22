@@ -89,14 +89,13 @@ npm install && npm run dev
 - GSAP
 - Stats.js
 
-### Week 5 - More Elements
+### Week 5 - 3D Model / Audio
 - 3D Model
 - Audio
 
 ### Week 6 - Interaction
-- Binding click events
-- Raycasting
-- Deplying site
+- Adding interactivity
+- Deploying site
 
 ### Week 7 - Final
 Presentation
