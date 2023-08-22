@@ -77,7 +77,7 @@ npm install && npm run dev
 - Light
 - Control
 
-### Week 3 - Mesh
+### Week 3 - Object
 - Primitive
 - Material
 - Texture
