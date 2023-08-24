@@ -5,8 +5,6 @@ import { OrbitControls } from "three/addons/controls/OrbitControls";
 // app
 const app = document.querySelector("#app");
 
-console.log(app);
-
 // renderer
 const renderer = new THREE.WebGLRenderer({ antialias: true });
 renderer.setPixelRatio(window.devicePixelRatio);
@@ -32,7 +30,7 @@ const axesHelper = new THREE.AxesHelper(10);
 scene.add(axesHelper);
 
 // ambient light
-const ambientLight = new THREE.AmbientLight(0xffffff, 0.1);
+const ambientLight = new THREE.AmbientLight(0xffffff, 1);
 scene.add(ambientLight);
 
 // control
@@ -41,11 +39,9 @@ controls.enableDamping = true;
 controls.dampingFactor = 0.05;
 controls.screenSpacePanning = false;
 controls.enableRotate = true;
-controls.rotateSpeed = 0.3;
+controls.rotateSpeed = 0.5;
 controls.enableZoom = true;
-controls.zoomSpeed = 0.5;
 controls.minDistance = 10;
-controls.maxDistance = 1000;
 
 // resize
 const onResize = () => {
@@ -59,10 +55,22 @@ window.addEventListener("resize", onResize);
 // material
 const material = new THREE.MeshNormalMaterial();
 
+// plane
+const planeGeometry = new THREE.PlaneGeometry(1, 1);
+const planeMesh = new THREE.Mesh(planeGeometry, material);
+scene.add(planeMesh);
+
 // box
 const boxGeometry = new THREE.BoxGeometry(1, 1, 1);
 const boxMesh = new THREE.Mesh(boxGeometry, material);
+planeMesh.position.z = -5;
 scene.add(boxMesh);
+
+// sphere
+const sphereGeometry = new THREE.SphereGeometry(1, 32, 16);
+const sphereMesh = new THREE.Mesh(sphereGeometry, material);
+sphereMesh.position.z = -10;
+scene.add(sphereMesh);
 
 // animate
 const animate = () => {
