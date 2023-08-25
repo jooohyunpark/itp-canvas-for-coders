@@ -44,7 +44,6 @@ controls.screenSpacePanning = false;
 controls.enableRotate = true;
 controls.rotateSpeed = 0.5;
 controls.enableZoom = true;
-controls.minDistance = 10;
 
 // resize
 const onResize = () => {
@@ -76,13 +75,13 @@ sphereMesh.position.z = -10;
 scene.add(sphereMesh);
 
 // cynlinder
-const cylinderGeometry = new THREE.CylinderGeometry(0.5, 0.5, 1, 32);
+const cylinderGeometry = new THREE.CylinderGeometry(1, 1, 2, 32);
 const cylinderMesh = new THREE.Mesh(cylinderGeometry, material);
 cylinderMesh.position.z = -15;
 scene.add(cylinderMesh);
 
 // torusknot
-const torusKnotGeometry = new THREE.TorusKnotGeometry(1, 0.3, 64, 16);
+const torusKnotGeometry = new THREE.TorusKnotGeometry(1, 0.3, 128, 64);
 const torusKnotMesh = new THREE.Mesh(torusKnotGeometry, material);
 torusKnotMesh.position.z = -20;
 scene.add(torusKnotMesh);
