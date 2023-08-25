@@ -18,4 +18,5 @@ export default defineConfig({
       },
     },
   },
+  publicDir: resolve(__dirname, "public"),
 });

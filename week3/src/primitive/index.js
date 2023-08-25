@@ -3,7 +3,7 @@ import * as THREE from "three";
 import { OrbitControls } from "three/addons/controls/OrbitControls";
 import { TextGeometry } from "three/addons/geometries/TextGeometry.js";
 import { FontLoader } from "three/addons/loaders/FontLoader.js";
-import helvetiker_regular from "three/examples/fonts/helvetiker_regular.typeface.json";
+// import helvetiker_regular from "three/examples/fonts/helvetiker_regular.typeface.json";
 
 // app
 const app = document.querySelector("#app");
@@ -89,22 +89,19 @@ scene.add(torusKnotMesh);
 
 // text
 const fontLoader = new FontLoader();
-fontLoader.load(helvetiker_regular, (font) => {
-  console.log(font);
-
+fontLoader.load("/helvetiker_regular.typeface.json", (font) => {
   const textGeometry = new TextGeometry("Hello three.js!", {
     font: font,
-    size: 3,
+    size: 70,
     height: 5,
-    curveSegments: 12,
+    curveSegments: 4,
     bevelEnabled: true,
-    bevelThickness: 10,
-    bevelSize: 8,
-    bevelOffset: 0,
-    bevelSegments: 5,
+    bevelThickness: 2,
+    bevelSize: 1.5,
   });
 
   const textMesh = new THREE.Mesh(textGeometry, material);
+  textMesh.scale.setScalar(0.03);
   textMesh.position.z = -25;
   scene.add(textMesh);
 });
