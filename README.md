@@ -86,8 +86,8 @@ npm install && npm run dev
 
 ### Week 4 - Animation
 - requestAnimationFrame
-- GSAP
-- Stats.js
+- [GSAP](https://greensock.com/gsap/)
+- [Stats.js](https://github.com/mrdoob/stats.js)
 
 ### Week 5 - 3D Model / Audio
 - 3D Models
