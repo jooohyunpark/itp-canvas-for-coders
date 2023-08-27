@@ -70,17 +70,17 @@ npm install && npm run dev
 
 ### Week 2 - Concept
 - Thinking in xyz space
-- Scene
+- [Scene](https://threejs.org/manual/#en/scenegraph)
 - Responsiveness
 - Helpers
-- Cameras
-- Lights
+- [Cameras](https://threejs.org/manual/#en/cameras)
+- [Lights](https://threejs.org/manual/#en/lights)
 - Controls
 
 ### Week 3 - Object
 - [Primitives](https://threejs.org/manual/#en/primitives)
-- Materials
-- Textures
+- [Materials](https://threejs.org/manual/#en/materials)
+- [Textures](https://threejs.org/manual/#en/textures)
 - Mesh attributes
 - Groups
 
