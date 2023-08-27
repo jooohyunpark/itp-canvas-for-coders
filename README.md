@@ -72,17 +72,17 @@ npm install && npm run dev
 - Thinking in xyz space
 - Scene
 - Responsiveness
-- Helper
-- Camera
-- Light
-- Control
+- Helpers
+- Cameras
+- Lights
+- Controls
 
 ### Week 3 - Object
-- [Primitive](https://threejs.org/manual/#en/primitives)
-- Material
-- Texture
-- Mesh attribute
-- Group
+- [Primitives](https://threejs.org/manual/#en/primitives)
+- Materials
+- Textures
+- Mesh attributes
+- Groups
 
 ### Week 4 - Animation
 - requestAnimationFrame
@@ -90,8 +90,8 @@ npm install && npm run dev
 - Stats.js
 
 ### Week 5 - 3D Model / Audio
-- 3D Model
-- Audio
+- 3D Models
+- Audios
 
 ### Week 6 - Interaction
 - Adding interactivity
