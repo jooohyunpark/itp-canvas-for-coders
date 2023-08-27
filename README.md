@@ -85,7 +85,7 @@ npm install && npm run dev
 - [Group](https://threejs.org/docs/index.html#api/en/objects/Group)
 
 ### Week 4 - Animation
-- requestAnimationFrame
+- [requestAnimationFrame](https://developer.mozilla.org/en-US/docs/Web/API/window/requestAnimationFrame)
 - [GSAP](https://greensock.com/gsap/)
 - [Stats.js](https://github.com/mrdoob/stats.js)
 
