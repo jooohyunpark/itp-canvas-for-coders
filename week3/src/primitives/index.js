@@ -24,11 +24,11 @@ const camera = new THREE.PerspectiveCamera(
   1,
   1000
 );
-camera.position.set(20, 10, 15);
+camera.position.set(20, 10, 20);
 scene.add(camera);
 
 // axis helper -> X: red, Y: green, Z: blue
-const axesHelper = new THREE.AxesHelper(10);
+const axesHelper = new THREE.AxesHelper(5);
 scene.add(axesHelper);
 
 // ambient light
@@ -65,7 +65,7 @@ const planeGeometry = new THREE.PlaneGeometry(1, 1);
 const planeMesh = new THREE.Mesh(planeGeometry, material);
 scene.add(planeMesh);
 
-//
+// circle
 const circlegeometry = new THREE.CircleGeometry(1, 64);
 const circleMesh = new THREE.Mesh(circlegeometry, material);
 circleMesh.position.z = -5;
@@ -78,13 +78,19 @@ boxMesh.position.z = -10;
 scene.add(boxMesh);
 
 // sphere
-const sphereGeometry = new THREE.SphereGeometry(1, 32, 16);
+const sphereGeometry = new THREE.SphereGeometry(1, 32, 64);
 const sphereMesh = new THREE.Mesh(sphereGeometry, material);
 sphereMesh.position.z = -15;
 scene.add(sphereMesh);
 
+// cone
+const coneGeometry = new THREE.ConeGeometry(1, 2, 64);
+const coneMesh = new THREE.Mesh(coneGeometry, material);
+coneMesh.position.z = -20;
+scene.add(coneMesh);
+
 // cynlinder
-const cylinderGeometry = new THREE.CylinderGeometry(1, 1, 2, 32);
+const cylinderGeometry = new THREE.CylinderGeometry(1, 1, 2, 64);
 const cylinderMesh = new THREE.Mesh(cylinderGeometry, material);
 cylinderMesh.position.z = -25;
 scene.add(cylinderMesh);
