@@ -82,7 +82,7 @@ npm install && npm run dev
 - [Materials](https://threejs.org/manual/#en/materials)
 - [Textures](https://threejs.org/manual/#en/textures)
 - Mesh attributes
-- Groups
+- [Group](https://threejs.org/docs/index.html#api/en/objects/Group)
 
 ### Week 4 - Animation
 - requestAnimationFrame
