@@ -72,16 +72,16 @@ npm install && npm run dev
 - Thinking in xyz space
 - Scene
 - Responsiveness
-- Helpers
-- Cameras
-- Lights
-- Controls
+- Helper
+- Camera
+- Light
+- Control
 
 ### Week 3 - Object
-- [Primitives](https://threejs.org/manual/#en/primitives)
-- Materials
-- Textures
-- Mesh attributes
+- [Primitive](https://threejs.org/manual/#en/primitives)
+- Material
+- Texture
+- Mesh attribute
 - Group
 
 ### Week 4 - Animation
