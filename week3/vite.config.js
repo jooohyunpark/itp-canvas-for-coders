@@ -11,10 +11,11 @@ export default defineConfig({
     rollupOptions: {
       input: {
         main: resolve(__dirname, "src/index.html"),
-        primitive: resolve(__dirname, "src/primitive/index.html"),
-        material: resolve(__dirname, "src/material/index.html"),
-        texture: resolve(__dirname, "src/texture/index.html"),
-        group: resolve(__dirname, "src/group/index.html"),
+        primitives: resolve(__dirname, "src/primitives/index.html"),
+        materias: resolve(__dirname, "src/materials/index.html"),
+        textures: resolve(__dirname, "src/textures/index.html"),
+        groups: resolve(__dirname, "src/groups/index.html"),
+        exercise: resolve(__dirname, "src/exercise/index.html"),
       },
     },
   },
