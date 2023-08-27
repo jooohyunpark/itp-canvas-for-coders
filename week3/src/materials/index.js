@@ -33,7 +33,6 @@ scene.add(axesHelper);
 const ambientLight = new THREE.AmbientLight(0xffffff, 0.3);
 const directionalLight = new THREE.DirectionalLight(0xffffff, 1);
 directionalLight.position.set(-1, 1, 1);
-
 scene.add(ambientLight, directionalLight);
 
 // control
@@ -61,10 +60,11 @@ window.addEventListener("resize", onResize);
 // geometry
 const geometry = new THREE.TorusKnotGeometry(1, 0.3, 128, 64);
 
-//
+// MeshNormalMaterial
 const mesh1 = new THREE.Mesh(geometry, new THREE.MeshNormalMaterial());
 scene.add(mesh1);
 
+// MeshBasicMaterial
 const mesh2 = new THREE.Mesh(
   geometry,
   new THREE.MeshBasicMaterial({
@@ -74,16 +74,43 @@ const mesh2 = new THREE.Mesh(
 mesh2.position.z = -5;
 scene.add(mesh2);
 
+// MeshStandardMaterial
 const mesh3 = new THREE.Mesh(
   geometry,
   new THREE.MeshStandardMaterial({
-    color: "#ffc800",
+    color: "#0000ff",
     roughness: 0.8,
     metalness: 0.2,
   })
 );
 mesh3.position.z = -10;
 scene.add(mesh3);
+
+// MeshPhongMaterial
+const mesh4 = new THREE.Mesh(
+  geometry,
+  new THREE.MeshPhongMaterial({
+    color: "#0000ff",
+    shininess: 80,
+    specular: "#cccccc",
+  })
+);
+mesh4.position.z = -15;
+scene.add(mesh4);
+
+// MeshPhysicalMaterial
+const mesh5 = new THREE.Mesh(
+  geometry,
+  new THREE.MeshPhysicalMaterial({
+    color: "#0000ff",
+    roughness: 0.8,
+    metalness: 0.2,
+    reflectivity: 0.7,
+    clearcoat: 0.3,
+  })
+);
+mesh5.position.z = -20;
+scene.add(mesh5);
 
 /* 
 //////////////////////////////////////////////////////////////////////////////
