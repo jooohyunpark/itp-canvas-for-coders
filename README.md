@@ -66,7 +66,7 @@ npm install && npm run dev
 - Three.js wrappers/frameworks
 - Three.js documentation
 - Class boilerplate
-- Renderer
+- [Renderer](https://threejs.org/manual/#en/rendertargets)
 
 ### Week 2 - Concept
 - Thinking in xyz space
