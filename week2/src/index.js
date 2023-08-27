@@ -105,8 +105,11 @@ controls.maxDistance = 1000;
 // controls.lookSpeed = 0.02;
 // const clock = new THREE.Clock();
 
-////////////////////////////////////////////////////////
-/* objects, you don't have to modify in week 2 */
+/*
+////////////////////////////////////////////////////////////////////////////////
+objects, you don't need to modify
+*/
+
 // ground
 const groundGeometry = new THREE.PlaneGeometry(10000, 10000);
 const groundMaterial = new THREE.MeshStandardMaterial({
@@ -135,7 +138,8 @@ const sphereMesh = new THREE.Mesh(geometry, material);
 sphereMesh.position.y = 100;
 sphereMesh.scale.setScalar(5);
 scene.add(sphereMesh);
-////////////////////////////////////////////////////////
+
+////////////////////////////////////////////////////////////////////////////////
 
 // resize
 const onResize = () => {
