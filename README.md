@@ -90,8 +90,8 @@ npm install && npm run dev
 - [Stats.js](https://github.com/mrdoob/stats.js)
 
 ### Week 5 - 3D Model / Audio
-- 3D Models
-- Audios
+- [3D Models](https://threejs.org/docs/index.html#manual/en/introduction/Loading-3D-models)
+- [Audios](https://threejs.org/docs/index.html#api/en/audio/Audio)
 
 ### Week 6 - Interaction
 - Adding interactivity
