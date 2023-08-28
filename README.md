@@ -86,7 +86,7 @@ npm install && npm run dev
 
 ### Week 4 - Animation
 - [requestAnimationFrame](https://developer.mozilla.org/en-US/docs/Web/API/window/requestAnimationFrame)
-- Stats.js](https://github.com/mrdoob/stats.js)
+- [Stats.js](https://github.com/mrdoob/stats.js)
 - [GSAP](https://greensock.com/gsap/)
 
 ### Week 5 - 3D Model / Audio
