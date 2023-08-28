@@ -107,10 +107,24 @@ const mesh5 = new THREE.Mesh(
     metalness: 0.2,
     reflectivity: 0.7,
     clearcoat: 0.3,
+    side: THREE.DoubleSide,
   })
 );
 mesh5.position.z = -20;
 scene.add(mesh5);
+
+// double sided
+const mesh6 = new THREE.Mesh(
+  new THREE.PlaneGeometry(3, 3),
+  new THREE.MeshStandardMaterial({
+    color: "#0000ff",
+    roughness: 0.8,
+    metalness: 0.2,
+    side: THREE.DoubleSide,
+  })
+);
+mesh6.position.z = -25;
+scene.add(mesh6);
 
 /* 
 //////////////////////////////////////////////////////////////////////////////
