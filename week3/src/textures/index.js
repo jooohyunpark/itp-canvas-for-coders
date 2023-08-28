@@ -89,10 +89,15 @@ const videoMaterial = new THREE.MeshBasicMaterial({
   side: THREE.DoubleSide,
 });
 
-const planeGeometry = new THREE.PlaneGeometry(10, 10);
+const planeGeometry = new THREE.PlaneGeometry(5, 5);
 const planeMesh = new THREE.Mesh(planeGeometry, videoMaterial);
 planeMesh.position.z = -20;
 scene.add(planeMesh);
+
+const torusGeometry = new THREE.TorusGeometry(3, 1, 16, 64);
+const torusMesh = new THREE.Mesh(torusGeometry, videoMaterial);
+torusMesh.position.z = -30;
+scene.add(torusMesh);
 
 /* 
 //////////////////////////////////////////////////////////////////////////////
