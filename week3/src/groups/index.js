@@ -84,7 +84,9 @@ earthGroup.add(moon);
 sunGroup.add(earthGroup);
 scene.add(sunGroup);
 
-// scene > sunGroup > sun & (earthGroup > earth & moon)
+/* 
+scene > sunGroup > sun & (earthGroup > earth & moon)
+*/
 
 /* 
 //////////////////////////////////////////////////////////////////////////////
