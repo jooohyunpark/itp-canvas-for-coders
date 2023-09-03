@@ -47,7 +47,7 @@ controls.enableRotate = true;
 controls.rotateSpeed = 0.3;
 controls.enableZoom = true;
 controls.zoomSpeed = 0.5;
-controls.minDistance = 10;
+controls.minDistance = 1;
 controls.maxDistance = 1000;
 controls.maxPolarAngle = Math.PI * 0.5;
 
@@ -92,25 +92,30 @@ torusKnotMesh.position.y = 5;
 scene.add(torusKnotMesh);
 controls.target.copy(torusKnotMesh.position);
 
-//
-// const SphereGeometry = new THREE.SphereGeometry(1, 128, 128);
-// const sphereMaterial = new THREE.MeshStandardMaterial({
-//   color: "#002408",
-//   roughness: 0.8,
-//   metalness: 0.2,
-// });
-// const sphereMesh = new THREE.Mesh(SphereGeometry, sphereMaterial);
-// sphereMesh.position.y = 5;
-// scene.add(sphereMesh);
+// sphere
+const sphereGroup = new THREE.Group();
+const SphereGeometry = new THREE.SphereGeometry(0.3, 128, 128);
+const sphereMaterial = new THREE.MeshStandardMaterial({
+  color: "#ffffff",
+  roughness: 0,
+  metalness: 0,
+});
+const sphereMesh = new THREE.Mesh(SphereGeometry, sphereMaterial);
+sphereMesh.position.set(5, 5, 0);
+sphereGroup.add(sphereMesh);
+scene.add(sphereGroup);
 
 // animate
 const animate = (time) => {
   requestAnimationFrame(animate);
 
+  // convert to second
   time *= 0.001;
 
   //
   torusKnotMesh.rotation.y = Math.PI * 0.1 * time;
+  sphereGroup.rotation.y = Math.PI * -0.12 * time;
+  sphereMesh.position.y = 5 + Math.cos(time);
 
   renderer.render(scene, camera);
   controls.update();
