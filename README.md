@@ -87,7 +87,7 @@ npm install && npm run dev
 ### Week 4 - Animation
 - [requestAnimationFrame](https://developer.mozilla.org/en-US/docs/Web/API/window/requestAnimationFrame)
 - [Stats.js](https://github.com/mrdoob/stats.js)
-- [GSAP](https://greensock.com/gsap/)
+- [GSAP](https://greensock.com/docs/v3/GSAP/gsap.to())
 
 ### Week 5 - 3D Model / Positional Audio
 - [3D Models](https://threejs.org/docs/index.html#manual/en/introduction/Loading-3D-models)
