@@ -142,15 +142,48 @@ gsap.to(sphereMesh.scale, {
   ease: "power2.inOut",
 });
 
+const randomTHREEColor = (
+  colorArray = [
+    "#00ffff",
+    "#ff00ff",
+    "#ffff00",
+    "#ff0000",
+    "#00ff00",
+    "#0000ff",
+    "#ffffff",
+  ]
+) => {
+  const c = colorArray[Math.floor(Math.random() * colorArray.length)];
+
+  console.log("random color: ", c);
+
+  return new THREE.Color(c);
+};
+
 // light color
+// gsap.to(rectLight.color, {
+//   duration: 3,
+//   r: "random(0, 1)",
+//   g: "random(0, 1)",
+//   b: "random(0, 1)",
+//   repeat: -1,
+//   repeatDelay: 3,
+//   repeatRefresh: true,
+// });
+
+let color = randomTHREEColor();
+
 gsap.to(rectLight.color, {
-  duration: 3,
-  r: "random(0, 1)",
-  g: "random(0, 1)",
-  b: "random(0, 1)",
+  duration: 1,
+  r: () => color.r,
+  g: () => color.g,
+  b: () => color.b,
   repeat: -1,
-  repeatDelay: 3,
   repeatRefresh: true,
+  repeatDelay: 2,
+  onRepeat: () => {
+    color = randomTHREEColor();
+  },
 });
 
 // const updateScreenColor = (colorArray = []) => {
