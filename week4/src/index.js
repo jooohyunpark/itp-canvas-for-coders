@@ -27,16 +27,15 @@ const camera = new THREE.PerspectiveCamera(
 camera.position.set(0, 5, 20);
 scene.add(camera);
 
-// axis helper -> X: red, Y: green, Z: blue
-const axesHelper = new THREE.AxesHelper(5);
-axesHelper.position.set(0, 0.1, 0);
-scene.add(axesHelper);
+// // axis helper -> X: red, Y: green, Z: blue
+// const axesHelper = new THREE.AxesHelper(5);
+// axesHelper.position.set(0, 0.1, 0);
+// scene.add(axesHelper);
 
 // rect light
 const rectLight = new THREE.RectAreaLight("#ffffff", 5, 50, 10);
 rectLight.position.set(0, 5, -15);
 rectLight.rotation.set(0, Math.PI, 0);
-
 scene.add(rectLight, new RectAreaLightHelper(rectLight));
 
 // control
@@ -50,6 +49,7 @@ controls.enableZoom = true;
 controls.zoomSpeed = 0.5;
 controls.minDistance = 10;
 controls.maxDistance = 1000;
+controls.maxPolarAngle = Math.PI * 0.5;
 
 // resize
 const onResize = () => {
@@ -62,8 +62,8 @@ window.addEventListener("resize", onResize);
 // floor
 const floorGeometry = new THREE.BoxGeometry(2000, 0.1, 2000);
 const floorMaterial = new THREE.MeshStandardMaterial({
-  color: "white",
-  roughness: 0.1,
+  color: "gray",
+  roughness: 0.2,
   metalness: 0,
 });
 const floorMesh = new THREE.Mesh(floorGeometry, floorMaterial);
