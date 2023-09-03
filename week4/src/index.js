@@ -24,7 +24,6 @@ const camera = new THREE.PerspectiveCamera(
   1,
   1000
 );
-
 camera.position.set(0, 5, 20);
 scene.add(camera);
 
@@ -34,8 +33,8 @@ axesHelper.position.set(0, 0.1, 0);
 scene.add(axesHelper);
 
 // rect light
-const rectLight = new THREE.RectAreaLight("#ffffff", 5, 20, 10);
-rectLight.position.set(0, 5, -10);
+const rectLight = new THREE.RectAreaLight("#ffffff", 5, 50, 10);
+rectLight.position.set(0, 5, -15);
 rectLight.rotation.set(0, Math.PI, 0);
 
 scene.add(rectLight, new RectAreaLightHelper(rectLight));
@@ -58,7 +57,6 @@ const onResize = () => {
   camera.updateProjectionMatrix();
   renderer.setSize(window.innerWidth, window.innerHeight);
 };
-
 window.addEventListener("resize", onResize);
 
 // floor
@@ -82,6 +80,18 @@ const coneMesh = new THREE.Mesh(coneGeometry, coneMaterial);
 coneMesh.position.y = 1.5;
 scene.add(coneMesh);
 
+// torusknot
+const torusKnotGeometry = new THREE.TorusKnotGeometry(1, 0.3, 128, 64);
+const torusKnotMaterial = new THREE.MeshStandardMaterial({
+  color: "#ffffff",
+  roughness: 0,
+  metalness: 0,
+});
+const torusKnotMesh = new THREE.Mesh(torusKnotGeometry, torusKnotMaterial);
+torusKnotMesh.position.y = 5;
+scene.add(torusKnotMesh);
+controls.target.copy(torusKnotMesh.position);
+
 //
 // const SphereGeometry = new THREE.SphereGeometry(1, 128, 128);
 // const sphereMaterial = new THREE.MeshStandardMaterial({
@@ -93,21 +103,14 @@ scene.add(coneMesh);
 // sphereMesh.position.y = 5;
 // scene.add(sphereMesh);
 
-//
-const torusKnotGeometry = new THREE.TorusKnotGeometry(1, 0.3, 128, 64);
-const torusKnotMaterial = new THREE.MeshStandardMaterial({
-  color: "white",
-  roughness: 0.8,
-  metalness: 0,
-});
-const torusKnotMesh = new THREE.Mesh(torusKnotGeometry, torusKnotMaterial);
-torusKnotMesh.position.y = 5;
-scene.add(torusKnotMesh);
-controls.target.copy(torusKnotMesh.position);
-
 // animate
-const animate = () => {
+const animate = (time) => {
   requestAnimationFrame(animate);
+
+  time *= 0.001;
+
+  //
+  torusKnotMesh.rotation.y = Math.PI * 0.1 * time;
 
   renderer.render(scene, camera);
   controls.update();
