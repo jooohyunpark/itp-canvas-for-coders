@@ -106,13 +106,6 @@ sphereMesh.position.set(5, 5, 0);
 sphereGroup.add(sphereMesh);
 scene.add(sphereGroup);
 
-gsap.to(torusKnotMesh.rotation, {
-  duration: 3,
-  y: Math.PI * 2,
-  repeat: -1,
-  ease: "linear", // https://greensock.com/docs/v3/Eases
-});
-
 // animate
 const animate = (time) => {
   requestAnimationFrame(animate);
@@ -122,3 +115,27 @@ const animate = (time) => {
 };
 
 animate();
+
+// rotate torusknot
+gsap.to(torusKnotMesh.rotation, {
+  duration: 4,
+  y: Math.PI * 2,
+  repeat: -1,
+  ease: "power2.inOut", // https://greensock.com/docs/v3/Eases
+});
+
+gsap.to(sphereGroup.rotation, {
+  duration: 20,
+  y: Math.PI * -2,
+  repeat: -1,
+  ease: "none", // https://greensock.com/docs/v3/Eases
+});
+
+gsap.to(sphereMesh.scale, {
+  duration: 1,
+  x: 3,
+  repeat: -1,
+  repeatDelay: 1,
+  yoyo: true,
+  ease: "power2.inOut", // https://greensock.com/docs/v3/Eases
+});
