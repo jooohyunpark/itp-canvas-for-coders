@@ -142,14 +142,40 @@ gsap.to(sphereMesh.scale, {
   ease: "power2.inOut",
 });
 
-// // light color
-// gsap.to(rectLight.color, {
-//   duration: 1,
-//   r: "random(0, 1)",
-//   g: "random(0, 1)",
-//   b: "random(0, 1)",
-//   repeat: -1,
-//   repeatDelay: 1,
-//   repeatRefresh: true,
-//   onUpdate: () => {},
-// });
+// light color
+gsap.to(rectLight.color, {
+  duration: 3,
+  r: "random(0, 1)",
+  g: "random(0, 1)",
+  b: "random(0, 1)",
+  repeat: -1,
+  repeatDelay: 3,
+  repeatRefresh: true,
+});
+
+// const updateScreenColor = (colorArray = []) => {
+//   const targetColor = colorArray[Math.floor(Math.random() * colorArray.length)];
+
+//   console.log("random color: ", targetColor);
+
+//   const { r, g, b } = new THREE.Color(targetColor);
+
+//   gsap.to(rectLight.color, {
+//     duration: 2,
+//     r: r,
+//     g: g,
+//     b: b,
+//   });
+// };
+
+// setInterval(() => {
+//   updateScreenColor([
+//     "#00ffff",
+//     "#ff00ff",
+//     "#ffff00",
+//     "#ff0000",
+//     "#00ff00",
+//     "#0000ff",
+//     "#ffffff",
+//   ]);
+// }, 5000);
