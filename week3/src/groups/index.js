@@ -96,10 +96,9 @@ scene > sunGroup > sun & (earthGroup > earth & moon)
 const animate = (time) => {
   requestAnimationFrame(animate);
 
-  time *= 0.001;
-
-  earthGroup.rotation.y = Math.PI * time * 0.1;
-  sunGroup.rotation.y = Math.PI * time * 0.1;
+  // time *= 0.001;
+  // earthGroup.rotation.y = Math.PI * time * 0.1;
+  // sunGroup.rotation.y = Math.PI * time * 0.1;
 
   renderer.render(scene, camera);
   controls.update();
