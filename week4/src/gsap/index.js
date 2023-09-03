@@ -23,15 +23,10 @@ const camera = new THREE.PerspectiveCamera(
   60,
   window.innerWidth / window.innerHeight,
   1,
-  1000
+  2000
 );
 camera.position.set(0, 5, 20);
 scene.add(camera);
-
-// // axis helper -> X: red, Y: green, Z: blue
-// const axesHelper = new THREE.AxesHelper(5);
-// axesHelper.position.set(0, 0.1, 0);
-// scene.add(axesHelper);
 
 // rect light
 const rectLight = new THREE.RectAreaLight("#ffffff", 5, 50, 10);
@@ -107,7 +102,7 @@ sphereGroup.add(sphereMesh);
 scene.add(sphereGroup);
 
 // animate
-const animate = (time) => {
+const animate = () => {
   requestAnimationFrame(animate);
 
   renderer.render(scene, camera);
@@ -115,6 +110,11 @@ const animate = (time) => {
 };
 
 animate();
+
+/* 
+//////////////////////////////////////////////////////////////////////
+gsap animations 
+*/
 
 // rotate torusknot
 gsap.to(torusKnotMesh.rotation, {
@@ -124,18 +124,32 @@ gsap.to(torusKnotMesh.rotation, {
   ease: "power2.inOut", // https://greensock.com/docs/v3/Eases
 });
 
+// rotate sphere group
 gsap.to(sphereGroup.rotation, {
   duration: 20,
   y: Math.PI * -2,
   repeat: -1,
-  ease: "none", // https://greensock.com/docs/v3/Eases
+  ease: "none",
 });
 
+// scale sphere
 gsap.to(sphereMesh.scale, {
   duration: 1,
   x: 3,
   repeat: -1,
   repeatDelay: 1,
   yoyo: true,
-  ease: "power2.inOut", // https://greensock.com/docs/v3/Eases
+  ease: "power2.inOut",
 });
+
+// // light color
+// gsap.to(rectLight.color, {
+//   duration: 1,
+//   r: "random(0, 1)",
+//   g: "random(0, 1)",
+//   b: "random(0, 1)",
+//   repeat: -1,
+//   repeatDelay: 1,
+//   repeatRefresh: true,
+//   onUpdate: () => {},
+// });
