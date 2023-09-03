@@ -2,6 +2,7 @@ import "./style.css";
 import * as THREE from "three";
 import { OrbitControls } from "three/addons/controls/OrbitControls";
 import { RectAreaLightHelper } from "three/addons/helpers/RectAreaLightHelper";
+import { gsap } from "gsap";
 
 // app
 const app = document.querySelector("#app");
@@ -105,17 +106,16 @@ sphereMesh.position.set(5, 5, 0);
 sphereGroup.add(sphereMesh);
 scene.add(sphereGroup);
 
+gsap.to(torusKnotMesh.rotation, {
+  duration: 3,
+  y: Math.PI * 2,
+  repeat: -1,
+  ease: "linear", // https://greensock.com/docs/v3/Eases
+});
+
 // animate
 const animate = (time) => {
   requestAnimationFrame(animate);
-
-  // convert to second
-  time *= 0.001;
-
-  //
-  torusKnotMesh.rotation.y = Math.PI * 0.1 * time;
-  sphereGroup.rotation.y = Math.PI * -0.12 * time;
-  sphereMesh.position.y = 5 + Math.cos(time);
 
   renderer.render(scene, camera);
   controls.update();
