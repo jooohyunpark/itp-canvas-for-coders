@@ -59,7 +59,7 @@ npm install && npm run dev
 ```
 
 
-## Weekly Topics (WIP)
+## Weekly Topics
 
 ### Week 1 - Intro
 - Creative projects built with three.js
