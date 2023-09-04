@@ -1,6 +1,7 @@
 import "./style.css";
 import * as THREE from "three";
 import { OrbitControls } from "three/addons/controls/OrbitControls";
+import { MapControls } from "three/addons/controls/MapControls";
 
 // app
 const app = document.querySelector("#app");
@@ -30,13 +31,13 @@ const axesHelper = new THREE.AxesHelper(5);
 scene.add(axesHelper);
 
 // ambient light
-const ambientLight = new THREE.AmbientLight(0xffffff, 0.3);
+const ambientLight = new THREE.AmbientLight(0xffffff, 0.5);
 const directionalLight = new THREE.DirectionalLight(0xffffff, 1);
 directionalLight.position.set(-1, 1, 1);
 scene.add(ambientLight, directionalLight);
 
 // control
-const controls = new OrbitControls(camera, renderer.domElement);
+const controls = new MapControls(camera, renderer.domElement);
 controls.enableDamping = true;
 controls.dampingFactor = 0.05;
 controls.screenSpacePanning = false;
@@ -64,67 +65,16 @@ const geometry = new THREE.TorusKnotGeometry(1, 0.3, 128, 64);
 const mesh1 = new THREE.Mesh(geometry, new THREE.MeshNormalMaterial());
 scene.add(mesh1);
 
-// MeshBasicMaterial
-const mesh2 = new THREE.Mesh(
-  geometry,
-  new THREE.MeshBasicMaterial({
-    color: "#0000ff",
-  })
-);
-mesh2.position.z = -5;
-scene.add(mesh2);
-
-// MeshStandardMaterial
-const mesh3 = new THREE.Mesh(
-  geometry,
-  new THREE.MeshStandardMaterial({
-    color: "#0000ff",
-    roughness: 0.8,
-    metalness: 0.2,
-  })
-);
-mesh3.position.z = -10;
-scene.add(mesh3);
-
-// MeshPhongMaterial
-const mesh4 = new THREE.Mesh(
-  geometry,
-  new THREE.MeshPhongMaterial({
-    color: "#0000ff",
-    shininess: 80,
-    specular: "#cccccc",
-  })
-);
-mesh4.position.z = -15;
-scene.add(mesh4);
-
-// MeshPhysicalMaterial
-const mesh5 = new THREE.Mesh(
-  geometry,
-  new THREE.MeshPhysicalMaterial({
-    color: "#0000ff",
-    roughness: 0.8,
-    metalness: 0.2,
-    reflectivity: 0.7,
-    clearcoat: 0.3,
-    side: THREE.DoubleSide,
-  })
-);
-mesh5.position.z = -20;
-scene.add(mesh5);
-
-// double sided
-const mesh6 = new THREE.Mesh(
-  new THREE.PlaneGeometry(3, 3),
-  new THREE.MeshStandardMaterial({
-    color: "#0000ff",
-    roughness: 0.8,
-    metalness: 0.2,
-    side: THREE.DoubleSide,
-  })
-);
-mesh6.position.z = -25;
-scene.add(mesh6);
+// // floor
+// const floorGeometry = new THREE.BoxGeometry(2000, 0.1, 2000);
+// const floorMaterial = new THREE.MeshStandardMaterial({
+//   color: "white",
+//   roughness: 0.2,
+//   metalness: 0,
+// });
+// const floorMesh = new THREE.Mesh(floorGeometry, floorMaterial);
+// floorMesh.receiveShadow = true;
+// scene.add(floorMesh);
 
 /* 
 //////////////////////////////////////////////////////////////////////////////
