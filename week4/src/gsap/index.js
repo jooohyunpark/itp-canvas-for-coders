@@ -142,73 +142,44 @@ gsap.to(sphereMesh.scale, {
   ease: "power2.inOut",
 });
 
-const randomTHREEColor = (
-  colorArray = [
-    "#00ffff",
-    "#ff00ff",
-    "#ffff00",
-    "#ff0000",
-    "#00ff00",
-    "#0000ff",
-    "#ffffff",
-  ]
-) => {
-  const c = colorArray[Math.floor(Math.random() * colorArray.length)];
-
-  console.log("random color: ", c);
-
-  return new THREE.Color(c);
-};
-
 // light color
-// gsap.to(rectLight.color, {
-//   duration: 3,
-//   r: "random(0, 1)",
-//   g: "random(0, 1)",
-//   b: "random(0, 1)",
-//   repeat: -1,
-//   repeatDelay: 3,
-//   repeatRefresh: true,
-// });
-
-let color = randomTHREEColor();
-
 gsap.to(rectLight.color, {
-  duration: 1,
-  r: () => color.r,
-  g: () => color.g,
-  b: () => color.b,
+  duration: 3,
+  r: "random(0, 1)",
+  g: "random(0, 1)",
+  b: "random(0, 1)",
   repeat: -1,
+  repeatDelay: 3,
   repeatRefresh: true,
-  repeatDelay: 2,
-  onRepeat: () => {
-    color = randomTHREEColor();
-  },
+  ease: "power2.inOut",
 });
 
-// const updateScreenColor = (colorArray = []) => {
-//   const targetColor = colorArray[Math.floor(Math.random() * colorArray.length)];
+// floor color
+const updateFloorColor = (color = "") => {
+  const { r, g, b } = new THREE.Color(color);
 
-//   console.log("random color: ", targetColor);
+  gsap.to(floorMaterial.color, {
+    duration: 2,
+    r,
+    g,
+    b,
+    ease: "none",
+  });
+};
 
-//   const { r, g, b } = new THREE.Color(targetColor);
+const colors = [
+  "#00ffff",
+  "#ff00ff",
+  "#ffff00",
+  "#ff0000",
+  "#00ff00",
+  "#0000ff",
+  "#ffffff",
+];
 
-//   gsap.to(rectLight.color, {
-//     duration: 2,
-//     r: r,
-//     g: g,
-//     b: b,
-//   });
-// };
+setInterval(() => {
+  const randomColor = colors[Math.floor(Math.random() * colors.length)];
+  console.log("floor color: ", randomColor);
 
-// setInterval(() => {
-//   updateScreenColor([
-//     "#00ffff",
-//     "#ff00ff",
-//     "#ffff00",
-//     "#ff0000",
-//     "#00ff00",
-//     "#0000ff",
-//     "#ffffff",
-//   ]);
-// }, 5000);
+  updateFloorColor(randomColor);
+}, 5000);
