@@ -186,4 +186,30 @@ setInterval(() => {
   updateFloorColor(randomColor);
 }, 5000);
 
-//
+// back sphere position & scale
+const count = 10;
+const gap = 2;
+
+for (let i = -count; i <= count; i++) {
+  const sphereMesh = new THREE.Mesh(SphereGeometry, sphereMaterial);
+  sphereMesh.position.set(i * gap, 2, -10);
+  scene.add(sphereMesh);
+
+  gsap.to(sphereMesh.position, {
+    duration: "random(3, 10)",
+    y: 9,
+    ease: "power2.inOut",
+    repeat: -1,
+    repeatRefresh: true,
+    yoyo: true,
+  });
+
+  gsap.to(sphereMesh.scale, {
+    duration: "random(3, 10)",
+    y: "random(1, 4)",
+    ease: "sineInOut",
+    repeat: -1,
+    repeatRefresh: true,
+    yoyo: true,
+  });
+}
