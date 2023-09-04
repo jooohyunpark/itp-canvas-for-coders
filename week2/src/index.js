@@ -42,6 +42,12 @@ scene.add(camera);
 const axesHelper = new THREE.AxesHelper(50);
 scene.add(axesHelper);
 
+// // grid helper
+// const size = 1000;
+// const divisions = 100;
+// const gridHelper = new THREE.GridHelper(size, divisions);
+// scene.add(gridHelper);
+
 // ambient light
 const ambientLight = new THREE.AmbientLight(0xffffff, 0.1);
 scene.add(ambientLight);
@@ -119,6 +125,7 @@ const groundMaterial = new THREE.MeshStandardMaterial({
   side: THREE.DoubleSide,
 });
 const groundMesh = new THREE.Mesh(groundGeometry, groundMaterial);
+groundMesh.position.y = -0.1;
 groundMesh.rotation.x = -Math.PI * 0.5;
 scene.add(groundMesh);
 
