@@ -29,6 +29,10 @@ scene.add(camera);
 const axesHelper = new THREE.AxesHelper(5);
 scene.add(axesHelper);
 
+// grid helper
+const gridHelper = new THREE.GridHelper(100, 100, "#444444", "#cccccc");
+scene.add(gridHelper);
+
 // ambient light
 const ambientLight = new THREE.AmbientLight(0xffffff, 1);
 scene.add(ambientLight);
