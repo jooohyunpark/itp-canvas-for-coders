@@ -42,12 +42,6 @@ scene.add(camera);
 const axesHelper = new THREE.AxesHelper(50);
 scene.add(axesHelper);
 
-// // grid helper
-// const size = 1000;
-// const divisions = 100;
-// const gridHelper = new THREE.GridHelper(size, divisions);
-// scene.add(gridHelper);
-
 // ambient light
 const ambientLight = new THREE.AmbientLight(0xffffff, 0.1);
 scene.add(ambientLight);
@@ -113,7 +107,7 @@ controls.maxDistance = 1000;
 
 /*
 ////////////////////////////////////////////////////////////////////////////////
-objects, you don't need to modify
+objects, you don't need to modify for week2 
 */
 
 // ground
