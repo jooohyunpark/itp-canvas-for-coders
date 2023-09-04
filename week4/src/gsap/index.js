@@ -114,6 +114,8 @@ animate();
 /* 
 //////////////////////////////////////////////////////////////////////
 gsap animations 
+Properties: https://greensock.com/docs/v3/GSAP/gsap.to()
+Ease: https://greensock.com/docs/v3/Eases
 */
 
 // rotate torusknot
@@ -121,7 +123,7 @@ gsap.to(torusKnotMesh.rotation, {
   duration: 4,
   y: Math.PI * 2,
   repeat: -1,
-  ease: "power2.inOut", // https://greensock.com/docs/v3/Eases
+  ease: "power2.inOut",
 });
 
 // rotate sphere group
@@ -183,3 +185,5 @@ setInterval(() => {
 
   updateFloorColor(randomColor);
 }, 5000);
+
+//
