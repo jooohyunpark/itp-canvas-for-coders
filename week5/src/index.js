@@ -10,6 +10,8 @@ const app = document.querySelector("#app");
 const renderer = new THREE.WebGLRenderer({ antialias: true });
 renderer.setPixelRatio(window.devicePixelRatio);
 renderer.setSize(window.innerWidth, window.innerHeight);
+renderer.shadowMap.enabled = true;
+renderer.shadowMap.type = THREE.PCFSoftShadowMap; // default THREE.PCFShadowMap
 app.appendChild(renderer.domElement);
 
 // scene
@@ -30,11 +32,31 @@ scene.add(camera);
 const axesHelper = new THREE.AxesHelper(5);
 scene.add(axesHelper);
 
-// lights
+// ambient light
 const ambientLight = new THREE.AmbientLight(0xffffff, 0.5);
+scene.add(ambientLight);
+
+// directional light
 const directionalLight = new THREE.DirectionalLight(0xffffff, 1);
-directionalLight.position.set(-1, 1, 1);
-scene.add(ambientLight, directionalLight);
+directionalLight.position.set(-10, 10, 10);
+directionalLight.castShadow = true;
+scene.add(directionalLight);
+
+//Set up shadow properties for the light
+directionalLight.shadow.mapSize.width = 512; // default
+directionalLight.shadow.mapSize.height = 512; // default
+directionalLight.shadow.camera.near = 0.5; // default
+directionalLight.shadow.camera.far = 500; // default
+directionalLight.shadow.camera.near = 0.5; // default
+directionalLight.shadow.camera.far = 500; // default
+directionalLight.shadow.camera.top = 10;
+directionalLight.shadow.camera.bottom = -10;
+directionalLight.shadow.camera.left = -10;
+directionalLight.shadow.camera.right = 10;
+
+//Create a helper for the shadow camera (optional)
+const shadowHelper = new THREE.CameraHelper(directionalLight.shadow.camera);
+scene.add(shadowHelper);
 
 // control
 const controls = new MapControls(camera, renderer.domElement);
@@ -62,13 +84,15 @@ window.addEventListener("resize", onResize);
 const geometry = new THREE.TorusKnotGeometry(1, 0.3, 128, 64);
 
 // MeshNormalMaterial
-const mesh1 = new THREE.Mesh(geometry, new THREE.MeshNormalMaterial());
-scene.add(mesh1);
+const mesh = new THREE.Mesh(geometry, new THREE.MeshNormalMaterial());
+mesh.position.y = 5;
+mesh.castShadow = true;
+scene.add(mesh);
 
 // floor
 const floorGeometry = new THREE.BoxGeometry(2000, 0.1, 2000);
 const floorMaterial = new THREE.MeshStandardMaterial({
-  color: "white",
+  color: "gray",
   roughness: 0.2,
   metalness: 0,
 });
