@@ -30,7 +30,7 @@ scene.add(camera);
 const axesHelper = new THREE.AxesHelper(5);
 scene.add(axesHelper);
 
-// ambient light
+// lights
 const ambientLight = new THREE.AmbientLight(0xffffff, 0.5);
 const directionalLight = new THREE.DirectionalLight(0xffffff, 1);
 directionalLight.position.set(-1, 1, 1);
@@ -65,16 +65,16 @@ const geometry = new THREE.TorusKnotGeometry(1, 0.3, 128, 64);
 const mesh1 = new THREE.Mesh(geometry, new THREE.MeshNormalMaterial());
 scene.add(mesh1);
 
-// // floor
-// const floorGeometry = new THREE.BoxGeometry(2000, 0.1, 2000);
-// const floorMaterial = new THREE.MeshStandardMaterial({
-//   color: "white",
-//   roughness: 0.2,
-//   metalness: 0,
-// });
-// const floorMesh = new THREE.Mesh(floorGeometry, floorMaterial);
-// floorMesh.receiveShadow = true;
-// scene.add(floorMesh);
+// floor
+const floorGeometry = new THREE.BoxGeometry(2000, 0.1, 2000);
+const floorMaterial = new THREE.MeshStandardMaterial({
+  color: "white",
+  roughness: 0.2,
+  metalness: 0,
+});
+const floorMesh = new THREE.Mesh(floorGeometry, floorMaterial);
+floorMesh.receiveShadow = true;
+scene.add(floorMesh);
 
 /* 
 //////////////////////////////////////////////////////////////////////////////
