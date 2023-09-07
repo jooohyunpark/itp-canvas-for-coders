@@ -8,6 +8,13 @@ export default defineConfig({
   },
   build: {
     outDir: "../dist",
+    rollupOptions: {
+      input: {
+        main: resolve(__dirname, "src/index.html"),
+        "3d": resolve(__dirname, "src/3d/index.html"),
+        shadow: resolve(__dirname, "src/shadow/index.html"),
+      },
+    },
   },
   publicDir: resolve(__dirname, "public"),
 });
