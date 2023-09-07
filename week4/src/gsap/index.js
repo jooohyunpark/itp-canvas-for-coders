@@ -28,7 +28,7 @@ const camera = new THREE.PerspectiveCamera(
 camera.position.set(0, 5, 20);
 scene.add(camera);
 
-// rect light
+// light
 const rectLight = new THREE.RectAreaLight("#ffffff", 5, 50, 10);
 rectLight.position.set(0, 5, -15);
 rectLight.rotation.set(0, Math.PI, 0);

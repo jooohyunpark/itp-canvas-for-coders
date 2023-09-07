@@ -32,7 +32,7 @@ scene.add(camera);
 // axesHelper.position.set(0, 0.1, 0);
 // scene.add(axesHelper);
 
-// rect light
+// light
 const rectLight = new THREE.RectAreaLight("#ffffff", 5, 50, 10);
 rectLight.position.set(0, 5, -15);
 rectLight.rotation.set(0, Math.PI, 0);
