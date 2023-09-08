@@ -11,7 +11,7 @@ export default defineConfig({
     rollupOptions: {
       input: {
         main: resolve(__dirname, "src/index.html"),
-        "3d": resolve(__dirname, "src/3d/index.html"),
+        "3d-assets": resolve(__dirname, "src/3d-assets/index.html"),
         shadow: resolve(__dirname, "src/shadow/index.html"),
       },
     },

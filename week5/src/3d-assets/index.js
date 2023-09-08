@@ -69,6 +69,8 @@ const mesh = new THREE.Mesh(geometry, new THREE.MeshNormalMaterial());
 mesh.position.y = 5;
 scene.add(mesh);
 
+console.log(mesh.isObject3D);
+
 // floor
 const floorGeometry = new THREE.BoxGeometry(2000, 0.1, 2000);
 const floorMaterial = new THREE.MeshStandardMaterial({

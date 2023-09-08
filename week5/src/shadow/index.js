@@ -1,7 +1,6 @@
 import "./style.css";
 import * as THREE from "three";
 import { OrbitControls } from "three/addons/controls/OrbitControls";
-import { MapControls } from "three/addons/controls/MapControls";
 
 // app
 const app = document.querySelector("#app");
@@ -59,7 +58,7 @@ const shadowHelper = new THREE.CameraHelper(directionalLight.shadow.camera);
 scene.add(shadowHelper);
 
 // control
-const controls = new MapControls(camera, renderer.domElement);
+const controls = new OrbitControls(camera, renderer.domElement);
 controls.enableDamping = true;
 controls.dampingFactor = 0.05;
 controls.screenSpacePanning = false;
@@ -90,13 +89,15 @@ mesh.castShadow = true;
 scene.add(mesh);
 
 // floor
-const floorGeometry = new THREE.BoxGeometry(2000, 0.1, 2000);
+const floorGeometry = new THREE.PlaneGeometry(2000, 2000);
 const floorMaterial = new THREE.MeshStandardMaterial({
-  color: "gray",
+  color: "white",
   roughness: 0.2,
   metalness: 0,
+  side: THREE.DoubleSide,
 });
 const floorMesh = new THREE.Mesh(floorGeometry, floorMaterial);
+floorMesh.rotation.x = Math.PI * 0.5;
 floorMesh.receiveShadow = true;
 scene.add(floorMesh);
 
