@@ -19,7 +19,7 @@ scene.background = new THREE.Color(0xffffff);
 
 // perspective camera
 const camera = new THREE.PerspectiveCamera(
-  60,
+  35,
   window.innerWidth / window.innerHeight,
   1,
   1000
@@ -65,6 +65,8 @@ controls.screenSpacePanning = false;
 controls.enableRotate = true;
 controls.rotateSpeed = 0.5;
 controls.enableZoom = true;
+controls.minDistance = 10;
+controls.maxDistance = 100;
 
 // resize
 const onResize = () => {

@@ -17,7 +17,7 @@ scene.background = new THREE.Color(0xffffff);
 
 // perspective camera
 const camera = new THREE.PerspectiveCamera(
-  60,
+  35,
   window.innerWidth / window.innerHeight,
   1,
   1000
@@ -27,7 +27,12 @@ scene.add(camera);
 
 // axis helper -> X: red, Y: green, Z: blue
 const axesHelper = new THREE.AxesHelper(5);
+axesHelper.position.y = 0.001;
 scene.add(axesHelper);
+
+// grid
+const gridHelper = new THREE.GridHelper(100, 100);
+scene.add(gridHelper);
 
 // ambient light
 const ambientLight = new THREE.AmbientLight(0xffffff, 0.5);
@@ -47,6 +52,8 @@ controls.screenSpacePanning = false;
 controls.enableRotate = true;
 controls.rotateSpeed = 0.5;
 controls.enableZoom = true;
+controls.minDistance = 10;
+controls.maxDistance = 100;
 
 // resize
 const onResize = () => {
@@ -66,20 +73,7 @@ const geometry = new THREE.TorusKnotGeometry(1, 0.3, 128, 64);
 
 // MeshNormalMaterial
 const mesh = new THREE.Mesh(geometry, new THREE.MeshNormalMaterial());
-mesh.position.y = 5;
 scene.add(mesh);
-
-console.log(mesh.isObject3D);
-
-// floor
-const floorGeometry = new THREE.BoxGeometry(2000, 0.1, 2000);
-const floorMaterial = new THREE.MeshStandardMaterial({
-  color: "gray",
-  roughness: 0.2,
-  metalness: 0,
-});
-const floorMesh = new THREE.Mesh(floorGeometry, floorMaterial);
-scene.add(floorMesh);
 
 /* 
 //////////////////////////////////////////////////////////////////////////////

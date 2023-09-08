@@ -12,7 +12,7 @@ export default defineConfig({
       input: {
         main: resolve(__dirname, "src/index.html"),
         "3d-assets": resolve(__dirname, "src/3d-assets/index.html"),
-        shadow: resolve(__dirname, "src/shadow/index.html"),
+        shadows: resolve(__dirname, "src/shadows/index.html"),
       },
     },
   },
