@@ -89,7 +89,7 @@ npm install && npm run dev
 - [Stats.js](https://github.com/mrdoob/stats.js)
 - [GSAP](https://greensock.com/docs/v3/GSAP/gsap.to())
 
-### Week 5 - 3D Model / Positional Audio
+### Week 5 - 3D Assets
 - [3D Models](https://threejs.org/docs/index.html#manual/en/introduction/Loading-3D-models)
 - [Positional audio](https://threejs.org/docs/#api/en/audio/PositionalAudio)
 - [Shadows](https://threejs.org/manual/#en/shadows)
