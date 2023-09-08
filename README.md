@@ -91,8 +91,8 @@ npm install && npm run dev
 
 ### Week 5 - 3D Model / Positional Audio
 - [3D Models](https://threejs.org/docs/index.html#manual/en/introduction/Loading-3D-models)
-- [Shadows](https://threejs.org/manual/#en/shadows)
 - [Positional audio](https://threejs.org/docs/#api/en/audio/PositionalAudio)
+- [Shadows](https://threejs.org/manual/#en/shadows)
 
 ### Week 6 - Interaction
 - Adding interactivity
