@@ -2,6 +2,11 @@ import "./style.css";
 import * as THREE from "three";
 import { OrbitControls } from "three/addons/controls/OrbitControls";
 import { RectAreaLightHelper } from "three/addons/helpers/RectAreaLightHelper";
+import Stats from "stats.js";
+
+// stats
+const stats = new Stats();
+document.body.appendChild(stats.dom);
 
 // app
 const app = document.querySelector("#app");
@@ -126,6 +131,7 @@ const animate = (time) => {
 
   renderer.render(scene, camera);
   controls.update();
+  stats.update();
 };
 
 animate();
