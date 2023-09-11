@@ -63,9 +63,9 @@ npm install && npm run dev
 
 ### Week 1 - Intro
 - Creative projects built with three.js
-- Three.js wrappers/frameworks
 - [Three.js documentation](https://threejs.org/docs/index.html#manual/en/introduction/Creating-a-scene)
 - [Three.js fundamentals](https://threejs.org/manual/#en/fundamentals)
+- [Three.js wrappers/frameworks](https://threejs.org/docs/#manual/en/introduction/Libraries-and-Plugins)
 - Class boilerplate
 - [Renderer](https://threejs.org/manual/#en/rendertargets)
 
