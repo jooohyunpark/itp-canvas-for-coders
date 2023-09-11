@@ -65,6 +65,7 @@ npm install && npm run dev
 - Creative projects built with three.js
 - Three.js wrappers/frameworks
 - [Three.js documentation](https://threejs.org/docs/index.html#manual/en/introduction/Creating-a-scene)
+- [Three.js fundamentals](https://threejs.org/manual/#en/fundamentals)
 - Class boilerplate
 - [Renderer](https://threejs.org/manual/#en/rendertargets)
 
