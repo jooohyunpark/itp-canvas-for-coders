@@ -1,6 +1,7 @@
 import "./style.css";
 import * as THREE from "three";
 import { MapControls } from "three/addons/controls/MapControls";
+import { GLTFLoader } from "three/addons/loaders/GLTFLoader.js";
 
 // app
 const app = document.querySelector("#app");
@@ -22,7 +23,7 @@ const camera = new THREE.PerspectiveCamera(
   1,
   1000
 );
-camera.position.set(20, 10, 20);
+camera.position.set(20, 20, 20);
 scene.add(camera);
 
 // axis helper -> X: red, Y: green, Z: blue
@@ -54,6 +55,7 @@ controls.rotateSpeed = 0.5;
 controls.enableZoom = true;
 controls.minDistance = 10;
 controls.maxDistance = 100;
+controls.target = new THREE.Vector3(0, 4, 0);
 
 // resize
 const onResize = () => {
@@ -68,12 +70,43 @@ window.addEventListener("resize", onResize);
 //////////////////////////////////////////////////////////////////////////////
 */
 
-// geometry
-const geometry = new THREE.TorusKnotGeometry(1, 0.3, 128, 64);
+// Instantiate a loader
+const loader = new GLTFLoader();
 
-// MeshNormalMaterial
-const mesh = new THREE.Mesh(geometry, new THREE.MeshNormalMaterial());
-scene.add(mesh);
+// Load a glTF resource
+loader.load(
+  // resource URL
+  "/banana.glb",
+  // called when the resource is loaded
+  function (gltf) {
+    console.log(gltf);
+    scene.add(gltf.scene);
+
+    gltf.scene.position.y = 4.2;
+    gltf.scene.scale.setScalar(0.75);
+
+    gltf.scene.traverse(function (el) {
+      if (el.isMesh) {
+        console.log(el);
+      }
+    });
+  },
+  // called while loading is progressing
+  function (xhr) {
+    console.log((xhr.loaded / xhr.total) * 100 + "% loaded");
+  },
+  // called when loading has errors
+  function (error) {
+    console.log("An error happened");
+  }
+);
+
+// box
+const boxGeometry = new THREE.BoxGeometry(2, 4, 2);
+const boxMaterial = new THREE.MeshStandardMaterial({ color: "white" });
+const boxMesh = new THREE.Mesh(boxGeometry, boxMaterial);
+boxMesh.position.y = 2;
+scene.add(boxMesh);
 
 /* 
 //////////////////////////////////////////////////////////////////////////////
