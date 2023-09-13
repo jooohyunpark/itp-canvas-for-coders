@@ -150,12 +150,10 @@ const sphereGeometry = new THREE.SphereGeometry(1, 128, 128);
 const sphereMaterial = new THREE.MeshStandardMaterial({
   color: "#5200ff",
   roughness: 0.2,
-  metalness: 0.1,
 });
 const sphereMaterial2 = new THREE.MeshStandardMaterial({
   color: "#FF5733",
-  roughness: 0.8,
-  metalness: 0.1,
+  roughness: 0.2,
 });
 
 const sphereMesh = new THREE.Mesh(sphereGeometry, sphereMaterial);
