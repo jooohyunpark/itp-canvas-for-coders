@@ -1,6 +1,6 @@
 # Week 1
 
-## Sites built with three.js
+## Projects built with three.js
 
 - [Chrome experiments](https://experiments.withgoogle.com/)
 - [Three.js examples](https://threejs.org/examples/#webgl_animation_keyframes)
