@@ -2,9 +2,6 @@
 
 ## Projects built with three.js
 
-- [Chrome experiments](https://experiments.withgoogle.com/)
-- [Three.js examples](https://threejs.org/examples/#webgl_animation_keyframes)
-- [React-three-fiber examples](https://docs.pmnd.rs/react-three-fiber/getting-started/examples)
 - [Doors](https://doors.parkjoohyun.com/)
 - [TV Buddha](https://tv-buddha.parkjoohyun.com/)
 - [t-SNE Map](https://experiments.withgoogle.com/t-sne-map)
