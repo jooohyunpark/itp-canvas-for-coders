@@ -10,3 +10,4 @@
 - [Object clump](https://codesandbox.io/s/ssbdsw?file=/src/App.js)
 - [Scrollcontrols + GLTF](https://codesandbox.io/s/4jr4p)
 - [Perlin Noise](https://codepen.io/vcomics/pen/djqNrm)
+- [Shader on scroll](https://tympanus.net/Tutorials/ShadersOnScroll/)
