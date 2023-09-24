@@ -22,7 +22,7 @@ app.appendChild(renderer.domElement);
 
 // scene
 const scene = new THREE.Scene();
-scene.background = new THREE.Color("black");
+scene.background = new THREE.Color("white");
 
 // perspective camera
 const camera = new THREE.PerspectiveCamera(
@@ -40,11 +40,9 @@ axesHelper.position.y = 0.001;
 scene.add(axesHelper);
 
 // light
-// const ambientLight = new THREE.AmbientLight(0xffffff, 1);
-// scene.add(ambientLight);
-const directionalLight = new THREE.DirectionalLight(0xffffff, 1);
-directionalLight.position.set(1, 1, 0);
-scene.add(directionalLight);
+const ambientLight = new THREE.AmbientLight("white", 0.5);
+const hemisphereLight = new THREE.HemisphereLight("#ffffff", "#ff00ff", 1);
+scene.add(ambientLight, hemisphereLight);
 
 // control
 const controls = new OrbitControls(camera, renderer.domElement);
@@ -54,6 +52,7 @@ controls.screenSpacePanning = false;
 controls.enableRotate = true;
 controls.rotateSpeed = 0.5;
 controls.enableZoom = true;
+controls.zoomSpeed = 0.5;
 controls.minDistance = 100;
 controls.maxDistance = 500;
 controls.target = new THREE.Vector3(0, 0, 0);
@@ -71,14 +70,14 @@ window.addEventListener("resize", onResize);
 //////////////////////////////////////////////////////////////////////////////
 */
 
-// sphere
+// spheres
 const sphereGeometry = new THREE.SphereGeometry(2, 128, 128);
 
 for (let i = 0; i < 1000; i++) {
   const sphereMesh = new THREE.Mesh(
     sphereGeometry,
     new THREE.MeshStandardMaterial({
-      color: "#181818",
+      color: "black",
       roughness: 0.8,
       metalness: 0.2,
     })
@@ -108,7 +107,7 @@ const onClick = () => {
     x: "random(0, 3)",
     y: "random(0, 3)",
     z: "random(0, 3)",
-    duration: 3,
+    duration: "random(2, 5)",
     ease: "power2.inOut",
     repeat: -1,
     yoyo: true,
@@ -116,7 +115,7 @@ const onClick = () => {
 
   // https://github.com/davidmerfield/randomColor
   const c = randomColor({
-    hue: "blue",
+    hue: "#0000FF",
     luminosity: "bright",
   });
   const { r, g, b } = new THREE.Color(c);
@@ -130,10 +129,6 @@ const onClick = () => {
 };
 window.addEventListener("click", onClick);
 
-/* 
-//////////////////////////////////////////////////////////////////////////////
-*/
-
 // animate
 const animate = () => {
   requestAnimationFrame(animate);
@@ -144,26 +139,30 @@ const animate = () => {
   // calculate objects intersecting the picking ray
   const intersects = raycaster.intersectObjects(scene.children);
 
+  // something intersected!
   if (intersects.length > 0) {
     if (
-      // look for spheres
+      // look for raycasted sphere
       intersects[0].object.name === "sphere" &&
       INTERSECTED != intersects[0].object
     ) {
-      // reset previous INTERSECTED object color
+      // reset previous intersected object color
       if (INTERSECTED)
         INTERSECTED.material.emissive.setHex(INTERSECTED.currentHex);
 
-      // assign currently INTERSECTED object
+      // assign currently intersected object
       INTERSECTED = intersects[0].object;
       INTERSECTED.currentHex = INTERSECTED.material.emissive.getHex();
-      INTERSECTED.material.emissive.setHex(0xff0000);
+      INTERSECTED.material.emissive.setHex(0xffff00);
     }
-  } else {
-    // reset previous INTERSECTED object color
+  }
+  // nothing intersected
+  else {
+    // reset previous intersected object color
     if (INTERSECTED)
       INTERSECTED.material.emissive.setHex(INTERSECTED.currentHex);
 
+    // release variable
     INTERSECTED = null;
   }
 
@@ -172,3 +171,7 @@ const animate = () => {
 };
 
 animate();
+
+/* 
+//////////////////////////////////////////////////////////////////////////////
+*/
