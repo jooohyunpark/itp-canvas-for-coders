@@ -39,9 +39,12 @@ const axesHelper = new THREE.AxesHelper(5);
 axesHelper.position.y = 0.001;
 scene.add(axesHelper);
 
-// ambient light
-const ambientLight = new THREE.AmbientLight(0xffffff, 2);
-scene.add(ambientLight);
+// light
+// const ambientLight = new THREE.AmbientLight(0xffffff, 1);
+// scene.add(ambientLight);
+const directionalLight = new THREE.DirectionalLight(0xffffff, 1);
+directionalLight.position.set(1, 1, 0);
+scene.add(directionalLight);
 
 // control
 const controls = new OrbitControls(camera, renderer.domElement);
@@ -75,9 +78,9 @@ for (let i = 0; i < 1000; i++) {
   const sphereMesh = new THREE.Mesh(
     sphereGeometry,
     new THREE.MeshStandardMaterial({
-      color: "gray",
-      roughness: 0.2,
-      metalness: 0.1,
+      color: "#181818",
+      roughness: 0.8,
+      metalness: 0.2,
     })
   );
   const x = 100 - Math.random() * 200;
@@ -89,27 +92,26 @@ for (let i = 0; i < 1000; i++) {
   scene.add(sphereMesh);
 }
 
-function onPointerMove(event) {
+const onPointerMove = (event) => {
   // calculate pointer position in normalized device coordinates
   // (-1 to +1) for both components
 
   pointer.x = (event.clientX / window.innerWidth) * 2 - 1;
   pointer.y = -(event.clientY / window.innerHeight) * 2 + 1;
-
-  // console.log(pointer);
-}
-
+};
 window.addEventListener("pointermove", onPointerMove);
 
 const onClick = () => {
   if (!INTERSECTED) return;
 
   gsap.to(INTERSECTED.scale, {
-    x: 2,
-    y: 2,
-    z: 2,
-    duration: 0.3,
+    x: "random(0, 3)",
+    y: "random(0, 3)",
+    z: "random(0, 3)",
+    duration: 3,
     ease: "power2.inOut",
+    repeat: -1,
+    yoyo: true,
   });
 
   // https://github.com/davidmerfield/randomColor
@@ -158,6 +160,7 @@ const animate = () => {
       INTERSECTED.material.emissive.setHex(0xff0000);
     }
   } else {
+    // reset previous INTERSECTED object color
     if (INTERSECTED)
       INTERSECTED.material.emissive.setHex(INTERSECTED.currentHex);
 
