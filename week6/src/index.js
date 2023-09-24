@@ -1,8 +1,8 @@
 import "./style.css";
 import * as THREE from "three";
 import { OrbitControls } from "three/addons/controls/OrbitControls";
-import randomColor from "randomcolor";
 import { gsap } from "gsap";
+import randomColor from "randomcolor"; // https://github.com/davidmerfield/randomColor
 
 // raycaster
 const raycaster = new THREE.Raycaster();
@@ -88,6 +88,7 @@ for (let i = 0; i < 1000; i++) {
 
   sphereMesh.position.set(x, y, z);
   sphereMesh.name = "sphere";
+  sphereMesh.isAnimating = false;
   scene.add(sphereMesh);
 }
 
@@ -103,29 +104,52 @@ window.addEventListener("pointermove", onPointerMove);
 const onClick = () => {
   if (!INTERSECTED) return;
 
-  gsap.to(INTERSECTED.scale, {
-    x: "random(0, 3)",
-    y: "random(0, 3)",
-    z: "random(0, 3)",
-    duration: "random(2, 5)",
-    ease: "power2.inOut",
-    repeat: -1,
-    yoyo: true,
-  });
+  if (INTERSECTED.isAnimating) {
+    gsap.to(INTERSECTED.scale, {
+      x: 1,
+      y: 1,
+      z: 1,
+      duration: 0.5,
+      ease: "power2.inOut",
+      overwrite: true,
+    });
 
-  // https://github.com/davidmerfield/randomColor
-  const c = randomColor({
-    hue: "#0000FF",
-    luminosity: "bright",
-  });
-  const { r, g, b } = new THREE.Color(c);
-  gsap.to(INTERSECTED.material.color, {
-    r,
-    g,
-    b,
-    duration: 0.3,
-    ease: "power2.inOut",
-  });
+    gsap.to(INTERSECTED.material.color, {
+      r: 0,
+      g: 0,
+      b: 0,
+      duration: 0.5,
+      ease: "power2.inOut",
+      overwrite: true,
+    });
+
+    INTERSECTED.isAnimating = false;
+  } else {
+    gsap.to(INTERSECTED.scale, {
+      x: "random(0, 3)",
+      y: "random(0, 3)",
+      z: "random(0, 3)",
+      duration: "random(2, 5)",
+      ease: "power2.inOut",
+      repeat: -1,
+      yoyo: true,
+    });
+
+    const c = randomColor({
+      hue: "#0000FF",
+      luminosity: "bright",
+    });
+    const { r, g, b } = new THREE.Color(c);
+    gsap.to(INTERSECTED.material.color, {
+      r,
+      g,
+      b,
+      duration: 1,
+      ease: "power2.inOut",
+    });
+
+    INTERSECTED.isAnimating = true;
+  }
 };
 window.addEventListener("click", onClick);
 
@@ -153,7 +177,7 @@ const animate = () => {
       // assign currently intersected object
       INTERSECTED = intersects[0].object;
       INTERSECTED.currentHex = INTERSECTED.material.emissive.getHex();
-      INTERSECTED.material.emissive.setHex(0xffff00);
+      INTERSECTED.material.emissive.setHex(0x00ffff);
     }
   }
   // nothing intersected
