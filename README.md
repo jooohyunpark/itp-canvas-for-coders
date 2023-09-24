@@ -97,7 +97,7 @@ npm install && npm run dev
 
 ### Week 6 - Interaction
 - [Adding interactivity](https://threejs.org/docs/index.html#api/en/core/Raycaster)
-- Deploying site
+- [Deploying site](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site)
 
 ### Week 7 - Final
 Presentation
