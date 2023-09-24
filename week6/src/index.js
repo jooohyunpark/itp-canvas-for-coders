@@ -87,6 +87,7 @@ for (let i = 0; i < 1000; i++) {
   const z = 100 - Math.random() * 200;
 
   sphereMesh.position.set(x, y, z);
+  // adding custome properties to use later
   sphereMesh.name = "sphere";
   sphereMesh.isAnimating = false;
   scene.add(sphereMesh);
@@ -199,3 +200,20 @@ animate();
 /* 
 //////////////////////////////////////////////////////////////////////////////
 */
+
+const button = document.querySelector("#bg-button");
+
+const onButtonClick = () => {
+  const c = randomColor({
+    luminosity: "bright",
+  });
+  const { r, g, b } = new THREE.Color(c);
+  gsap.to(scene.background, {
+    r,
+    g,
+    b,
+    duration: 1,
+    ease: "linear",
+  });
+};
+button.addEventListener("click", onButtonClick);
