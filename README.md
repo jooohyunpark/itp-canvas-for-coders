@@ -96,7 +96,7 @@ npm install && npm run dev
 - [Shadows](https://threejs.org/manual/#en/shadows)
 
 ### Week 6 - Interaction
-- [Interactivity](https://threejs.org/docs/index.html#api/en/core/Raycaster)
+- [Adding interactivity](https://threejs.org/docs/index.html#api/en/core/Raycaster)
 - [Deploying site](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site)
 
 ### Week 7 - Final
