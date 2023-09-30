@@ -86,8 +86,10 @@ loader.load(
     gltf.scene.scale.setScalar(0.75);
 
     gltf.scene.traverse(function (el) {
+      console.log("traverse: ", el);
+
       if (el.isMesh) {
-        console.log(el);
+        console.log("isMesh: ", el);
       }
     });
   },
@@ -100,6 +102,18 @@ loader.load(
     console.log("An error happened");
   }
 );
+
+loader.load("/fish.glb", function (gltf) {
+  scene.add(gltf.scene);
+
+  gltf.scene.position.y = 5;
+  gltf.scene.scale.setScalar(5);
+
+  gltf.scene.traverse(function (el) {
+    if (el.isMesh) {
+    }
+  });
+});
 
 // box
 const boxGeometry = new THREE.BoxGeometry(2, 4, 2);
