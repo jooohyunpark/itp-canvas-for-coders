@@ -2,6 +2,11 @@ import "./style.css";
 import * as THREE from "three";
 import { MapControls } from "three/addons/controls/MapControls";
 import { GLTFLoader } from "three/addons/loaders/GLTFLoader.js";
+import { gsap } from "gsap";
+
+// animation mixer
+let mixer;
+const clock = new THREE.Clock();
 
 // app
 const app = document.querySelector("#app");
@@ -79,7 +84,8 @@ loader.load(
   "/banana.glb",
   // called when the resource is loaded
   function (gltf) {
-    console.log(gltf);
+    console.log(`banana gltf: `, gltf);
+
     scene.add(gltf.scene);
 
     gltf.scene.position.y = 4.2;
@@ -103,17 +109,27 @@ loader.load(
   }
 );
 
+const fisthGroup = new THREE.Group();
+
 loader.load("/fish.glb", function (gltf) {
-  scene.add(gltf.scene);
+  console.log("fish gltf: ", gltf);
 
-  gltf.scene.position.y = 5;
+  fisthGroup.add(gltf.scene);
+
+  // initiate animation mixer
+  mixer = new THREE.AnimationMixer(gltf.scene.children[0]);
+  mixer.clipAction(gltf.animations[0]).play();
+
+  gltf.scene.position.set(0, 10, 10);
   gltf.scene.scale.setScalar(5);
-
-  gltf.scene.traverse(function (el) {
-    if (el.isMesh) {
-    }
-  });
 });
+
+gsap.to(fisthGroup.rotation, {
+  y: Math.PI * 2,
+  duration: 60,
+  repeat: -1,
+});
+scene.add(fisthGroup);
 
 // box
 const boxGeometry = new THREE.BoxGeometry(2, 4, 2);
@@ -162,11 +178,11 @@ window.addEventListener("click", play);
 // sphere
 const sphereGeometry = new THREE.SphereGeometry(1, 128, 128);
 const sphereMaterial = new THREE.MeshStandardMaterial({
-  color: "#5200ff",
+  color: "cyan",
   roughness: 0.2,
 });
 const sphereMaterial2 = new THREE.MeshStandardMaterial({
-  color: "#FF5733",
+  color: "magenta",
   roughness: 0.2,
 });
 
@@ -187,6 +203,10 @@ scene.add(sphereMesh2);
 // animate
 const animate = () => {
   requestAnimationFrame(animate);
+
+  const delta = clock.getDelta();
+
+  if (mixer) mixer.update(delta);
 
   renderer.render(scene, camera);
   controls.update();
