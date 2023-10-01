@@ -76,7 +76,6 @@ const loader = new GLTFLoader();
 
 // animation mixer
 let mixer;
-const clock = new THREE.Clock();
 
 // Load a glTF resource
 loader.load(
@@ -200,6 +199,9 @@ scene.add(sphereMesh2);
 /* 
 //////////////////////////////////////////////////////////////////////////////
 */
+
+// add clock for delta time
+const clock = new THREE.Clock();
 
 // animate
 const animate = () => {

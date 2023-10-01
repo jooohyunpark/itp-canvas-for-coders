@@ -74,9 +74,8 @@ window.addEventListener("resize", onResize);
 // Instantiate a loader
 const loader = new GLTFLoader();
 
-// Instantiate animation mixer
+// animation mixer
 let mixer;
-const clock = new THREE.Clock();
 
 const fisthGroup = new THREE.Group();
 
@@ -103,6 +102,9 @@ scene.add(fisthGroup);
 /* 
 //////////////////////////////////////////////////////////////////////////////
 */
+
+// add clock for delta time
+const clock = new THREE.Clock();
 
 // animate
 const animate = () => {
