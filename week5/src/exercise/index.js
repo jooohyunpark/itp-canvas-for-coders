@@ -79,6 +79,7 @@ let mixer;
 
 const fisthGroup = new THREE.Group();
 
+// https://sketchfab.com/3d-models/emperor-angelfish-3dc2d360d98c485496899121792ebcce
 loader.load("/fish.glb", function (gltf) {
   console.log("fish gltf: ", gltf);
 
