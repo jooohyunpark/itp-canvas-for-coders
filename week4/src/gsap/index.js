@@ -156,36 +156,6 @@ gsap.to(rectLight.color, {
   ease: "power2.inOut",
 });
 
-// floor color
-const updateFloorColor = (color = "") => {
-  const { r, g, b } = new THREE.Color(color);
-
-  gsap.to(floorMaterial.color, {
-    duration: 2,
-    r,
-    g,
-    b,
-    ease: "none",
-  });
-};
-
-const colors = [
-  "#00ffff",
-  "#ff00ff",
-  "#ffff00",
-  "#ff0000",
-  "#00ff00",
-  "#0000ff",
-  "#ffffff",
-];
-
-setInterval(() => {
-  const randomColor = colors[Math.floor(Math.random() * colors.length)];
-  console.log("floor color: ", randomColor);
-
-  updateFloorColor(randomColor);
-}, 5000);
-
 // back sphere position & scale
 const count = 10;
 const gap = 2;

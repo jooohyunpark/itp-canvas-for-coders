@@ -11,6 +11,10 @@ export default defineConfig({
     rollupOptions: {
       input: {
         main: resolve(__dirname, "src/index.html"),
+        requestAnimationFrame: resolve(
+          __dirname,
+          "src/requestAnimationFrame/index.html"
+        ),
         gsap: resolve(__dirname, "src/gsap/index.html"),
       },
     },
