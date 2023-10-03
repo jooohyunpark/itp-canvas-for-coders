@@ -120,7 +120,7 @@ const groundMaterial = new THREE.MeshStandardMaterial({
   side: THREE.DoubleSide,
 });
 const groundMesh = new THREE.Mesh(groundGeometry, groundMaterial);
-groundMesh.position.y = -0.1;
+groundMesh.position.y = -0.01;
 groundMesh.rotation.x = -Math.PI * 0.5;
 scene.add(groundMesh);
 
