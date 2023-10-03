@@ -17,7 +17,7 @@ app.appendChild(renderer.domElement);
 // scene
 const scene = new THREE.Scene();
 scene.background = new THREE.Color(0x000000);
-scene.fog = new THREE.FogExp2(0x000000, 0.0007);
+// scene.fog = new THREE.FogExp2(0x000000, 0.0007);
 
 // perspective camera
 const camera = new THREE.PerspectiveCamera(
@@ -36,6 +36,7 @@ const camera = new THREE.PerspectiveCamera(
 //   3000
 // );
 camera.position.set(200, 100, 400);
+camera.lookAt(0, 0, 0);
 scene.add(camera);
 
 // axis helper -> X: red, Y: green, Z: blue
@@ -99,11 +100,11 @@ controls.zoomSpeed = 0.5;
 controls.minDistance = 10;
 controls.maxDistance = 1000;
 
-// // first person control
-// const controls = new FirstPersonControls(camera, renderer.domElement);
-// controls.movementSpeed = 100;
-// controls.lookSpeed = 0.02;
-// const clock = new THREE.Clock();
+// // // first person control
+// // const controls = new FirstPersonControls(camera, renderer.domElement);
+// // controls.movementSpeed = 100;
+// // controls.lookSpeed = 0.02;
+// // const clock = new THREE.Clock();
 
 /*
 ////////////////////////////////////////////////////////////////////////////////
@@ -155,8 +156,9 @@ window.addEventListener("resize", onResize);
 const animate = () => {
   requestAnimationFrame(animate);
 
-  renderer.render(scene, camera);
   controls.update();
+
+  renderer.render(scene, camera);
 };
 
 animate();
