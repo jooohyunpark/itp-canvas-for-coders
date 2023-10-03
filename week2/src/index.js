@@ -32,8 +32,8 @@ const camera = new THREE.PerspectiveCamera(
 //   window.innerWidth / 2,
 //   window.innerHeight / 2,
 //   window.innerHeight / -2,
-//   1,
-//   3000
+//   0,
+//   1000
 // );
 camera.position.set(200, 100, 400);
 camera.lookAt(0, 0, 0);
@@ -146,6 +146,10 @@ scene.add(sphereMesh);
 // resize
 const onResize = () => {
   camera.aspect = window.innerWidth / window.innerHeight;
+  // camera.left = window.innerWidth / -2;
+  // camera.right = window.innerWidth / 2;
+  // camera.top = window.innerHeight / 2;
+  // camera.bottom = window.innerHeight / -2;
   camera.updateProjectionMatrix();
   renderer.setSize(window.innerWidth, window.innerHeight);
 };
