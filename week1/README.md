@@ -1,6 +1,6 @@
 # Week 1
 
-## Projects built with three.js
+## Projects built with web 3D
 
 - [Doors](https://doors.parkjoohyun.com/)
 - [TV Buddha](https://tv-buddha.parkjoohyun.com/)
