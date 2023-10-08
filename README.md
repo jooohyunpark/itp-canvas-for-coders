@@ -62,7 +62,7 @@ npm install && npm run dev
 ## Weekly Topics
 
 ### Week 1 - Intro
-- [Creative projects built with web 3D](https://github.com/jooohyunpark/itp-canvas-for-coders/tree/main/week1#projects-built-with-web-3d)
+- [Projects built with web 3D](https://github.com/jooohyunpark/itp-canvas-for-coders/tree/main/week1#projects-built-with-web-3d)
 - [Three.js documentation](https://threejs.org/docs/index.html#manual/en/introduction/Creating-a-scene)
 - [Three.js fundamentals](https://threejs.org/manual/#en/fundamentals)
 - [Three.js wrappers/frameworks](https://threejs.org/docs/#manual/en/introduction/Libraries-and-Plugins)
