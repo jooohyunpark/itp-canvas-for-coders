@@ -107,7 +107,6 @@ Presentation
 - [three.js](https://threejs.org/) - Javascript 3D library
 - [vite](https://vitejs.dev/) - Javascript build tool
 - [gsap](https://greensock.com/gsap/) - Animation library
-- [stats.js](https://github.com/mrdoob/stats.js/) - Performance Monitor
 
 
 ## Resources
