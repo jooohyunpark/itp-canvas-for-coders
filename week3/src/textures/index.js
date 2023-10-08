@@ -62,7 +62,6 @@ const imageTexture = new THREE.TextureLoader().load(
 imageTexture.colorSpace = THREE.SRGBColorSpace;
 
 const imageMaterial = new THREE.MeshBasicMaterial({
-  color: 0xffffff,
   map: imageTexture,
   side: THREE.DoubleSide,
 });
@@ -71,7 +70,7 @@ const boxGeometry = new THREE.BoxGeometry(3, 3, 3);
 const boxMesh = new THREE.Mesh(boxGeometry, imageMaterial);
 scene.add(boxMesh);
 
-const sphereGeometry = new THREE.SphereGeometry(3, 64, 64);
+const sphereGeometry = new THREE.SphereGeometry(3, 128, 128);
 const sphereMesh = new THREE.Mesh(sphereGeometry, imageMaterial);
 sphereMesh.position.z = -10;
 scene.add(sphereMesh);
