@@ -1,8 +1,8 @@
 import "./style.css";
 import * as THREE from "three";
 import { OrbitControls } from "three/addons/controls/OrbitControls";
-import { TextGeometry } from "three/addons/geometries/TextGeometry.js";
-import { FontLoader } from "three/addons/loaders/FontLoader.js";
+import { TextGeometry } from "three/addons/geometries/TextGeometry";
+import { FontLoader } from "three/addons/loaders/FontLoader";
 
 // app
 const app = document.querySelector("#app");
@@ -78,7 +78,7 @@ boxMesh.position.z = -10;
 scene.add(boxMesh);
 
 // sphere
-const sphereGeometry = new THREE.SphereGeometry(1, 32, 64);
+const sphereGeometry = new THREE.SphereGeometry(1, 32, 128);
 const sphereMesh = new THREE.Mesh(sphereGeometry, material);
 sphereMesh.position.z = -15;
 scene.add(sphereMesh);
