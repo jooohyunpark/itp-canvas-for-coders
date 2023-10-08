@@ -33,7 +33,7 @@ const camera = new THREE.PerspectiveCamera(
 //   window.innerHeight / 2,
 //   window.innerHeight / -2,
 //   0,
-//   1000
+//   3000
 // );
 camera.position.set(200, 100, 400);
 camera.lookAt(0, 0, 0);
@@ -100,11 +100,11 @@ controls.zoomSpeed = 0.5;
 controls.minDistance = 10;
 controls.maxDistance = 1000;
 
-// // // first person control
-// // const controls = new FirstPersonControls(camera, renderer.domElement);
-// // controls.movementSpeed = 100;
-// // controls.lookSpeed = 0.02;
-// // const clock = new THREE.Clock();
+// first person control
+// const controls = new FirstPersonControls(camera, renderer.domElement);
+// controls.movementSpeed = 100;
+// controls.lookSpeed = 0.02;
+// const clock = new THREE.Clock(); // requires delta time value in update()
 
 /*
 ////////////////////////////////////////////////////////////////////////////////
@@ -161,6 +161,7 @@ const animate = () => {
   requestAnimationFrame(animate);
 
   controls.update();
+  // controls.update(clock.getDelta());
 
   renderer.render(scene, camera);
 };
