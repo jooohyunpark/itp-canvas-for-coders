@@ -41,6 +41,7 @@ scene.add(camera);
 
 // axis helper -> X: red, Y: green, Z: blue
 const axesHelper = new THREE.AxesHelper(50);
+axesHelper.position.y = 0.01; // above the ground slightly
 scene.add(axesHelper);
 
 // ambient light
@@ -120,7 +121,6 @@ const groundMaterial = new THREE.MeshStandardMaterial({
   side: THREE.DoubleSide,
 });
 const groundMesh = new THREE.Mesh(groundGeometry, groundMaterial);
-groundMesh.position.y = -0.01;
 groundMesh.rotation.x = -Math.PI * 0.5;
 scene.add(groundMesh);
 
