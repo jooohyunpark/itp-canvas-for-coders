@@ -27,7 +27,7 @@ scene.add(camera);
 
 // axis helper -> X: red, Y: green, Z: blue
 const axesHelper = new THREE.AxesHelper(5);
-axesHelper.position.y = 0.001; // so we're above the ground slightly
+axesHelper.position.y = 0.001; // above the ground slightly
 scene.add(axesHelper);
 
 // grid helper
