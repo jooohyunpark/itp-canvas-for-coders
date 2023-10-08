@@ -18,7 +18,7 @@ For some creators, a web browser is more than just a tool; it is a digital canva
 At the completion of this course, the students will:
 
 1. Be comfortable prototyping web 3D experience with three.js
-2. Practice utilizing browser as a digital canvas
+2. Develop skills to utilize a web browser as a digital canvas
 
 
 ## Values
