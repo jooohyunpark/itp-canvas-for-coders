@@ -2,10 +2,11 @@ import { resolve } from "path";
 import { defineConfig } from "vite";
 
 export default defineConfig({
-  root: resolve(__dirname, "src"),
   server: {
     port: 3000,
   },
+  root: resolve(__dirname, "src"),
+  publicDir: resolve(__dirname, "public"),
   build: {
     outDir: "../dist",
     rollupOptions: {
@@ -17,5 +18,4 @@ export default defineConfig({
       },
     },
   },
-  publicDir: resolve(__dirname, "public"),
 });
