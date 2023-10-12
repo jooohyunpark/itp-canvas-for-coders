@@ -177,7 +177,7 @@ for (let i = -count; i <= count; i++) {
   gsap.to(sphereMesh.scale, {
     y: "random(1, 4)",
     duration: "random(3, 10)",
-    ease: "sineInOut",
+    ease: "sine.inOut",
     repeat: -1,
     repeatRefresh: true,
     yoyo: true,
