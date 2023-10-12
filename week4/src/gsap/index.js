@@ -120,24 +120,24 @@ Ease: https://greensock.com/docs/v3/Eases
 
 // rotate torusknot
 gsap.to(torusKnotMesh.rotation, {
-  duration: 4,
   y: Math.PI * 2,
+  duration: 4,
   repeat: -1,
   ease: "power2.inOut",
 });
 
 // rotate sphere group
 gsap.to(sphereGroup.rotation, {
-  duration: 20,
   y: Math.PI * -2,
+  duration: 20,
   repeat: -1,
   ease: "none",
 });
 
 // scale sphere
 gsap.to(sphereMesh.scale, {
-  duration: 1,
   x: 3,
+  duration: 1,
   repeat: -1,
   repeatDelay: 1,
   yoyo: true,
@@ -146,17 +146,17 @@ gsap.to(sphereMesh.scale, {
 
 // light color
 gsap.to(rectLight.color, {
-  duration: 3,
   r: "random(0, 1)",
   g: "random(0, 1)",
   b: "random(0, 1)",
+  duration: 3,
   repeat: -1,
   repeatDelay: 3,
   repeatRefresh: true,
   ease: "power2.inOut",
 });
 
-// back sphere position & scale
+// // back sphere position & scale
 const count = 10;
 const gap = 2;
 
@@ -166,8 +166,8 @@ for (let i = -count; i <= count; i++) {
   scene.add(sphereMesh);
 
   gsap.to(sphereMesh.position, {
-    duration: "random(3, 10)",
     y: 9,
+    duration: "random(3, 10)",
     ease: "power2.inOut",
     repeat: -1,
     repeatRefresh: true,
@@ -175,8 +175,8 @@ for (let i = -count; i <= count; i++) {
   });
 
   gsap.to(sphereMesh.scale, {
-    duration: "random(3, 10)",
     y: "random(1, 4)",
+    duration: "random(3, 10)",
     ease: "sineInOut",
     repeat: -1,
     repeatRefresh: true,
