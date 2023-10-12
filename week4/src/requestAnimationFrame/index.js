@@ -32,11 +32,6 @@ const camera = new THREE.PerspectiveCamera(
 camera.position.set(0, 5, 20);
 scene.add(camera);
 
-// // axis helper -> X: red, Y: green, Z: blue
-// const axesHelper = new THREE.AxesHelper(5);
-// axesHelper.position.set(0, 0.1, 0);
-// scene.add(axesHelper);
-
 // light
 const rectLight = new THREE.RectAreaLight("#ffffff", 5, 50, 10);
 rectLight.position.set(0, 5, -15);
@@ -114,7 +109,7 @@ scene.add(sphereGroup);
 const animate = (time) => {
   requestAnimationFrame(animate);
 
-  // convert to second
+  // timestamp - convert millisecond to second
   time *= 0.001;
 
   // aniamte objects
@@ -127,7 +122,7 @@ const animate = (time) => {
   s — saturation value between 0.0 and 1.0
   l — lightness value between 0.0 and 1.0
   */
-  // rectLight.color.setHSL(Math.cos(time) * 0.1, 1, 0.5);
+  // rectLight.color.setHSL(Math.abs(Math.cos(time * 0.1)), 1, 0.5);
 
   renderer.render(scene, camera);
   controls.update();
