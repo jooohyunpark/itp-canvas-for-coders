@@ -43,7 +43,6 @@ scene.add(ambientLight);
 // directional light
 const directionalLight = new THREE.DirectionalLight(0xffffff, 1);
 directionalLight.position.set(-10, 10, 10);
-directionalLight.castShadow = true;
 scene.add(directionalLight);
 
 // control
