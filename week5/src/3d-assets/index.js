@@ -28,12 +28,12 @@ camera.position.set(20, 20, 20);
 scene.add(camera);
 
 // axis helper -> X: red, Y: green, Z: blue
-const axesHelper = new THREE.AxesHelper(5);
+const axesHelper = new THREE.AxesHelper(10);
 axesHelper.position.y = 0.001;
 scene.add(axesHelper);
 
 // grid
-const gridHelper = new THREE.GridHelper(100, 100);
+const gridHelper = new THREE.GridHelper(100, 100, "#444444", "#cccccc");
 scene.add(gridHelper);
 
 // ambient light
@@ -74,9 +74,6 @@ window.addEventListener("resize", onResize);
 // Instantiate a loader
 const loader = new GLTFLoader();
 
-// animation mixer
-let mixer;
-
 // Load a glTF resource
 loader.load(
   // resource URL
@@ -107,6 +104,9 @@ loader.load(
     console.log("An error happened");
   }
 );
+
+// animation mixer
+let mixer;
 
 const fisthGroup = new THREE.Group();
 

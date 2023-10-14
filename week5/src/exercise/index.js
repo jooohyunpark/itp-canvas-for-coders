@@ -33,7 +33,7 @@ axesHelper.position.y = 0.001;
 scene.add(axesHelper);
 
 // grid
-const gridHelper = new THREE.GridHelper(100, 100);
+const gridHelper = new THREE.GridHelper(100, 100, "#444444", "#cccccc");
 scene.add(gridHelper);
 
 // ambient light
