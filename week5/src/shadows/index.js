@@ -37,26 +37,6 @@ scene.add(axesHelper);
 const ambientLight = new THREE.AmbientLight(0xffffff, 0.5);
 scene.add(ambientLight);
 
-// directional light
-const directionalLight = new THREE.DirectionalLight(0xffffff, 1);
-directionalLight.position.set(-10, 10, 10);
-directionalLight.castShadow = true;
-scene.add(directionalLight);
-
-//Set up shadow properties for the light
-directionalLight.shadow.mapSize.width = 512; // default
-directionalLight.shadow.mapSize.height = 512; // default
-directionalLight.shadow.camera.near = 0.5; // default
-directionalLight.shadow.camera.far = 500; // default
-directionalLight.shadow.camera.top = 10;
-directionalLight.shadow.camera.bottom = -10;
-directionalLight.shadow.camera.left = -10;
-directionalLight.shadow.camera.right = 10;
-
-//Create a helper for the shadow camera (optional)
-const shadowHelper = new THREE.CameraHelper(directionalLight.shadow.camera);
-scene.add(shadowHelper);
-
 // control
 const controls = new OrbitControls(camera, renderer.domElement);
 controls.enableDamping = true;
@@ -82,14 +62,32 @@ window.addEventListener("resize", onResize);
 //////////////////////////////////////////////////////////////////////////////
 */
 
-const bananaGroup = new THREE.Group();
+// directional light
+const directionalLight = new THREE.DirectionalLight(0xffffff, 1.5);
+directionalLight.position.set(-10, 10, 10);
+directionalLight.castShadow = true;
+scene.add(directionalLight);
+
+//Set up shadow properties for the light
+directionalLight.shadow.mapSize.width = 512; // default
+directionalLight.shadow.mapSize.height = 512; // default
+directionalLight.shadow.camera.near = 0.5; // default
+directionalLight.shadow.camera.far = 500; // default
+directionalLight.shadow.camera.top = 10;
+directionalLight.shadow.camera.bottom = -10;
+directionalLight.shadow.camera.left = -10;
+directionalLight.shadow.camera.right = 10;
+
+//Create a helper for the shadow camera (optional)
+const shadowHelper = new THREE.CameraHelper(directionalLight.shadow.camera);
+scene.add(shadowHelper);
 
 // floor
 const floorGeometry = new THREE.PlaneGeometry(2000, 2000);
 const floorMaterial = new THREE.MeshStandardMaterial({
-  color: "#ccc",
+  color: "navy",
   roughness: 0.8,
-  metalness: 0,
+  metalness: 0.2,
   side: THREE.DoubleSide,
 });
 const floorMesh = new THREE.Mesh(floorGeometry, floorMaterial);
@@ -99,6 +97,9 @@ scene.add(floorMesh);
 
 // Instantiate a loader
 const loader = new GLTFLoader();
+
+// create banna group
+const bananaGroup = new THREE.Group();
 
 // Load a glTF resource
 loader.load(
@@ -121,14 +122,6 @@ loader.load(
     // scene.add(directionalLight.target);
 
     bananaGroup.add(gltf.scene);
-  },
-  // called while loading is progressing
-  function (xhr) {
-    console.log((xhr.loaded / xhr.total) * 100 + "% loaded");
-  },
-  // called when loading has errors
-  function (error) {
-    console.log("An error happened");
   }
 );
 
@@ -139,7 +132,6 @@ const boxMesh = new THREE.Mesh(boxGeometry, boxMaterial);
 boxMesh.position.y = 2;
 boxMesh.castShadow = true;
 boxMesh.receiveShadow = true;
-
 bananaGroup.add(boxMesh);
 scene.add(bananaGroup);
 
