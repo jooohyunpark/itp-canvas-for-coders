@@ -115,7 +115,6 @@ Presentation
 - [Google experiments](https://experiments.withgoogle.com/)
 - [@react-three/fiber](https://docs.pmnd.rs/react-three-fiber/getting-started/examples)
 - [@react-three/drei](https://github.com/pmndrs/drei)
-- [AFrame](https://aframe.io/)
 
 
 ## Equipment
