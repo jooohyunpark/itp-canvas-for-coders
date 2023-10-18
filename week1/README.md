@@ -9,6 +9,7 @@
 - [Star system](https://codepen.io/seanseansean/pen/vEjOvy)
 - [Sketches by Yi-Wen Lin](https://yiwenl.github.io/Sketches/)
 - https://jesse-zhou.com/
+- [Kinetic Typography Playground](https://kinetic-typography-playground.netlify.app/)
 - [Object clump](https://codesandbox.io/s/ssbdsw?file=/src/App.js)
 - [Scrollcontrols + GLTF](https://codesandbox.io/s/4jr4p)
 - [Perlin Noise](https://codepen.io/vcomics/pen/djqNrm)
