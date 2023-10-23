@@ -69,7 +69,7 @@ npm install && npm run dev
 - Class boilerplate
 - [Renderer](https://threejs.org/manual/#en/rendertargets)
 
-### Week 2 - Concept
+### Week 2 - Concepts
 - Thinking in xyz space
 - [Scene](https://threejs.org/manual/#en/scenegraph)
 - Responsiveness
@@ -78,14 +78,14 @@ npm install && npm run dev
 - [Lights](https://threejs.org/manual/#en/lights)
 - Controls
 
-### Week 3 - Object
+### Week 3 - Objects
 - [Primitives](https://threejs.org/manual/#en/primitives)
 - [Materials](https://threejs.org/manual/#en/materials)
 - [Textures](https://threejs.org/manual/#en/textures)
 - [Object properties](https://threejs.org/docs/#api/en/core/Object3D)
 - [Group](https://threejs.org/docs/index.html#api/en/objects/Group)
 
-### Week 4 - Animation
+### Week 4 - Animations
 - [requestAnimationFrame](https://developer.mozilla.org/en-US/docs/Web/API/window/requestAnimationFrame)
 - [GSAP](https://greensock.com/docs/v3/GSAP/gsap.to())
 
@@ -94,7 +94,7 @@ npm install && npm run dev
 - [Positional audio](https://threejs.org/docs/#api/en/audio/PositionalAudio)
 - [Shadows](https://threejs.org/manual/#en/shadows)
 
-### Week 6 - Interaction
+### Week 6 - Interactions
 - [Adding interactivity](https://threejs.org/docs/index.html#api/en/core/Raycaster)
 - [Deploying site](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site)
 
