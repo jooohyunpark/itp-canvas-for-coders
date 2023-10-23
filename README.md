@@ -89,7 +89,7 @@ npm install && npm run dev
 - [requestAnimationFrame](https://developer.mozilla.org/en-US/docs/Web/API/window/requestAnimationFrame)
 - [GSAP](https://greensock.com/docs/v3/GSAP/gsap.to())
 
-### Week 5 - 3D Assets
+### Week 5 - 3D Asset
 - [3D Models](https://threejs.org/docs/index.html#manual/en/introduction/Loading-3D-models)
 - [Positional audio](https://threejs.org/docs/#api/en/audio/PositionalAudio)
 - [Shadows](https://threejs.org/manual/#en/shadows)
