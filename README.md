@@ -74,6 +74,8 @@ npm install && npm run dev
 - Thinking in xyz space
 - [Scene](https://threejs.org/manual/#en/scenegraph)
 - Responsiveness
+- [Vectors](https://threejs.org/docs/index.html#api/en/math/Vector3)
+- [Colors](https://threejs.org/docs/index.html#api/en/math/Color)
 - Helpers
 - [Cameras](https://threejs.org/manual/#en/cameras)
 - [Lights](https://threejs.org/manual/#en/lights)
