@@ -4,9 +4,10 @@
 
 - [Joohyun Park](mailto:joohyunpark@nyu.edu)
 - Class dates
-  - 10/27/2023 - 12/15/2023, Friday, 6:00pm-8:30pm, 370 Jay Street Room 450 Loc: Brooklyn Campus
+  - 10/27/2023 - 12/15/2023, Friday, 6:00pm-8:30pm, 370 Jay Street Room 409 Loc: Brooklyn Campus
 - [Office hours](https://calendar.app.google/BYHgr6gMdJk75LfX7)
   - 10/27/2023 - 12/15/2023, Friday, 5:30pm-6:00pm & 8:30pm-9:00pm, 370 Jay Street: Brooklyn Campus
+- [Zoom link](https://nyu.zoom.us/my/joohyunpark)
 
 
 ## Course Description
@@ -73,6 +74,8 @@ npm install && npm run dev
 - Thinking in xyz space
 - [Scene](https://threejs.org/manual/#en/scenegraph)
 - Responsiveness
+- [Vectors](https://threejs.org/docs/index.html#api/en/math/Vector3)
+- [Colors](https://threejs.org/docs/index.html#api/en/math/Color)
 - Helpers
 - [Cameras](https://threejs.org/manual/#en/cameras)
 - [Lights](https://threejs.org/manual/#en/lights)
