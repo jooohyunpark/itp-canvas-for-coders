@@ -30,7 +30,6 @@ const camera = new THREE.PerspectiveCamera(
   2000
 );
 camera.position.set(0, 5, 20);
-scene.add(camera);
 
 // light
 const rectLight = new THREE.RectAreaLight("#ffffff", 5, 50, 10);
