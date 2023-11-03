@@ -103,7 +103,9 @@ scene.add(torusKnotMesh);
 // text
 const fontLoader = new FontLoader();
 fontLoader.load("/helvetiker_regular.typeface.json", (font) => {
-  const textGeometry = new TextGeometry("Hello three.js!", {
+  const text = "Hello three.js!";
+
+  const textGeometry = new TextGeometry(text, {
     font: font,
     size: 70,
     height: 5,
