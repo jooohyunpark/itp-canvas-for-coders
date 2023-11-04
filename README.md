@@ -56,7 +56,8 @@ To run weekly codebase, run following commands.
 
 ```bash
 cd week1
-npm install && npm run dev
+npm install
+npm run dev
 ```
 
 
