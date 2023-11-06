@@ -77,14 +77,14 @@ earthGroup.add(earth);
 const moon = new THREE.Mesh(geometry, material);
 moon.scale.setScalar(1 / 4);
 moon.position.z = -10;
+earthGroup.add(moon);
 
 // nesting
-earthGroup.add(moon);
 sunGroup.add(earthGroup);
 scene.add(sunGroup);
 
 /* 
-scene > sunGroup > sun & (earthGroup > earth & moon)
+scene > sunGroup > sun / (earthGroup > earth / moon)
 */
 
 /* 
