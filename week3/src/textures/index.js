@@ -85,8 +85,8 @@ const boxMesh = new THREE.Mesh(boxGeometry, imageMaterial2);
 boxMesh.position.z = -10;
 scene.add(boxMesh);
 
-// video
-const videoElement = document.getElementById("video-texture");
+// video 1
+const videoElement = document.getElementById("video-texture-1");
 videoElement.play();
 const videoTexture = new THREE.VideoTexture(videoElement);
 videoTexture.colorSpace = THREE.SRGBColorSpace;
@@ -101,8 +101,19 @@ const planeMesh = new THREE.Mesh(planeGeometry, videoMaterial);
 planeMesh.position.z = -20;
 scene.add(planeMesh);
 
+// video 2
+const videoElement2 = document.getElementById("video-texture-2");
+videoElement2.play();
+const videoTexture2 = new THREE.VideoTexture(videoElement2);
+videoTexture2.colorSpace = THREE.SRGBColorSpace;
+const videoMaterial2 = new THREE.MeshLambertMaterial({
+  color: 0xffffff,
+  map: videoTexture2,
+  side: THREE.DoubleSide,
+});
+
 const torusGeometry = new THREE.TorusGeometry(3, 1, 16, 64);
-const torusMesh = new THREE.Mesh(torusGeometry, videoMaterial);
+const torusMesh = new THREE.Mesh(torusGeometry, videoMaterial2);
 torusMesh.position.z = -30;
 scene.add(torusMesh);
 
