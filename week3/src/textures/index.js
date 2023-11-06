@@ -54,25 +54,36 @@ window.addEventListener("resize", onResize);
 //////////////////////////////////////////////////////////////////////////////
 */
 
-// image
-const imageTexture = new THREE.TextureLoader().load(
+// image 1
+const imageTexture1 = new THREE.TextureLoader().load(
   "/hubble_telescope_picture.jpg"
 );
-imageTexture.colorSpace = THREE.SRGBColorSpace;
+imageTexture1.colorSpace = THREE.SRGBColorSpace;
 
-const imageMaterial = new THREE.MeshBasicMaterial({
-  map: imageTexture,
+const imageMaterial1 = new THREE.MeshBasicMaterial({
+  map: imageTexture1,
+  side: THREE.DoubleSide,
+});
+const sphereGeometry = new THREE.SphereGeometry(3, 128, 128);
+const sphereMesh = new THREE.Mesh(sphereGeometry, imageMaterial1);
+scene.add(sphereMesh);
+
+// image 2 - repeat
+const imageTexture2 = new THREE.TextureLoader().load("/inka_niclas.jpg");
+imageTexture2.colorSpace = THREE.SRGBColorSpace;
+imageTexture2.wrapS = THREE.RepeatWrapping;
+imageTexture2.wrapT = THREE.RepeatWrapping;
+imageTexture2.repeat.set(2, 2);
+
+const imageMaterial2 = new THREE.MeshBasicMaterial({
+  map: imageTexture2,
   side: THREE.DoubleSide,
 });
 
-const boxGeometry = new THREE.BoxGeometry(3, 3, 3);
-const boxMesh = new THREE.Mesh(boxGeometry, imageMaterial);
+const boxGeometry = new THREE.BoxGeometry(4, 4, 4);
+const boxMesh = new THREE.Mesh(boxGeometry, imageMaterial2);
+boxMesh.position.z = -10;
 scene.add(boxMesh);
-
-const sphereGeometry = new THREE.SphereGeometry(3, 128, 128);
-const sphereMesh = new THREE.Mesh(sphereGeometry, imageMaterial);
-sphereMesh.position.z = -10;
-scene.add(sphereMesh);
 
 // video
 const videoElement = document.getElementById("video-texture");
