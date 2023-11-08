@@ -109,7 +109,7 @@ fontLoader.load("/helvetiker_regular.typeface.json", (font) => {
     font: font,
     size: 70,
     height: 5,
-    curveSegments: 4,
+    curveSegments: 12,
     bevelEnabled: true,
     bevelThickness: 2,
     bevelSize: 1.5,
