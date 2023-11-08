@@ -77,7 +77,7 @@ boxMesh.position.z = -10;
 scene.add(boxMesh);
 
 // sphere
-const sphereGeometry = new THREE.SphereGeometry(1, 32, 128);
+const sphereGeometry = new THREE.SphereGeometry(1, 128, 128);
 const sphereMesh = new THREE.Mesh(sphereGeometry, material);
 sphereMesh.position.z = -15;
 scene.add(sphereMesh);
