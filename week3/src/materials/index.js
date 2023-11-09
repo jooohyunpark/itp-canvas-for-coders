@@ -73,25 +73,25 @@ const mesh2 = new THREE.Mesh(
 mesh2.position.z = -5;
 scene.add(mesh2);
 
-// MeshStandardMaterial
-const mesh3 = new THREE.Mesh(
-  geometry,
-  new THREE.MeshStandardMaterial({
-    color: "#0000ff",
-    roughness: 0.8,
-    metalness: 0.2,
-  })
-);
-mesh3.position.z = -10;
-scene.add(mesh3);
-
 // MeshPhongMaterial
-const mesh4 = new THREE.Mesh(
+const mesh3 = new THREE.Mesh(
   geometry,
   new THREE.MeshPhongMaterial({
     color: "#0000ff",
     shininess: 80,
     specular: "#cccccc",
+  })
+);
+mesh3.position.z = -10;
+scene.add(mesh3);
+
+// MeshStandardMaterial
+const mesh4 = new THREE.Mesh(
+  geometry,
+  new THREE.MeshStandardMaterial({
+    color: "#0000ff",
+    roughness: 0.8,
+    metalness: 0.2,
   })
 );
 mesh4.position.z = -15;
