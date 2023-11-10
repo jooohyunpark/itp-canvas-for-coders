@@ -86,18 +86,18 @@ boxMesh.position.z = -10;
 scene.add(boxMesh);
 
 // video 1
-const videoElement = document.getElementById("video-texture-1");
-videoElement.play();
-const videoTexture = new THREE.VideoTexture(videoElement);
-videoTexture.colorSpace = THREE.SRGBColorSpace;
-const videoMaterial = new THREE.MeshLambertMaterial({
+const videoElement1 = document.getElementById("video-texture-1");
+videoElement1.play();
+const videoTexture1 = new THREE.VideoTexture(videoElement1);
+videoTexture1.colorSpace = THREE.SRGBColorSpace;
+const videoMaterial1 = new THREE.MeshLambertMaterial({
   color: 0xffffff,
-  map: videoTexture,
+  map: videoTexture1,
   side: THREE.DoubleSide,
 });
 
 const planeGeometry = new THREE.PlaneGeometry(5, 5);
-const planeMesh = new THREE.Mesh(planeGeometry, videoMaterial);
+const planeMesh = new THREE.Mesh(planeGeometry, videoMaterial1);
 planeMesh.position.z = -20;
 scene.add(planeMesh);
 
