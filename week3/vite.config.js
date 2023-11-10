@@ -13,7 +13,7 @@ export default defineConfig({
       input: {
         main: resolve(__dirname, "src/index.html"),
         primitives: resolve(__dirname, "src/primitives/index.html"),
-        materias: resolve(__dirname, "src/materials/index.html"),
+        materials: resolve(__dirname, "src/materials/index.html"),
         textures: resolve(__dirname, "src/textures/index.html"),
         groups: resolve(__dirname, "src/groups/index.html"),
         exercise: resolve(__dirname, "src/exercise/index.html"),
