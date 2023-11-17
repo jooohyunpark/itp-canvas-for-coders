@@ -72,8 +72,9 @@ const sphereMaterial = new THREE.MeshStandardMaterial({
   metalness: 0,
 });
 const sphereMesh = new THREE.Mesh(SphereGeometry, sphereMaterial);
-sphereMesh.position.set(0, 3, 0);
+sphereMesh.position.set(0, 5, 0);
 scene.add(sphereMesh);
+controls.target.copy(sphereMesh.position);
 
 // animate
 const animate = () => {
