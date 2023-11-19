@@ -24,7 +24,7 @@ const camera = new THREE.PerspectiveCamera(
   1,
   1000
 );
-camera.position.set(20, 20, 20);
+camera.position.set(0, 20, 50);
 
 // axis helper -> X: red, Y: green, Z: blue
 const axesHelper = new THREE.AxesHelper(10);
@@ -41,7 +41,7 @@ scene.add(ambientLight);
 
 // directional light
 const directionalLight = new THREE.DirectionalLight(0xffffff, 1);
-directionalLight.position.set(-10, 10, 10);
+directionalLight.position.set(-1, 1, 1);
 scene.add(directionalLight);
 
 // control
@@ -175,22 +175,26 @@ window.addEventListener("click", play);
 
 // sphere
 const sphereGeometry = new THREE.SphereGeometry(1, 128, 128);
-const sphereMaterial = new THREE.MeshStandardMaterial({
-  color: "cyan",
-  roughness: 0.2,
-});
-const sphereMaterial2 = new THREE.MeshStandardMaterial({
-  color: "magenta",
-  roughness: 0.2,
-});
 
-const sphereMesh = new THREE.Mesh(sphereGeometry, sphereMaterial);
-sphereMesh.position.set(20, 5, 0);
+const sphereMesh = new THREE.Mesh(
+  sphereGeometry,
+  new THREE.MeshStandardMaterial({
+    color: "#0C3227",
+    roughness: 0.5,
+  })
+);
+sphereMesh.position.set(25, 5, -25);
 sphereMesh.add(sound);
 scene.add(sphereMesh);
 
-const sphereMesh2 = new THREE.Mesh(sphereGeometry, sphereMaterial2);
-sphereMesh2.position.set(-30, 5, -20);
+const sphereMesh2 = new THREE.Mesh(
+  sphereGeometry,
+  new THREE.MeshStandardMaterial({
+    color: "#12167f",
+    roughness: 0.5,
+  })
+);
+sphereMesh2.position.set(-25, 5, -25);
 sphereMesh2.add(sound2);
 scene.add(sphereMesh2);
 
