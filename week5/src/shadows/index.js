@@ -16,7 +16,7 @@ app.appendChild(renderer.domElement);
 
 // scene
 const scene = new THREE.Scene();
-scene.background = new THREE.Color(0xffffff);
+scene.background = new THREE.Color("white");
 
 // perspective camera
 const camera = new THREE.PerspectiveCamera(
@@ -33,7 +33,7 @@ axesHelper.position.y = 0.001;
 scene.add(axesHelper);
 
 // ambient light
-const ambientLight = new THREE.AmbientLight(0xffffff, 0.5);
+const ambientLight = new THREE.AmbientLight(0xffffff, 0.2);
 scene.add(ambientLight);
 
 // control
@@ -62,7 +62,7 @@ window.addEventListener("resize", onResize);
 */
 
 // directional light
-const directionalLight = new THREE.DirectionalLight(0xffffff, 1.5);
+const directionalLight = new THREE.DirectionalLight("white", 1.5);
 directionalLight.position.set(-10, 10, 10);
 directionalLight.castShadow = true;
 scene.add(directionalLight);
@@ -84,9 +84,8 @@ scene.add(shadowHelper);
 // floor
 const floorGeometry = new THREE.PlaneGeometry(2000, 2000);
 const floorMaterial = new THREE.MeshStandardMaterial({
-  color: "navy",
+  color: "white",
   roughness: 0.8,
-  metalness: 0.2,
   side: THREE.DoubleSide,
 });
 const floorMesh = new THREE.Mesh(floorGeometry, floorMaterial);
@@ -126,7 +125,10 @@ loader.load(
 
 // box
 const boxGeometry = new THREE.BoxGeometry(2, 4, 2);
-const boxMaterial = new THREE.MeshStandardMaterial({ color: "white" });
+const boxMaterial = new THREE.MeshStandardMaterial({
+  color: "white",
+  roughness: 0.8,
+});
 const boxMesh = new THREE.Mesh(boxGeometry, boxMaterial);
 boxMesh.position.y = 2;
 boxMesh.castShadow = true;
