@@ -39,9 +39,11 @@ axesHelper.position.y = 0.001;
 scene.add(axesHelper);
 
 // light
-const ambientLight = new THREE.AmbientLight("white", 0.5);
-const hemisphereLight = new THREE.HemisphereLight("#ffffff", "#ff00ff", 1);
-scene.add(ambientLight, hemisphereLight);
+const ambientLight = new THREE.AmbientLight("white", 0.2);
+const hemisphereLight = new THREE.HemisphereLight("#ffffff", "#ff00ff", 0.8);
+const directionalLight = new THREE.DirectionalLight("white", 0.8);
+directionalLight.position.set(-1, 1, 1);
+scene.add(ambientLight, directionalLight, hemisphereLight);
 
 // control
 const controls = new OrbitControls(camera, renderer.domElement);
