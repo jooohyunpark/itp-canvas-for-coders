@@ -85,7 +85,7 @@ loader.load("/fish.glb", function (gltf) {
   fisthGroup.add(gltf.scene);
 
   // initiate animation mixer
-  mixer = new THREE.AnimationMixer(gltf.scene.children[0]);
+  mixer = new THREE.AnimationMixer(gltf.scene);
   mixer.clipAction(gltf.animations[0]).play();
 
   gltf.scene.position.set(0, 10, 10);

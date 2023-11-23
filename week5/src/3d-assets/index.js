@@ -117,7 +117,7 @@ loader.load("/fish.glb", function (gltf) {
   gltf.scene.scale.setScalar(5);
 
   // initiate animation mixer
-  mixer = new THREE.AnimationMixer(gltf.scene.children[0]);
+  mixer = new THREE.AnimationMixer(gltf.scene);
   mixer.clipAction(gltf.animations[0]).play();
 });
 
