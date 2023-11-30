@@ -16,7 +16,7 @@ app.appendChild(renderer.domElement);
 
 // scene
 const scene = new THREE.Scene();
-scene.background = new THREE.Color("white");
+scene.background = new THREE.Color("black");
 
 // perspective camera
 const camera = new THREE.PerspectiveCamera(
@@ -33,7 +33,7 @@ axesHelper.position.y = 0.001;
 scene.add(axesHelper);
 
 // ambient light
-const ambientLight = new THREE.AmbientLight(0xffffff, 0.2);
+const ambientLight = new THREE.AmbientLight(0xffffff, 0.4);
 scene.add(ambientLight);
 
 // control
@@ -84,7 +84,7 @@ scene.add(shadowHelper);
 // floor
 const floorGeometry = new THREE.PlaneGeometry(2000, 2000);
 const floorMaterial = new THREE.MeshStandardMaterial({
-  color: "white",
+  color: "#ccc",
   roughness: 0.8,
   side: THREE.DoubleSide,
 });
