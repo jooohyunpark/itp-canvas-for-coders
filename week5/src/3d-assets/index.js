@@ -65,8 +65,19 @@ const onResize = () => {
 
 window.addEventListener("resize", onResize);
 
+// box
+const boxGeometry = new THREE.BoxGeometry(2, 4, 2);
+const boxMaterial = new THREE.MeshStandardMaterial({ color: "white" });
+const boxMesh = new THREE.Mesh(boxGeometry, boxMaterial);
+boxMesh.position.y = 2;
+scene.add(boxMesh);
+
 /* 
 //////////////////////////////////////////////////////////////////////////////
+*/
+
+/* 
+3D Model
 */
 
 // Instantiate a loader
@@ -103,7 +114,10 @@ loader.load(
   }
 );
 
-// animation mixer
+/* 
+3D Model - Animation Mixer
+*/
+
 let mixer;
 
 const fisthGroup = new THREE.Group();
@@ -119,22 +133,16 @@ loader.load("/fish.glb", function (gltf) {
   // initiate animation mixer
   mixer = new THREE.AnimationMixer(gltf.scene);
   mixer.clipAction(gltf.animations[0]).play();
-});
 
-// rotate fishgroup
-gsap.to(fisthGroup.rotation, {
-  y: Math.PI * 2,
-  duration: 60,
-  repeat: -1,
-});
-scene.add(fisthGroup);
+  // rotate fishgroup
+  gsap.to(fisthGroup.rotation, {
+    y: Math.PI * 2,
+    duration: 60,
+    repeat: -1,
+  });
 
-// box
-const boxGeometry = new THREE.BoxGeometry(2, 4, 2);
-const boxMaterial = new THREE.MeshStandardMaterial({ color: "white" });
-const boxMesh = new THREE.Mesh(boxGeometry, boxMaterial);
-boxMesh.position.y = 2;
-scene.add(boxMesh);
+  scene.add(fisthGroup);
+});
 
 /* 
 Positional Audio
