@@ -105,6 +105,8 @@ loader.load(
   "/banana.glb",
   // called when the resource is loaded
   function (gltf) {
+    bananaGroup.add(gltf.scene);
+
     gltf.scene.position.y = 4.2;
     gltf.scene.scale.setScalar(0.75);
 
@@ -118,8 +120,6 @@ loader.load(
     // target directional light to banana object
     directionalLight.target = gltf.scene;
     scene.add(directionalLight.target);
-
-    bananaGroup.add(gltf.scene);
   }
 );
 
