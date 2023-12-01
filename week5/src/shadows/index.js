@@ -63,7 +63,7 @@ window.addEventListener("resize", onResize);
 
 // directional light
 const directionalLight = new THREE.DirectionalLight("white", 1.5);
-directionalLight.position.set(-10, 10, 10);
+directionalLight.position.set(-5, 10, 5);
 directionalLight.castShadow = true;
 scene.add(directionalLight);
 
@@ -72,10 +72,10 @@ directionalLight.shadow.mapSize.width = 512; // default
 directionalLight.shadow.mapSize.height = 512; // default
 directionalLight.shadow.camera.near = 0.5; // default
 directionalLight.shadow.camera.far = 500; // default
-directionalLight.shadow.camera.top = 10;
-directionalLight.shadow.camera.bottom = -10;
-directionalLight.shadow.camera.left = -10;
-directionalLight.shadow.camera.right = 10;
+// directionalLight.shadow.camera.top = 10;
+// directionalLight.shadow.camera.bottom = -10;
+// directionalLight.shadow.camera.left = -10;
+// directionalLight.shadow.camera.right = 10;
 
 //Create a helper for the shadow camera (optional)
 const shadowHelper = new THREE.CameraHelper(directionalLight.shadow.camera);
@@ -116,8 +116,8 @@ loader.load(
     });
 
     // target directional light to banana object
-    // directionalLight.target = gltf.scene;
-    // scene.add(directionalLight.target);
+    directionalLight.target = gltf.scene;
+    scene.add(directionalLight.target);
 
     bananaGroup.add(gltf.scene);
   }
@@ -142,7 +142,7 @@ const torusKnotMesh = new THREE.Mesh(
   new THREE.MeshNormalMaterial()
 );
 torusKnotMesh.scale.setScalar(0.5);
-torusKnotMesh.position.set(0, 4, -6);
+torusKnotMesh.position.set(0, 5, -5);
 torusKnotMesh.castShadow = true;
 scene.add(torusKnotMesh);
 

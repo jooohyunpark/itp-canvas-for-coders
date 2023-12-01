@@ -166,6 +166,7 @@ audioLoader.load("/forest.mp3", function (buffer) {
   sound.setRefDistance(5); // the distance at which the volume reduction starts taking effect
   sound.setRolloffFactor(1); // value describing how quickly the volume is reduced as the source moves away from the listener
   sound.setLoop(true);
+  console.log(sound);
 });
 audioLoader.load("/rain.mp3", function (buffer) {
   sound2.setBuffer(buffer);
