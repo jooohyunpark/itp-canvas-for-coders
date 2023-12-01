@@ -133,12 +133,14 @@ loader.load("/fish.glb", function (gltf) {
   // initiate animation mixer
   mixer = new THREE.AnimationMixer(gltf.scene);
   mixer.clipAction(gltf.animations[0]).play();
+  mixer.clipAction(gltf.animations[0]).timeScale = 0.3;
 
   // rotate fishgroup
   gsap.to(fisthGroup.rotation, {
     y: Math.PI * 2,
     duration: 60,
     repeat: -1,
+    ease: "none",
   });
 
   scene.add(fisthGroup);
@@ -158,7 +160,6 @@ const sound2 = new THREE.PositionalAudio(listener);
 
 // load a sound and set it as the PositionalAudio object's buffer
 const audioLoader = new THREE.AudioLoader();
-
 audioLoader.load("/forest.mp3", function (buffer) {
   sound.setBuffer(buffer);
   sound.setVolume(0.7);
