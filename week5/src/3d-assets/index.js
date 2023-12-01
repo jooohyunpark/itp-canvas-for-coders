@@ -162,15 +162,15 @@ const audioLoader = new THREE.AudioLoader();
 audioLoader.load("/forest.mp3", function (buffer) {
   sound.setBuffer(buffer);
   sound.setVolume(0.7);
-  sound.setRefDistance(10);
-  sound.setRolloffFactor(5);
+  sound.setRefDistance(5); // the distance at which the volume reduction starts taking effect
+  sound.setRolloffFactor(1); // value describing how quickly the volume is reduced as the source moves away from the listener
   sound.setLoop(true);
 });
 audioLoader.load("/rain.mp3", function (buffer) {
   sound2.setBuffer(buffer);
   sound2.setVolume(1);
-  sound2.setRefDistance(5);
-  sound2.setRolloffFactor(1);
+  sound2.setRefDistance(10);
+  sound2.setRolloffFactor(5);
   sound2.setLoop(true);
 });
 
