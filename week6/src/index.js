@@ -91,7 +91,6 @@ const onPointerMove = (event) => {
   // (-1 to +1) for both components
   pointer.x = (event.clientX / window.innerWidth) * 2 - 1;
   pointer.y = -(event.clientY / window.innerHeight) * 2 + 1;
-  console.log(pointer);
 };
 window.addEventListener("pointermove", onPointerMove);
 
