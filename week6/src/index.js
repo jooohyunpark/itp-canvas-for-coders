@@ -77,11 +77,12 @@ for (let i = 0; i < 1000; i++) {
   const x = 100 - Math.random() * 200;
   const y = 100 - Math.random() * 200;
   const z = 100 - Math.random() * 200;
-
   sphereMesh.position.set(x, y, z);
+
   // adding custome properties to use later
   sphereMesh.name = "sphere";
   sphereMesh.isAnimating = false;
+
   scene.add(sphereMesh);
 }
 
@@ -90,6 +91,7 @@ const onPointerMove = (event) => {
   // (-1 to +1) for both components
   pointer.x = (event.clientX / window.innerWidth) * 2 - 1;
   pointer.y = -(event.clientY / window.innerHeight) * 2 + 1;
+  console.log(pointer);
 };
 window.addEventListener("pointermove", onPointerMove);
 
