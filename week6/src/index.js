@@ -66,16 +66,14 @@ window.addEventListener("resize", onResize);
 
 // spheres
 const sphereGeometry = new THREE.SphereGeometry(2, 128, 128);
+const sphereMaterial = new THREE.MeshStandardMaterial({
+  color: "black",
+  roughness: 0.8,
+  metalness: 0.2,
+});
 
 for (let i = 0; i < 1000; i++) {
-  const sphereMesh = new THREE.Mesh(
-    sphereGeometry,
-    new THREE.MeshStandardMaterial({
-      color: "black",
-      roughness: 0.8,
-      metalness: 0.2,
-    })
-  );
+  const sphereMesh = new THREE.Mesh(sphereGeometry, sphereMaterial.clone());
   const x = 100 - Math.random() * 200;
   const y = 100 - Math.random() * 200;
   const z = 100 - Math.random() * 200;
