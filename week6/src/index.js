@@ -4,13 +4,6 @@ import { OrbitControls } from "three/addons/controls/OrbitControls";
 import { gsap } from "gsap";
 import randomColor from "randomcolor"; // https://github.com/davidmerfield/randomColor
 
-// raycaster
-const raycaster = new THREE.Raycaster();
-const pointer = new THREE.Vector2();
-
-// intersected object
-let INTERSECTED;
-
 // app
 const app = document.querySelector("#app");
 
@@ -102,6 +95,56 @@ const onPointerMove = (event) => {
 };
 window.addEventListener("pointermove", onPointerMove);
 
+// raycaster
+const raycaster = new THREE.Raycaster();
+const pointer = new THREE.Vector2();
+
+// intersected object
+let INTERSECTED;
+
+// animate
+const animate = () => {
+  requestAnimationFrame(animate);
+
+  // update the picking ray with the camera and pointer position
+  raycaster.setFromCamera(pointer, camera);
+
+  // calculate objects intersecting the picking ray
+  const intersects = raycaster.intersectObjects(scene.children);
+
+  // something intersected!
+  if (intersects.length > 0) {
+    if (
+      // look for raycasted sphere
+      intersects[0].object.name === "sphere" &&
+      INTERSECTED !== intersects[0].object
+    ) {
+      // reset previous intersected object color
+      if (INTERSECTED)
+        INTERSECTED.material.emissive.setHex(INTERSECTED.currentHex);
+
+      // assign currently intersected object
+      INTERSECTED = intersects[0].object;
+      INTERSECTED.currentHex = INTERSECTED.material.emissive.getHex();
+      INTERSECTED.material.emissive.setHex(0x00ffff);
+    }
+  }
+  // nothing intersected
+  else {
+    // reset previous intersected object color
+    if (INTERSECTED)
+      INTERSECTED.material.emissive.setHex(INTERSECTED.currentHex);
+
+    // release variable
+    INTERSECTED = null;
+  }
+
+  renderer.render(scene, camera);
+  controls.update();
+};
+
+animate();
+
 const onClick = () => {
   if (!INTERSECTED) return;
 
@@ -114,7 +157,6 @@ const onClick = () => {
       ease: "power2.inOut",
       overwrite: true,
     });
-
     gsap.to(INTERSECTED.material.color, {
       r: 0,
       g: 0,
@@ -153,49 +195,6 @@ const onClick = () => {
   }
 };
 window.addEventListener("click", onClick);
-
-// animate
-const animate = () => {
-  requestAnimationFrame(animate);
-
-  // update the picking ray with the camera and pointer position
-  raycaster.setFromCamera(pointer, camera);
-
-  // calculate objects intersecting the picking ray
-  const intersects = raycaster.intersectObjects(scene.children);
-
-  // something intersected!
-  if (intersects.length > 0) {
-    if (
-      // look for raycasted sphere
-      intersects[0].object.name === "sphere" &&
-      INTERSECTED != intersects[0].object
-    ) {
-      // reset previous intersected object color
-      if (INTERSECTED)
-        INTERSECTED.material.emissive.setHex(INTERSECTED.currentHex);
-
-      // assign currently intersected object
-      INTERSECTED = intersects[0].object;
-      INTERSECTED.currentHex = INTERSECTED.material.emissive.getHex();
-      INTERSECTED.material.emissive.setHex(0x00ffff);
-    }
-  }
-  // nothing intersected
-  else {
-    // reset previous intersected object color
-    if (INTERSECTED)
-      INTERSECTED.material.emissive.setHex(INTERSECTED.currentHex);
-
-    // release variable
-    INTERSECTED = null;
-  }
-
-  renderer.render(scene, camera);
-  controls.update();
-};
-
-animate();
 
 /* 
 //////////////////////////////////////////////////////////////////////////////
