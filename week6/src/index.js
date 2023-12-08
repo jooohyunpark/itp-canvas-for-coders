@@ -118,7 +118,7 @@ const animate = () => {
       intersects[0].object.name === "sphere" &&
       INTERSECTED !== intersects[0].object
     ) {
-      // reset previous intersected object color
+      // reset previous intersected object's color
       if (INTERSECTED)
         INTERSECTED.material.emissive.setHex(INTERSECTED.currentHex);
 
@@ -130,7 +130,7 @@ const animate = () => {
   }
   // nothing intersected
   else {
-    // reset previous intersected object color
+    // reset previous intersected object's color
     if (INTERSECTED)
       INTERSECTED.material.emissive.setHex(INTERSECTED.currentHex);
 
@@ -147,6 +147,7 @@ animate();
 const onClick = () => {
   if (!INTERSECTED) return;
 
+  // reset animation
   if (INTERSECTED.isAnimating) {
     gsap.to(INTERSECTED.scale, {
       x: 1,
@@ -166,7 +167,9 @@ const onClick = () => {
     });
 
     INTERSECTED.isAnimating = false;
-  } else {
+  }
+  // animate
+  else {
     gsap.to(INTERSECTED.scale, {
       x: "random(0, 3)",
       y: "random(0, 3)",
