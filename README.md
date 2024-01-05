@@ -11,7 +11,7 @@
 
 
 ## Course Description
-For some creators, a web browser is more than just a tool; it is a digital canvas with boundless possibilities for artistic expression. This course covers three.js fundamentals to provide students with skills to create interactive aesthetics in web 3D space.
+Web browser is a 21st-century canvas—a digital canvas with boundless possibilities for artists. This course covers three.js fundamentals to provide students with skills to create computational aesthetics in web 3D space.
 
 
 ## Course Objectives
