@@ -7,7 +7,6 @@
   - 10/27/2023 - 12/15/2023, Friday, 6:00pm-8:30pm, 370 Jay Street Room 409 Loc: Brooklyn Campus
 - [Office hours](https://calendar.app.google/BYHgr6gMdJk75LfX7)
   - 10/27/2023 - 12/15/2023, Friday, 5:30pm-6:00pm & 8:30pm-9:00pm, 370 Jay Street: Brooklyn Campus
-- [Zoom link](https://nyu.zoom.us/my/joohyunpark)
 
 
 ## Course Description
