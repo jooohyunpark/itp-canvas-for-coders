@@ -17,8 +17,8 @@ Web browser is a digital canvas for 21st-century artists. While being one of the
 
 At the completion of this course, the students will:
 
-1. Be comfortable prototyping web 3D experience with three.js
-2. Develop perspectives on using web pages as a creative medium 
+1. Be comfortable prototyping web 3D experience with three.js.
+2. Develop perspectives on using web pages as a creative medium. 
 
 
 ## Values
