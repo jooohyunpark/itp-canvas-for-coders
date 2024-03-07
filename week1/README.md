@@ -1,6 +1,6 @@
 # Week 1
 
-## Projects built with web 3D
+## Reimagining web spaces
 
 - [Doors](https://doors.parkjoohyun.com/)
 - [TV Buddha](https://tv-buddha.parkjoohyun.com/)
