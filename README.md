@@ -46,16 +46,16 @@ Please setup belows on your machine before the first class.
 
 Clone this repo. It has weekly code examples in each folder.
 
-```bash
-git clone https://github.com/jooohyunpark/itp-canvas-for-coders.git
+```sh
+git clone https://github.com/jooohyunpark/itp-canvas-for-coders.git &&
 cd itp-canvas-for-coders
 ```
 
-To run weekly codebase, run following commands.
+To run weekly codebase, navigate to the folder, install dependencies (once), and start the dev server.
 
-```bash
-cd week1
-npm install
+```sh
+cd week1 &&
+npm install &&
 npm run dev
 ```
 
