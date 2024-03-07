@@ -36,7 +36,7 @@ Feedback matters as much as presentation. Your constructive opinion can inspire 
 
 Please setup belows on your machine before the first class.
 
-- [VS Code](https://code.visualstudio.com/)
+- [Visual Studio Code](https://code.visualstudio.com/)
 - [Node](https://nodejs.org/en/)
 - [npm](https://www.npmjs.com/) (Comes with Node.js installation)
 - [Git](https://github.com/git-guides/install-git)
