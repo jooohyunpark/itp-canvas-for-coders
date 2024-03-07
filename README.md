@@ -63,11 +63,10 @@ npm run dev
 ## Weekly Topics
 
 ### Week 1 - Intro
-- [Projects built with web 3D](https://github.com/jooohyunpark/itp-canvas-for-coders/tree/main/week1#projects-built-with-web-3d)
-- [Three.js wrappers/frameworks](https://threejs.org/docs/#manual/en/introduction/Libraries-and-Plugins)
+- [Reimagining web spaces](https://github.com/jooohyunpark/itp-canvas-for-coders/tree/main/week1#projects-built-with-web-3d)
 - [Three.js documentation](https://threejs.org/docs/index.html#manual/en/introduction/Creating-a-scene)
 - [Three.js fundamentals](https://threejs.org/manual/#en/fundamentals)
-- Class boilerplate
+- [Three.js wrappers/frameworks](https://threejs.org/docs/#manual/en/introduction/Libraries-and-Plugins)
 - [Renderer](https://threejs.org/manual/#en/rendertargets)
 
 ### Week 2 - Concepts
