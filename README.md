@@ -4,9 +4,9 @@
 
 - [Joohyun Park](mailto:jhp527@nyu.edu)
 - Class dates
-  - 10/27/2023 - 12/15/2023, Friday, 6:00pm-8:30pm, 370 Jay Street Room 409 Loc: Brooklyn Campus
+  - 09/05/2024 - 10/17/2024, Thursday, 6:00pm-8:30pm, 370 Jay Street (Room TBA) Loc: Brooklyn Campus
 - [Office hours](https://calendar.app.google/BYHgr6gMdJk75LfX7)
-  - 10/27/2023 - 12/15/2023, Friday, 5:30pm-6:00pm & 8:30pm-9:00pm, 370 Jay Street: Brooklyn Campus
+  - TBA
 
 
 ## Course Description
