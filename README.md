@@ -67,17 +67,16 @@ npm run dev
 - [Three.js documentation](https://threejs.org/docs/index.html#manual/en/introduction/Creating-a-scene)
 - [Three.js fundamentals](https://threejs.org/manual/#en/fundamentals)
 - [Three.js wrappers/frameworks](https://threejs.org/docs/#manual/en/introduction/Libraries-and-Plugins)
-- [Renderer](https://threejs.org/manual/#en/rendertargets)
+- Thinking in xyz space
 
 ### Week 2 - Concepts
-- Thinking in xyz space
-- [Scene](https://threejs.org/manual/#en/scenegraph)
-- Responsiveness
 - [Vectors](https://threejs.org/docs/index.html#api/en/math/Vector3)
 - [Colors](https://threejs.org/docs/index.html#api/en/math/Color)
-- Helpers
+- [Renderer](https://threejs.org/manual/#en/rendertargets) 
+- [Scene](https://threejs.org/manual/#en/scenegraph)
 - [Cameras](https://threejs.org/manual/#en/cameras)
 - [Lights](https://threejs.org/manual/#en/lights)
+- Helpers
 - Controls
 
 ### Week 3 - Objects
