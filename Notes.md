@@ -20,9 +20,10 @@
 ## Developing ideas through statements
 
 ```
-Buddha in an infinite, stateless space isolated from the outer world.
+Sometimes I imagine myself in an infinite room, completely isolated from the outside world. In that space only the vast thoughts exist and it will take million years to wake up.
 ```
 
+### Undone, Ólafur Arnalds
 ```
 As we get bigger and bigger  
 The distance between ourselves  
@@ -45,8 +46,6 @@ We're all thinking
 "This is the end of my life"  
 And then we're born and it's a surprise  
 'Cause it's just the beginning
-
-– Undone, Ólafur Arnalds
 ```
 
 ## Week 1 reference
