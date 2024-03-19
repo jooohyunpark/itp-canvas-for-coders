@@ -19,7 +19,11 @@
 
 ## Developing ideas
 
-### Undone, Ólafur Arnalds
+### Statement
+
+#### Undone, Ólafur Arnalds
+
+```
 As we get bigger and bigger  
 The distance between ourselves  
 And that other outside world  
@@ -40,4 +44,8 @@ We're all thinking
 "This is death"  
 "This is the end of my life"  
 And then we're born and it's a surprise  
-'Cause it's just the beginning  
+'Cause it's just the beginning
+```
+
+
+### Iteration
