@@ -20,7 +20,8 @@
 ## Developing ideas through statements
 
 ```
-Sometimes I imagine myself in an infinite room, completely isolated from the outside world. In that space only the vast thoughts exist and it will take million years to wake up.
+Sometimes I imagine myself in an infinite room, completely isolated from the outside world.
+In that space only the vast thoughts exist and it would take million years to reach the edge.
 ```
 
 ### Undone, Ólafur Arnalds
