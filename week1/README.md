@@ -1,5 +1,9 @@
 # Week 1
 
+## Description
+This is a week 1 codebase.
+
+## Usage
 Install dependencies: 
 ```sh
 # npm
