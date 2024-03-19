@@ -18,3 +18,26 @@
 
 
 ## Developing ideas
+
+### Undone, Ólafur Arnalds
+As we get bigger and bigger  
+The distance between ourselves  
+And that other outside world  
+Becomes smaller and smaller
+
+And this world that we are inside  
+Which seems so huge in the beginning  
+And so infinitely welcoming  
+Has become very uncomfortable  
+And we are obliged to be born  
+
+And my father says that  
+Birth is so chaotic and violent  
+That he's sure that at the moment of birth  
+We're all thinking  
+
+"This is it"  
+"This is death"  
+"This is the end of my life"  
+And then we're born and it's a surprise  
+'Cause it's just the beginning  
