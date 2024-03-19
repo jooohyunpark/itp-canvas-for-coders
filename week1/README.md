@@ -21,8 +21,12 @@
 
 ### Statement
 
-#### Undone, Ólafur Arnalds
+#### TV Buddha
+```
+Buddha in an infinite, stateless space isolated from the outer world.
+```
 
+#### Undone, Ólafur Arnalds
 ```
 As we get bigger and bigger  
 The distance between ourselves  
