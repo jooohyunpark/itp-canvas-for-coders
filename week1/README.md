@@ -15,3 +15,6 @@
 - [Perlin Noise](https://codepen.io/vcomics/pen/djqNrm)
 - [Shader on scroll](https://tympanus.net/Tutorials/ShadersOnScroll/)
 - [Amazon Coach brand store](https://www.amazon.com/stores/page/F3D8452D-98F8-46A6-8B8B-55A5B6B79F80)
+
+
+## Developing ideas
