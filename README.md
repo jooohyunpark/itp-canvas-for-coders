@@ -111,9 +111,9 @@ Presentation
 
 ## Tools
 
-- [three.js](https://threejs.org/) - Javascript 3D library
-- [vite](https://vitejs.dev/) - Javascript build tool
-- [gsap](https://greensock.com/gsap/) - Animation library
+- [Three.js](https://threejs.org/) - Javascript 3D library
+- [Vite](https://vitejs.dev/) - Javascript build tool
+- [GSAP](https://greensock.com/gsap/) - Animation library
 
 
 ## Resources
