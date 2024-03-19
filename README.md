@@ -54,9 +54,15 @@ cd itp-canvas-for-coders
 To run weekly codebase, navigate to the folder, install dependencies (once), and start the dev server.
 
 ```sh
+# npm
 cd week1 &&
 npm install &&
 npm run dev
+
+# yarn
+cd week1 &&
+yarn &&
+yarn dev
 ```
 
 
