@@ -24,7 +24,10 @@ Sometimes I imagine myself in an infinite room, completely isolated from the out
 In that space, only vast thoughts exist, and it would take million years to reach the edge.
 ```
 
-### Undone, Ólafur Arnalds
+```
+Are we alone?
+```
+
 ```
 As we get bigger and bigger  
 The distance between ourselves  
@@ -47,6 +50,8 @@ We're all thinking
 "This is the end of my life"  
 And then we're born and it's a surprise  
 'Cause it's just the beginning
+
+- Undone, Ólafur Arnalds
 ```
 
 ## Week 1 reference
