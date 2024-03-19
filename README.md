@@ -119,6 +119,7 @@ Presentation
 ## Resources
 - [Three.js fundamentals](https://threejs.org/manual/#en/fundamentals)
 - [Three.js editor](https://threejs.org/editor/)
+- [Three.js examples](https://threejs.org/examples/)
 - [Google experiments](https://experiments.withgoogle.com/)
 - [@react-three/fiber](https://docs.pmnd.rs/react-three-fiber/getting-started/examples)
 - [@react-three/drei](https://github.com/pmndrs/drei)
