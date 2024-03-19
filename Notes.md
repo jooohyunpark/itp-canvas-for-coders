@@ -1,8 +1,6 @@
 # Notes
 
-## Week 1
-
-### Reimagining web spaces
+## Reimagining web spaces
 
 - [Doors](https://doors.parkjoohyun.com/)
 - [TV Buddha](https://tv-buddha.parkjoohyun.com/)
@@ -19,9 +17,7 @@
 - [Amazon Coach brand store](https://www.amazon.com/stores/page/F3D8452D-98F8-46A6-8B8B-55A5B6B79F80)
 
 
-### Developing ideas
-
-#### Statement
+## Developing ideas through statements
 
 ```
 Buddha in an infinite, stateless space isolated from the outer world.
@@ -53,14 +49,11 @@ And then we're born and it's a surprise
 – Undone, Ólafur Arnalds
 ```
 
+## Week 1 reference
+- [exercise_scene.json](https://github.com/jooohyunpark/itp-canvas-for-coders/blob/main/week2/exercise_scene.json)
+ 
 
-#### Iteration
-
-
-
-## Week 2
-
+## Week 2 reference
 - [Three.js camera comparison](https://github.com/jooohyunpark/threejs-camera-comparison) - Perspective vs Orthographic
 - [Common Three.js code pattern](https://github.com/mrdoob/three.js/blob/master/examples/misc_controls_orbit.html)
-- [exercise_scene.json](https://github.com/jooohyunpark/itp-canvas-for-coders/blob/main/week2/exercise_scene.json)
 
