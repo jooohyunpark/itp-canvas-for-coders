@@ -18,7 +18,6 @@
 - [Shader on scroll](https://tympanus.net/Tutorials/ShadersOnScroll/)
 - [Amazon Coach brand store](https://www.amazon.com/stores/page/F3D8452D-98F8-46A6-8B8B-55A5B6B79F80)
 
-
 ## Developing ideas through statements
 
 ```
@@ -31,36 +30,36 @@ Are we alone?
 ```
 
 ```
-As we get bigger and bigger  
-The distance between ourselves  
-And that other outside world  
+As we get bigger and bigger
+The distance between ourselves
+And that other outside world
 Becomes smaller and smaller
 
-And this world that we are inside  
-Which seems so huge in the beginning  
-And so infinitely welcoming  
-Has become very uncomfortable  
-And we are obliged to be born  
+And this world that we are inside
+Which seems so huge in the beginning
+And so infinitely welcoming
+Has become very uncomfortable
+And we are obliged to be born
 
-And my father says that  
-Birth is so chaotic and violent  
-That he's sure that at the moment of birth  
-We're all thinking  
+And my father says that
+Birth is so chaotic and violent
+That he's sure that at the moment of birth
+We're all thinking
 
-"This is it"  
-"This is death"  
-"This is the end of my life"  
-And then we're born and it's a surprise  
+"This is it"
+"This is death"
+"This is the end of my life"
+And then we're born and it's a surprise
 'Cause it's just the beginning
 
 - Undone, Ólafur Arnalds
 ```
 
 ## Week 1 reference
-- [exercise_scene.json](https://github.com/jooohyunpark/itp-canvas-for-coders/blob/main/week2/exercise_scene.json)
- 
+
+- [exercise_scene.json](https://github.com/jooohyunpark/itp-canvas-for-coders/blob/main/week1/public/exercise_scene.json)
 
 ## Week 2 reference
+
 - [Three.js camera comparison](https://github.com/jooohyunpark/threejs-camera-comparison) - Perspective vs Orthographic
 - [Common Three.js code pattern](https://github.com/mrdoob/three.js/blob/master/examples/misc_controls_orbit.html)
-
