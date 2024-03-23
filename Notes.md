@@ -26,8 +26,10 @@ In that space, only vast thoughts exist, and it would take million years to reac
 ```
 
 ```
-A man starts driving without knowing where he is going. He alternates between turning right and left, and finally he gets stuck at the end of a forest road.
-Soon it gets dark and starts to snow, but instead of going back to find help, he ventures, foolishly, into the dark forest.
+A man starts driving without knowing where he is going.
+He alternates between turning right and left, and finally he gets stuck at the end of a forest road.
+Soon it gets dark and starts to snow,
+but instead of going back to find help, he ventures, foolishly, into the dark forest.
 
 - A Shining, Jon Fosse
 ```
