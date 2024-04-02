@@ -29,12 +29,11 @@ In that space, only vast thoughts exist, and it would take million years to reac
 ```
 
 ```
-A man starts driving without knowing where he is going.
-He alternates between turning right and left, and finally he gets stuck at the end of a forest road.
-Soon it gets dark and starts to snow,
-but instead of going back to find help, he ventures, foolishly, into the dark forest.
+A recently deceased man returns as a ghost to his suburban home to console his bereft wife,
+only to find that in his spectral state, he has become stuck in time,
+forced to watch passively as the life he knew and the woman he loves slowly slip away.
 
-- A Shining, Jon Fosse
+- A Ghost Story
 ```
 
 ```
