@@ -6,7 +6,8 @@ export default defineConfig({
     port: 3000,
   },
   root: resolve(__dirname, "src"),
+  publicDir: resolve(__dirname, "public"),
   build: {
-    outDir: "../dist",
+    outDir: resolve(__dirname, "dist"),
   },
 });
