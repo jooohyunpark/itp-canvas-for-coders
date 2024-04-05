@@ -106,10 +106,10 @@ controls.maxDistance = 1000;
 // controls.lookSpeed = 0.02;
 // const clock = new THREE.Clock(); // requires delta time value in update()
 
-/*
-////////////////////////////////////////////////////////////////////////////////
-objects, you don't need to modify for week2 
-*/
+/**
+ * --------------------------------------------
+ * objects, you don't need to modify for week2
+ */
 
 // ground
 const groundGeometry = new THREE.PlaneGeometry(10000, 10000);
@@ -140,7 +140,9 @@ sphereMesh.position.y = 100;
 sphereMesh.scale.setScalar(5);
 scene.add(sphereMesh);
 
-////////////////////////////////////////////////////////////////////////////////
+/**
+ * --------------------------------------------
+ */
 
 // resize
 const onResize = () => {
