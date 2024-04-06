@@ -108,7 +108,7 @@ yarn dev
 - [Deploying site](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site)
 
 ### Week 7 - Final
-Presentation
+- Presentation
 
 
 ## Tools
