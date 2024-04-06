@@ -60,9 +60,9 @@ const onResize = () => {
 
 window.addEventListener("resize", onResize);
 
-/* 
-//////////////////////////////////////////////////////////////////////////////
-*/
+/**
+ * //////////////////////////////////////////////////////////////////////////////
+ */
 
 // spheres
 const sphereGeometry = new THREE.SphereGeometry(2, 128, 128);
@@ -198,9 +198,9 @@ const onClick = () => {
 };
 window.addEventListener("click", onClick);
 
-/* 
-//////////////////////////////////////////////////////////////////////////////
-*/
+/**
+ * //////////////////////////////////////////////////////////////////////////////
+ */
 
 const button = document.querySelector("#bg-button");
 
@@ -217,4 +217,5 @@ const onButtonClick = () => {
     ease: "linear",
   });
 };
+
 button.addEventListener("click", onButtonClick);

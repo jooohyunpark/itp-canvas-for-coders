@@ -110,12 +110,12 @@ const animate = () => {
 
 animate();
 
-/* 
-//////////////////////////////////////////////////////////////////////
-gsap animations 
-Properties: https://greensock.com/docs/v3/GSAP/gsap.to()
-Ease: https://greensock.com/docs/v3/Eases
-*/
+/**
+ * //////////////////////////////////////////////////////////////////////
+ * gsap animations
+ * Properties: https://greensock.com/docs/v3/GSAP/gsap.to()
+ * Ease: https://greensock.com/docs/v3/Eases
+ */
 
 // rotate torusknot
 gsap.to(torusKnotMesh.rotation, {
@@ -155,7 +155,7 @@ gsap.to(rectLight.color, {
   ease: "power2.inOut",
 });
 
-// // back sphere position & scale
+// back sphere position & scale
 const count = 10;
 const gap = 2;
 

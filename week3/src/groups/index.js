@@ -52,9 +52,9 @@ const onResize = () => {
 
 window.addEventListener("resize", onResize);
 
-/* 
-//////////////////////////////////////////////////////////////////////////////
-*/
+/**
+ * //////////////////////////////////////////////////////////////////////////////
+ */
 
 const geometry = new THREE.BoxGeometry(5, 5, 5);
 const material = new THREE.MeshNormalMaterial();
@@ -83,13 +83,13 @@ earthGroup.add(moon);
 sunGroup.add(earthGroup);
 scene.add(sunGroup);
 
-/* 
-scene > sunGroup > sun / (earthGroup > earth / moon)
-*/
+/**
+ * scene > sunGroup > sun / (earthGroup > earth / moon)
+ */
 
-/* 
-//////////////////////////////////////////////////////////////////////////////
-*/
+/**
+ * //////////////////////////////////////////////////////////////////////////////
+ */
 
 // animate
 const animate = (time) => {

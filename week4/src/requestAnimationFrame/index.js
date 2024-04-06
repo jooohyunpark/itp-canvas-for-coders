@@ -116,11 +116,11 @@ const animate = (time) => {
   sphereGroup.rotation.y = Math.PI * -0.12 * time;
   sphereMesh.position.y = 5 + Math.cos(time);
 
-  /*    
-  h — hue value between 0.0 and 1.0
-  s — saturation value between 0.0 and 1.0
-  l — lightness value between 0.0 and 1.0
-  */
+  /**
+   * h — hue value between 0.0 and 1.0
+   * s — saturation value between 0.0 and 1.0
+   * l — lightness value between 0.0 and 1.0
+   */
   // rectLight.color.setHSL(Math.abs(Math.cos(time * 0.1)), 1, 0.5);
 
   renderer.render(scene, camera);

@@ -72,13 +72,13 @@ const boxMesh = new THREE.Mesh(boxGeometry, boxMaterial);
 boxMesh.position.y = 2;
 scene.add(boxMesh);
 
-/* 
-//////////////////////////////////////////////////////////////////////////////
-*/
+/**
+ * //////////////////////////////////////////////////////////////////////////////
+ */
 
-/* 
-3D Model
-*/
+/**
+ * 3D Model
+ */
 
 // Instantiate a loader
 const loader = new GLTFLoader();
@@ -114,9 +114,9 @@ loader.load(
   }
 );
 
-/* 
-3D Model - Animation Mixer
-*/
+/**
+ * 3D Model - Animation Mixer
+ */
 
 let mixer;
 
@@ -146,9 +146,9 @@ loader.load("/fish.glb", function (gltf) {
   scene.add(fisthGroup);
 });
 
-/* 
-Positional Audio
-*/
+/**
+ * Positional Audio
+ */
 
 // create an AudioListener and add it to the camera
 const listener = new THREE.AudioListener();
@@ -208,9 +208,9 @@ sphereMesh2.position.set(-25, 5, -25);
 sphereMesh2.add(sound2);
 scene.add(sphereMesh2);
 
-/* 
-//////////////////////////////////////////////////////////////////////////////
-*/
+/**
+ * //////////////////////////////////////////////////////////////////////////////
+ */
 
 // add clock for delta time
 const clock = new THREE.Clock();
