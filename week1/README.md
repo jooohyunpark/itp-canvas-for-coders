@@ -1,10 +1,13 @@
 # Week 1
 
 ## Description
-This is a week 1 codebase.
+
+The most basic Three.js demo. You can simply run the project to play with it.
 
 ## Usage
-Install dependencies: 
+
+Install dependencies:
+
 ```sh
 # npm
 npm install
@@ -13,11 +16,32 @@ npm install
 yarn
 ```
 
-To run the project:
+Start dev server:
+
 ```sh
 # npm
 npm run dev
 
 # yarn
 yarn dev
+```
+
+Build for production:
+
+```sh
+# npm
+npm run build
+
+# yarn
+yarn build
+```
+
+Locally preview the production build:
+
+```sh
+# npm
+npm run preview
+
+# yarn
+yarn preview
 ```

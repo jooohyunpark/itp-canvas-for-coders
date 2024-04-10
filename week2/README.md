@@ -1,6 +1,56 @@
 # Week 2
 
-- [Three.js camera comparison](https://github.com/jooohyunpark/threejs-camera-comparison) - Perspective vs Orthographic
-- [Common Three.js code pattern](https://github.com/mrdoob/three.js/blob/master/examples/misc_controls_orbit.html)
-- [exercise_scene.json](https://github.com/jooohyunpark/itp-canvas-for-coders/blob/main/week2/exercise_scene.json)
+## Description
 
+This code base aims to cover fundamental concepts of a Three.js project.
+
+- [Vectors](https://threejs.org/docs/index.html#api/en/math/Vector3)
+- [Colors](https://threejs.org/docs/index.html#api/en/math/Color)
+- [Renderer](https://threejs.org/manual/#en/rendertargets)
+- [Scene](https://threejs.org/manual/#en/scenegraph)
+- [Cameras](https://threejs.org/manual/#en/cameras)
+- [Lights](https://threejs.org/manual/#en/lights)
+- Helpers
+- Controls
+
+## Usage
+
+Install dependencies:
+
+```sh
+# npm
+npm install
+
+# yarn
+yarn
+```
+
+Start dev server:
+
+```sh
+# npm
+npm run dev
+
+# yarn
+yarn dev
+```
+
+Build for production:
+
+```sh
+# npm
+npm run build
+
+# yarn
+yarn build
+```
+
+Locally preview the production build:
+
+```sh
+# npm
+npm run preview
+
+# yarn
+yarn preview
+```
