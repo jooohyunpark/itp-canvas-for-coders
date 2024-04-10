@@ -2,7 +2,7 @@
 
 ## Description
 
-This code base aims to cover geometry, material, and object in Three.js
+This code base aims to cover geometry, material, mesh, and object in Three.js
 
 - [Primitives](https://threejs.org/manual/#en/primitives)
 - [Materials](https://threejs.org/manual/#en/materials)
