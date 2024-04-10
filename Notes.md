@@ -71,7 +71,16 @@ Are we alone?
 
 - [exercise_scene.json](https://github.com/jooohyunpark/itp-canvas-for-coders/blob/main/week1/public/exercise_scene.json)
 
+
 ## Week 2 reference
 
-- [Three.js camera comparison](https://github.com/jooohyunpark/threejs-camera-comparison) - Perspective vs Orthographic
 - [Common Three.js code pattern](https://github.com/mrdoob/three.js/blob/master/examples/misc_controls_orbit.html)
+- [Three.js camera comparison](https://github.com/jooohyunpark/threejs-camera-comparison) - Perspective vs Orthographic
+
+
+## Week 3 reference
+- [TTFLoader example](https://threejs.org/examples/?q=font#webgl_loader_ttf)
+
+
+## Week 6 reference
+- [GitHub page test repo](https://github.com/jooohyunpark/github-page)
