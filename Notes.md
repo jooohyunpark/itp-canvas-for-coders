@@ -81,3 +81,6 @@ Are we alone?
 ## Week 3 reference
 - [TTFLoader example](https://threejs.org/examples/?q=font#webgl_loader_ttf)
 
+
+## Week 6 reference
+- [GitHub page test repo](https://github.com/jooohyunpark/github-page)
