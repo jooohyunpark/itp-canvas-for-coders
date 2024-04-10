@@ -2,7 +2,7 @@
 
 ## Description
 
-The most basic Three.js demo. You can simply run the project to play with it.
+The most basic Three.js demo. You can simply run the project to play around with it.
 
 ## Usage
 

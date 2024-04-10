@@ -2,7 +2,7 @@
 
 ## Description
 
-This code base aims to cover fundamental concepts of a Three.js project.
+This code base aims to cover fundamental concepts of a Three.js.
 
 - [Vectors](https://threejs.org/docs/index.html#api/en/math/Vector3)
 - [Colors](https://threejs.org/docs/index.html#api/en/math/Color)
