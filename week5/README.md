@@ -1,11 +1,12 @@
-# Week 6
+# Week 5
 
 ## Description
 
-This code base covers how to interact with Three.js objects.
+This code base covers using 3D model and positional audio in Three.js
 
-- [Raycaster](https://threejs.org/docs/index.html#api/en/core/Raycaster)
-- [Deploying site](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site)
+- [3D Models](https://threejs.org/docs/index.html#manual/en/introduction/Loading-3D-models)
+- [Positional audio](https://threejs.org/docs/#api/en/audio/PositionalAudio)
+- [Shadows](https://threejs.org/manual/#en/shadows)
 
 ## Usage
 

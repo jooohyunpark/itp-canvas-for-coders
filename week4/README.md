@@ -1,11 +1,11 @@
-# Week 6
+# Week 4
 
 ## Description
 
-This code base covers how to interact with Three.js objects.
+This code base covers different animation methods.
 
-- [Raycaster](https://threejs.org/docs/index.html#api/en/core/Raycaster)
-- [Deploying site](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site)
+- [requestAnimationFrame](https://developer.mozilla.org/en-US/docs/Web/API/window/requestAnimationFrame)
+- [GSAP](<https://greensock.com/docs/v3/GSAP/gsap.to()>)
 
 ## Usage
 
