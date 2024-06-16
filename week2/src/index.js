@@ -5,6 +5,14 @@ import { MapControls } from "three/addons/controls/MapControls";
 import { FirstPersonControls } from "three/addons/controls/FirstPersonControls";
 import { RectAreaLightHelper } from "three/addons/helpers/RectAreaLightHelper";
 
+// vector
+const myVector = new THREE.Vector3(1, 2, 3);
+console.log("myVector:", myVector);
+
+// color
+const myColor = new THREE.Color("blue");
+console.log("myColor:", myColor);
+
 // app
 const app = document.querySelector("#app");
 
@@ -48,39 +56,39 @@ const ambientLight = new THREE.AmbientLight(0xffffff, 0.1);
 scene.add(ambientLight);
 
 // directional light
-const dirLight = new THREE.DirectionalLight("#0000ff");
+const dirLight = new THREE.DirectionalLight(0x0000ff);
 dirLight.position.set(-100, 100, 0);
 scene.add(dirLight);
 const dirLighthelper = new THREE.DirectionalLightHelper(dirLight, 10);
 scene.add(dirLighthelper);
 
-// point light
-const pointLight = new THREE.PointLight(0xff0000, 2, 300);
+// point light ( color, intensity : Float, distance : Number, decay : Float )
+const pointLight = new THREE.PointLight(0xff0000, 2, 200, 0.1);
 pointLight.position.set(-200, 100, 0);
 scene.add(pointLight);
 const pointLightHelper = new THREE.PointLightHelper(pointLight, 10);
 scene.add(pointLightHelper);
 
-// area light
+// area light ( color : Integer, intensity : Float, width : Float, height : Float )
 const rectLight = new THREE.RectAreaLight(0x00ff00, 3, 50, 100);
 rectLight.position.set(0, 50, 200);
 scene.add(rectLight);
 const rectLightHelper = new RectAreaLightHelper(rectLight);
 scene.add(rectLightHelper);
 
-// spot light
+// spot light ( color : Integer, intensity : Float, distance : Float, angle : Radians, penumbra : Float, decay : Float )
 const spotLight = new THREE.SpotLight(0xffff00, 3);
+spotLight.distance = 300;
 spotLight.angle = Math.PI * 0.1;
 spotLight.penumbra = 0.3;
-spotLight.decay = 1;
-spotLight.distance = 300;
+spotLight.decay = 0.1;
 spotLight.position.set(100, 100, -300);
 spotLight.target.position.set(0, 0, -200);
 scene.add(spotLight, spotLight.target);
 const spotLightHelper = new THREE.SpotLightHelper(spotLight);
 scene.add(spotLightHelper);
 
-// hemisphere light
+// hemisphere light ( skyColor : Integer, groundColor : Integer, intensity : Float )
 const hemiLight = new THREE.HemisphereLight(0x000000, 0x00ffff, 1);
 hemiLight.position.set(0, 200, 0);
 scene.add(hemiLight);
