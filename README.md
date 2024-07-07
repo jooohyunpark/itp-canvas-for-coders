@@ -25,7 +25,7 @@ At the completion of this course, the students will:
 #### Invent creativity together 💡
 All ideas are valuable. We respect every perspective and encourage boundless creativity.
 
-#### Learn by doing 🧠
+#### Learn by doing ✍️
 Ideate, research, prototype, and iterate. Dive right into writing code, and don’t hesitate to break it.  
 
 #### Be curious 👀
