@@ -75,7 +75,7 @@ yarn dev
 - [Three.js wrappers/frameworks](https://threejs.org/docs/#manual/en/introduction/Libraries-and-Plugins)
 - [Three.js editor](https://threejs.org/editor/)
 - Thinking in xyz space
-- [Starting a Vite project](https://vitejs.dev/guide/)
+- [Getting started with a Vite project]([https://vitejs.dev/guide/](https://vitejs.dev/guide/#scaffolding-your-first-vite-project))
 
 ### Week 2 - Concepts
 - [Vectors](https://threejs.org/docs/index.html#api/en/math/Vector3)
