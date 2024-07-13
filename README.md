@@ -69,7 +69,7 @@ yarn dev
 ## Weekly Topics
 
 ### Week 1 - Intro
-- [Reimagining web spaces](https://github.com/jooohyunpark/itp-canvas-for-coders/tree/main/week1#projects-built-with-web-3d)
+- [Reimagining web spaces](https://github.com/jooohyunpark/itp-canvas-for-coders/blob/main/Notes.md#reimagining-web-spaces)
 - [Three.js documentation](https://threejs.org/docs/index.html#manual/en/introduction/Creating-a-scene)
 - [Three.js fundamentals](https://threejs.org/manual/#en/fundamentals)
 - [Three.js wrappers/frameworks](https://threejs.org/docs/#manual/en/introduction/Libraries-and-Plugins)
