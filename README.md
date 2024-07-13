@@ -73,8 +73,7 @@ yarn dev
 - [Three.js documentation](https://threejs.org/docs/index.html#manual/en/introduction/Creating-a-scene)
 - [Three.js fundamentals](https://threejs.org/manual/#en/fundamentals)
 - [Three.js wrappers/frameworks](https://threejs.org/docs/#manual/en/introduction/Libraries-and-Plugins)
-- [Three.js editor](https://threejs.org/editor/)
-- Thinking in xyz space
+- [Thinking in xyz space (Three.js editor)](https://threejs.org/editor/)
 - [Getting started with a Vite project](https://vitejs.dev/guide/#scaffolding-your-first-vite-project)
 
 ### Week 2 - Concepts
