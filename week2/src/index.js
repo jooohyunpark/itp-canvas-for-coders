@@ -54,6 +54,7 @@ scene.add(axesHelper);
 // ambient light
 const ambientLight = new THREE.AmbientLight(0xffffff, 0.1);
 scene.add(ambientLight);
+console.log("ambientLight", ambientLight);
 
 // directional light
 const dirLight = new THREE.DirectionalLight(0x0000ff);
