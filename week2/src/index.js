@@ -27,14 +27,14 @@ const scene = new THREE.Scene();
 scene.background = new THREE.Color(0x000000);
 // scene.fog = new THREE.FogExp2(0x000000, 0.0007);
 
-// perspective camera
+// perspective camera ( fov, aspect, near, far )
 const camera = new THREE.PerspectiveCamera(
   60,
   window.innerWidth / window.innerHeight,
   0.1,
   3000
 );
-// orthographic camera
+// orthographic camera ( left, right, top, bottom, near, far )
 // const camera = new THREE.OrthographicCamera(
 //   window.innerWidth / -2,
 //   window.innerWidth / 2,
@@ -62,21 +62,21 @@ scene.add(dirLight);
 const dirLighthelper = new THREE.DirectionalLightHelper(dirLight, 10);
 scene.add(dirLighthelper);
 
-// point light ( color, intensity : Float, distance : Number, decay : Float )
+// point light ( color, intensity, distance, decay )
 const pointLight = new THREE.PointLight(0xff0000, 2, 200, 0.1);
 pointLight.position.set(-200, 100, 0);
 scene.add(pointLight);
 const pointLightHelper = new THREE.PointLightHelper(pointLight, 10);
 scene.add(pointLightHelper);
 
-// area light ( color : Integer, intensity : Float, width : Float, height : Float )
+// area light ( color, intensity, width, height )
 const rectLight = new THREE.RectAreaLight(0x00ff00, 3, 50, 100);
 rectLight.position.set(0, 50, 200);
 scene.add(rectLight);
 const rectLightHelper = new RectAreaLightHelper(rectLight);
 scene.add(rectLightHelper);
 
-// spot light ( color : Integer, intensity : Float, distance : Float, angle : Radians, penumbra : Float, decay : Float )
+// spot light ( color, intensity, distance, angle, penumbra, decay )
 const spotLight = new THREE.SpotLight(0xffff00, 3);
 spotLight.distance = 300;
 spotLight.angle = Math.PI * 0.1;
@@ -88,7 +88,7 @@ scene.add(spotLight, spotLight.target);
 const spotLightHelper = new THREE.SpotLightHelper(spotLight);
 scene.add(spotLightHelper);
 
-// hemisphere light ( skyColor : Integer, groundColor : Integer, intensity : Float )
+// hemisphere light ( skyColor, groundColor, intensity )
 const hemiLight = new THREE.HemisphereLight(0x000000, 0x00ffff, 1);
 hemiLight.position.set(0, 200, 0);
 scene.add(hemiLight);
