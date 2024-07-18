@@ -8,29 +8,30 @@
 - [Office hours](https://calendar.app.google/5MMSKGww8qTmJd5q8)
   - 09/05/2024 - 10/17/2024, Thursday, 8:30pm-9:30pm, 370 Jay Street (Room TBA) Loc: Brooklyn Campus
 
-
 ## Course Description
-Web browser is a 21st-century canvas. While being one of the most common mediums today, web space has infinite possibilities for new aesthetics. This course covers three.js fundamentals, providing students with the skills and insights to create arts in web 3D.
 
+Web browser is a 21st-century canvas. While being one of the most common mediums today, web space has infinite possibilities for new aesthetics. This course covers three.js fundamentals, providing students with the skills and insights to create arts in web 3D.
 
 ## Course Objectives
 
 At the completion of this course, the students will:
 
 1. Be comfortable prototyping web 3D experience with three.js.
-2. Develop perspectives on using web pages as a creative medium. 
-
+2. Develop perspectives on using web pages as a creative medium.
 
 ## Values
+
 #### Invent creativity together 💡
+
 All ideas are valuable. We respect every perspective and encourage boundless creativity.
 
 #### Learn by doing ✍️
-Ideate, research, prototype, and iterate. Dive right into writing code, and don’t hesitate to break it.  
+
+Ideate, research, prototype, and iterate. Dive right into writing code, and don’t hesitate to break it.
 
 #### Be curious 👀
-Feedback matters as much as presentation. Your constructive opinion can inspire someone to create great art.
 
+Feedback matters as much as presentation. Your constructive opinion can inspire someone to create great art.
 
 ## Prerequisites
 
@@ -40,7 +41,6 @@ Please setup belows on your machine before the first class.
 - [Node](https://nodejs.org/en/)
 - [npm](https://www.npmjs.com/) (Comes with Node.js installation)
 - [Git](https://github.com/git-guides/install-git)
-
 
 ## Get Started
 
@@ -65,10 +65,10 @@ yarn &&
 yarn dev
 ```
 
-
 ## Weekly Topics
 
 ### Week 1 - Intro
+
 - [Reimagining web spaces](https://github.com/jooohyunpark/itp-canvas-for-coders/blob/main/Notes.md#reimagining-web-spaces)
 - [Three.js documentation](https://threejs.org/docs/index.html#manual/en/introduction/Creating-a-scene)
 - [Three.js fundamentals](https://threejs.org/manual/#en/fundamentals)
@@ -77,9 +77,11 @@ yarn dev
 - [Getting started with a Vite project](https://vitejs.dev/guide/#scaffolding-your-first-vite-project)
 
 ### Week 2 - Concepts
+
 - [Vectors](https://threejs.org/docs/index.html#api/en/math/Vector3)
 - [Colors](https://threejs.org/docs/index.html#api/en/math/Color)
-- [Renderer](https://threejs.org/manual/#en/rendertargets) 
+- [Object properties](https://threejs.org/docs/#api/en/core/Object3D)
+- [Renderer](https://threejs.org/manual/#en/rendertargets)
 - [Scene](https://threejs.org/manual/#en/scenegraph)
 - [Cameras](https://threejs.org/manual/#en/cameras)
 - [Lights](https://threejs.org/manual/#en/lights)
@@ -87,28 +89,31 @@ yarn dev
 - [Controls](https://threejs.org/docs/#examples/en/controls/OrbitControls)
 
 ### Week 3 - Objects
+
 - [Primitives](https://threejs.org/manual/#en/primitives)
 - [Materials](https://threejs.org/manual/#en/materials)
 - [Textures](https://threejs.org/manual/#en/textures)
-- [Object properties](https://threejs.org/docs/#api/en/core/Object3D)
 - [Group](https://threejs.org/docs/index.html#api/en/objects/Group)
 
 ### Week 4 - Animations
+
 - [requestAnimationFrame](https://developer.mozilla.org/en-US/docs/Web/API/window/requestAnimationFrame)
-- [GSAP](https://greensock.com/docs/v3/GSAP/gsap.to())
+- [GSAP](<https://greensock.com/docs/v3/GSAP/gsap.to()>)
 
 ### Week 5 - 3D Assets
+
 - [3D Models](https://threejs.org/docs/index.html#manual/en/introduction/Loading-3D-models)
 - [Positional audio](https://threejs.org/docs/#api/en/audio/PositionalAudio)
 - [Shadows](https://threejs.org/manual/#en/shadows)
 
 ### Week 6 - Interactions
+
 - [Raycaster](https://threejs.org/docs/index.html#api/en/core/Raycaster)
 - [Deploying site](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site)
 
 ### Week 7 - Final
-- Presentation
 
+- Presentation
 
 ## Tools
 
@@ -116,8 +121,8 @@ yarn dev
 - [Vite](https://vitejs.dev/) - Javascript build tool
 - [GSAP](https://greensock.com/gsap/) - Animation library
 
-
 ## Resources
+
 - [Three.js fundamentals](https://threejs.org/manual/#en/fundamentals)
 - [Three.js editor](https://threejs.org/editor/)
 - [Three.js examples](https://threejs.org/examples/)
@@ -125,10 +130,9 @@ yarn dev
 - [@react-three/fiber](https://docs.pmnd.rs/react-three-fiber/getting-started/examples)
 - [@react-three/drei](https://github.com/pmndrs/drei)
 
-
 ## Equipment
-You will need a modern laptop (4 years old or younger is a good rule of thumb). Most required software is freely available.
 
+You will need a modern laptop (4 years old or younger is a good rule of thumb). Most required software is freely available.
 
 ## Evaluation
 
@@ -152,7 +156,6 @@ Class will culminate with final projects. You are expected to push your abilitie
 
 Plagiarism is presenting someone else’s work as though it were your own. More specifically, plagiarism is to present as your own: A sequence of words quoted without quotation marks from another writer or a paraphrased passage from another writer’s work or facts, ideas or images composed by someone else.
 
-
 ## Use of Free and Open Source Code from Examples
 
 The following is adapted by permission [from Golan Levin’s Interactivity and Computation Course (Fall 2018)](http://cmuems.com/2018/60212f/syllabus/academic-integrity/) at Carnegie Mellon University.
@@ -165,10 +168,9 @@ You must cite the source of any code you use. Please note the following expectat
 
 **Be Careful.** It sometimes happens that an artist places the entire source code for their sketch or artwork online, as a resource from which others can learn. Assignments given in new-media arts courses are often similar; you may also discover the work of a student in some other class or school, who has posted code for a project which responds to a similar assignment. You should probably avoid this code. At the very least, you should be careful about approaching such code for possible re-use. If it is necessary to do so, it is best to extract components that solve a specific technical problem, rather than those parts which operate to create a poetic experience. Your challenge, if and/or when you work with others' code, is to make it your own. It should be clear that downloading an artwork from someone's GitHub and simply changing the colors would be disgracefully lazy. And doing so without proper citation would be outright plagiarism.
 
-
 ## Statement of Principle
 
-The core of the educational experience at the Tisch School of the Arts is the creation of original academic and artistic work by students for the critical review of faculty members.  It is therefore of the utmost importance that students at all times provide their instructors with an accurate sense of their current abilities and knowledge in order to receive appropriate constructive criticism and advice.  Any attempt to evade that essential, transparent transaction between instructor and student through plagiarism or cheating is educationally self-defeating and a grave violation of Tisch School of the Arts community standards.  For all the details on plagiarism, please refer to page 10 of the Tisch School of the Arts, Policies and Procedures Handbook, which can be found online at https://tisch.nyu.edu/student-affairs/important-resources/tisch-policies-and-handbooks
+The core of the educational experience at the Tisch School of the Arts is the creation of original academic and artistic work by students for the critical review of faculty members. It is therefore of the utmost importance that students at all times provide their instructors with an accurate sense of their current abilities and knowledge in order to receive appropriate constructive criticism and advice. Any attempt to evade that essential, transparent transaction between instructor and student through plagiarism or cheating is educationally self-defeating and a grave violation of Tisch School of the Arts community standards. For all the details on plagiarism, please refer to page 10 of the Tisch School of the Arts, Policies and Procedures Handbook, which can be found online at https://tisch.nyu.edu/student-affairs/important-resources/tisch-policies-and-handbooks
 
 ## Statement on Accessibility
 
