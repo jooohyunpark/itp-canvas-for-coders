@@ -21,7 +21,7 @@
 
 ## Developing ideas through statements
 ```
-Visualization of the progress of human lifetime in an abstract and minimal composition.
+Eyes gazing at you all the time.
 ```
 
 ```
