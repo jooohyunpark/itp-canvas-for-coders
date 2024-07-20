@@ -21,7 +21,7 @@
 
 ## Developing ideas through statements
 ```
-Eyes gazing at you all the time.
+Eyes gazing at you without intent.
 ```
 
 ```
