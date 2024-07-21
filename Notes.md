@@ -6,7 +6,6 @@
 - [Doors](https://doors.parkjoohyun.com/)
 - [TV Buddha](https://tv-buddha.parkjoohyun.com/)
 - [Gaze](https://gaze.parkjoohyun.com/)
-- [Cloud in a Box](https://cloud-in-a-box.parkjoohyun.com/)
 - [Bruno Simon](https://bruno-simon.com/)
 - [t-SNE Map](https://experiments.withgoogle.com/t-sne-map)
 - [Star system](https://codepen.io/seanseansean/pen/vEjOvy)
