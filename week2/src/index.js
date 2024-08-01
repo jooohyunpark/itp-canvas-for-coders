@@ -34,7 +34,7 @@ const camera = new THREE.PerspectiveCamera(
   0.1,
   3000
 );
-// orthographic camera ( left, right, top, bottom, near, far )
+// // orthographic camera ( left, right, top, bottom, near, far )
 // const camera = new THREE.OrthographicCamera(
 //   window.innerWidth / -2,
 //   window.innerWidth / 2,
@@ -109,7 +109,7 @@ controls.zoomSpeed = 0.5;
 controls.minDistance = 10;
 controls.maxDistance = 1000;
 
-// first person control
+// // first person control
 // const controls = new FirstPersonControls(camera, renderer.domElement);
 // controls.movementSpeed = 100;
 // controls.lookSpeed = 0.02;
@@ -156,10 +156,10 @@ scene.add(sphereMesh);
 // resize
 const onResize = () => {
   camera.aspect = window.innerWidth / window.innerHeight;
-  // camera.left = window.innerWidth / -2;
-  // camera.right = window.innerWidth / 2;
-  // camera.top = window.innerHeight / 2;
-  // camera.bottom = window.innerHeight / -2;
+  // camera.left = window.innerWidth / -2; // orthographic camera
+  // camera.right = window.innerWidth / 2; // orthographic camera
+  // camera.top = window.innerHeight / 2; // orthographic camera
+  // camera.bottom = window.innerHeight / -2; // orthographic camera
   camera.updateProjectionMatrix();
   renderer.setSize(window.innerWidth, window.innerHeight);
 };
@@ -171,7 +171,7 @@ const animate = () => {
   requestAnimationFrame(animate);
 
   controls.update();
-  // controls.update(clock.getDelta());
+  // controls.update(clock.getDelta()); // first person control
 
   renderer.render(scene, camera);
 };
