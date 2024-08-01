@@ -116,7 +116,7 @@ const animate = () => {
     if (
       // look for raycasted sphere
       intersects[0].object.name === "sphere" &&
-      INTERSECTED !== intersects[0].object
+      intersects[0].object !== INTERSECTED
     ) {
       // reset previous intersected object's color
       if (INTERSECTED)
