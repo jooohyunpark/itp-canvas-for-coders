@@ -60,12 +60,8 @@ const geometry = new THREE.BoxGeometry(5, 5, 5);
 const material = new THREE.MeshNormalMaterial();
 
 // groups
-const sunGroup = new THREE.Group();
 const earthGroup = new THREE.Group();
-
-// sun
-const sun = new THREE.Mesh(geometry, material);
-sunGroup.add(sun);
+const sunGroup = new THREE.Group();
 
 // earth
 const earth = new THREE.Mesh(geometry, material);
@@ -79,7 +75,9 @@ moon.scale.setScalar(1 / 4);
 moon.position.z = -10;
 earthGroup.add(moon);
 
-// nesting
+// sun
+const sun = new THREE.Mesh(geometry, material);
+sunGroup.add(sun);
 sunGroup.add(earthGroup);
 scene.add(sunGroup);
 
