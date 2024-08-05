@@ -63,22 +63,21 @@ const material = new THREE.MeshNormalMaterial();
 const earthGroup = new THREE.Group();
 const sunGroup = new THREE.Group();
 
-// earth
-const earth = new THREE.Mesh(geometry, material);
-earthGroup.scale.setScalar(1 / 4);
-earthGroup.position.z = -10;
-earthGroup.add(earth);
-
 // moon
 const moon = new THREE.Mesh(geometry, material);
 moon.scale.setScalar(1 / 4);
 moon.position.z = -10;
-earthGroup.add(moon);
+
+// earth
+const earth = new THREE.Mesh(geometry, material);
+earthGroup.scale.setScalar(1 / 4);
+earthGroup.position.z = -10;
+earthGroup.add(earth, moon);
 
 // sun
 const sun = new THREE.Mesh(geometry, material);
-sunGroup.add(sun);
-sunGroup.add(earthGroup);
+sunGroup.add(sun, earthGroup);
+
 scene.add(sunGroup);
 
 /**
