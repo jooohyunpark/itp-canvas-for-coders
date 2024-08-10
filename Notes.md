@@ -9,6 +9,7 @@
 - [SymbiosisThreeJS](https://dannoblem.github.io/SymbiosisThreeJS/)
 - [Swiss Army Man](https://swissarmyman.com/)
 - [Bruno Simon](https://bruno-simon.com/)
+- [Exoplanet Travel Bureau](https://exoplanets.nasa.gov/alien-worlds/exoplanet-travel-bureau/)
 - [t-SNE Map](https://experiments.withgoogle.com/t-sne-map)
 - [Star system](https://codepen.io/seanseansean/pen/vEjOvy)
 - [Jesse Zhou portfolio](https://jesse-zhou.com/)
