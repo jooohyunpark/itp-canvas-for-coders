@@ -33,7 +33,7 @@ axesHelper.position.y = 0.001;
 scene.add(axesHelper);
 
 // ambient light
-const ambientLight = new THREE.AmbientLight(0xffffff, 0.4);
+const ambientLight = new THREE.AmbientLight(0xffffff, 1.5);
 scene.add(ambientLight);
 
 // control
@@ -62,7 +62,7 @@ window.addEventListener("resize", onResize);
  */
 
 // directional light
-const directionalLight = new THREE.DirectionalLight("white", 1.5);
+const directionalLight = new THREE.DirectionalLight("white", 2);
 directionalLight.position.set(-5, 10, 5);
 directionalLight.castShadow = true;
 scene.add(directionalLight);
@@ -152,8 +152,6 @@ scene.add(torusKnotMesh);
 
 // animate
 const animate = (timestamp) => {
-  requestAnimationFrame(animate);
-
   timestamp *= 0.001;
 
   bananaGroup.rotation.y = Math.PI * timestamp * 0.1;
@@ -163,4 +161,4 @@ const animate = (timestamp) => {
   controls.update();
 };
 
-animate();
+renderer.setAnimationLoop(animate);

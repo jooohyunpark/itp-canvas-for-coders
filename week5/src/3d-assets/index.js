@@ -36,11 +36,11 @@ const gridHelper = new THREE.GridHelper(100, 100, "#444444", "#cccccc");
 scene.add(gridHelper);
 
 // ambient light
-const ambientLight = new THREE.AmbientLight(0xffffff, 0.5);
+const ambientLight = new THREE.AmbientLight(0xffffff, 2);
 scene.add(ambientLight);
 
 // directional light
-const directionalLight = new THREE.DirectionalLight(0xffffff, 1);
+const directionalLight = new THREE.DirectionalLight(0xffffff, 2);
 directionalLight.position.set(-1, 1, 1);
 scene.add(directionalLight);
 
@@ -217,8 +217,6 @@ const clock = new THREE.Clock();
 
 // animate
 const animate = () => {
-  requestAnimationFrame(animate);
-
   const delta = clock.getDelta();
 
   if (mixer) mixer.update(delta);
@@ -227,4 +225,4 @@ const animate = () => {
   controls.update();
 };
 
-animate();
+renderer.setAnimationLoop(animate);
