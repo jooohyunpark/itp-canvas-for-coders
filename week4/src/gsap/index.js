@@ -110,11 +110,8 @@ const animate = () => {
   renderer.render(scene, camera);
   controls.update();
   stats.update();
-
-  requestAnimationFrame(animate);
 };
-
-animate();
+renderer.setAnimationLoop(animate);
 
 /**
  * //////////////////////////////////////////////////////////////////////
