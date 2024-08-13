@@ -2,6 +2,7 @@ import "./style.css";
 import * as THREE from "three";
 import { OrbitControls } from "three/addons/controls/OrbitControls";
 import { RectAreaLightHelper } from "three/addons/helpers/RectAreaLightHelper";
+import Stats from "stats.js";
 import { gsap } from "gsap";
 
 // app
@@ -100,12 +101,17 @@ sphereMesh.position.set(5, 5, 0);
 sphereGroup.add(sphereMesh);
 scene.add(sphereGroup);
 
+// stats
+const stats = new Stats();
+document.body.appendChild(stats.dom);
+
 // animate
 const animate = () => {
   requestAnimationFrame(animate);
 
   renderer.render(scene, camera);
   controls.update();
+  stats.update();
 };
 
 animate();
