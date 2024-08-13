@@ -107,11 +107,11 @@ document.body.appendChild(stats.dom);
 
 // animate
 const animate = () => {
-  requestAnimationFrame(animate);
-
   renderer.render(scene, camera);
   controls.update();
   stats.update();
+
+  requestAnimationFrame(animate);
 };
 
 animate();

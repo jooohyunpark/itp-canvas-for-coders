@@ -108,14 +108,14 @@ const clock = new THREE.Clock();
 
 // animate
 const animate = () => {
-  requestAnimationFrame(animate);
-
   const delta = clock.getDelta();
 
   if (mixer) mixer.update(delta);
 
   renderer.render(scene, camera);
   controls.update();
+
+  requestAnimationFrame(animate);
 };
 
 animate();

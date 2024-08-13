@@ -123,10 +123,10 @@ scene.add(torusMesh);
 
 // animate
 const animate = () => {
-  requestAnimationFrame(animate);
-
   renderer.render(scene, camera);
   controls.update();
+
+  requestAnimationFrame(animate);
 };
 
 animate();

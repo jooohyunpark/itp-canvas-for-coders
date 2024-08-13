@@ -106,8 +106,6 @@ document.body.appendChild(stats.dom);
 
 // animate
 const animate = (timestamp) => {
-  requestAnimationFrame(animate);
-
   // timestamp - convert millisecond to second
   timestamp *= 0.001;
 
@@ -126,6 +124,8 @@ const animate = (timestamp) => {
   renderer.render(scene, camera);
   controls.update();
   stats.update();
+
+  requestAnimationFrame(animate);
 };
 
 animate();

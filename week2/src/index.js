@@ -168,12 +168,11 @@ window.addEventListener("resize", onResize);
 
 // animate
 const animate = () => {
-  requestAnimationFrame(animate);
-
   controls.update();
   // controls.update(clock.getDelta()); // first person control
 
   renderer.render(scene, camera);
+  requestAnimationFrame(animate);
 };
 
 animate();

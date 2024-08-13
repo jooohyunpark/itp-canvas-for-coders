@@ -103,8 +103,6 @@ let INTERSECTED;
 
 // animate
 const animate = () => {
-  requestAnimationFrame(animate);
-
   // update the picking ray with the camera and pointer position
   raycaster.setFromCamera(pointer, camera);
 
@@ -140,6 +138,7 @@ const animate = () => {
 
   renderer.render(scene, camera);
   controls.update();
+  requestAnimationFrame(animate);
 };
 
 animate();
