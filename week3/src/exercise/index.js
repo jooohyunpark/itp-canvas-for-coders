@@ -34,7 +34,7 @@ const gridHelper = new THREE.GridHelper(100, 100, "#444444", "#cccccc");
 scene.add(gridHelper);
 
 // ambient light
-const ambientLight = new THREE.AmbientLight(0xffffff, 1);
+const ambientLight = new THREE.AmbientLight(0xffffff, 3);
 scene.add(ambientLight);
 
 // control

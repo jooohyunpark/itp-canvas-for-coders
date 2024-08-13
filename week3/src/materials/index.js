@@ -29,8 +29,8 @@ const axesHelper = new THREE.AxesHelper(5);
 scene.add(axesHelper);
 
 // ambient light
-const ambientLight = new THREE.AmbientLight(0xffffff, 0.3);
-const directionalLight = new THREE.DirectionalLight(0xffffff, 1);
+const ambientLight = new THREE.AmbientLight(0xffffff, 2);
+const directionalLight = new THREE.DirectionalLight(0xffffff, 2);
 directionalLight.position.set(-1, 1, 1);
 scene.add(ambientLight, directionalLight);
 

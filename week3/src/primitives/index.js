@@ -30,10 +30,6 @@ camera.position.set(20, 10, 20);
 const axesHelper = new THREE.AxesHelper(5);
 scene.add(axesHelper);
 
-// ambient light
-const ambientLight = new THREE.AmbientLight(0xffffff, 1);
-scene.add(ambientLight);
-
 // control
 const controls = new OrbitControls(camera, renderer.domElement);
 controls.enableDamping = true;

@@ -29,7 +29,7 @@ const axesHelper = new THREE.AxesHelper(5);
 scene.add(axesHelper);
 
 // ambient light
-const ambientLight = new THREE.AmbientLight(0xffffff, 2);
+const ambientLight = new THREE.AmbientLight("white", 3);
 scene.add(ambientLight);
 
 // control
