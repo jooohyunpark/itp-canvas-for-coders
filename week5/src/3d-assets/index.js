@@ -40,7 +40,7 @@ const ambientLight = new THREE.AmbientLight(0xffffff, 2);
 scene.add(ambientLight);
 
 // directional light
-const directionalLight = new THREE.DirectionalLight(0xffffff, 2);
+const directionalLight = new THREE.DirectionalLight(0xffffff, 1.5);
 directionalLight.position.set(-1, 1, 1);
 scene.add(directionalLight);
 
@@ -70,6 +70,7 @@ const boxGeometry = new THREE.BoxGeometry(2, 4, 2);
 const boxMaterial = new THREE.MeshStandardMaterial({ color: "white" });
 const boxMesh = new THREE.Mesh(boxGeometry, boxMaterial);
 boxMesh.position.y = 2;
+boxMesh.rotation.y = Math.PI * 0.25;
 scene.add(boxMesh);
 
 /**
@@ -189,9 +190,8 @@ const sphereGeometry = new THREE.SphereGeometry(1, 128, 128);
 const sphereMesh = new THREE.Mesh(
   sphereGeometry,
   new THREE.MeshStandardMaterial({
-    color: "#0C3227",
+    color: "#00ff00",
     roughness: 0.5,
-    metalness: 0.2,
   })
 );
 sphereMesh.position.set(25, 5, -25);
@@ -201,9 +201,8 @@ scene.add(sphereMesh);
 const sphereMesh2 = new THREE.Mesh(
   sphereGeometry,
   new THREE.MeshStandardMaterial({
-    color: "#12167f",
+    color: "#0000ff",
     roughness: 0.5,
-    metalness: 0.2,
   })
 );
 sphereMesh2.position.set(-25, 5, -25);
