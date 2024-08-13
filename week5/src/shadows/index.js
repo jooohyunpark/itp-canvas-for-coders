@@ -151,13 +151,13 @@ scene.add(torusKnotMesh);
  */
 
 // animate
-const animate = (time) => {
+const animate = (timestamp) => {
   requestAnimationFrame(animate);
 
-  time *= 0.001;
+  timestamp *= 0.001;
 
-  bananaGroup.rotation.y = Math.PI * time * 0.1;
-  torusKnotMesh.rotation.y = Math.PI * time * -0.1;
+  bananaGroup.rotation.y = Math.PI * timestamp * 0.1;
+  torusKnotMesh.rotation.y = Math.PI * timestamp * -0.1;
 
   renderer.render(scene, camera);
   controls.update();

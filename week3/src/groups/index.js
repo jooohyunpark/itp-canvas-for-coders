@@ -89,12 +89,12 @@ scene.add(sunGroup);
  */
 
 // animate
-const animate = (time) => {
+const animate = (timestamp) => {
   requestAnimationFrame(animate);
 
-  // time *= 0.001;
-  // earthGroup.rotation.y = Math.PI * time * 0.1;
-  // sunGroup.rotation.y = Math.PI * time * 0.1;
+  // timestamp *= 0.001;
+  // earthGroup.rotation.y = Math.PI * timestamp * 0.1;
+  // sunGroup.rotation.y = Math.PI * timestamp * 0.1;
 
   renderer.render(scene, camera);
   controls.update();

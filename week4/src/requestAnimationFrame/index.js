@@ -105,23 +105,23 @@ const stats = new Stats();
 document.body.appendChild(stats.dom);
 
 // animate
-const animate = (time) => {
+const animate = (timestamp) => {
   requestAnimationFrame(animate);
 
   // timestamp - convert millisecond to second
-  time *= 0.001;
+  timestamp *= 0.001;
 
   // aniamte objects
-  torusKnotMesh.rotation.y = Math.PI * 0.1 * time;
-  sphereGroup.rotation.y = Math.PI * -0.12 * time;
-  sphereMesh.position.y = 5 + Math.cos(time);
+  torusKnotMesh.rotation.y = Math.PI * 0.1 * timestamp;
+  sphereGroup.rotation.y = Math.PI * -0.12 * timestamp;
+  sphereMesh.position.y = 5 + Math.cos(timestamp);
 
   /**
    * h — hue value between 0.0 and 1.0
    * s — saturation value between 0.0 and 1.0
    * l — lightness value between 0.0 and 1.0
    */
-  // rectLight.color.setHSL(Math.abs(Math.cos(time * 0.1)), 1, 0.5);
+  // rectLight.color.setHSL(Math.abs(Math.cos(timestamp * 0.1)), 1, 0.5);
 
   renderer.render(scene, camera);
   controls.update();
