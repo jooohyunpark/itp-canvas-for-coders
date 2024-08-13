@@ -191,6 +191,7 @@ const sphereMesh = new THREE.Mesh(
   new THREE.MeshStandardMaterial({
     color: "#0C3227",
     roughness: 0.5,
+    metalness: 0.2,
   })
 );
 sphereMesh.position.set(25, 5, -25);
@@ -202,6 +203,7 @@ const sphereMesh2 = new THREE.Mesh(
   new THREE.MeshStandardMaterial({
     color: "#12167f",
     roughness: 0.5,
+    metalness: 0.2,
   })
 );
 sphereMesh2.position.set(-25, 5, -25);
