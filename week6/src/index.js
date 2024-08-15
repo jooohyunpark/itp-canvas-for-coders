@@ -32,7 +32,7 @@ axesHelper.position.y = 0.001;
 scene.add(axesHelper);
 
 // light
-const ambientLight = new THREE.AmbientLight("white", 1);
+const ambientLight = new THREE.AmbientLight("white", 2);
 const hemisphereLight = new THREE.HemisphereLight("#ffffff", "#ff00ff", 1);
 const directionalLight = new THREE.DirectionalLight("white", 1);
 directionalLight.position.set(-1, 1, 1);
@@ -138,10 +138,8 @@ const animate = () => {
 
   renderer.render(scene, camera);
   controls.update();
-  requestAnimationFrame(animate);
 };
-
-animate();
+renderer.setAnimationLoop(animate);
 
 const onClick = () => {
   if (!INTERSECTED) return;
