@@ -20,7 +20,7 @@
 - [Amazon Coach Tabby brand store](https://www.amazon.com/stores/page/F3D8452D-98F8-46A6-8B8B-55A5B6B79F80)
 - [IBM Fast Start Journey](https://www.ibm.com/watson/supply-chain/resources/fast-start-journey/)
 
-## Developing ideas through statements
+## Idea statements examples
 ```
 Eyes gazing at you without intent.
 ```
