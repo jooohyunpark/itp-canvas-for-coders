@@ -7,7 +7,6 @@ This code base covers geometry, material, mesh, and object in Three.js
 - [Primitives](https://threejs.org/manual/#en/primitives)
 - [Materials](https://threejs.org/manual/#en/materials)
 - [Textures](https://threejs.org/manual/#en/textures)
-- [Object properties](https://threejs.org/docs/#api/en/core/Object3D)
 - [Group](https://threejs.org/docs/index.html#api/en/objects/Group)
 
 ## Usage
