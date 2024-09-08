@@ -5,6 +5,7 @@
 - [Doors](https://doors.parkjoohyun.com/)
 - [TV Buddha](https://tv-buddha.parkjoohyun.com/)
 - [Gaze](https://gaze.parkjoohyun.com/)
+- [Time](https://time.parkjoohyun.com/)
 - [Infinite Swimming Pools](https://zer02z2.github.io/Swimming-Pools-in-the-Hill/)
 - [SymbiosisThreeJS](https://dannoblem.github.io/SymbiosisThreeJS/)
 - [Swiss Army Man](https://swissarmyman.com/)
@@ -16,9 +17,11 @@
 - [Kinetic Typography Playground](https://kinetic-typography-playground.netlify.app/)
 - [Scrollcontrols + GLTF](https://codesandbox.io/s/4jr4p)
 - [Sketches by Yi-Wen Lin](https://yiwenl.github.io/Sketches/)
+- [Life Interrupted](https://life-interrupted.parkjoohyun.com/#/digitalexperience/room/1)
 - [Amazon Coach Tabby brand store](https://www.amazon.com/stores/page/F3D8452D-98F8-46A6-8B8B-55A5B6B79F80)
+- [IBM Fast Start Journey](https://www.ibm.com/watson/supply-chain/resources/fast-start-journey/)
 
-## Developing ideas through statements
+## Idea statements examples
 ```
 Eyes gazing at you without intent.
 ```
