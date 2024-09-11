@@ -109,7 +109,7 @@ controls.zoomSpeed = 0.5;
 controls.minDistance = 10;
 controls.maxDistance = 1000;
 
-// // first person control
+// // FirstPersonControl
 // const controls = new FirstPersonControls(camera, renderer.domElement);
 // controls.movementSpeed = 100;
 // controls.lookSpeed = 0.02;
@@ -169,7 +169,7 @@ window.addEventListener("resize", onResize);
 // animate
 const animate = () => {
   controls.update();
-  // controls.update(clock.getDelta()); // first person control
+  // controls.update(clock.getDelta()); // for first person control
 
   renderer.render(scene, camera);
   requestAnimationFrame(animate);
