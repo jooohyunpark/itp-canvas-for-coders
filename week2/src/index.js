@@ -116,7 +116,7 @@ controls.maxDistance = 1000;
 // const clock = new THREE.Clock(); // requires delta time value in update()
 
 /**
- * --------------------------------------------
+ * ----------------------------------------------------------------------------------------
  * objects, you don't need to modify for week2
  */
 
@@ -150,7 +150,7 @@ sphereMesh.scale.setScalar(5);
 scene.add(sphereMesh);
 
 /**
- * --------------------------------------------
+ * ----------------------------------------------------------------------------------------
  */
 
 // resize
