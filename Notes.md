@@ -58,7 +58,7 @@ Are we alone?
 ## Week 2 reference
 
 - [Common Three.js code pattern](https://github.com/mrdoob/three.js/blob/master/examples/misc_controls_orbit.html)
-- [Three.js camera comparison](https://github.com/jooohyunpark/threejs-camera-comparison) - Perspective vs Orthographic
+- [Three.js camera comparison](https://jooohyunpark.github.io/threejs-camera-comparison/) - Perspective vs Orthographic
 
 
 ## Week 3 reference
