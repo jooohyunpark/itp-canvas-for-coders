@@ -52,7 +52,7 @@ axesHelper.position.y = 0.01; // above the ground slightly
 scene.add(axesHelper);
 
 // ambient light
-const ambientLight = new THREE.AmbientLight(0x0000ff, 0.1);
+const ambientLight = new THREE.AmbientLight(0xcccccc, 0.1);
 scene.add(ambientLight);
 console.log("ambientLight", ambientLight);
 
