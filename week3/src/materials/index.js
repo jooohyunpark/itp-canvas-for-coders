@@ -24,15 +24,20 @@ const camera = new THREE.PerspectiveCamera(
 );
 camera.position.set(20, 10, 20);
 
-// axis helper -> X: red, Y: green, Z: blue
+// axes helper -> X: red, Y: green, Z: blue
 const axesHelper = new THREE.AxesHelper(5);
 scene.add(axesHelper);
 
-// ambient light
+// lights
 const ambientLight = new THREE.AmbientLight(0xffffff, 2);
 const directionalLight = new THREE.DirectionalLight(0xffffff, 2);
-directionalLight.position.set(-1, 1, 1);
-scene.add(ambientLight, directionalLight);
+directionalLight.position.set(-10, 10, 10);
+const directionalLightHelper = new THREE.DirectionalLightHelper(
+  directionalLight,
+  1,
+  "black"
+);
+scene.add(ambientLight, directionalLight, directionalLightHelper);
 
 // control
 const controls = new OrbitControls(camera, renderer.domElement);

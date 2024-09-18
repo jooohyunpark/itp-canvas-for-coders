@@ -24,7 +24,7 @@ const camera = new THREE.PerspectiveCamera(
 );
 camera.position.set(20, 10, 20);
 
-// axis helper -> X: red, Y: green, Z: blue
+// axes helper -> X: red, Y: green, Z: blue
 const axesHelper = new THREE.AxesHelper(5);
 axesHelper.position.y = 0.001; // above the ground slightly
 scene.add(axesHelper);

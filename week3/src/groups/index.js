@@ -24,7 +24,7 @@ const camera = new THREE.PerspectiveCamera(
 );
 camera.position.set(20, 10, 20);
 
-// axis helper -> X: red, Y: green, Z: blue
+// axes helper -> X: red, Y: green, Z: blue
 const axesHelper = new THREE.AxesHelper(10);
 scene.add(axesHelper);
 
@@ -49,7 +49,6 @@ const onResize = () => {
   camera.updateProjectionMatrix();
   renderer.setSize(window.innerWidth, window.innerHeight);
 };
-
 window.addEventListener("resize", onResize);
 
 /**
@@ -90,7 +89,7 @@ scene.add(sunGroup);
 
 // animate
 const animate = (timestamp) => {
-  // timestamp *= 0.001;
+  timestamp *= 0.001;
   // earthGroup.rotation.y = Math.PI * timestamp * 0.1;
   // sunGroup.rotation.y = Math.PI * timestamp * 0.1;
 
