@@ -49,6 +49,7 @@ const onResize = () => {
   camera.updateProjectionMatrix();
   renderer.setSize(window.innerWidth, window.innerHeight);
 };
+
 window.addEventListener("resize", onResize);
 
 /**
