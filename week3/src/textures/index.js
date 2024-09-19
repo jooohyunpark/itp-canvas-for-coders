@@ -58,7 +58,7 @@ window.addEventListener("resize", onResize);
 const imageTexture1 = new THREE.TextureLoader().load(
   "/hubble_telescope_picture.jpg"
 );
-imageTexture1.colorSpace = THREE.SRGBColorSpace;
+imageTexture1.colorSpace = THREE.SRGBColorSpace; // Textures containing color data should be annotated with THREE.SRGBColorSpace or THREE.LinearSRGBColorSpace.
 
 const imageMaterial1 = new THREE.MeshBasicMaterial({
   map: imageTexture1,
@@ -91,7 +91,7 @@ videoElement1.play();
 const videoTexture1 = new THREE.VideoTexture(videoElement1);
 videoTexture1.colorSpace = THREE.SRGBColorSpace;
 const videoMaterial1 = new THREE.MeshLambertMaterial({
-  color: 0xffffff,
+  color: "white",
   map: videoTexture1,
   side: THREE.DoubleSide,
 });
@@ -107,7 +107,7 @@ videoElement2.play();
 const videoTexture2 = new THREE.VideoTexture(videoElement2);
 videoTexture2.colorSpace = THREE.SRGBColorSpace;
 const videoMaterial2 = new THREE.MeshLambertMaterial({
-  color: 0xffffff,
+  color: "white",
   map: videoTexture2,
   side: THREE.DoubleSide,
 });
