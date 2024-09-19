@@ -10,8 +10,8 @@ export default defineConfig({
   publicDir: resolve(__dirname, "public"),
   build: {
     outDir: resolve(__dirname, "dist"),
-    // https://vitejs.dev/guide/build.html#multi-page-app
     rollupOptions: {
+      // https://vitejs.dev/guide/build.html#multi-page-app
       input: {
         main: resolve(__dirname, "src/index.html"),
         "3d-assets": resolve(__dirname, "src/3d-assets/index.html"),
