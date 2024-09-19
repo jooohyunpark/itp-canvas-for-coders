@@ -69,9 +69,10 @@ moon.position.z = -10;
 
 // earth
 const earth = new THREE.Mesh(geometry, material);
+earthGroup.add(earth, moon);
+
 earthGroup.scale.setScalar(1 / 4);
 earthGroup.position.z = -10;
-earthGroup.add(earth, moon);
 
 // sun
 const sun = new THREE.Mesh(geometry, material);
