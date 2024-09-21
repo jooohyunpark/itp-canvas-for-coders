@@ -100,7 +100,7 @@ yarn dev
 
 ### Week 4 - Animations
 
-- [requestAnimationFrame](https://developer.mozilla.org/en-US/docs/Web/API/window/requestAnimationFrame)
+- [Animation Loop (requestAnimationFrame)](https://threejs.org/docs/index.html?q=render#api/en/renderers/WebGLRenderer.setAnimationLoop)
 - [GSAP](<https://greensock.com/docs/v3/GSAP/gsap.to()>)
 
 ### Week 5 - 3D Assets
