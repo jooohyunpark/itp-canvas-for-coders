@@ -12,7 +12,6 @@ const app = document.querySelector("#app");
 const renderer = new THREE.WebGLRenderer({ antialias: true });
 renderer.setPixelRatio(window.devicePixelRatio);
 renderer.setSize(window.innerWidth, window.innerHeight);
-renderer.outputColorSpace = THREE.SRGBColorSpace; // optional with post-processing
 app.appendChild(renderer.domElement);
 
 // scene
