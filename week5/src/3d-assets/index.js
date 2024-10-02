@@ -126,8 +126,6 @@ const fisthGroup = new THREE.Group();
 loader.load("/fish.glb", function (gltf) {
   console.log("fish gltf: ", gltf);
 
-  fisthGroup.add(gltf.scene);
-
   gltf.scene.position.set(0, 10, 10);
   gltf.scene.scale.setScalar(5);
 
@@ -144,6 +142,7 @@ loader.load("/fish.glb", function (gltf) {
     ease: "none",
   });
 
+  fisthGroup.add(gltf.scene);
   scene.add(fisthGroup);
 });
 
