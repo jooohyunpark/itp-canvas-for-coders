@@ -212,11 +212,12 @@ scene.add(sphereMesh2);
  * //////////////////////////////////////////////////////////////////////////////
  */
 
-// add clock for delta time
+// Add clock for delta time
 const clock = new THREE.Clock();
 
 // animate
 const animate = () => {
+  // Get the time elapsed since the last frame, used for mixer update
   const delta = clock.getDelta();
 
   if (mixer) mixer.update(delta);
