@@ -131,8 +131,10 @@ loader.load("/fish.glb", function (gltf) {
 
   // initiate animation mixer
   mixer = new THREE.AnimationMixer(gltf.scene);
-  mixer.clipAction(gltf.animations[0]).play();
-  mixer.clipAction(gltf.animations[0]).timeScale = 0.3;
+
+  const action = mixer.clipAction(gltf.animations[0]);
+  action.play();
+  action.timeScale = 0.3;
 
   // rotate fishgroup
   gsap.to(fisthGroup.rotation, {
