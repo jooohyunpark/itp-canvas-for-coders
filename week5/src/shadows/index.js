@@ -113,7 +113,6 @@ loader.load(
     gltf.scene.traverse(function (el) {
       if (el.isMesh) {
         el.castShadow = true;
-        el.receiveShadow = true;
       }
     });
 
