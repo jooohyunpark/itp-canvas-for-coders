@@ -194,7 +194,6 @@ const sphereMesh = new THREE.Mesh(
     roughness: 0.5,
   })
 );
-
 sphereMesh.position.set(25, 5, -25);
 sphereMesh.add(sound); // add the sound to the mesh
 scene.add(sphereMesh);
