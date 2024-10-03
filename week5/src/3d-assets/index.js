@@ -187,7 +187,6 @@ window.addEventListener("click", play);
 
 // sphere
 const sphereGeometry = new THREE.SphereGeometry(1, 128, 128);
-
 const sphereMesh = new THREE.Mesh(
   sphereGeometry,
   new THREE.MeshStandardMaterial({
@@ -195,8 +194,9 @@ const sphereMesh = new THREE.Mesh(
     roughness: 0.5,
   })
 );
+
 sphereMesh.position.set(25, 5, -25);
-sphereMesh.add(sound);
+sphereMesh.add(sound); // add the sound to the mesh
 scene.add(sphereMesh);
 
 const sphereMesh2 = new THREE.Mesh(
