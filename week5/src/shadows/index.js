@@ -116,7 +116,7 @@ loader.load(
       }
     });
 
-    // target directional light to banana object
+    // target directional light to banana object (https://threejs.org/docs/index.html?q=light#api/en/lights/DirectionalLight.target)
     directionalLight.target = gltf.scene;
     scene.add(directionalLight.target);
   }
