@@ -191,7 +191,7 @@ const onClick = () => {
 };
 window.addEventListener("click", onClick);
 
-const button = document.querySelector("#bg-button");
+const bgGutton = document.querySelector("#bg-button");
 
 const onButtonClick = () => {
   const c = randomColor({
@@ -206,5 +206,4 @@ const onButtonClick = () => {
     ease: "linear",
   });
 };
-
-button.addEventListener("click", onButtonClick);
+bgGutton.addEventListener("click", onButtonClick);
