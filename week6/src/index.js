@@ -57,12 +57,7 @@ const onResize = () => {
   camera.updateProjectionMatrix();
   renderer.setSize(window.innerWidth, window.innerHeight);
 };
-
 window.addEventListener("resize", onResize);
-
-/**
- * //////////////////////////////////////////////////////////////////////////////
- */
 
 // spheres
 const sphereGeometry = new THREE.SphereGeometry(2, 128, 128);
@@ -142,6 +137,7 @@ const animate = () => {
 renderer.setAnimationLoop(animate);
 
 const onClick = () => {
+  // if no intersected objects, return
   if (!INTERSECTED) return;
 
   // reset animation
@@ -194,10 +190,6 @@ const onClick = () => {
   }
 };
 window.addEventListener("click", onClick);
-
-/**
- * //////////////////////////////////////////////////////////////////////////////
- */
 
 const button = document.querySelector("#bg-button");
 
