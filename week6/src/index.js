@@ -132,7 +132,9 @@ const animate = () => {
 
       // assign currently intersected object
       INTERSECTED = intersects[0].object;
+      // store current emmissive hexcolor (to reset later, in above step)
       INTERSECTED.currentHex = INTERSECTED.material.emissive.getHex();
+      // set emmissive hexcolor to cyan
       INTERSECTED.material.emissive.setHex(0x00ffff);
     }
   }
