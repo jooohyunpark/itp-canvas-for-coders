@@ -59,7 +59,7 @@ const onResize = () => {
 };
 window.addEventListener("resize", onResize);
 
-// https://karthikkaranth.me/blog/generating-random-points-in-a-sphere/
+// Generating Random Points in a Sphere (https://karthikkaranth.me/blog/generating-random-points-in-a-sphere/)
 const getPoint = (radius = 1) => {
   const u = Math.random();
   const v = Math.random();
