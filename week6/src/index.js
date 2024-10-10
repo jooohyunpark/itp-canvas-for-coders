@@ -190,6 +190,7 @@ const onClick = () => {
       yoyo: true,
     });
 
+    // get random bright blue palette
     const c = randomColor({
       hue: "#0000FF",
       luminosity: "bright",
