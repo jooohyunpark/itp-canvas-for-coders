@@ -157,7 +157,7 @@ const onClick = () => {
   // if no intersected objects, return
   if (!INTERSECTED) return;
 
-  // reset animation
+  // if it was animating, reset animation
   if (INTERSECTED.isAnimating) {
     gsap.to(INTERSECTED.scale, {
       x: 1,
