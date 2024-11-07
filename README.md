@@ -69,7 +69,7 @@ yarn dev
 
 ## Weekly Topics
 
-### Week 1 - Intro
+### Week 1: Intro
 
 - [Reimagining web spaces](https://github.com/jooohyunpark/itp-canvas-for-coders/blob/main/Notes.md#reimagining-web-spaces)
 - [Three.js documentation](https://threejs.org/docs/index.html#manual/en/introduction/Creating-a-scene)
@@ -78,7 +78,7 @@ yarn dev
 - [Thinking in xyz space (Three.js editor)](https://threejs.org/editor/)
 - [Getting started with a Vite project](https://vitejs.dev/guide/#scaffolding-your-first-vite-project)
 
-### Week 2 - Concepts
+### Week 2: Concepts
 
 - [Vectors](https://threejs.org/docs/index.html#api/en/math/Vector3)
 - [Colors](https://threejs.org/docs/index.html#api/en/math/Color)
@@ -90,7 +90,7 @@ yarn dev
 - [Helpers](https://threejs.org/docs/?q=helper#api/en/helpers/AxesHelper)
 - [Controls](https://threejs.org/docs/#examples/en/controls/OrbitControls)
 
-### Week 3 - Objects
+### Week 3: Objects
 
 - [Mesh](https://threejs.org/docs/index.html?q=mesh#api/en/objects/Mesh)
 - [Primitives](https://threejs.org/manual/#en/primitives)
@@ -98,23 +98,23 @@ yarn dev
 - [Textures](https://threejs.org/manual/#en/textures)
 - [Group](https://threejs.org/docs/index.html#api/en/objects/Group)
 
-### Week 4 - Animations
+### Week 4: Animations
 
 - [Animation loop](https://threejs.org/docs/index.html?q=render#api/en/renderers/WebGLRenderer.setAnimationLoop)
 - [GSAP](<https://greensock.com/docs/v3/GSAP/gsap.to()>)
 
-### Week 5 - 3D Assets
+### Week 5: 3D Assets
 
 - [3D Models](https://threejs.org/docs/index.html#manual/en/introduction/Loading-3D-models)
 - [Positional audio](https://threejs.org/docs/#api/en/audio/PositionalAudio)
 - [Shadows](https://threejs.org/manual/#en/shadows)
 
-### Week 6 - Interactions
+### Week 6: Interactions
 
 - [Raycaster](https://threejs.org/docs/index.html#api/en/core/Raycaster)
 - [Deploying site](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site)
 
-### Week 7 - Final
+### Week 7: Final
 
 - Presentation
 
