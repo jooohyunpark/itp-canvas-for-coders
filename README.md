@@ -21,17 +21,16 @@ At the completion of this course, the students will:
 2. Be comfortable prototyping web 3D experience with three.js.
 
 
-## Values
+## Course Values
 
-#### 💡 Invent creativity together
-
+### 1. Invent creativity together. 
 All ideas are valuable. We respect every perspective and encourage boundless creativity.
 
-#### ✍️ Learn by doing
+### 2. Learn by doing
 
 Ideate, research, prototype, and iterate. Dive right into writing code, and don’t hesitate to break it.
 
-#### 👀 Be curious
+### 3. Be curious
 
 Feedback matters as much as presentation. Your constructive opinion can inspire someone to create great art.
 
