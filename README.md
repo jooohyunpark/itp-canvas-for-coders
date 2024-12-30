@@ -122,6 +122,7 @@ yarn dev
 - [Three.js](https://threejs.org/) - Javascript 3D library
 - [Vite](https://vitejs.dev/) - Javascript build tool
 - [GSAP](https://greensock.com/gsap/) - Animation library
+- 
 
 ## Resources
 
@@ -131,6 +132,7 @@ yarn dev
 - [Google experiments](https://experiments.withgoogle.com/)
 - [@react-three/fiber](https://docs.pmnd.rs/react-three-fiber/getting-started/examples)
 - [@react-three/drei](https://github.com/pmndrs/drei)
+- [Motion](https://motion.dev/docs/react-three-fiber) 
 
 ## Equipment
 
