@@ -11,7 +11,7 @@
 
 ## Course Description
 
-Web browser is a 21st-century canvas. While being one of the most common mediums today, web space has infinite possibilities for new aesthetics. This course covers three.js fundamentals, providing students with the skills and insights to create arts in web 3D.
+The web browser is a 21st-century canvas. While it is one of the most common mediums today, the web space offers infinite possibilities for new aesthetics. This course covers three.js fundamentals, providing students with the skills and insights to create visual experiences in web 3D.
 
 ## Course Objectives
 
