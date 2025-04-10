@@ -48,7 +48,10 @@ Please setup belows on your machine before the first class.
 Clone this repo. It has weekly code examples in each folder.
 
 ```sh
+# Clone the repo
 git clone https://github.com/jooohyunpark/itp-canvas-for-coders.git
+
+# Go to the project folder
 cd itp-canvas-for-coders
 ```
 
