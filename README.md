@@ -48,22 +48,21 @@ Please setup belows on your machine before the first class.
 Clone this repo. It has weekly code examples in each folder.
 
 ```sh
-git clone https://github.com/jooohyunpark/itp-canvas-for-coders.git &&
+git clone https://github.com/jooohyunpark/itp-canvas-for-coders.git
 cd itp-canvas-for-coders
 ```
 
 To run weekly codebase, navigate to the folder, install dependencies (once), and start the dev server.
 
 ```sh
-# npm
-cd week1 &&
-npm install &&
-npm run dev
+# Navigate to the weekly repo
+cd week1
 
-# yarn
-cd week1 &&
-yarn &&
-yarn dev
+# Install dependencies
+npm install
+
+# Start the dev server 
+npm run dev
 ```
 
 ## Weekly Topics
