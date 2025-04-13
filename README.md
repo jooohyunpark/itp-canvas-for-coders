@@ -123,6 +123,7 @@ npm run dev
 
 - [Three.js](https://threejs.org/) - Javascript 3D library
 - [React](https://react.dev/) - JavaScript library for building UI
+- [React three fiber](https://github.com/pmndrs/react-three-fiber) - A React renderer for Three.js
 - [Vite](https://vitejs.dev/) - Javascript build tool
 - [GSAP](https://greensock.com/gsap/) - Animation library
 
