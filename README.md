@@ -58,7 +58,7 @@ cd itp-canvas-for-coders
 To run weekly codebase, navigate to the folder, install dependencies (once), and start the dev server.
 
 ```sh
-# Navigate to the weekly repo
+# Navigate to the weekly project folder
 cd week1
 
 # Install dependencies
