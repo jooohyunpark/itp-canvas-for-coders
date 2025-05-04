@@ -125,6 +125,7 @@ npm run dev
 - [React](https://react.dev/) - JavaScript library for building UI
 - [@react-three/fiber](https://github.com/pmndrs/react-three-fiber) - A React renderer for Three.js
 - [@react-three/drei](https://github.com/pmndrs/drei) - Ready-to-use helpers for r3f
+- [@react-three/rapier](https://github.com/pmndrs/react-three-rapier) - Rapier physics in r3f
 - [Vite](https://vitejs.dev/) - Javascript build tool
 - [GSAP](https://greensock.com/gsap/) - Animation library
 
