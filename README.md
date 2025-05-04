@@ -123,7 +123,8 @@ npm run dev
 
 - [Three.js](https://threejs.org/) - Javascript 3D library
 - [React](https://react.dev/) - JavaScript library for building UI
-- [React three fiber](https://github.com/pmndrs/react-three-fiber) - A React renderer for Three.js
+- [@react-three/fiber](https://github.com/pmndrs/react-three-fiber) - A React renderer for Three.js
+- [@react-three/drei](https://github.com/pmndrs/drei) - Ready-to-use helpers for r3f
 - [Vite](https://vitejs.dev/) - Javascript build tool
 - [GSAP](https://greensock.com/gsap/) - Animation library
 
@@ -131,11 +132,10 @@ npm run dev
 ## Resources
 
 - [Three.js fundamentals](https://threejs.org/manual/#en/fundamentals)
+- [Three.js Mentor GPT](https://chatgpt.com/g/g-jGjqAMvED-three-js-mentor)
 - [Three.js editor](https://threejs.org/editor/)
 - [Three.js examples](https://threejs.org/examples/)
-- [Google experiments](https://experiments.withgoogle.com/)
-- [@react-three/fiber](https://docs.pmnd.rs/react-three-fiber/getting-started/examples)
-- [@react-three/drei](https://github.com/pmndrs/drei)
+- [Three.js devtools](https://chromewebstore.google.com/detail/threejs-devtools/jechbjkglifdaldbdbigibihfaclnkbo)
 - [react-spring](https://github.com/pmndrs/react-spring)
 - [Motion](https://motion.dev/docs/react-three-fiber)
 
