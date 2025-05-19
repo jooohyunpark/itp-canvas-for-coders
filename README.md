@@ -119,6 +119,10 @@ npm run dev
 
 - Presentation
 
+
+## Assignments
+Submit your weekly assignments [here](https://github.com/jooohyunpark/itp-canvas-for-coders/discussions/categories/assignments)
+
 ## Tools
 
 - [Three.js](https://threejs.org/) - Javascript 3D library
@@ -140,6 +144,7 @@ npm run dev
 - [Three.js devtools](https://chromewebstore.google.com/detail/threejs-devtools/jechbjkglifdaldbdbigibihfaclnkbo)
 - [react-spring](https://github.com/pmndrs/react-spring)
 - [Motion](https://motion.dev/docs/react-three-fiber)
+
 
 ## Equipment
 
