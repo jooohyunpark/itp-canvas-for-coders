@@ -18,7 +18,7 @@ The web browser is a 21st-century canvas. While it is one of the most common med
 At the completion of this course, the students will:
 
 1. Develop perspectives on using web pages as a creative medium.
-2. Be comfortable prototyping web 3D experience with three.js.
+2. Be comfortable prototyping web 3D experience with three.js and react-three-fiber.
 
 
 ## Course Values
