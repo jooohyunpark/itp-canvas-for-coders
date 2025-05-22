@@ -133,24 +133,25 @@ Submit your weekly assignments [here](https://github.com/jooohyunpark/itp-canvas
 ## Tools
 
 - [Three.js](https://threejs.org/) - Javascript 3D library
+- [Vite](https://vitejs.dev/) - Javascript build tool
+- [GSAP](https://greensock.com/gsap/) - Animation library
 - [React](https://react.dev/) - JavaScript library for building UI
 - [@react-three/fiber](https://github.com/pmndrs/react-three-fiber) - A React renderer for Three.js
 - [@react-three/drei](https://github.com/pmndrs/drei) - Ready-to-use helpers for r3f
-- [react-spring](https://github.com/pmndrs/react-spring) - Spring-based React animation library
+- [@react-spring/three](https://github.com/pmndrs/react-spring) - Spring-based React animation library
 - [@react-three/rapier](https://github.com/pmndrs/react-three-rapier) - Rapier physics in r3f
-- [Vite](https://vitejs.dev/) - Javascript build tool
-- [GSAP](https://greensock.com/gsap/) - Animation library
+- [Motion](https://motion.dev/docs/react-three-fiber) - Animation library
+- [Three.js editor](https://threejs.org/editor/)
+- [Three.js devtools](https://chromewebstore.google.com/detail/threejs-devtools/jechbjkglifdaldbdbigibihfaclnkbo)
 
 
 ## Resources
 
 - [Three.js fundamentals](https://threejs.org/manual/#en/fundamentals)
 - [Three.js Mentor GPT](https://chatgpt.com/g/g-jGjqAMvED-three-js-mentor)
-- [Three.js editor](https://threejs.org/editor/)
 - [Three.js examples](https://threejs.org/examples/)
-- [Three.js devtools](https://chromewebstore.google.com/detail/threejs-devtools/jechbjkglifdaldbdbigibihfaclnkbo)
-- [react-spring](https://github.com/pmndrs/react-spring)
-- [Motion](https://motion.dev/docs/react-three-fiber)
+- [React, visualized](https://react.gg/visualized)
+
 
 
 ## Equipment
