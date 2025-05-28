@@ -114,8 +114,9 @@ npm run dev
 
 
 ### Week 4: React
-- [Concept](https://react.gg/visualized#v=fn(s))/[JSX](https://react.gg/visualized#jsx)
-- [Component](https://react.gg/visualized#components)/[props](https://react.dev/learn/passing-props-to-a-component)
+- [Concept](https://react.gg/visualized#v=fn(s))
+- [JSX](https://react.gg/visualized#jsx)
+- [Component](https://react.gg/visualized#components) / [Props](https://react.dev/learn/passing-props-to-a-component)
 - [Event handlers](https://react.dev/learn/responding-to-events)
 - [State](https://react.dev/learn/state-a-components-memory)
 - [Hooks](https://react.dev/reference/react/hooks)
