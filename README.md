@@ -85,42 +85,50 @@ npm run dev
 - [Three.js wrappers/frameworks](https://threejs.org/docs/#manual/en/introduction/Libraries-and-Plugins)
 - [Thinking in xyz space (Three.js editor)](https://threejs.org/editor/)
 - [Getting started with a Vite project](https://vitejs.dev/guide/#scaffolding-your-first-vite-project)
-
-### Week 2: Concepts
-
 - [Vectors](https://threejs.org/docs/index.html#api/en/math/Vector3)
 - [Colors](https://threejs.org/docs/index.html#api/en/math/Color)
 - [Object properties](https://threejs.org/docs/#api/en/core/Object3D)
+
+
+### Week 2: Building a Scene
+
 - [Renderer](https://threejs.org/manual/#en/rendertargets)
 - [Scene](https://threejs.org/manual/#en/scenegraph)
 - [Cameras](https://threejs.org/manual/#en/cameras)
 - [Lights](https://threejs.org/manual/#en/lights)
 - [Helpers](https://threejs.org/docs/?q=helper#api/en/helpers/AxesHelper)
 - [Controls](https://threejs.org/docs/#examples/en/controls/OrbitControls)
-
-### Week 3: Objects
-
 - [Mesh](https://threejs.org/docs/index.html?q=mesh#api/en/objects/Mesh)
 - [Primitives](https://threejs.org/manual/#en/primitives)
 - [Materials](https://threejs.org/manual/#en/materials)
 - [Textures](https://threejs.org/manual/#en/textures)
-- [Group](https://threejs.org/docs/index.html#api/en/objects/Group)
+- [Group](https://threejs.org/docs/index.html#api/en/objects/Group)  
 
-### Week 4: Animations
+
+### Week 3: Motion & Depth
 
 - [Animation loop](https://threejs.org/docs/index.html?q=render#api/en/renderers/WebGLRenderer.setAnimationLoop)
 - [GSAP](<https://greensock.com/docs/v3/GSAP/gsap.to()>)
-
-### Week 5: 3D Assets
-
 - [3D Models](https://threejs.org/docs/index.html#manual/en/introduction/Loading-3D-models)
 - [Positional audio](https://threejs.org/docs/#api/en/audio/PositionalAudio)
-- [Shadows](https://threejs.org/manual/#en/shadows)
 
-### Week 6: Interactions
 
-- [Raycaster](https://threejs.org/docs/index.html#api/en/core/Raycaster)
+### Week 4: React
+- Concept
+- JSX
+- Component/props
+- Built-in attributes
+- State/hook
+
+
+### Week 5: React Three Fiber
+- [React-three-fiber](https://r3f.docs.pmnd.rs/getting-started/introduction)
+
+
+### Week 6: Interactions & Deployment
+- [React-three-rapier](https://github.com/pmndrs/react-three-rapier)
 - [Deploying site](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site)
+
 
 ### Week 7: Final
 
