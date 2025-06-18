@@ -26,6 +26,8 @@ const camera = new THREE.PerspectiveCamera(
   0.1,
   3000
 );
+camera.position.set(200, 100, 400);
+camera.lookAt(0, 0, 0);
 // // orthographic camera ( left, right, top, bottom, near, far )
 // const camera = new THREE.OrthographicCamera(
 //   window.innerWidth / -2,
@@ -35,8 +37,6 @@ const camera = new THREE.PerspectiveCamera(
 //   0,
 //   3000
 // );
-camera.position.set(200, 100, 400);
-camera.lookAt(0, 0, 0);
 
 // axes helper -> X: red, Y: green, Z: blue
 const axesHelper = new THREE.AxesHelper(50);
@@ -107,11 +107,6 @@ controls.maxDistance = 1000;
 // controls.lookSpeed = 0.02;
 // const clock = new THREE.Clock(); // requires delta time value in update()
 
-/**
- * ----------------------------------------------------------------------------------------
- * objects, you don't need to modify for week2
- */
-
 // ground
 const groundGeometry = new THREE.PlaneGeometry(10000, 10000);
 const groundMaterial = new THREE.MeshStandardMaterial({
@@ -124,7 +119,7 @@ const groundMesh = new THREE.Mesh(groundGeometry, groundMaterial);
 groundMesh.rotation.x = -Math.PI * 0.5;
 scene.add(groundMesh);
 
-// spheres
+// small spheres
 const geometry = new THREE.SphereGeometry(5, 128, 128);
 const material = new THREE.MeshPhongMaterial({
   color: 0xffffff,
@@ -140,10 +135,6 @@ const sphereMesh = new THREE.Mesh(geometry, material);
 sphereMesh.position.y = 100;
 sphereMesh.scale.setScalar(5);
 scene.add(sphereMesh);
-
-/**
- * ----------------------------------------------------------------------------------------
- */
 
 // resize
 const onResize = () => {
