@@ -2,6 +2,14 @@ import "./style.css";
 import * as THREE from "three";
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
 
+// vector
+const myVector = new THREE.Vector3(1, 2, 3);
+console.log("myVector:", myVector);
+
+// color
+const myColor = new THREE.Color("blue");
+console.log("myColor:", myColor);
+
 // app
 const app = document.querySelector("#app");
 

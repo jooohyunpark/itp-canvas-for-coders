@@ -5,14 +5,6 @@ import { MapControls } from "three/addons/controls/MapControls";
 import { FirstPersonControls } from "three/addons/controls/FirstPersonControls";
 import { RectAreaLightHelper } from "three/addons/helpers/RectAreaLightHelper";
 
-// vector
-const myVector = new THREE.Vector3(1, 2, 3);
-console.log("myVector:", myVector);
-
-// color
-const myColor = new THREE.Color("blue");
-console.log("myColor:", myColor);
-
 // app
 const app = document.querySelector("#app");
 
