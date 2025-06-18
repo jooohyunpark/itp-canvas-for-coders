@@ -1,6 +1,9 @@
 import "./style.css";
 import * as THREE from "three";
 import { OrbitControls } from "three/addons/controls/OrbitControls";
+import { RectAreaLightHelper } from "three/addons/helpers/RectAreaLightHelper";
+import Stats from "stats.js";
+import { gsap } from "gsap";
 
 // app
 const app = document.querySelector("#app");
@@ -13,29 +16,22 @@ app.appendChild(renderer.domElement);
 
 // scene
 const scene = new THREE.Scene();
-scene.background = new THREE.Color(0xffffff);
+scene.background = new THREE.Color("black");
 
 // perspective camera
 const camera = new THREE.PerspectiveCamera(
   60,
   window.innerWidth / window.innerHeight,
   1,
-  1000
+  2000
 );
-camera.position.set(20, 10, 20);
+camera.position.set(0, 5, 20);
 
-// axes helper -> X: red, Y: green, Z: blue
-const axesHelper = new THREE.AxesHelper(5);
-axesHelper.position.y = 0.001; // above the ground slightly
-scene.add(axesHelper);
-
-// grid helper
-const gridHelper = new THREE.GridHelper(100, 100, "#444444", "#cccccc");
-scene.add(gridHelper);
-
-// ambient light
-const ambientLight = new THREE.AmbientLight(0xffffff, 3);
-scene.add(ambientLight);
+// light
+const rectLight = new THREE.RectAreaLight("#ffffff", 5, 50, 10);
+rectLight.position.set(0, 5, -15);
+rectLight.rotation.set(0, Math.PI, 0);
+scene.add(rectLight, new RectAreaLightHelper(rectLight));
 
 // control
 const controls = new OrbitControls(camera, renderer.domElement);
@@ -43,8 +39,12 @@ controls.enableDamping = true;
 controls.dampingFactor = 0.05;
 controls.screenSpacePanning = false;
 controls.enableRotate = true;
-controls.rotateSpeed = 0.5;
+controls.rotateSpeed = 0.3;
 controls.enableZoom = true;
+controls.zoomSpeed = 0.5;
+controls.minDistance = 1;
+controls.maxDistance = 1000;
+controls.maxPolarAngle = Math.PI * 0.5;
 
 // resize
 const onResize = () => {
@@ -52,21 +52,53 @@ const onResize = () => {
   camera.updateProjectionMatrix();
   renderer.setSize(window.innerWidth, window.innerHeight);
 };
-
 window.addEventListener("resize", onResize);
 
-// box
-const boxGeometry = new THREE.BoxGeometry(1, 1, 1);
-const material = new THREE.MeshNormalMaterial();
-const boxMesh = new THREE.Mesh(boxGeometry, material);
-scene.add(boxMesh);
+// floor
+const floorGeometry = new THREE.BoxGeometry(2000, 0.1, 2000);
+const floorMaterial = new THREE.MeshStandardMaterial({
+  color: "gray",
+  roughness: 0.2,
+  metalness: 0,
+});
+const floorMesh = new THREE.Mesh(floorGeometry, floorMaterial);
+scene.add(floorMesh);
+
+// sphere
+const SphereGeometry = new THREE.SphereGeometry(1, 128, 128);
+const sphereMaterial = new THREE.MeshStandardMaterial({
+  color: "#ffffff",
+  roughness: 0,
+  metalness: 0,
+});
+const sphereMesh = new THREE.Mesh(SphereGeometry, sphereMaterial);
+sphereMesh.position.set(0, 5, 0);
+scene.add(sphereMesh);
+controls.target.copy(sphereMesh.position);
+
+// stats
+const stats = new Stats();
+document.body.appendChild(stats.dom);
 
 // animate
 const animate = () => {
   renderer.render(scene, camera);
   controls.update();
-
-  requestAnimationFrame(animate);
+  stats.update();
 };
+renderer.setAnimationLoop(animate);
 
-animate();
+gsap.fromTo(
+  sphereMesh.position,
+  {
+    x: -10,
+  },
+  {
+    x: 10,
+    duration: 3,
+    repeat: -1,
+    repeatDelay: 3,
+    yoyo: true,
+    ease: "power2.inOut",
+  }
+);
