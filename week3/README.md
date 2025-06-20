@@ -2,12 +2,10 @@
 
 ## Description
 
-This code base covers geometry, material, mesh, and object in Three.js
+This code base covers animation and 3D model.
 
-- [Primitives](https://threejs.org/manual/#en/primitives)
-- [Materials](https://threejs.org/manual/#en/materials)
-- [Textures](https://threejs.org/manual/#en/textures)
-- [Group](https://threejs.org/docs/index.html#api/en/objects/Group)
+- [requestAnimationFrame](https://developer.mozilla.org/en-US/docs/Web/API/window/requestAnimationFrame)
+- [GSAP](<https://greensock.com/docs/v3/GSAP/gsap.to()>)
 
 ## Usage
 
