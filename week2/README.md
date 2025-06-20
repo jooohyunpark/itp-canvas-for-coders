@@ -2,8 +2,6 @@
 
 ## Description
 
-This code base covers fundamentals of a Three.js.
-
 - [Renderer](https://threejs.org/manual/#en/rendertargets)
 - [Scene](https://threejs.org/manual/#en/scenegraph)
 - [Cameras](https://threejs.org/manual/#en/cameras)
