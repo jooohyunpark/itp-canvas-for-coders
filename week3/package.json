@@ -13,6 +13,7 @@
   },
   "dependencies": {
     "gsap": "^3.13.0",
+    "randomcolor": "^0.6.2",
     "stats.js": "^0.17.0",
     "three": "^0.166.1"
   }
