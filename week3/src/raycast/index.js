@@ -1,8 +1,12 @@
 import "./style.css";
 import * as THREE from "three";
 import { OrbitControls } from "three/addons/controls/OrbitControls";
+import { RectAreaLightHelper } from "three/addons/helpers/RectAreaLightHelper";
+import Stats from "stats.js";
 import { gsap } from "gsap";
-import randomColor from "randomcolor"; // https://github.com/davidmerfield/randomColor
+
+// raycast objects
+const raycastObjects = [];
 
 // app
 const app = document.querySelector("#app");
@@ -15,28 +19,22 @@ app.appendChild(renderer.domElement);
 
 // scene
 const scene = new THREE.Scene();
-scene.background = new THREE.Color("white");
+scene.background = new THREE.Color("black");
 
 // perspective camera
 const camera = new THREE.PerspectiveCamera(
-  35,
+  60,
   window.innerWidth / window.innerHeight,
   1,
-  1000
+  2000
 );
-camera.position.set(0, 0, 100);
-
-// axes helper -> X: red, Y: green, Z: blue
-const axesHelper = new THREE.AxesHelper(5);
-axesHelper.position.y = 0.001;
-scene.add(axesHelper);
+camera.position.set(0, 5, 20);
 
 // light
-const ambientLight = new THREE.AmbientLight("white", 2);
-const hemisphereLight = new THREE.HemisphereLight("#ffffff", "#ff00ff", 1);
-const directionalLight = new THREE.DirectionalLight("white", 1);
-directionalLight.position.set(-1, 1, 1);
-scene.add(ambientLight, directionalLight, hemisphereLight);
+const rectLight = new THREE.RectAreaLight("#ffffff", 5, 50, 10);
+rectLight.position.set(0, 5, -15);
+rectLight.rotation.set(0, Math.PI, 0);
+scene.add(rectLight, new RectAreaLightHelper(rectLight));
 
 // control
 const controls = new OrbitControls(camera, renderer.domElement);
@@ -44,12 +42,12 @@ controls.enableDamping = true;
 controls.dampingFactor = 0.05;
 controls.screenSpacePanning = false;
 controls.enableRotate = true;
-controls.rotateSpeed = 0.5;
+controls.rotateSpeed = 0.3;
 controls.enableZoom = true;
 controls.zoomSpeed = 0.5;
-controls.minDistance = 100;
-controls.maxDistance = 500;
-controls.target = new THREE.Vector3(0, 0, 0);
+controls.minDistance = 1;
+controls.maxDistance = 1000;
+controls.maxPolarAngle = Math.PI * 0.5;
 
 // resize
 const onResize = () => {
@@ -59,42 +57,66 @@ const onResize = () => {
 };
 window.addEventListener("resize", onResize);
 
-// Generating Random Points in a Sphere (https://karthikkaranth.me/blog/generating-random-points-in-a-sphere/)
-const getPoint = (radius = 1) => {
-  const u = Math.random();
-  const v = Math.random();
-  const theta = u * 2.0 * Math.PI;
-  const phi = Math.acos(2.0 * v - 1.0);
-  const r = Math.cbrt(Math.random()) * radius;
-  const sinTheta = Math.sin(theta);
-  const cosTheta = Math.cos(theta);
-  const sinPhi = Math.sin(phi);
-  const cosPhi = Math.cos(phi);
-  const x = r * sinPhi * cosTheta;
-  const y = r * sinPhi * sinTheta;
-  const z = r * cosPhi;
-  return { x, y, z };
-};
+// floor
+const floorGeometry = new THREE.BoxGeometry(2000, 0.1, 2000);
+const floorMaterial = new THREE.MeshStandardMaterial({
+  color: "gray",
+  roughness: 0.2,
+  metalness: 0,
+});
+const floorMesh = new THREE.Mesh(floorGeometry, floorMaterial);
+scene.add(floorMesh);
 
-// spheres
-const sphereGeometry = new THREE.SphereGeometry(2, 128, 128);
+// cone
+const coneGeometry = new THREE.ConeGeometry(1, 3, 128);
+const coneMaterial = new THREE.MeshStandardMaterial({
+  color: "white",
+  roughness: 0.8,
+  metalness: 0,
+});
+const coneMesh = new THREE.Mesh(coneGeometry, coneMaterial);
+coneMesh.position.y = 1.5;
+scene.add(coneMesh);
+
+// torusknot
+const torusKnotGeometry = new THREE.TorusKnotGeometry(1, 0.3, 128, 64);
+const torusKnotMaterial = new THREE.MeshStandardMaterial({
+  color: "#ffffff",
+  roughness: 0,
+  metalness: 0,
+});
+const torusKnotMesh = new THREE.Mesh(torusKnotGeometry, torusKnotMaterial);
+torusKnotMesh.position.y = 5;
+torusKnotMesh.name = "torusKnot";
+scene.add(torusKnotMesh);
+controls.target.copy(torusKnotMesh.position);
+raycastObjects.push(torusKnotMesh);
+
+// sphere
+const sphereGroup = new THREE.Group();
+const SphereGeometry = new THREE.SphereGeometry(0.3, 128, 128);
 const sphereMaterial = new THREE.MeshStandardMaterial({
-  color: "black",
+  color: "#ffffff",
   roughness: 0.8,
   metalness: 0.2,
 });
 
-for (let i = 0; i < 1000; i++) {
-  const sphereMesh = new THREE.Mesh(sphereGeometry, sphereMaterial.clone());
-  const { x, y, z } = getPoint(100);
-  sphereMesh.position.set(x, y, z);
+// stats
+const stats = new Stats();
+document.body.appendChild(stats.dom);
 
-  // adding custome properties to use later
+// back sphere position & scale
+const count = 10;
+const gap = 2;
+
+for (let i = -count; i <= count; i++) {
+  const sphereMesh = new THREE.Mesh(SphereGeometry, sphereMaterial.clone());
+  sphereMesh.position.set(i * gap, 2, -10);
+  sphereMesh.initialPosition = sphereMesh.position.clone();
   sphereMesh.name = "sphere";
-  sphereMesh.isAnimating = false;
-
-  scene.add(sphereMesh);
+  raycastObjects.push(sphereMesh);
 }
+scene.add(...raycastObjects);
 
 // raycaster
 const raycaster = new THREE.Raycaster();
@@ -117,13 +139,12 @@ const animate = () => {
   raycaster.setFromCamera(pointer, camera);
 
   // calculate objects intersecting the picking ray
-  const intersects = raycaster.intersectObjects(scene.children);
+  const intersects = raycaster.intersectObjects(raycastObjects);
 
   // something intersected!
   if (intersects.length > 0) {
     if (
       // look for raycasted sphere
-      intersects[0].object.name === "sphere" &&
       intersects[0].object !== INTERSECTED
     ) {
       // reset previous intersected object's color
@@ -159,69 +180,66 @@ const onClick = () => {
 
   // if it was animating, reset animation
   if (INTERSECTED.isAnimating) {
-    gsap.to(INTERSECTED.scale, {
-      x: 1,
-      y: 1,
-      z: 1,
-      duration: 0.5,
-      ease: "power2.inOut",
-      overwrite: true,
-    });
-    gsap.to(INTERSECTED.material.color, {
-      r: 0,
-      g: 0,
-      b: 0,
-      duration: 0.5,
-      ease: "power2.inOut",
-      overwrite: true,
-    });
+    // spheres
+
+    if (INTERSECTED.name === "sphere") {
+      gsap.to(INTERSECTED.position, {
+        y: INTERSECTED.initialPosition.y,
+        duration: 1,
+        ease: "power2.inOut",
+        overwrite: true,
+      });
+      gsap.to(INTERSECTED.scale, {
+        y: 1,
+        duration: 1,
+        ease: "power2.inOut",
+        overwrite: true,
+      });
+    }
+
+    // torus knot
+    if (INTERSECTED.name === "torusKnot") {
+      gsap.to(INTERSECTED.rotation, {
+        y: 0,
+        duration: 1,
+        ease: "power2.inOut",
+        overwrite: true,
+      });
+    }
 
     INTERSECTED.isAnimating = false;
   }
   // animate
   else {
-    gsap.to(INTERSECTED.scale, {
-      x: "random(0, 3)",
-      y: "random(0, 3)",
-      z: "random(0, 3)",
-      duration: "random(2, 5)",
-      ease: "power2.inOut",
-      repeat: -1,
-      yoyo: true,
-    });
+    if (INTERSECTED.name === "sphere") {
+      gsap.to(INTERSECTED.position, {
+        y: 9,
+        duration: "random(3, 10)",
+        ease: "power2.inOut",
+        repeat: -1,
+        repeatRefresh: true,
+        yoyo: true,
+      });
+      gsap.to(INTERSECTED.scale, {
+        y: "random(1, 4)",
+        duration: "random(3, 10)",
+        ease: "sine.inOut",
+        repeat: -1,
+        repeatRefresh: true,
+        yoyo: true,
+      });
+    }
 
-    // get random bright blue palette
-    const c = randomColor({
-      hue: "#0000FF",
-      luminosity: "bright",
-    });
-    const { r, g, b } = new THREE.Color(c);
-    gsap.to(INTERSECTED.material.color, {
-      r,
-      g,
-      b,
-      duration: 1,
-      ease: "power2.inOut",
-    });
+    if (INTERSECTED.name === "torusKnot") {
+      gsap.to(INTERSECTED.rotation, {
+        y: Math.PI * 2,
+        duration: 4,
+        ease: "power2.inOut",
+        repeat: -1,
+      });
+    }
 
     INTERSECTED.isAnimating = true;
   }
 };
 window.addEventListener("click", onClick);
-
-const bgGutton = document.querySelector("#bg-button");
-
-const onButtonClick = () => {
-  const c = randomColor({
-    luminosity: "bright",
-  });
-  const { r, g, b } = new THREE.Color(c);
-  gsap.to(scene.background, {
-    r,
-    g,
-    b,
-    duration: 1,
-    ease: "linear",
-  });
-};
-bgGutton.addEventListener("click", onButtonClick);
