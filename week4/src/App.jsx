@@ -7,10 +7,11 @@ function App() {
   return (
     <div id="app">
       <div className="button-container">
-        <Button variant="solid" onClick={() => setCount(count + 1)}>
+        <Button onClick={() => setCount(count + 1)}>Click me</Button>
+        <Button variant="outline" onClick={() => setCount(count + 1)}>
           Click me
         </Button>
-        <Button variant="outline" onClick={() => setCount(count + 1)}>
+        <Button variant="subtle" onClick={() => setCount(count + 1)}>
           Click me
         </Button>
       </div>

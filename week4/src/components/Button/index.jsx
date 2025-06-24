@@ -1,6 +1,6 @@
 import styles from "./index.module.css";
 
-const Button = ({ children, variant = "solid", ...props }) => {
+const Button = ({ children, variant = "fill", ...props }) => {
   return (
     <button className={`${styles.button} ${styles[variant]}`} {...props}>
       {children}

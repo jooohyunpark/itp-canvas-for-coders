@@ -11,9 +11,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 20px;
-  background-color: #242424;
-  color: #fff;
+  gap: 40px;
 }
 
 .button-container {
