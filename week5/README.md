@@ -1,12 +1,11 @@
-# Week 5
+# Week 4
 
 ## Description
 
-This code base covers using 3D model and positional audio in Three.js
+This code base covers different animation methods.
 
-- [3D Models](https://threejs.org/docs/index.html#manual/en/introduction/Loading-3D-models)
-- [Positional audio](https://threejs.org/docs/#api/en/audio/PositionalAudio)
-- [Shadows](https://threejs.org/manual/#en/shadows)
+- [requestAnimationFrame](https://developer.mozilla.org/en-US/docs/Web/API/window/requestAnimationFrame)
+- [GSAP](<https://greensock.com/docs/v3/GSAP/gsap.to()>)
 
 ## Usage
 
