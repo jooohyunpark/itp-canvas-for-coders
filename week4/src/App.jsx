@@ -7,8 +7,7 @@ function App() {
   return (
     <div id="app">
       <Button onClick={() => setCount(count + 1)}>Click me</Button>
-
-      {count}
+      <p>You clicked {count} times!</p>
     </div>
   );
 }
