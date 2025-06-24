@@ -6,7 +6,14 @@ function App() {
 
   return (
     <div id="app">
-      <Button onClick={() => setCount(count + 1)}>Click me</Button>
+      <div className="button-container">
+        <Button variant="solid" onClick={() => setCount(count + 1)}>
+          Click me
+        </Button>
+        <Button variant="outline" onClick={() => setCount(count + 1)}>
+          Click me
+        </Button>
+      </div>
       <p>You clicked {count} times!</p>
     </div>
   );

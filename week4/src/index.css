@@ -15,3 +15,8 @@
   background-color: #242424;
   color: #fff;
 }
+
+.button-container {
+  display: flex;
+  gap: 20px;
+}

@@ -1,0 +1,27 @@
+.button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.solid {
+  background: rgba(255, 255, 255, 0.7);
+  transition: background 0.3s ease;
+
+  &:hover {
+    background: white;
+  }
+}
+
+.outline {
+  border: 1px solid white;
+  background: transparent;
+  color: white;
+  transition: background 0.3s ease, color 0.3s ease;
+
+  &:hover {
+    background: white;
+    color: black;
+  }
+}
