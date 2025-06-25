@@ -9,7 +9,7 @@ function App() {
   return (
     <div id="app">
       <Canvas>
-        <PerspectiveCamera makeDefault fov={60} position={[0, 0, 10]} />
+        <PerspectiveCamera makeDefault fov={60} position={[0, 0, 15]} />
         <OrbitControls makeDefault />
 
         <Center>
@@ -17,8 +17,12 @@ function App() {
             Basic
           </Text>
 
-          <Text position={[3, 0, 0]} onClick={() => navigate("/basic")}>
-            ddd
+          <Text position={[3, 0, 0]} onClick={() => navigate("/spring")}>
+            Spring
+          </Text>
+
+          <Text position={[6, 0, 0]} onClick={() => navigate("/exercise")}>
+            Exercise
           </Text>
         </Center>
       </Canvas>

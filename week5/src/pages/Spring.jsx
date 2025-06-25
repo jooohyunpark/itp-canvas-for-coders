@@ -9,9 +9,15 @@ function App() {
         <PerspectiveCamera makeDefault fov={60} position={[0, 0, 10]} />
         <OrbitControls makeDefault />
 
-        <ambientLight intensity={3} />
-        <directionalLight position={[10, 10, 10]} intensity={1} />
-        <pointLight position={[0, -10, 0]} decay={0} intensity={1} />
+        <ambientLight intensity={Math.PI / 2} />
+        <spotLight
+          position={[10, 10, 10]}
+          angle={0.15}
+          penumbra={1}
+          decay={0}
+          intensity={Math.PI}
+        />
+        <pointLight position={[-10, -10, -10]} decay={0} intensity={Math.PI} />
 
         <Box position={[-2, 0, 0]} />
         <Box position={[0, 0, 0]} />

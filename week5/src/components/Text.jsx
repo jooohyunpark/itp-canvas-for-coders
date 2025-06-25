@@ -10,7 +10,7 @@ const Text = ({ children, hover = true, ...props }) => {
       ref={ref}
       font="/fonts/helvetiker_regular.typeface.json"
       size={0.5}
-      height={0.1}
+      height={0.15}
       curveSegments={12}
       onPointerOver={() => hover && setHover(true)}
       onPointerOut={() => hover && setHover(false)}
@@ -18,11 +18,7 @@ const Text = ({ children, hover = true, ...props }) => {
     >
       {children}
 
-      <meshBasicMaterial
-        color={hovered ? "blue" : "black"}
-        metalness={0.2}
-        roughness={0.8}
-      />
+      <meshBasicMaterial color={hovered ? "blue" : "black"} />
     </Text3D>
   );
 };
