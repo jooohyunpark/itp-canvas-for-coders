@@ -17,15 +17,11 @@ const Text = ({ children, ...props }) => {
     <Text3D
       ref={ref}
       font="/fonts/helvetiker_regular.typeface.json"
-      size={1}
-      height={0.2}
+      size={0.5}
+      height={0.1}
       curveSegments={12}
       onPointerOver={() => setHover(true)}
       onPointerOut={() => setHover(false)}
-      onClick={() => {
-        console.log("clicked");
-      }}
-      center
       {...props}
     >
       {children}
