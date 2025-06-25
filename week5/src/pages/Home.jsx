@@ -1,5 +1,5 @@
 import { Canvas } from "@react-three/fiber";
-import { OrbitControls, PerspectiveCamera } from "@react-three/drei";
+import { OrbitControls, PerspectiveCamera, Center } from "@react-three/drei";
 import { useNavigate } from "react-router-dom";
 import Text from "@/components/Text";
 
@@ -10,14 +10,17 @@ function App() {
     <div id="app">
       <Canvas>
         <PerspectiveCamera makeDefault fov={60} position={[0, 0, 10]} />
-        <OrbitControls />
+        <OrbitControls makeDefault />
 
-        <Text position={[0, 0, 0]} onClick={() => navigate("/basic")}>
-          Basic
-        </Text>
-        <Text position={[3, 0, 0]} onClick={() => navigate("/basic")}>
-          ddd
-        </Text>
+        <Center>
+          <Text position={[0, 0, 0]} onClick={() => navigate("/basic")}>
+            Basic
+          </Text>
+
+          <Text position={[3, 0, 0]} onClick={() => navigate("/basic")}>
+            ddd
+          </Text>
+        </Center>
       </Canvas>
     </div>
   );

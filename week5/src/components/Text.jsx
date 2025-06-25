@@ -1,17 +1,9 @@
 import { Text3D } from "@react-three/drei";
-import { useState, useRef, useEffect } from "react";
-import { useFrame } from "@react-three/fiber";
+import { useState, useRef } from "react";
 
-const Text = ({ children, ...props }) => {
+const Text = ({ children, hover = true, ...props }) => {
   const ref = useRef();
   const [hovered, setHover] = useState(false);
-
-  // Center the geometry once it's available
-  useEffect(() => {
-    if (ref.current) ref.current.geometry.center();
-  }, []);
-
-  useFrame((state, delta) => (ref.current.rotation.y -= delta * 0.1));
 
   return (
     <Text3D
@@ -20,8 +12,8 @@ const Text = ({ children, ...props }) => {
       size={0.5}
       height={0.1}
       curveSegments={12}
-      onPointerOver={() => setHover(true)}
-      onPointerOut={() => setHover(false)}
+      onPointerOver={() => hover && setHover(true)}
+      onPointerOut={() => hover && setHover(false)}
       {...props}
     >
       {children}
