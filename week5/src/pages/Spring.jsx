@@ -1,8 +1,16 @@
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, PerspectiveCamera } from "@react-three/drei";
+import { useSpring, animated } from "@react-spring/three";
 import AnimatedBox from "@/components/AnimatedBox";
 
 function Scene() {
+  const { background } = useSpring({
+    loop: { reverse: true },
+    from: { background: "white" },
+    to: { background: "red" },
+    config: { duration: 2000 },
+  });
+
   return (
     <>
       <color attach="background" args={["white"]} />

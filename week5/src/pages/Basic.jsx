@@ -1,8 +1,9 @@
 import { useRef } from "react";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, PerspectiveCamera, useHelper } from "@react-three/drei";
-import Box from "@/components/Box";
+import { useFrame } from "@react-three/fiber";
 import { PointLightHelper, DirectionalLightHelper } from "three";
+import Box from "@/components/Box";
 
 function Scene() {
   const directionalLightRef = useRef();
@@ -11,6 +12,8 @@ function Scene() {
   // ref, helper, size, color
   useHelper(directionalLightRef, DirectionalLightHelper, 1, "black");
   useHelper(pointLightRef, PointLightHelper, 1, "black");
+
+  useFrame((state) => {});
 
   return (
     <>
