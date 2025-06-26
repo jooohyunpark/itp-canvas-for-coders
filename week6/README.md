@@ -1,10 +1,8 @@
-# Week 6
+# Week 6: Interactions & Deployment
 
-## Description
+## Content
 
-This code base covers how to interact with Three.js objects.
-
-- [Raycaster](https://threejs.org/docs/index.html#api/en/core/Raycaster)
+- [React-three-rapier](https://github.com/pmndrs/react-three-rapier)
 - [Deploying site](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site)
 
 ## Usage

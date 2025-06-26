@@ -1,8 +1,8 @@
-# Week 3
+# Week 3: Motion & Depth
 
-## Description
+## Content
 
-- [requestAnimationFrame](https://developer.mozilla.org/en-US/docs/Web/API/window/requestAnimationFrame)
+- [Animation loop](https://threejs.org/docs/index.html?q=render#api/en/renderers/WebGLRenderer.setAnimationLoop)
 - [GSAP](<https://greensock.com/docs/v3/GSAP/gsap.to()>)
 - [3D Models](https://threejs.org/docs/index.html#manual/en/introduction/Loading-3D-models)
 - [Positional audio](https://threejs.org/docs/#api/en/audio/PositionalAudio)

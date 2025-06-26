@@ -1,6 +1,6 @@
-# Week 1
+# Week 1: Intro
 
-## Description
+## Content
 
 - [Vectors](https://threejs.org/docs/index.html#api/en/math/Vector3)
 - [Colors](https://threejs.org/docs/index.html#api/en/math/Color)

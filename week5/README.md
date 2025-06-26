@@ -1,11 +1,10 @@
-# Week 4
+# Week 5: React Three Fiber
 
-## Description
+## Content
 
-This code base covers different animation methods.
-
-- [requestAnimationFrame](https://developer.mozilla.org/en-US/docs/Web/API/window/requestAnimationFrame)
-- [GSAP](<https://greensock.com/docs/v3/GSAP/gsap.to()>)
+- [@react-three/fiber](https://r3f.docs.pmnd.rs/getting-started/introduction)
+- [@react-three/drei](https://github.com/pmndrs/drei)
+- [@react-spring/three](https://github.com/pmndrs/react-spring)
 
 ## Usage
 

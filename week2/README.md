@@ -1,6 +1,6 @@
-# Week 2
+# Week 2: Building a Scene
 
-## Description
+## Content
 
 - [Renderer](https://threejs.org/manual/#en/rendertargets)
 - [Scene](https://threejs.org/manual/#en/scenegraph)

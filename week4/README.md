@@ -1,7 +1,8 @@
-# Week 4
+# Week 4: React
 
-## Description
-- [React Concept](https://react.gg/visualized#v=fn(s))
+## Content
+
+- [Concept](<https://react.gg/visualized#v=fn(s)>)
 - [JSX](https://react.gg/visualized#jsx)
 - [Component](https://react.gg/visualized#components)/[Props](https://react.dev/learn/passing-props-to-a-component)
 - [Event handlers](https://react.dev/learn/responding-to-events)
