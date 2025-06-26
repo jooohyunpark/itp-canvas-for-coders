@@ -13,6 +13,8 @@ function Scene() {
   useHelper(directionalLightRef, DirectionalLightHelper, 1, "black");
   useHelper(pointLightRef, PointLightHelper, 1, "black");
 
+  // you can access useful information in the state object
+  // { gl, scene, camera }
   useFrame((state) => {});
 
   return (
