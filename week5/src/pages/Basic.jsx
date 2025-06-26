@@ -1,7 +1,7 @@
+import { useRef } from "react";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, PerspectiveCamera, useHelper } from "@react-three/drei";
 import Box from "@/components/Box";
-import { useRef } from "react";
 import { PointLightHelper, DirectionalLightHelper } from "three";
 
 function Scene() {

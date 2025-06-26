@@ -22,7 +22,7 @@ const AnimatedBox = (props) => {
   const { color } = useSpring({
     color: hovered ? "hotpink" : "orange",
     config: {
-      duration: 300,
+      duration: 250,
     },
   });
 
