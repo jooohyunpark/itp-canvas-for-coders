@@ -1,5 +1,4 @@
 import { useRef, useState } from "react";
-import { useFrame } from "@react-three/fiber";
 import { animated, useSpring, easings } from "@react-spring/three";
 
 const AnimatedBox = (props) => {
@@ -8,8 +7,6 @@ const AnimatedBox = (props) => {
   // Set up state for the hovered and active state
   const [hovered, setHover] = useState(false);
   const [active, setActive] = useState(false);
-  // Subscribe this component to the render-loop, rotate the mesh every frame
-  useFrame((state, delta) => (meshRef.current.rotation.x += delta * 0.5));
 
   const { scale } = useSpring({
     scale: active ? 1.5 : 1,
@@ -26,10 +23,20 @@ const AnimatedBox = (props) => {
     },
   });
 
+  const { rotation } = useSpring({
+    loop: true,
+    from: { rotation: [0, 0, 0] },
+    to: { rotation: [Math.PI * 2, 0, 0] },
+    config: {
+      duration: 10 * 1000,
+    },
+  });
+
   return (
     <animated.mesh
       ref={meshRef}
       scale={scale}
+      rotation={rotation}
       onClick={() => setActive(!active)}
       onPointerOver={() => setHover(true)}
       onPointerOut={() => setHover(false)}

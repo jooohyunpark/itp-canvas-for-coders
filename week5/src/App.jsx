@@ -3,6 +3,7 @@ import Basic from "@/pages/Basic";
 import Home from "@/pages/Home";
 import Spring from "@/pages/Spring";
 import Exercise from "@/pages/Exercise";
+import Drei from "@/pages/Drei";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/basic" element={<Basic />} />
         <Route path="/spring" element={<Spring />} />
+        <Route path="/drei" element={<Drei />} />
         <Route path="/exercise" element={<Exercise />} />
       </Routes>
     </BrowserRouter>

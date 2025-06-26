@@ -17,11 +17,15 @@ function App() {
             Basic
           </Text>
 
-          <Text position={[3, 0, 0]} onClick={() => navigate("/spring")}>
+          <Text position={[0, -2, 0]} onClick={() => navigate("/spring")}>
             Spring
           </Text>
 
-          <Text position={[6, 0, 0]} onClick={() => navigate("/exercise")}>
+          <Text position={[0, -4, 0]} onClick={() => navigate("/drei")}>
+            Drei
+          </Text>
+
+          <Text position={[0, -6, 0]} onClick={() => navigate("/exercise")}>
             Exercise
           </Text>
         </Center>
