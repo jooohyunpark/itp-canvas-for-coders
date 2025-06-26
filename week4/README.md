@@ -1,11 +1,12 @@
 # Week 4
 
 ## Description
-
-This code base covers different animation methods.
-
-- [requestAnimationFrame](https://developer.mozilla.org/en-US/docs/Web/API/window/requestAnimationFrame)
-- [GSAP](<https://greensock.com/docs/v3/GSAP/gsap.to()>)
+- [React Concept](https://react.gg/visualized#v=fn(s))
+- [JSX](https://react.gg/visualized#jsx)
+- [Component](https://react.gg/visualized#components)/[Props](https://react.dev/learn/passing-props-to-a-component)
+- [Event handlers](https://react.dev/learn/responding-to-events)
+- [State](https://react.dev/learn/state-a-components-memory)
+- [Hooks](https://react.dev/reference/react/hooks)
 
 ## Usage
 
