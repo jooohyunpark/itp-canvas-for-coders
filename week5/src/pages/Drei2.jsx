@@ -6,6 +6,7 @@ import {
   Stage,
   Gltf,
 } from "@react-three/drei";
+import { MeshBasicMaterial } from "three";
 import Human from "@/components/Human";
 
 function Scene() {
@@ -30,10 +31,14 @@ function Scene() {
           <Human />
         </Center>
         <Center top position={[2, 0, 0]}>
-          <mesh castShadow rotation={[0, Math.PI / 4, 0]}>
-            <boxGeometry args={[0.5, 0.5, 0.5]} />
-            <meshStandardMaterial color="white" />
-          </mesh>
+          <Clouds material={MeshBasicMaterial}>
+            <Cloud
+              segments={40}
+              bounds={[10, 3, 2]}
+              volume={10}
+              color="#0000FF"
+            />
+          </Clouds>
         </Center>
       </Stage>
     </>

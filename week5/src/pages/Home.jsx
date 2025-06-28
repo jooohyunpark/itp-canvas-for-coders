@@ -21,11 +21,15 @@ function App() {
             Spring
           </Text>
 
-          <Text position={[0, -4, 0]} onClick={() => navigate("/drei")}>
-            Drei
+          <Text position={[0, -4, 0]} onClick={() => navigate("/drei-1")}>
+            Drei 1
           </Text>
 
-          <Text position={[0, -6, 0]} onClick={() => navigate("/exercise")}>
+          <Text position={[0, -6, 0]} onClick={() => navigate("/drei-2")}>
+            Drei 2
+          </Text>
+
+          <Text position={[0, -8, 0]} onClick={() => navigate("/exercise")}>
             Exercise
           </Text>
         </Center>
