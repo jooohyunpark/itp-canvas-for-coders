@@ -22,10 +22,14 @@ function App() {
           </Text>
 
           <Text position={[0, -4, 0]} onClick={() => navigate("/drei")}>
-            Drei
+            Drei - Basic
           </Text>
 
-          <Text position={[0, -6, 0]} onClick={() => navigate("/exercise")}>
+          <Text position={[0, -6, 0]} onClick={() => navigate("/drei")}>
+            Drei - Advanced
+          </Text>
+
+          <Text position={[0, -8, 0]} onClick={() => navigate("/exercise")}>
             Exercise
           </Text>
         </Center>
