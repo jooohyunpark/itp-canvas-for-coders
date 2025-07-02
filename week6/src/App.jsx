@@ -101,7 +101,7 @@ function Scene() {
 function App() {
   return (
     <div id="app">
-      <Canvas>
+      <Canvas shadows>
         <Scene />
       </Canvas>
     </div>
