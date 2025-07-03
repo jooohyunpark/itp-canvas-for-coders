@@ -9,7 +9,7 @@ function App() {
   return (
     <div id="app">
       <Canvas>
-        <PerspectiveCamera makeDefault fov={60} position={[0, 0, 15]} />
+        <PerspectiveCamera makeDefault fov={60} position={[0, 0, 20]} />
         <OrbitControls makeDefault />
 
         <Center>
