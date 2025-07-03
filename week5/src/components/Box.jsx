@@ -1,7 +1,7 @@
 import { useRef, useState } from "react";
 import { useFrame } from "@react-three/fiber";
 
-const Box = ({ color = "orange", ...props }) => {
+const Box = ({ color = "white", ...props }) => {
   // This reference will give us direct access to the mesh
   const meshRef = useRef();
   // Set up state for the hovered and active state
@@ -20,7 +20,7 @@ const Box = ({ color = "orange", ...props }) => {
       {...props}
     >
       <boxGeometry args={[1, 1, 1]} />
-      <meshStandardMaterial color={hovered ? "hotpink" : color} />
+      <meshStandardMaterial color={hovered ? "blue" : color} />
     </mesh>
   );
 };

@@ -4,10 +4,10 @@ import { useSpring, animated } from "@react-spring/three";
 import AnimatedBox from "@/components/AnimatedBox";
 
 function Scene() {
-  const { background } = useSpring({
+  const { color } = useSpring({
     loop: { reverse: true },
-    from: { background: "white" },
-    to: { background: "red" },
+    from: { color: "white" },
+    to: { color: "red" },
     config: { duration: 2000 },
   });
 
