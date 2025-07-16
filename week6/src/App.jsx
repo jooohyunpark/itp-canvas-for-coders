@@ -77,9 +77,9 @@ function Scene() {
           />
         </directionalLight>
 
-        <Physics debug={false}>
-          <Environment files="/images/studio.hdr" />
+        <Environment files="/images/studio.hdr" />
 
+        <Physics debug={false}>
           {texts.map((text, index) => (
             <Text
               key={index}
