@@ -5,7 +5,7 @@
 - [Joohyun Park](https://joohyunpark.dev) ([📧](mailto:jhp527@nyu.edu))
 - Class dates
   - 10/23/2025 - 12/11/2025, Thursday, 6:00pm-8:30pm, 370 Jay Street (Room 409) Loc: Brooklyn Campus
-- [Office hours](https://calendar.app.google/5MMSKGww8qTmJd5q8)
+- Office hours
   - 10/23/2025 - 12/11/2025, Thursday, 8:30pm-9:30pm, 370 Jay Street (Room 409) Loc: Brooklyn Campus
 - [Zoom link](https://nyu.zoom.us/my/joohyunpark)
 
