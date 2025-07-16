@@ -1,5 +1,5 @@
 export const initialY = 10;
-const distance = 1.1;
+export const distance = 1.1;
 
 export const initialTexts = [
   {

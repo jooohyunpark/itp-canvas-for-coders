@@ -8,7 +8,7 @@ export function Text({
   rotation = [0, 0, 0],
 }) {
   const { opacity } = useSpring({
-    from: { opacity: 0.001 },
+    from: { opacity: 0.001 }, // since 0 gives a weird error, we use 0.001
     to: { opacity: 1 },
     config: { duration: 500 },
   });
