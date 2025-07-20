@@ -2,7 +2,6 @@ import "./style.css";
 import * as THREE from "three";
 import { OrbitControls } from "three/addons/controls/OrbitControls";
 import { RectAreaLightHelper } from "three/addons/helpers/RectAreaLightHelper";
-import Stats from "stats.js";
 import { gsap } from "gsap";
 
 // raycast objects
@@ -100,10 +99,6 @@ const sphereMaterial = new THREE.MeshStandardMaterial({
   roughness: 0.8,
   metalness: 0.2,
 });
-
-// stats
-const stats = new Stats();
-document.body.appendChild(stats.dom);
 
 // back sphere position & scale
 const count = 10;
