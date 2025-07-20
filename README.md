@@ -19,7 +19,7 @@ While being one of the most common media today, web space has infinite possibili
 
 At the completion of this course, the students will:
 
-1. Develop perspectives on using web pages as a creative medium.
+1. Develop perspectives on using web as a creative medium.
 2. Be comfortable prototyping web 3D experience with [Three.js](https://threejs.org/) and [React Three Fiber](https://github.com/pmndrs/react-three-fiber).
 
 
