@@ -7,7 +7,6 @@
   - 10/23/2025 - 12/11/2025, Thursday, 6:00pm-8:30pm, 370 Jay Street (Room 409) Loc: Brooklyn Campus
 - Office hours
   - 10/23/2025 - 12/11/2025, Thursday, 8:30pm-9:30pm, 370 Jay Street (Room 409) Loc: Brooklyn Campus
-- [Zoom link](https://nyu.zoom.us/my/joohyunpark)
 
 ## Course Description
 
