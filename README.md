@@ -79,7 +79,7 @@ npm run dev
 
 ## Weekly Topics
 
-### Week 1: Intro
+### Week 1: Introduction
 
 - [Reimagining web spaces](https://github.com/jooohyunpark/itp-canvas-for-coders/blob/main/Notes.md#reimagining-web-spaces)
 - [Three.js documentation](https://threejs.org/docs/index.html#manual/en/introduction/Creating-a-scene)
