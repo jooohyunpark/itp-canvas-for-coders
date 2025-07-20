@@ -12,7 +12,8 @@
 
 Web browser is a 21st-century canvas. 
 
-While it is one of the most common media today, the web space offers infinite possibilities for new aesthetics. This course covers Three.js fundamentals, providing students with the skills and insights to create visual experiences in web 3D.
+While being one of the most common media today, web space has infinite possibilities for new aesthetics. This course covers Three.js fundamentals, providing students with the skills and insights to develop visual and narrative experiences in web.
+
 
 ## Course Objectives
 
