@@ -1,5 +1,4 @@
-# Week 1: Intro
-
+# Week 1: Introduction
 
 ## Reimagining web space
 
@@ -23,14 +22,11 @@
 - [Amazon Coach Tabby brand store](https://www.amazon.com/stores/page/F3D8452D-98F8-46A6-8B8B-55A5B6B79F80)
 - [IBM Fast Start Journey](https://www.ibm.com/watson/supply-chain/resources/fast-start-journey/)
 
-
 ## Content
 
 - [Vectors](https://threejs.org/docs/index.html#api/en/math/Vector3)
 - [Colors](https://threejs.org/docs/index.html#api/en/math/Color)
 - [Object properties](https://threejs.org/docs/#api/en/core/Object3D)
-
-
 
 ## Usage
 
