@@ -37,7 +37,7 @@ Ideate, research, prototype, and iterate. Dive right into writing code, and donâ
 Feedback matters as much as presentation. Your constructive opinion can inspire someone to create great art.
 
 ## Course Structure
-- Group discussion (20 minutes)
+- Group discussion (15 minutes)
 - First half content (60 minutes)
 - Second half content or class exercise (60 minutes)
 
