@@ -25,14 +25,14 @@ At the completion of this course, the students will:
 
 ## Course Values
 
-### 1. Create together. 
+### 🤝 Create together
 Every idea matters. We respect every perspective and encourage open creativity through collaboration.
 
-### 2. Learn by doing
+### 💻 Learn by doing
 
 Ideate, research, prototype, and iterate. Dive right into writing code, and don't hesitate to break things along the way.
 
-### 3. Stay curious
+### 👀 Stay curious
 
 Ask questions, seek feedback, and share constructive insights. Your curiosity and thoughtful input can inspire others.
 
