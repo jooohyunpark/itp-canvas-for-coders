@@ -6,10 +6,9 @@
 - [Type](https://type.joohyunpark.dev/)
 - [TV Buddha](https://tv-buddha.joohyunpark.dev/)
 - [Gaze](https://gaze.joohyunpark.dev/)
-- [Time](https://time.joohyunpark.dev/)
+- [Time](https://new-interface-of-time.joohyunpark.dev/)
 - [Infinite Swimming Pools](https://zer02z2.github.io/Swimming-Pools-in-the-Hill/)
 - [SymbiosisThreeJS](https://dannoblem.github.io/SymbiosisThreeJS/)
-- [Swiss Army Man](https://swissarmyman.com/)
 - [Bruno Simon](https://bruno-simon.com/)
 - [Exoplanet Travel Bureau](https://exoplanets.nasa.gov/alien-worlds/exoplanet-travel-bureau/)
 - [t-SNE Map](https://experiments.withgoogle.com/t-sne-map)
@@ -19,7 +18,6 @@
 - [Scrollcontrols + GLTF](https://codesandbox.io/s/4jr4p)
 - [Sketches by Yi-Wen Lin](https://yiwenl.github.io/Sketches/)
 - [Life Interrupted](https://life-interrupted.joohyunpark.dev/#/digitalexperience/room/1)
-- [Amazon Coach Tabby brand store](https://www.amazon.com/stores/page/F3D8452D-98F8-46A6-8B8B-55A5B6B79F80)
 - [IBM Fast Start Journey](https://www.ibm.com/watson/supply-chain/resources/fast-start-journey/)
 
 ## Content
