@@ -6,7 +6,7 @@
 - [Type](https://type.joohyunpark.dev/)
 - [TV Buddha](https://tv-buddha.joohyunpark.dev/)
 - [Gaze](https://gaze.joohyunpark.dev/)
-- [Time](https://new-interface-of-time.joohyunpark.dev/)
+- [New Interface of Time](https://new-interface-of-time.joohyunpark.dev/)
 - [Infinite Swimming Pools](https://zer02z2.github.io/Swimming-Pools-in-the-Hill/)
 - [SymbiosisThreeJS](https://dannoblem.github.io/SymbiosisThreeJS/)
 - [Bruno Simon](https://bruno-simon.com/)
