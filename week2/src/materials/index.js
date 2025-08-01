@@ -137,8 +137,5 @@ scene.add(mesh6);
 const animate = () => {
   renderer.render(scene, camera);
   controls.update();
-
-  requestAnimationFrame(animate);
 };
-
-animate();
+renderer.setAnimationLoop(animate);

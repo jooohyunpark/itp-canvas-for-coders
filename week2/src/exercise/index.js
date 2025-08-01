@@ -65,8 +65,5 @@ scene.add(boxMesh);
 const animate = () => {
   renderer.render(scene, camera);
   controls.update();
-
-  requestAnimationFrame(animate);
 };
-
-animate();
+renderer.setAnimationLoop(animate);

@@ -125,8 +125,5 @@ fontLoader.load("/helvetiker_regular.typeface.json", (font) => {
 const animate = () => {
   renderer.render(scene, camera);
   controls.update();
-
-  requestAnimationFrame(animate);
 };
-
-animate();
+renderer.setAnimationLoop(animate);

@@ -96,8 +96,5 @@ const animate = (timestamp) => {
 
   renderer.render(scene, camera);
   controls.update();
-
-  requestAnimationFrame(animate);
 };
-
-animate();
+renderer.setAnimationLoop(animate);

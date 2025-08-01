@@ -155,7 +155,5 @@ const animate = () => {
   // controls.update(clock.getDelta()); // for first person control
 
   renderer.render(scene, camera);
-  requestAnimationFrame(animate);
 };
-
-animate();
+renderer.setAnimationLoop(animate);
