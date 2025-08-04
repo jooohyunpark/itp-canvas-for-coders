@@ -1,6 +1,8 @@
 import "./style.css";
 import * as THREE from "three";
 import { OrbitControls } from "three/addons/controls/OrbitControls";
+import { TextGeometry } from "three/addons/geometries/TextGeometry";
+import { FontLoader } from "three/addons/loaders/FontLoader";
 
 // app
 const app = document.querySelector("#app");
@@ -60,6 +62,28 @@ const boxGeometry = new THREE.BoxGeometry(1, 1, 1);
 const material = new THREE.MeshNormalMaterial();
 const boxMesh = new THREE.Mesh(boxGeometry, material);
 scene.add(boxMesh);
+
+// text
+const fontLoader = new FontLoader();
+fontLoader.load("/helvetiker_regular.typeface.json", (font) => {
+  const text =
+    "Exercise:\nCreate your own Three.js scene using only box shapes (BoxGeometry).\nFeel free to use any other features!";
+
+  const textGeometry = new TextGeometry(text, {
+    font: font,
+    size: 70,
+    height: 5,
+    curveSegments: 12,
+    bevelEnabled: true,
+    bevelThickness: 2,
+    bevelSize: 1.5,
+  });
+
+  const textMesh = new THREE.Mesh(textGeometry, material);
+  textMesh.scale.setScalar(0.01);
+  textMesh.position.set(0, 7, 0);
+  scene.add(textMesh);
+});
 
 // animate
 const animate = () => {

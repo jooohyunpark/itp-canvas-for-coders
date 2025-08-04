@@ -1,6 +1,12 @@
 import { Canvas } from "@react-three/fiber";
-import { OrbitControls, PerspectiveCamera } from "@react-three/drei";
+import {
+  OrbitControls,
+  PerspectiveCamera,
+  Center,
+  Text3D,
+} from "@react-three/drei";
 import Box from "@/components/Box";
+import Text from "@/components/Text";
 
 function Scene() {
   return (
@@ -17,6 +23,20 @@ function Scene() {
       <Box position={[-2, 0, 0]} />
       <Box position={[0, 0, 0]} />
       <Box position={[2, 0, 0]} />
+
+      <Center position={[0, 2, 0]}>
+        <Text3D
+          font="/fonts/helvetiker_regular.typeface.json"
+          size={0.5}
+          height={0.15}
+          curveSegments={12}
+          scale={0.5}
+        >
+          Exercise:{"\n"}
+          Rebuild your Three.js project in R3F.
+          <meshNormalMaterial />
+        </Text3D>
+      </Center>
     </>
   );
 }
