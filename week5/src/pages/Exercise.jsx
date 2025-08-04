@@ -4,11 +4,23 @@ import {
   PerspectiveCamera,
   Center,
   Text3D,
+  Box,
 } from "@react-three/drei";
-import Box from "@/components/Box";
-import Text from "@/components/Text";
+import { useFrame } from "@react-three/fiber";
+
+import { useRef } from "react";
 
 function Scene() {
+  const box1Ref = useRef();
+  const box2Ref = useRef();
+  const box3Ref = useRef();
+
+  useFrame((state, delta) => {
+    box1Ref.current.rotation.x += delta * 0.5;
+    box2Ref.current.rotation.y += delta * 0.5;
+    box3Ref.current.rotation.z += delta * 0.5;
+  });
+
   return (
     <>
       <color attach="background" args={["white"]} />
@@ -17,12 +29,18 @@ function Scene() {
       <OrbitControls makeDefault />
 
       <ambientLight intensity={1} />
-      <directionalLight position={[5, 5, 5]} intensity={2} />
-      <pointLight position={[-5, -5, 5]} decay={0} intensity={2} />
 
-      <Box position={[-2, 0, 0]} />
-      <Box position={[0, 0, 0]} />
-      <Box position={[2, 0, 0]} />
+      <Center position={[0, -1, 0]}>
+        <Box ref={box1Ref} position={[-2, 0, 0]}>
+          <meshNormalMaterial />
+        </Box>
+        <Box ref={box2Ref} position={[0, 0, 0]}>
+          <meshNormalMaterial />
+        </Box>
+        <Box ref={box3Ref} position={[2, 0, 0]}>
+          <meshNormalMaterial />
+        </Box>
+      </Center>
 
       <Center position={[0, 2, 0]}>
         <Text3D
