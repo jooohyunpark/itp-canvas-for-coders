@@ -19,7 +19,7 @@ function Scene() {
         makeDefault
         minPolarAngle={0}
         maxPolarAngle={Math.PI / 2}
-        target={[0, 0.5, 0]}
+        target={[0, 0, 0]}
       />
 
       <Stage intensity={0.7} adjustCamera={false} environment="city">
