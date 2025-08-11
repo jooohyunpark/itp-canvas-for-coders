@@ -14,19 +14,14 @@ function Scene() {
   useFrame((state, delta) => {
     const scrollProgress = scroll.offset;
 
-    console.log(scrollProgress);
+    console.log("scrollProgress: ", scrollProgress.toFixed(2));
 
     state.camera.position.z = 7 + scrollProgress * -5; // Full rotation
   });
   return (
     <>
       <PerspectiveCamera makeDefault fov={60} position={[0, 0, 7]} />
-      {/* <OrbitControls
-        makeDefault
-        minPolarAngle={0}
-        maxPolarAngle={Math.PI / 2}
-        target={[0, 0.5, 0]}
-      /> */}
+      {/* <OrbitControls makeDefault /> */}
 
       <Stage intensity={0.7} adjustCamera={false} environment="city">
         <Human position={[0, 0, 0]} />
@@ -39,7 +34,7 @@ function App() {
   return (
     <div id="app">
       <Canvas shadows>
-        <ScrollControls pages={3} damping={0.25}>
+        <ScrollControls pages={3} damping={0.2}>
           <Scene />
         </ScrollControls>
       </Canvas>
