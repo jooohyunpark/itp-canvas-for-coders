@@ -5,6 +5,7 @@ import {
   ScrollControls,
   useScroll,
   useHelper,
+  Trail,
 } from "@react-three/drei";
 import Human from "@/components/Human";
 import { PointLightHelper } from "three";
@@ -15,6 +16,7 @@ function Scene() {
   const pointLightRef = useRef();
   const ambientLightRef = useRef();
   const backgroundRef = useRef();
+  const sphereRef = useRef();
 
   useHelper(pointLightRef, PointLightHelper, 0.1, "orange");
 
@@ -37,6 +39,8 @@ function Scene() {
     // background color
     const color = 1 - scrollProgress;
     backgroundRef.current.setRGB(color, color, color);
+
+    sphereRef.current.rotation.y = scrollProgress * -4 * Math.PI;
   });
 
   return (
@@ -56,6 +60,23 @@ function Scene() {
 
       <group ref={modelRef}>
         <Human />
+      </group>
+
+      <group ref={sphereRef}>
+        <Trail
+          width={0.2} // Width of the line
+          color={"blue"} // Color of the line
+          length={2} // Length of the line
+          decay={0.4} // How fast the line fades away
+          local={false} // Wether to use the target's world or local positions
+          stride={0} // Min distance between previous and current point
+          interval={1} // Number of frames to wait before next calculation
+        >
+          <mesh position={[1, 0, 0]}>
+            <sphereGeometry args={[0.04, 64, 64]} />
+            <meshBasicMaterial color="blue" />
+          </mesh>
+        </Trail>
       </group>
     </>
   );

@@ -4,7 +4,6 @@ import {
   PerspectiveCamera,
   Center,
   Stage,
-  Gltf,
   Clouds,
   Cloud,
 } from "@react-three/drei";
