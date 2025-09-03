@@ -4,6 +4,7 @@
 
 - [Doors](https://doors.joohyunpark.dev/)
 - [Type](https://type.joohyunpark.dev/)
+- [Type 2](https://type2joohyunpark.dev/)
 - [TV Buddha](https://tv-buddha.joohyunpark.dev/)
 - [Gaze](https://gaze.joohyunpark.dev/)
 - [New Interface of Time](https://new-interface-of-time.joohyunpark.dev/)
