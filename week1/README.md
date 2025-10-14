@@ -7,7 +7,6 @@
 - [Type 2](https://type2.joohyunpark.dev/)
 - [TV Buddha](https://tv-buddha.joohyunpark.dev/)
 - [Gaze](https://gaze.joohyunpark.dev/)
-- [New Interface of Time](https://new-interface-of-time.joohyunpark.dev/)
 - [Infinite Swimming Pools](https://zer02z2.github.io/Swimming-Pools-in-the-Hill/)
 - [SymbiosisThreeJS](https://dannoblem.github.io/SymbiosisThreeJS/)
 - [Bruno Simon](https://bruno-simon.com/)
@@ -21,6 +20,7 @@
 - [Sketches by Yi-Wen Lin](https://yiwenl.github.io/Sketches/)
 - [Life Interrupted](https://life-interrupted.joohyunpark.dev/#/digitalexperience/room/1)
 - [IBM Fast Start Journey](https://www.ibm.com/watson/supply-chain/resources/fast-start-journey/)
+- [New Interface of Time](https://new-interface-of-time.joohyunpark.dev/)
 
 ## Content
 
