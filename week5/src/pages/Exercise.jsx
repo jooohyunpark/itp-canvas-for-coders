@@ -51,7 +51,9 @@ function Scene() {
           scale={0.5}
         >
           Exercise:{"\n"}
-          Rebuild your Three.js project in R3F.
+          Rebuild your Three.js project using R3F,
+          {"\n"}
+          or explore examples to prototype a scene in R3F.
           <meshNormalMaterial />
         </Text3D>
       </Center>
