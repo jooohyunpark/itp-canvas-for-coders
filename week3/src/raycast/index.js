@@ -108,7 +108,6 @@ for (let i = -count; i <= count; i++) {
   const sphereMesh = new THREE.Mesh(SphereGeometry, sphereMaterial.clone());
   sphereMesh.position.set(i * gap, 2, -10);
   sphereMesh.initialPosition = sphereMesh.position.clone();
-  sphereMesh.name = "sphere";
   raycastObjects.push(sphereMesh);
 }
 scene.add(...raycastObjects);
@@ -139,7 +138,7 @@ const animate = () => {
   // something intersected!
   if (intersects.length > 0) {
     if (
-      // look for raycasted sphere
+      // look for raycasted object
       intersects[0].object !== INTERSECTED
     ) {
       // reset previous intersected object's color
@@ -168,73 +167,3 @@ const animate = () => {
   controls.update();
 };
 renderer.setAnimationLoop(animate);
-
-const onClick = () => {
-  // if no intersected objects, return
-  if (!INTERSECTED) return;
-
-  // if it was animating, reset animation
-  if (INTERSECTED.isAnimating) {
-    // spheres
-
-    if (INTERSECTED.name === "sphere") {
-      gsap.to(INTERSECTED.position, {
-        y: INTERSECTED.initialPosition.y,
-        duration: 1,
-        ease: "power2.inOut",
-        overwrite: true,
-      });
-      gsap.to(INTERSECTED.scale, {
-        y: 1,
-        duration: 1,
-        ease: "power2.inOut",
-        overwrite: true,
-      });
-    }
-
-    // torus knot
-    if (INTERSECTED.name === "torusKnot") {
-      gsap.to(INTERSECTED.rotation, {
-        y: 0,
-        duration: 1,
-        ease: "power2.inOut",
-        overwrite: true,
-      });
-    }
-
-    INTERSECTED.isAnimating = false;
-  }
-  // animate
-  else {
-    if (INTERSECTED.name === "sphere") {
-      gsap.to(INTERSECTED.position, {
-        y: 9,
-        duration: "random(3, 10)",
-        ease: "power2.inOut",
-        repeat: -1,
-        repeatRefresh: true,
-        yoyo: true,
-      });
-      gsap.to(INTERSECTED.scale, {
-        y: "random(1, 4)",
-        duration: "random(3, 10)",
-        ease: "sine.inOut",
-        repeat: -1,
-        repeatRefresh: true,
-        yoyo: true,
-      });
-    }
-
-    if (INTERSECTED.name === "torusKnot") {
-      gsap.to(INTERSECTED.rotation, {
-        y: Math.PI * 2,
-        duration: 4,
-        ease: "power2.inOut",
-        repeat: -1,
-      });
-    }
-
-    INTERSECTED.isAnimating = true;
-  }
-};
-window.addEventListener("click", onClick);
