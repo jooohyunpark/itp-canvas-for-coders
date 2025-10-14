@@ -114,7 +114,6 @@ npm run dev
 - [GSAP](<https://greensock.com/docs/v3/GSAP/gsap.to()>)
 - [3D Models](https://threejs.org/docs/index.html#manual/en/introduction/Loading-3D-models)
 - [Positional audio](https://threejs.org/docs/#api/en/audio/PositionalAudio)
-- [Raycaster](https://threejs.org/docs/index.html#api/en/core/Raycaster)
 
 
 ### Week 4: React
