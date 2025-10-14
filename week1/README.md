@@ -14,6 +14,7 @@
 - [Exoplanet Travel Bureau](https://exoplanets.nasa.gov/alien-worlds/exoplanet-travel-bureau/)
 - [t-SNE Map](https://experiments.withgoogle.com/t-sne-map)
 - [Star system](https://codepen.io/seanseansean/pen/vEjOvy)
+- [How Big is 10 billion](https://yanlinma.co/10-billion-dollar/)
 - [Jesse Zhou portfolio](https://jesse-zhou.com/)
 - [Kinetic Typography Playground](https://kinetic-typography-playground.netlify.app/)
 - [Scrollcontrols + GLTF](https://codesandbox.io/s/4jr4p)
