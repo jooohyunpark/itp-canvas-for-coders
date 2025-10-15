@@ -10,6 +10,7 @@
 - [Gaze](https://gaze.joohyunpark.dev/)
 - [Infinite Swimming Pools](https://zer02z2.github.io/Swimming-Pools-in-the-Hill/)
 - [SymbiosisThreeJS](https://dannoblem.github.io/SymbiosisThreeJS/)
+- [Experiments by Jack](https://www.instagram.com/p/C05FxiGMVu9/?img_index=4)
 - [Bruno Simon](https://bruno-simon.com/)
 - [Exoplanet Travel Bureau](https://exoplanets.nasa.gov/alien-worlds/exoplanet-travel-bureau/)
 - [t-SNE Map](https://experiments.withgoogle.com/t-sne-map)
