@@ -2,6 +2,7 @@
 
 ## Reimagining web space
 
+- [Rafaël Rozendaal](https://www.newrafael.com/internet/)
 - [Doors](https://doors.joohyunpark.dev/)
 - [Type](https://type.joohyunpark.dev/)
 - [Type 2](https://type2.joohyunpark.dev/)
