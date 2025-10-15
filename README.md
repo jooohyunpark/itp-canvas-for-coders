@@ -134,6 +134,7 @@ npm run dev
 ### Week 6: Interactions & Deployment
 - [@react-three/rapierpier](https://github.com/pmndrs/react-three-rapier)
 - [Deploying site](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site)
+- [Vercel deployment](https://vercel.com/docs/git/vercel-for-github)
 
 
 ### Week 7: Final
