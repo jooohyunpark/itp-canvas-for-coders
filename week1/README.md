@@ -2,7 +2,6 @@
 
 ## Reimagining web space
 
-- [Rafaël Rozendaal](https://www.newrafael.com/internet/)
 - [Firework](https://firework.joohyunpark.dev/)
 - [Doors](https://doors.joohyunpark.dev/)
 - [Type](https://type.joohyunpark.dev/)
@@ -14,6 +13,7 @@
 - [Experiments by Jack](https://www.instagram.com/p/C05FxiGMVu9/?img_index=4)
 - [How Big is 10 billion](https://yanlinma.co/10-billion-dollar/)
 - [Bruno Simon](https://bruno-simon.com/)
+- [Rafaël Rozendaal](https://www.newrafael.com/internet/)
 - [Exoplanet Travel Bureau](https://exoplanets.nasa.gov/alien-worlds/exoplanet-travel-bureau/)
 - [t-SNE Map](https://experiments.withgoogle.com/t-sne-map)
 - [Star system](https://codepen.io/seanseansean/pen/vEjOvy)
