@@ -154,7 +154,6 @@ Submit your weekly assignments [here](https://github.com/jooohyunpark/itp-canvas
 - [@react-three/drei](https://github.com/pmndrs/drei) - Ready-to-use helpers for r3f
 - [@react-spring/three](https://github.com/pmndrs/react-spring) - Spring-based React animation library
 - [@react-three/rapier](https://github.com/pmndrs/react-three-rapier) - Rapier physics in r3f
-- [Motion](https://motion.dev/docs/react-three-fiber) - Animation library
 - [Three.js editor](https://threejs.org/editor/)
 - [Three.js devtools](https://chromewebstore.google.com/detail/threejs-devtools/jechbjkglifdaldbdbigibihfaclnkbo)
 
