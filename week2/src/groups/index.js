@@ -91,8 +91,8 @@ console.log(sunGroup);
 // animate
 const animate = (timestamp) => {
   timestamp *= 0.001;
-  // earthGroup.rotation.y = Math.PI * timestamp * 0.1;
-  // sunGroup.rotation.y = Math.PI * timestamp * 0.1;
+  earthGroup.rotation.y = Math.PI * timestamp * 0.1;
+  sunGroup.rotation.y = Math.PI * timestamp * 0.03;
 
   renderer.render(scene, camera);
   controls.update();
