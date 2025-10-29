@@ -2,7 +2,7 @@
 
 ## Content
 
-- [Renderer](https://threejs.org/manual/#en/rendertargets)
+- [Renderer](https://threejs.org/docs/?q=render#api/en/renderers/WebGLRenderer)
 - [Scene](https://threejs.org/manual/#en/scenegraph)
 - [Cameras](https://threejs.org/manual/#en/cameras)
   - [Perspective vs Orthographic](https://jooohyunpark.github.io/threejs-camera-comparison/)
