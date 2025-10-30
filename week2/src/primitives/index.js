@@ -104,6 +104,7 @@ fontLoader.load("/helvetiker_regular.typeface.json", (font) => {
   const textGeometry = new TextGeometry(text, {
     font: font,
     size: 70,
+    depth: 15,
     height: 5,
     curveSegments: 12,
     bevelEnabled: true,
