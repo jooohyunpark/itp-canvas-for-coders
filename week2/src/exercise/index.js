@@ -78,6 +78,7 @@ fontLoader.load("/helvetiker_regular.typeface.json", (font) => {
     bevelThickness: 2,
     bevelSize: 1.5,
   });
+  textGeometry.center();
 
   const textMesh = new THREE.Mesh(textGeometry, material);
   textMesh.scale.setScalar(0.01);
