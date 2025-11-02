@@ -74,6 +74,7 @@ const coneMaterial = new THREE.MeshStandardMaterial({
 });
 const coneMesh = new THREE.Mesh(coneGeometry, coneMaterial);
 coneMesh.position.y = 1.5;
+scene.add(coneMesh);
 raycastObjects.push(coneMesh);
 
 // torusknot
@@ -87,6 +88,7 @@ const torusKnotMesh = new THREE.Mesh(torusKnotGeometry, torusKnotMaterial);
 torusKnotMesh.position.y = 5;
 torusKnotMesh.name = "torusKnot";
 controls.target.copy(torusKnotMesh.position);
+scene.add(torusKnotMesh);
 raycastObjects.push(torusKnotMesh);
 
 // sphere
@@ -105,9 +107,9 @@ for (let i = -count; i <= count; i++) {
   const sphereMesh = new THREE.Mesh(SphereGeometry, sphereMaterial.clone());
   sphereMesh.position.set(i * gap, 2, -10);
   sphereMesh.initialPosition = sphereMesh.position.clone();
+  scene.add(sphereMesh);
   raycastObjects.push(sphereMesh);
 }
-scene.add(...raycastObjects);
 
 // raycaster
 const raycaster = new THREE.Raycaster();
