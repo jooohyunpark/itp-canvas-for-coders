@@ -76,6 +76,7 @@ const coneMaterial = new THREE.MeshStandardMaterial({
 const coneMesh = new THREE.Mesh(coneGeometry, coneMaterial);
 coneMesh.position.y = 1.5;
 scene.add(coneMesh);
+raycastObjects.push(coneMesh);
 
 // torusknot
 const torusKnotGeometry = new THREE.TorusKnotGeometry(1, 0.3, 128, 64);
@@ -92,7 +93,6 @@ controls.target.copy(torusKnotMesh.position);
 raycastObjects.push(torusKnotMesh);
 
 // sphere
-const sphereGroup = new THREE.Group();
 const SphereGeometry = new THREE.SphereGeometry(0.3, 128, 128);
 const sphereMaterial = new THREE.MeshStandardMaterial({
   color: "#ffffff",
