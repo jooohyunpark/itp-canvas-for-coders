@@ -2,7 +2,6 @@ import "./style.css";
 import * as THREE from "three";
 import { OrbitControls } from "three/addons/controls/OrbitControls";
 import { RectAreaLightHelper } from "three/addons/helpers/RectAreaLightHelper";
-import { gsap } from "gsap";
 
 // raycast objects
 const raycastObjects = [];
