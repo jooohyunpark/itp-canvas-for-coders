@@ -52,7 +52,7 @@ controls.screenSpacePanning = false;
 controls.enableRotate = true;
 controls.rotateSpeed = 0.5;
 controls.enableZoom = true;
-controls.minDistance = 10;
+controls.minDistance = 5;
 controls.maxDistance = 100;
 controls.target = new THREE.Vector3(0, 4, 0);
 
@@ -67,7 +67,7 @@ window.addEventListener("resize", onResize);
 
 // box
 const boxGeometry = new THREE.BoxGeometry(2, 4, 2);
-const boxMaterial = new THREE.MeshStandardMaterial({ color: "white" });
+const boxMaterial = new THREE.MeshStandardMaterial();
 const boxMesh = new THREE.Mesh(boxGeometry, boxMaterial);
 boxMesh.position.y = 2;
 boxMesh.rotation.y = Math.PI * 0.25;
@@ -121,7 +121,7 @@ loader.load(
 
 let mixer;
 
-const fisthGroup = new THREE.Group();
+const fishGroup = new THREE.Group();
 
 loader.load("/fish.glb", function (gltf) {
   console.log("fish gltf: ", gltf);
@@ -137,15 +137,15 @@ loader.load("/fish.glb", function (gltf) {
   action.timeScale = 0.3;
 
   // rotate fishgroup
-  gsap.to(fisthGroup.rotation, {
+  gsap.to(fishGroup.rotation, {
     y: Math.PI * 2,
     duration: 60,
     repeat: -1,
     ease: "none",
   });
 
-  fisthGroup.add(gltf.scene);
-  scene.add(fisthGroup);
+  fishGroup.add(gltf.scene);
+  scene.add(fishGroup);
 });
 
 /**
