@@ -134,32 +134,17 @@ const animate = () => {
   // calculate objects intersecting the picking ray
   const intersects = raycaster.intersectObjects(raycastObjects);
 
-  // something intersected!
-  if (intersects.length > 0) {
-    if (
-      // look for raycasted object
-      intersects[0].object !== INTERSECTED
-    ) {
-      // reset previous intersected object's color
-      if (INTERSECTED)
-        INTERSECTED.material.emissive.setHex(INTERSECTED.currentHex);
-
-      // assign currently intersected object
-      INTERSECTED = intersects[0].object;
-      // store current emmissive hexcolor (to reset later, in above step)
-      INTERSECTED.currentHex = INTERSECTED.material.emissive.getHex();
-      // set emmissive hexcolor to cyan
-      INTERSECTED.material.emissive.setHex(0x00ffff);
-    }
-  }
-  // nothing intersected
-  else {
-    // reset previous intersected object's color
-    if (INTERSECTED)
-      INTERSECTED.material.emissive.setHex(INTERSECTED.currentHex);
-
-    // release variable
+  // Reset previous intersected object's color
+  if (INTERSECTED) {
+    INTERSECTED.material.emissive.setHex(INTERSECTED.currentHex);
     INTERSECTED = null;
+  }
+
+  // Set new intersected object if any
+  if (intersects.length > 0) {
+    INTERSECTED = intersects[0].object;
+    INTERSECTED.currentHex = INTERSECTED.material.emissive.getHex();
+    INTERSECTED.material.emissive.setHex(0x00ffff);
   }
 
   renderer.render(scene, camera);
