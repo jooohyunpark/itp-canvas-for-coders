@@ -158,7 +158,9 @@ camera.add(listener);
 
 // create the PositionalAudio object (passing in the listener)
 const waterSound = new THREE.PositionalAudio(listener);
+const waterSound2 = new THREE.PositionalAudio(listener);
 const forestSound = new THREE.PositionalAudio(listener);
+const forestSound2 = new THREE.PositionalAudio(listener);
 
 // load a sound and set it as the PositionalAudio object's buffer
 const audioLoader = new THREE.AudioLoader();
@@ -169,6 +171,12 @@ audioLoader.load("/forest.mp3", function (buffer) {
   forestSound.setRolloffFactor(2); // value describing how quickly the volume is reduced as the source moves away from the listener
   forestSound.setLoop(true);
   console.log(forestSound);
+
+  forestSound2.setBuffer(buffer);
+  forestSound2.setVolume(0.5);
+  forestSound2.setRefDistance(5);
+  forestSound2.setRolloffFactor(2);
+  forestSound2.setLoop(true);
 });
 audioLoader.load("/underwater.mp3", function (buffer) {
   waterSound.setBuffer(buffer);
@@ -176,12 +184,20 @@ audioLoader.load("/underwater.mp3", function (buffer) {
   waterSound.setRefDistance(5);
   waterSound.setRolloffFactor(2);
   waterSound.setLoop(true);
+
+  waterSound2.setBuffer(buffer);
+  waterSound2.setVolume(1);
+  waterSound2.setRefDistance(5);
+  waterSound2.setRolloffFactor(2);
+  waterSound2.setLoop(true);
 });
 
 // start playing on user interaction - https://developer.chrome.com/blog/autoplay/#webaudio
 const play = () => {
   if (forestSound.buffer && !forestSound.isPlaying) forestSound.play();
+  if (forestSound2.buffer && !forestSound2.isPlaying) forestSound2.play();
   if (waterSound.buffer && !waterSound.isPlaying) waterSound.play();
+  if (waterSound2.buffer && !waterSound2.isPlaying) waterSound2.play();
 };
 window.addEventListener("click", play);
 
@@ -201,7 +217,7 @@ waterSphereMesh1.add(waterSound); // add the sound to the mesh
 
 const waterSphereMesh2 = new THREE.Mesh(sphereGeometry, waterSphereMaterial);
 waterSphereMesh2.position.set(-25, 5, 25);
-waterSphereMesh2.add(waterSound);
+waterSphereMesh2.add(waterSound2);
 
 scene.add(waterSphereMesh1, waterSphereMesh2);
 
@@ -211,7 +227,7 @@ forestSphereMesh1.add(forestSound);
 
 const forestSphereMesh2 = new THREE.Mesh(sphereGeometry, forestSphereMaterial);
 forestSphereMesh2.position.set(25, 5, 25);
-forestSphereMesh2.add(forestSound);
+forestSphereMesh2.add(forestSound2);
 
 scene.add(forestSphereMesh1, forestSphereMesh2);
 
