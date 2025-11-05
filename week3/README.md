@@ -4,7 +4,7 @@
 
 - [Animation loop](https://threejs.org/docs/index.html?q=render#api/en/renderers/WebGLRenderer.setAnimationLoop)
 - [GSAP](<https://greensock.com/docs/v3/GSAP/gsap.to()>)
-- [3D Models](https://threejs.org/docs/index.html#manual/en/introduction/Loading-3D-models)
+- [3D Models](https://threejs.org/manual/?q=gltf#en/load-gltf)
 - [Positional audio](https://threejs.org/docs/#api/en/audio/PositionalAudio)
 - [Raycaster](https://threejs.org/docs/index.html#api/en/core/Raycaster)
 
