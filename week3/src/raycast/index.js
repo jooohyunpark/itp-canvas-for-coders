@@ -99,7 +99,7 @@ const sphereMaterial = new THREE.MeshStandardMaterial({
   metalness: 0.2,
 });
 
-// back sphere position & scale
+// back spheres
 const count = 10;
 const gap = 2;
 
