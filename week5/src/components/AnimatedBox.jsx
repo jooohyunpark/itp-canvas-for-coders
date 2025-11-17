@@ -4,6 +4,7 @@ import { animated, useSpring, easings } from "@react-spring/three";
 const AnimatedBox = (props) => {
   // This reference will give us direct access to the mesh
   const meshRef = useRef();
+
   // Set up state for the hovered and active state
   const [hovered, setHover] = useState(false);
   const [active, setActive] = useState(false);
