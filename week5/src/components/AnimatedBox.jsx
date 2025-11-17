@@ -9,21 +9,17 @@ const AnimatedBox = (props) => {
   const [hovered, setHover] = useState(false);
   const [active, setActive] = useState(false);
 
-  const { scale } = useSpring({
+  // state based animations
+  const { scale, color } = useSpring({
     scale: active ? 1.5 : 1,
+    color: hovered ? "blue" : "white",
     config: {
-      duration: 350,
+      duration: 300,
       easing: easings.easeInOutQuart,
     },
   });
 
-  const { color } = useSpring({
-    color: hovered ? "blue" : "white",
-    config: {
-      duration: 250,
-    },
-  });
-
+  // rotation loop
   const { rotation } = useSpring({
     loop: true,
     from: { rotation: [0, 0, 0] },
