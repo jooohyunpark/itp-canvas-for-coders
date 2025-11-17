@@ -25,11 +25,7 @@ function Scene() {
         <Center top position={[-2, 0, 0]}>
           <mesh castShadow>
             <sphereGeometry args={[0.3, 64, 64]} />
-            <meshStandardMaterial
-              color="white"
-              roughness={0.4}
-              metalness={0.7}
-            />
+            <meshStandardMaterial color="white" roughness={0} metalness={1} />
           </mesh>
         </Center>
         <Center top position={[0, 0, 0]}>
