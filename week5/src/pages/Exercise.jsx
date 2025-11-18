@@ -7,7 +7,6 @@ import {
   Box,
 } from "@react-three/drei";
 import { useFrame } from "@react-three/fiber";
-
 import { useRef } from "react";
 
 function Scene() {

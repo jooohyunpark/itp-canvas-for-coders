@@ -7,6 +7,7 @@ export function Text({
   position = [0, 0, 0],
   rotation = [0, 0, 0],
 }) {
+  // fade in when added to the scene
   const { opacity } = useSpring({
     from: { opacity: 0.001 }, // since 0 gives a weird error, we use 0.001
     to: { opacity: 1 },
