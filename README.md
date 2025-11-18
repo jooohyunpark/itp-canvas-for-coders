@@ -126,7 +126,7 @@ npm run dev
 
 
 ### Week 5: React Three Fiber
-- [@react-three/fiber](https://r3f.docs.pmnd.rs/getting-started/introduction)
+- [@react-three/fiber](https://r3f.docs.pmnd.rs/getting-started/your-first-scene)
 - [@react-three/drei](https://github.com/pmndrs/drei) 
 
 
