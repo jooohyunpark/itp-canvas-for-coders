@@ -4,10 +4,9 @@ import { useEffect } from "react";
 const Human = (props) => {
   const { scene } = useGLTF("/models/LeePerrySmith.glb");
 
+  // You can traverse the scene graph
   useEffect(() => {
-    scene.traverse((child) => {
-      // You can traverse the scene here
-    });
+    scene.traverse((child) => {});
   }, [scene]);
 
   return (
