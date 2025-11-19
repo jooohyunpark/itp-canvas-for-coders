@@ -1,4 +1,4 @@
-import { useGLTF } from "@react-three/drei";
+import { useGLTF, Gltf } from "@react-three/drei";
 import { useEffect } from "react";
 
 const Human = (props) => {
