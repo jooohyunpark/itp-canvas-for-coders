@@ -10,10 +10,9 @@
 
 ## Course Description
 
-Web browser is a 21st-century canvas. 
+Web browser is a 21st-century canvas.
 
 While being one of the most common media today, web space has infinite possibilities for new aesthetics. This course covers Three.js fundamentals, providing students with the skills and insights to develop visual and narrative experiences in web.
-
 
 ## Course Objectives
 
@@ -22,10 +21,10 @@ At the completion of this course, the students will:
 1. Develop perspectives on using web as a creative medium.
 2. Be comfortable prototyping web 3D experience with [Three.js](https://threejs.org/) and [React Three Fiber](https://github.com/pmndrs/react-three-fiber).
 
-
 ## Course Values
 
 ### 🤝 Create together
+
 Every idea matters. We respect every perspective and encourage open creativity through collaboration.
 
 ### 💻 Learn by doing
@@ -36,13 +35,11 @@ Ideate, research, prototype, and iterate. Dive right into writing code, and don'
 
 Ask questions, seek feedback, and share constructive insights. Your curiosity and thoughtful input can inspire others.
 
-
 ## Course Structure
+
 - Group discussion (15 minutes)
 - First half content (60 minutes)
 - Second half content or class exercise (60 minutes)
-
-
 
 ## Prerequisites
 
@@ -74,7 +71,7 @@ cd week1
 # Install dependencies
 npm install
 
-# Start the dev server 
+# Start the dev server
 npm run dev
 ```
 
@@ -91,7 +88,6 @@ npm run dev
 - [Colors](https://threejs.org/docs/index.html#api/en/math/Color)
 - [Object properties](https://threejs.org/docs/#api/en/core/Object3D)
 
-
 ### Week 2: Building a Scene
 
 - [Renderer](https://threejs.org/manual/#en/rendertargets)
@@ -104,8 +100,7 @@ npm run dev
 - [Primitives](https://threejs.org/manual/#en/primitives)
 - [Materials](https://threejs.org/manual/#en/materials)
 - [Textures](https://threejs.org/manual/#en/textures)
-- [Group](https://threejs.org/docs/index.html#api/en/objects/Group)  
-
+- [Group](https://threejs.org/docs/index.html#api/en/objects/Group)
 
 ### Week 3: Motion & Depth
 
@@ -115,33 +110,33 @@ npm run dev
 - [Positional audio](https://threejs.org/docs/#api/en/audio/PositionalAudio)
 - [Raycast](https://threejs.org/docs/#api/en/core/Raycaster)
 
-
 ### Week 4: React
-- [Concept](https://react.gg/visualized#v=fn(s))
+
+- [Concept](<https://react.gg/visualized#v=fn(s)>)
 - [JSX](https://react.gg/visualized#jsx)
 - [Component](https://react.gg/visualized#components) / [Props](https://react.dev/learn/passing-props-to-a-component)
 - [Event handlers](https://react.dev/learn/responding-to-events)
 - [State](https://react.dev/learn/state-a-components-memory)
 - [Hooks](https://react.dev/reference/react/hooks)
 
-
 ### Week 5: React Three Fiber
-- [@react-three/fiber](https://r3f.docs.pmnd.rs/getting-started/your-first-scene)
-- [@react-three/drei](https://github.com/pmndrs/drei) 
 
+- [@react-three/fiber](https://r3f.docs.pmnd.rs/getting-started/your-first-scene)
+- [@react-three/drei](https://github.com/pmndrs/drei)
+- [@react-spring/three ](https://github.com/pmndrs/react-spring)
 
 ### Week 6: Interactions & Deployment
+
 - [@react-three/rapier](https://github.com/pmndrs/react-three-rapier)
 - [Deploying site](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site)
 - [Vercel deployment](https://vercel.com/docs/git/vercel-for-github)
-
 
 ### Week 7: Final
 
 - Presentation
 
-
 ## Assignments
+
 Submit your weekly assignments [here](https://github.com/jooohyunpark/itp-canvas-for-coders/discussions/categories/assignments)
 
 ## Tools
@@ -157,15 +152,12 @@ Submit your weekly assignments [here](https://github.com/jooohyunpark/itp-canvas
 - [Three.js editor](https://threejs.org/editor/)
 - [Three.js devtools](https://chromewebstore.google.com/detail/threejs-devtools/jechbjkglifdaldbdbigibihfaclnkbo)
 
-
 ## Resources
 
 - [Three.js fundamentals](https://threejs.org/manual/#en/fundamentals)
 - [Three.js Mentor GPT](https://chatgpt.com/g/g-jGjqAMvED-three-js-mentor)
 - [Three.js examples](https://threejs.org/examples/)
 - [React, visualized](https://react.gg/visualized)
-
-
 
 ## Equipment
 
