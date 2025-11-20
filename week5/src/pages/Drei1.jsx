@@ -7,7 +7,7 @@ import {
   Clouds,
   Cloud,
 } from "@react-three/drei";
-import { MeshBasicMaterial } from "three";
+import { MeshStandardMaterial } from "three";
 import Human from "@/components/Human";
 
 function Scene() {
@@ -32,8 +32,9 @@ function Scene() {
           <Human />
         </Center>
         <Center top position={[2, 0.5, 0]}>
-          <Clouds material={MeshBasicMaterial} scale={0.05}>
-            <Cloud segments={40} bounds={[10, 3, 2]} volume={10} color="#ccc" />
+          <Clouds material={MeshStandardMaterial} scale={0.05}>
+            <Cloud segments={20} bounds={[10, 3, 2]} volume={15} color="#ccc" />
+            <pointLight intensity={2} color="blue" />
           </Clouds>
         </Center>
       </Stage>
