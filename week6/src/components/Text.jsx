@@ -16,7 +16,7 @@ export function Text({
 
   return (
     <RigidBody position={position} rotation={rotation} colliders="cuboid">
-      <animated.group>
+      <group>
         <Text3D
           font="/fonts/helvetiker_regular.typeface.json"
           size={1}
@@ -34,7 +34,7 @@ export function Text({
             opacity={opacity}
           />
         </Text3D>
-      </animated.group>
+      </group>
     </RigidBody>
   );
 }
