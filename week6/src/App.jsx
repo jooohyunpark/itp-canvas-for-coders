@@ -88,7 +88,7 @@ function Scene() {
 
         <Environment files="/images/studio.hdr" />
 
-        <Physics debug={true}>
+        <Physics debug={false}>
           {texts.map((text, index) => (
             <Text
               key={index}
