@@ -16,25 +16,23 @@ export function Text({
 
   return (
     <RigidBody position={position} rotation={rotation} colliders="cuboid">
-      <group>
-        <Text3D
-          font="/fonts/helvetiker_regular.typeface.json"
-          size={1}
-          height={0.2}
-          curveSegments={12}
-          castShadow
-          receiveShadow
-        >
-          {content}
-          <animated.meshStandardMaterial
-            color="white"
-            metalness={1}
-            roughness={0.2}
-            transparent
-            opacity={opacity}
-          />
-        </Text3D>
-      </group>
+      <Text3D
+        font="/fonts/helvetiker_regular.typeface.json"
+        size={1}
+        height={0.2}
+        curveSegments={12}
+        castShadow
+        receiveShadow
+      >
+        {content}
+        <animated.meshStandardMaterial
+          color="white"
+          metalness={1}
+          roughness={0.2}
+          transparent
+          opacity={opacity}
+        />
+      </Text3D>
     </RigidBody>
   );
 }
