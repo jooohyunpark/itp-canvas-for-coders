@@ -6,6 +6,7 @@ import {
   Preload,
   Environment,
   SoftShadows,
+  Html,
 } from "@react-three/drei";
 import { Physics } from "@react-three/rapier";
 import { initialTexts } from "@/data";
@@ -43,12 +44,25 @@ function Scene() {
 
   return (
     <>
+      <Html position={[0, 5, 0]} transform center>
+        <h1>Hello world!</h1>
+      </Html>
+
+      <Html
+        rotation={[0, Math.PI * -0.5, 0]}
+        position={[0, 4, 0]}
+        transform
+        center
+      >
+        <button>Click me</button>
+      </Html>
+
       <SoftShadows size={40} samples={16} focus={0} />
 
       <Suspense>
         <PerspectiveCamera
           makeDefault
-          position={[0, 20, 20]}
+          position={[-15, 10, 20]}
           fov={35}
           near={0.1}
           far={10000}
