@@ -45,7 +45,7 @@ Ask questions, seek feedback, and share constructive insights. Your curiosity an
 
 Please setup belows on your machine before the first class.
 
-- [Visual Studio Code](https://code.visualstudio.com/)
+- Code editor such as [Visual Studio Code](https://code.visualstudio.com/) or [Cursor](https://cursor.com/)
 - [Node](https://nodejs.org/en/)
 - [npm](https://www.npmjs.com/) (Comes with Node.js installation)
 - [Git](https://github.com/git-guides/install-git)
