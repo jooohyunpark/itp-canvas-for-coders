@@ -6,7 +6,6 @@ import {
   Preload,
   Environment,
   SoftShadows,
-  Html,
 } from "@react-three/drei";
 import { Physics } from "@react-three/rapier";
 import { initialTexts } from "@/data";
@@ -44,14 +43,6 @@ function Scene() {
 
   return (
     <>
-      <Html position={[0, 5, 0]} transform>
-        <h1>Hello world!</h1>
-      </Html>
-
-      <Html rotation={[0, Math.PI * -0.5, 0]} position={[0, 4, 0]} transform>
-        <button>Click me</button>
-      </Html>
-
       <SoftShadows size={40} samples={16} focus={0} />
 
       <Suspense>
