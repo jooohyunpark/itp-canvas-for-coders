@@ -25,15 +25,15 @@ At the completion of this course, the students will:
 
 ### 🤝 Create together
 
-Every idea matters. We respect every perspective and encourage open creativity through collaboration.
+We works as a team. We value every perspective and encourage open creativity through collaboration.
 
-### 💻 Learn by doing
+### 💻 Learn and iterate
 
-Ideate, research, prototype, and iterate. Dive right into writing code, and don't hesitate to break things along the way.
+Ideate, research, prototype, and iterate. Jump into code, embrace mistakes, and learn by doing.
 
-### 👀 Stay curious
+### 👀 Discuss
 
-Ask questions, seek feedback, and share constructive insights. Your curiosity and thoughtful input can inspire others.
+Bring your questions, curiosities, and perspectives to the table. Thoughtful dialogue and constructive exchange help everyone grow.
 
 ## Course Structure
 
