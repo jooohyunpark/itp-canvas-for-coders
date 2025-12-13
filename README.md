@@ -12,7 +12,7 @@
 
 Web browser is a 21st-century canvas.
 
-While being one of the most common media today, web space has infinite possibilities for new aesthetics. This course covers Three.js fundamentals, providing students with the skills and insights to develop visual and narrative experiences in web.
+As one of today’s most common media, it offers infinite possibilities for computational expression and new aesthetics. This course explores the creative practice of Three.js and React Three Fiber, guiding students in crafting visual and narrative experiences that exist natively on the web.
 
 ## Course Objectives
 
