@@ -10,7 +10,7 @@
 
 ## Course Description
 
-Web browser is a 21st-century canvas.
+Web browser is a twenty-first century canvas.
 
 As one of today’s most common media, web offers infinite possibilities for computational expression and new aesthetics. This course explores the creative practice of Three.js and React Three Fiber, guiding students in crafting visual and narrative experiences that exist natively on the web.
 
