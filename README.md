@@ -12,7 +12,7 @@
 
 Web browser is a twenty-first century canvas.
 
-As one of today’s most common media, web enables new forms of computational expression and aesthetics. This course explores the creative practice of Three.js and React Three Fiber, guiding students in crafting visual and narrative experiences that exist natively on the web.
+As one of today’s most common media, web offers new forms of computational expression and aesthetics. This course explores the creative practice of Three.js and React Three Fiber, guiding students in crafting visual and conceptual experiences that exist natively on the web.
 
 ## Course Objectives
 
