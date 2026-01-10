@@ -5,6 +5,7 @@ import {
   PerspectiveCamera,
   Preload,
   Environment,
+  Html,
   SoftShadows,
 } from "@react-three/drei";
 import { Physics } from "@react-three/rapier";
@@ -79,7 +80,7 @@ function Scene() {
 
         <Environment files="/images/studio.hdr" />
 
-        <Physics debug={false}>
+        <Physics debug={false} gravity={[0, -30, 0]}>
           {texts.map((text, index) => (
             <Text
               key={index}
