@@ -34,7 +34,6 @@ export default function RootLayout({
           storageKey="itp-c4c-theme"
           enableSystem={true}
         >
-          {" "}
           <Nav />
           <main className="flex-1 lg:py-8 lg:pl-56 xl:pl-64">{children}</main>
         </ThemeProvider>
