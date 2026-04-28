@@ -12,12 +12,12 @@ import { Button } from "@/components/ui/button"
 import { ThemeToggle } from "@/components/site/theme-toggle"
 
 const navLinks = [
-  { href: "/week1", label: "Week 1" },
-  { href: "/week2", label: "Week 2" },
-  { href: "/week3", label: "Week 3" },
-  { href: "/week4", label: "Week 4" },
-  { href: "/week5", label: "Week 5" },
-  { href: "/week6", label: "Week 6" },
+  { href: "/week/1", label: "Week 1" },
+  { href: "/week/2", label: "Week 2" },
+  { href: "/week/3", label: "Week 3" },
+  { href: "/week/4", label: "Week 4" },
+  { href: "/week/5", label: "Week 5" },
+  { href: "/week/6", label: "Week 6" },
 ] as const
 
 function NavLinks({ onNavigate }: { onNavigate?: () => void }) {
@@ -58,8 +58,8 @@ export function Nav() {
       {/* Desktop sidebar */}
       <aside className="fixed top-0 left-0 z-10 hidden h-svh w-56 flex-col border-r lg:flex xl:w-64">
         <div className="flex shrink-0 items-center border-b px-4 py-4">
-          <Link href="/" className="px-2 text-lg font-medium tracking-tight">
-            ITP Canvas for Coders
+          <Link href="/" className="text-md px-2 font-medium tracking-tight">
+            Canvas for Coders
           </Link>
         </div>
 
@@ -97,10 +97,10 @@ export function Nav() {
             <div className="flex h-(--header-height) items-center justify-between px-6">
               <Link
                 href="/"
-                className="text-lg font-medium tracking-tight"
+                className="text-md font-medium tracking-tight"
                 onClick={close}
               >
-                ITP Canvas for Coders
+                Canvas for Coders
               </Link>
               <MobileToggle
                 ref={toggleRef}

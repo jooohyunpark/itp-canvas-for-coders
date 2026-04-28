@@ -1,6 +1,8 @@
+import type { Metadata } from "next"
 import { Geist, Geist_Mono } from "next/font/google"
 import { ThemeProvider } from "next-themes"
 import { Nav } from "@/components/site/nav"
+import { siteUrl } from "@/lib/site"
 import { cn } from "@/lib/utils"
 import "./globals.css"
 
@@ -10,6 +12,16 @@ const fontMono = Geist_Mono({
   subsets: ["latin"],
   variable: "--font-mono",
 })
+
+export const metadata: Metadata = {
+  metadataBase: new URL(siteUrl),
+  title: {
+    default: "Canvas for Coders",
+    template: "%s | Canvas for Coders",
+  },
+  description:
+    "Web browser is a twenty-first century canvas. A creative practice course exploring Three.js and React Three Fiber at NYU ITP.",
+}
 
 export default function RootLayout({
   children,
