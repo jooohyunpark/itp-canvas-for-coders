@@ -56,10 +56,13 @@ export function Nav() {
   return (
     <>
       {/* Desktop sidebar */}
-      <aside className="fixed top-0 left-0 z-10 hidden h-svh w-56 flex-col border-r lg:flex xl:w-64">
+      <aside className="fixed top-0 left-0 z-10 hidden h-svh w-48 flex-col border-r lg:flex xl:w-64">
         <div className="flex shrink-0 items-center border-b px-4 py-4">
-          <Link href="/" className="text-md px-2 font-medium tracking-tight">
-            Canvas for Coders
+          <Link href="/" className="flex flex-col px-2 tracking-tight">
+            <span className="text-sm font-medium xl:text-base">
+              Canvas for Coders
+            </span>
+            <span className="text-sm text-muted-foreground">Fall 2026</span>
           </Link>
         </div>
 
@@ -97,10 +100,10 @@ export function Nav() {
             <div className="flex h-(--header-height) items-center justify-between px-6">
               <Link
                 href="/"
-                className="text-md font-medium tracking-tight"
+                className="text-sm font-medium tracking-tight text-balance"
                 onClick={close}
               >
-                Canvas for Coders
+                Canvas for Coders | Fall 2026
               </Link>
               <MobileToggle
                 ref={toggleRef}
