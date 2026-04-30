@@ -62,7 +62,9 @@ export function Nav() {
             <span className="text-sm font-medium xl:text-base">
               Canvas for Coders
             </span>
-            <span className="text-sm text-muted-foreground">Fall 2026</span>
+            <span className="text-sm font-medium text-muted-foreground">
+              Fall 2026
+            </span>
           </Link>
         </div>
 

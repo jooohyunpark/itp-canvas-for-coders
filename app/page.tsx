@@ -1,6 +1,7 @@
 import { Section } from "@/components/site/section"
 import { Content } from "@/components/site/content"
 import { Article } from "@/components/site/article"
+import Link from "next/link"
 
 export default function Page() {
   return (
@@ -25,6 +26,7 @@ export default function Page() {
               make. I’m looking forward to building with you.
             </p>
             <p>:)</p>
+            <p>Joohyun</p>
           </Article>
         </Content>
       </Section>
@@ -33,49 +35,25 @@ export default function Page() {
         <Content>
           <Article>
             <h2>Info</h2>
-            <ul>
-              <li>
-                <strong>Instructor:</strong>{" "}
-                <a href="mailto:jhp527@nyu.edu">Joohyun Park</a>
-              </li>
-              <li>
-                <strong>Class:</strong> Thursdays, Oct 23 &ndash; Dec 11, 2025,
-                6:00&ndash;8:30pm. 370 Jay Street, Room 409, Brooklyn Campus.
-              </li>
-              <li>
-                <strong>Office hours:</strong> Thursdays, 8:30&ndash;9:, same
-                room.
-              </li>
-            </ul>
+            <dl className="not-prose grid grid-cols-[max-content_1fr] gap-x-6 gap-y-2">
+              <dt>Instructor</dt>
+              <dd>
+                <Link href="mailto:jhp527@nyu.edu" className="underline">
+                  Joohyun Park
+                </Link>
+              </dd>
 
-            <h2>Course objectives</h2>
-            <p>By the end of this course, you will:</p>
-            <ul>
-              <li>See the web as a creative medium of your own.</li>
-              <li>
-                Build 3D web experiences confidently with Three.js and React
-                Three Fiber.
-              </li>
-            </ul>
+              <dt>Class</dt>
+              <dd>
+                <div>
+                  Thursdays, Oct 23 &ndash; Dec 11, 2025, 6:00&ndash;8:30pm
+                </div>
+                <div>370 Jay Street, Room 409, Brooklyn Campus</div>
+              </dd>
 
-            <h2>Course values</h2>
-            <h3>Create together</h3>
-            <p>
-              We work as a team. Every perspective counts, and ideas grow
-              through collaboration.
-            </p>
-
-            <h3>Learn and iterate</h3>
-            <p>
-              Ideate, research, prototype, repeat. Write code, make mistakes,
-              learn by doing.
-            </p>
-
-            <h3>Discuss</h3>
-            <p>
-              Bring your questions and curiosities. Honest conversation helps
-              everyone grow.
-            </p>
+              <dt>Office hours</dt>
+              <dd>After class, same room</dd>
+            </dl>
           </Article>
         </Content>
       </Section>
