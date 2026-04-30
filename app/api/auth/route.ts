@@ -1,5 +1,6 @@
 import crypto from "crypto"
 import { NextRequest, NextResponse } from "next/server"
+import { AUTH_COOKIE, authToken } from "@/lib/auth"
 
 export async function POST(req: NextRequest) {
   try {
@@ -23,8 +24,10 @@ export async function POST(req: NextRequest) {
       return NextResponse.json({ success: false }, { status: 401 })
     }
 
+    const token = await authToken()
+
     const response = NextResponse.json({ success: true })
-    response.cookies.set("site_auth", "1", {
+    response.cookies.set(AUTH_COOKIE, token, {
       httpOnly: true,
       sameSite: "strict",
       secure: process.env.NODE_ENV === "production",
