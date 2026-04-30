@@ -9,15 +9,16 @@ import { useLockBodyScroll } from "@/hooks/useLockBodyScroll"
 import { cn } from "@/lib/utils"
 import { MenuIcon, XIcon } from "lucide-react"
 import { Button } from "@/components/ui/button"
+import { Content } from "@/components/site/content"
 import { ThemeToggle } from "@/components/site/theme-toggle"
 
 const navLinks = [
-  { href: "/week/1", label: "Week 1" },
-  { href: "/week/2", label: "Week 2" },
-  { href: "/week/3", label: "Week 3" },
-  { href: "/week/4", label: "Week 4" },
-  { href: "/week/5", label: "Week 5" },
-  { href: "/week/6", label: "Week 6" },
+  { href: "/week/1", label: "W1: Intro" },
+  { href: "/week/2", label: "W2: Scene" },
+  { href: "/week/3", label: "W3: Motion/Depth" },
+  { href: "/week/4", label: "W4: React " },
+  { href: "/week/5", label: "W5: React Three Fiber" },
+  { href: "/week/6", label: "W6: Interaction" },
 ] as const
 
 function NavLinks({ onNavigate }: { onNavigate?: () => void }) {
@@ -56,7 +57,7 @@ export function Nav() {
   return (
     <>
       {/* Desktop sidebar */}
-      <aside className="fixed top-0 left-0 z-10 hidden h-svh w-48 flex-col border-r lg:flex xl:w-64">
+      <aside className="fixed top-0 left-0 z-10 hidden h-svh w-64 flex-col border-r lg:flex">
         <div className="flex shrink-0 items-center border-b px-4 py-4">
           <Link href="/" className="flex flex-col px-2 tracking-tight">
             <span className="text-sm font-medium xl:text-base">
@@ -99,20 +100,22 @@ export function Nav() {
               isOpen && "bg-background"
             )}
           >
-            <div className="flex h-(--header-height) items-center justify-between px-6">
-              <Link
-                href="/"
-                className="text-sm font-medium tracking-tight text-balance"
-                onClick={close}
-              >
-                Canvas for Coders | Fall 2026
-              </Link>
-              <MobileToggle
-                ref={toggleRef}
-                isOpen={isOpen}
-                onToggle={() => setIsOpen((v) => !v)}
-              />
-            </div>
+            <Content>
+              <div className="flex h-(--header-height) items-center justify-between">
+                <Link
+                  href="/"
+                  className="text-sm font-medium tracking-tight text-balance"
+                  onClick={close}
+                >
+                  Canvas for Coders | Fall 2026
+                </Link>
+                <MobileToggle
+                  ref={toggleRef}
+                  isOpen={isOpen}
+                  onToggle={() => setIsOpen((v) => !v)}
+                />
+              </div>
+            </Content>
           </header>
 
           <AnimatePresence>

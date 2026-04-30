@@ -5,7 +5,7 @@ import { Article } from "@/components/site/article"
 import { CodeBlock } from "@/components/site/code-block"
 
 export const metadata: Metadata = {
-  title: "Week 1",
+  title: "W1: Intro",
 }
 
 const installCode = `npm create vite@latest my-app -- --template vanilla
@@ -47,15 +47,15 @@ export default function Week1Page() {
           <Article>
             <h1>Week 1: Introduction</h1>
             <p>
-              Welcome. This semester we treat the web as a creative medium.
-              The browser already includes a 3D graphics pipeline and a render
-              loop; our job is to learn how to use them.
+              Welcome. This semester we treat the web as a creative medium. The
+              browser already includes a 3D graphics pipeline and a render loop;
+              our job is to learn how to use them.
             </p>
 
             <h2>Your go-to dictionary</h2>
             <p>
-              You are not expected to memorize the Three.js API. Keep these
-              two references open while you work:
+              You are not expected to memorize the Three.js API. Keep these two
+              references open while you work:
             </p>
             <ul>
               <li>
@@ -109,9 +109,9 @@ export default function Week1Page() {
 
             <h2>Getting started with a Vite project</h2>
             <p>
-              Vite is a dev server and bundler. It gives you fast reload and
-              ES module imports, so you can pull in <code>three</code> like
-              any other package.
+              Vite is a dev server and bundler. It gives you fast reload and ES
+              module imports, so you can pull in <code>three</code> like any
+              other package.
             </p>
           </Article>
         </Content>
